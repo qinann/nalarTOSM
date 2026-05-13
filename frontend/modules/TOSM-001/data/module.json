@@ -1,0 +1,29 @@
+{
+  "id": "TOSM-001",
+  "title": "Komponen Utama Engine",
+  "level": "dasar",
+  "desc": "Engine sepeda motor tersusun dari komponen-komponen mekanis yang bekerja secara sinergis untuk mengubah energi kimia bahan bakar menjadi energi gerak. Pemahaman mendalam terhadap setiap komponen menjadi dasar penguasaan teknik otomotif.",
+  "kd": "Peserta mampu mengidentifikasi, menjelaskan fungsi, dan melakukan pemeriksaan visual komponen utama engine sepeda motor sesuai standar pabrik.",
+  "components": ["Blok silinder", "Kepala silinder", "Piston", "Crankshaft", "Camshaft", "Connecting rod", "Valve"],
+  "diagramCaption": "Gambar potongan engine sepeda motor — Blok mesin, kepala silinder, piston, connecting rod, crankshaft, dan camshaft",
+  "capaian": [
+    "Mengidentifikasi nama dan letak komponen utama engine sepeda motor",
+    "Menjelaskan fungsi masing-masing komponen utama engine",
+    "Mendeskripsikan hubungan mekanis antar komponen engine",
+    "Melakukan pemeriksaan visual kondisi komponen engine",
+    "Menentukan batas keausan komponen berdasarkan spesifikasi pabrik"
+  ],
+  "praktek": [
+    { "title": "Persiapan & K3", "desc": "Siapkan APD (sarung tangan, kacamata), letakkan motor di atas stand, pastikan mesin dingin sebelum dibongkar." },
+    { "title": "Pembongkaran Engine", "desc": "Lepas penutup kepala silinder, rantai timing, kepala silinder, piston, dan connecting rod secara berurutan menggunakan SST." },
+    { "title": "Identifikasi Komponen", "desc": "Tandai setiap komponen, ukur diameter piston, celah ring piston, dan kebengkokan connecting rod menggunakan alat ukur." },
+    { "title": "Pemeriksaan Keausan", "desc": "Bandingkan hasil pengukuran dengan spesifikasi pabrik. Tandai komponen yang sudah melebihi batas keausan untuk diganti." },
+    { "title": "Perakitan Kembali", "desc": "Rakit engine sesuai urutan kebalikan pembongkaran. Pastikan torsi pengencangan baut sesuai spesifikasi dan uji kompresi." }
+  ],
+  "evaluasi": [
+    { "q": "Komponen yang berfungsi mengubah gerak bolak-balik piston menjadi gerak putar adalah?", "opts": ["Connecting Rod", "Crankshaft", "Camshaft", "Flywheel"], "ans": 1 },
+    { "q": "Fungsi ring piston pada engine adalah?", "opts": ["Mendinginkan piston", "Menyegel ruang bakar dan mengontrol oli", "Menghubungkan piston ke crankshaft", "Mengatur timing katup"], "ans": 1 },
+    { "q": "Kepala silinder berfungsi sebagai?", "opts": ["Tempat gerak piston", "Penutup ruang bakar dan dudukan katup", "Penyimpan oli mesin", "Penghubung ke transmisi"], "ans": 1 },
+    { "q": "Camshaft berfungsi untuk?", "opts": ["Memutar crankshaft", "Menggerakkan kopling", "Mengatur waktu buka-tutup katup", "Memompa bahan bakar"], "ans": 2 }
+  ]
+}

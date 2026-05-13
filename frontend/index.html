@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOSM — Masuk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --purple:   #7c3aed;
+      --blue:     #3b82f6;
+      --text:     #f1f5f9;
+      --muted:    rgba(241,245,249,.45);
+      --glass-bg: rgba(255,255,255,.04);
+      --glass-bd: rgba(255,255,255,.08);
+      --input-bg: rgba(255,255,255,.06);
+      --input-bd: rgba(255,255,255,.1);
+      --radius:   12px;
+    }
+    html, body { height: 100%; font-family: 'Inter', system-ui, sans-serif; background: #03071a; color: var(--text); overflow: hidden; }
+
+    #bg { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; }
+
+    .page {
+      position: relative; z-index: 10;
+      display: flex; align-items: center; justify-content: center;
+      min-height: 100vh; padding: 20px;
+    }
+
+    /* ── Card ── */
+    .card {
+      width: 100%; max-width: 400px;
+      background: var(--glass-bg);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      border: 1px solid var(--glass-bd);
+      border-radius: 20px;
+      padding: 44px 38px;
+      box-shadow: 0 8px 40px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.06);
+      animation: up .5s cubic-bezier(.16,1,.3,1) both;
+    }
+    @keyframes up { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+
+    /* ── Brand ── */
+    .brand { text-align: center; margin-bottom: 36px; }
+    .brand-icon {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 54px; height: 54px;
+      background: linear-gradient(135deg, var(--purple), var(--blue));
+      border-radius: 15px; margin-bottom: 14px;
+      box-shadow: 0 0 36px rgba(124,58,237,.45);
+    }
+    .brand-name {
+      font-size: 22px; font-weight: 700; letter-spacing: -.4px;
+      background: linear-gradient(135deg, #e0e7ff, #a5b4fc);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .brand-sub { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+    /* ── Heading ── */
+    .form-heading { margin-bottom: 22px; }
+    .form-heading h2 { font-size: 18px; font-weight: 600; }
+    .form-heading p  { font-size: 13px; color: var(--muted); margin-top: 3px; }
+
+    /* ── Fields ── */
+    .form-group { margin-bottom: 14px; }
+    label { display: block; font-size: 13px; font-weight: 500; color: var(--muted); margin-bottom: 6px; }
+    input {
+      width: 100%; padding: 11px 14px;
+      background: var(--input-bg); border: 1px solid var(--input-bd);
+      border-radius: var(--radius); color: var(--text); font-size: 14px; font-family: inherit;
+      outline: none; transition: all .2s;
+    }
+    input:focus {
+      border-color: rgba(124,58,237,.6);
+      background: rgba(124,58,237,.08);
+      box-shadow: 0 0 0 3px rgba(124,58,237,.12);
+    }
+    input::placeholder { color: rgba(255,255,255,.22); }
+
+    .row-between { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+    .row-between label { margin-bottom: 0; }
+    .link { font-size: 12px; color: var(--muted); text-decoration: none; transition: color .2s; }
+    .link:hover { color: #c4b5fd; }
+
+    /* ── Button ── */
+    .btn {
+      width: 100%; padding: 12px; margin-top: 12px;
+      background: linear-gradient(135deg, var(--purple), #4f46e5);
+      border: none; border-radius: var(--radius);
+      color: #fff; font-size: 14px; font-weight: 600; font-family: inherit;
+      cursor: pointer; position: relative; overflow: hidden;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .btn::after { content:''; position:absolute; inset:0; background:linear-gradient(135deg,rgba(255,255,255,.12),transparent); opacity:0; transition:opacity .2s; }
+    .btn:hover  { transform:translateY(-1px); box-shadow:0 10px 28px rgba(124,58,237,.4); }
+    .btn:hover::after { opacity:1; }
+    .btn:active { transform:translateY(0); }
+    .btn:disabled { opacity:.55; cursor:not-allowed; transform:none; box-shadow:none; }
+
+    /* ── Alert ── */
+    .alert { padding:10px 14px; border-radius:9px; font-size:13px; margin-bottom:16px; display:none; }
+    .alert.error   { background:rgba(239,68,68,.1);  border:1px solid rgba(239,68,68,.3);  color:#fca5a5; }
+    .alert.success { background:rgba(34,197,94,.1);  border:1px solid rgba(34,197,94,.3);  color:#86efac; }
+
+    /* ── Spinner ── */
+    .spin { display:inline-block; width:14px; height:14px; border:2px solid rgba(255,255,255,.3); border-top-color:#fff; border-radius:50%; animation:spin .6s linear infinite; vertical-align:middle; margin-right:6px; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+
+    @media (max-width:480px) { .card { padding:32px 22px; } }
+  </style>
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <div class="page">
+    <div class="card">
+
+      <div class="brand">
+        <div class="brand-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="white" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+            <path d="M2 17L12 22L22 17" stroke="white" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+            <path d="M2 12L12 17L22 12" stroke="white" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="brand-name">TOSM</div>
+        <div class="brand-sub">Platform Manajemen Terpadu</div>
+      </div>
+
+      <div class="form-heading">
+        <h2>Selamat datang kembali</h2>
+        <p>Masuk untuk melanjutkan ke dashboard</p>
+      </div>
+
+      <div class="alert" id="alert"></div>
+
+      <form onsubmit="handleLogin(event)">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="nama@contoh.com" autocomplete="email" required />
+        </div>
+        <div class="form-group">
+          <div class="row-between">
+            <label for="password">Kata Sandi</label>
+            <a href="#" class="link">Lupa kata sandi?</a>
+          </div>
+          <input id="password" type="password" placeholder="••••••••" autocomplete="current-password" required />
+        </div>
+        <button type="submit" class="btn" id="btn-login">Masuk</button>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+  <script>
+  // ── Three.js background ───────────────────────────────────
+  (function () {
+    const canvas   = document.getElementById('bg');
+    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+    renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+    renderer.setSize(innerWidth, innerHeight);
+    renderer.setClearColor(0x03071a, 1);
+
+    const scene  = new THREE.Scene();
+    scene.fog    = new THREE.FogExp2(0x03071a, 0.055);
+    const camera = new THREE.PerspectiveCamera(70, innerWidth / innerHeight, 0.1, 120);
+    camera.position.z = 32;
+
+    const COUNT = 2200;
+    const pos = new Float32Array(COUNT * 3);
+    const col = new Float32Array(COUNT * 3);
+    const vel = new Float32Array(COUNT * 3);
+    const palette = [
+      new THREE.Color(0x7c3aed), new THREE.Color(0x4f46e5),
+      new THREE.Color(0x3b82f6), new THREE.Color(0x06b6d4), new THREE.Color(0xa855f7),
+    ];
+    for (let i = 0; i < COUNT; i++) {
+      pos[i*3]   = (Math.random()-.5)*90;
+      pos[i*3+1] = (Math.random()-.5)*90;
+      pos[i*3+2] = (Math.random()-.5)*70;
+      vel[i*3]   = (Math.random()-.5)*.008;
+      vel[i*3+1] = (Math.random()-.5)*.008;
+      vel[i*3+2] = (Math.random()-.5)*.004;
+      const c = palette[i % palette.length];
+      col[i*3] = c.r; col[i*3+1] = c.g; col[i*3+2] = c.b;
+    }
+    const geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+    geo.setAttribute('color',    new THREE.BufferAttribute(col, 3));
+    const posAttr = geo.attributes.position;
+    const pts = new THREE.Points(geo, new THREE.PointsMaterial({ size:.18, vertexColors:true, transparent:true, opacity:.7, sizeAttenuation:true }));
+    scene.add(pts);
+
+    const orbs = [];
+    [
+      { r:9,  x:-16, y:9,   z:-12, c:0x7c3aed, rx:.0025, ry:.003  },
+      { r:6,  x:19,  y:-7,  z:-18, c:0x3b82f6, rx:.004,  ry:.002  },
+      { r:13, x:4,   y:-17, z:-22, c:0x06b6d4, rx:.0018, ry:.0022 },
+      { r:5,  x:-22, y:-12, z:-10, c:0xa855f7, rx:.005,  ry:.004  },
+      { r:7,  x:14,  y:14,  z:-7,  c:0x4f46e5, rx:.003,  ry:.0035 },
+    ].forEach(d => {
+      const m = new THREE.Mesh(
+        new THREE.IcosahedronGeometry(d.r, 1),
+        new THREE.MeshBasicMaterial({ color:d.c, wireframe:true, transparent:true, opacity:.07 })
+      );
+      m.position.set(d.x, d.y, d.z);
+      m.userData = { rx:d.rx, ry:d.ry, baseY:d.y, phase:Math.random()*Math.PI*2 };
+      scene.add(m); orbs.push(m);
+    });
+
+    let mx=0, my=0, cx=0, cy=0;
+    window.addEventListener('mousemove', e => { mx=(e.clientX/innerWidth-.5)*4; my=(e.clientY/innerHeight-.5)*4; });
+
+    let t=0;
+    (function loop() {
+      requestAnimationFrame(loop);
+      t += .006;
+      cx += (mx-cx)*.04; cy += (-my-cy)*.04;
+      camera.position.x = cx; camera.position.y = cy;
+      camera.lookAt(scene.position);
+      for (let i=0; i<COUNT; i++) {
+        pos[i*3]   += vel[i*3];   pos[i*3+1] += vel[i*3+1]; pos[i*3+2] += vel[i*3+2];
+        if (Math.abs(pos[i*3])   > 45) vel[i*3]   *= -1;
+        if (Math.abs(pos[i*3+1]) > 45) vel[i*3+1] *= -1;
+        if (Math.abs(pos[i*3+2]) > 35) vel[i*3+2] *= -1;
+      }
+      posAttr.needsUpdate = true;
+      orbs.forEach(o => {
+        const u = o.userData;
+        o.rotation.x += u.rx; o.rotation.y += u.ry;
+        o.position.y = u.baseY + Math.sin(t + u.phase) * 1.2;
+      });
+      renderer.render(scene, camera);
+    })();
+
+    window.addEventListener('resize', () => {
+      camera.aspect = innerWidth/innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(innerWidth, innerHeight);
+    });
+  })();
+
+  // ── Login logic ────────────────────────────────────────────
+  const API = 'http://localhost:3000/api';
+
+  function showAlert(msg, type) {
+    const el = document.getElementById('alert');
+    el.innerHTML = msg; el.className = `alert ${type}`; el.style.display = '';
+  }
+
+  async function handleLogin(e) {
+    e.preventDefault();
+    const btn      = document.getElementById('btn-login');
+    const email    = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value;
+    document.getElementById('alert').style.display = 'none';
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spin"></span>Memproses...';
+    try {
+      const res  = await fetch(`${API}/auth/login`, {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ email, password }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.message || 'Login gagal');
+      localStorage.setItem('tosm_token', data.token);
+      localStorage.setItem('tosm_user',  JSON.stringify(data.user));
+      showAlert('&#10003; Login berhasil! Mengalihkan ke halaman utama...', 'success');
+      setTimeout(() => window.location.href = 'dashboard.html', 800);
+    } catch (err) {
+      showAlert(err.message, 'error');
+      btn.disabled = false; btn.textContent = 'Masuk';
+    }
+  }
+  </script>
+</body>
+</html>

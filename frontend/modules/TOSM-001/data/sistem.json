@@ -1,0 +1,101 @@
+{
+  "caption": "Komponen Utama Engine",
+  "imageUrl": "/assets/images/komponenUtamaEngine.jpg",
+  "componentDetails": {
+    "Blok silinder": {
+      "fungsi": "Blok silinder adalah kerangka utama engine yang menjadi tempat bergeraknya piston. Berfungsi sebagai rumah silinder, menyalurkan panas ke sistem pendingin, dan menjadi dudukan seluruh komponen internal engine.",
+      "imageUrl": null,
+      "caption": "Gambar blok silinder",
+      "subComponents": ["Lubang silinder", "Liner / sleeve", "Water jacket", "Crankcase", "Oil passage", "Baut tanam"],
+      "subComponentDetails": {
+        "Lubang silinder": { "fungsi": "Lubang silinder adalah rongga tempat piston bergerak naik-turun. Permukaannya diproses dengan honing untuk menghasilkan kekasaran mikro yang mempertahankan lapisan oli dan mengurangi gesekan.", "imageUrl": null, "caption": "Gambar lubang silinder" },
+        "Liner / sleeve": { "fungsi": "Liner adalah lapisan dalam lubang silinder yang dapat diganti saat aus. Terbuat dari besi cor atau baja paduan keras untuk ketahanan aus optimal terhadap gesekan ring piston.", "imageUrl": null, "caption": "Gambar liner silinder" },
+        "Water jacket": { "fungsi": "Saluran air pendingin yang mengelilingi lubang silinder di dalam blok. Coolant bersirkulasi melalui jalur ini untuk menyerap dan membuang panas dari pembakaran.", "imageUrl": null, "caption": "Gambar water jacket" },
+        "Crankcase": { "fungsi": "Rumah bagian bawah blok silinder yang menjadi dudukan crankshaft dan menyimpan oli mesin. Menjadi penutup sistem pelumasan dan mendukung struktural engine secara keseluruhan.", "imageUrl": null, "caption": "Gambar crankcase" },
+        "Oil passage": { "fungsi": "Saluran oli yang dibor di dalam blok silinder untuk mendistribusikan oli dari pompa ke bearing crankshaft, camshaft, dan komponen yang membutuhkan pelumasan.", "imageUrl": null, "caption": "Gambar oil passage" },
+        "Baut tanam": { "fungsi": "Stud bolt yang tertanam di blok silinder sebagai pengikat kepala silinder. Terbuat dari baja paduan kuat untuk menahan tekanan pengencangan torsi tinggi sesuai spesifikasi pabrikan.", "imageUrl": null, "caption": "Gambar baut tanam" }
+      }
+    },
+    "Kepala silinder": {
+      "fungsi": "Kepala silinder menutup bagian atas blok silinder dan membentuk ruang bakar. Menjadi dudukan katup, busi, camshaft (OHC), serta saluran masuk dan buang gas pembakaran.",
+      "imageUrl": null,
+      "caption": "Gambar kepala silinder",
+      "subComponents": ["Ruang bakar", "Port masuk", "Port buang", "Dudukan busi", "Dudukan katup", "Water jacket"],
+      "subComponentDetails": {
+        "Ruang bakar": { "fungsi": "Rongga antara kepala silinder dan piston saat di TMA (Titik Mati Atas) tempat proses pembakaran berlangsung. Bentuk dan volumenya menentukan rasio kompresi engine.", "imageUrl": null, "caption": "Gambar ruang bakar" },
+        "Port masuk": { "fungsi": "Saluran yang menghubungkan karburator/injektor dengan ruang bakar untuk mengalirkan campuran udara-bahan bakar. Desain port mempengaruhi efisiensi pengisian dan tenaga engine.", "imageUrl": null, "caption": "Gambar port masuk" },
+        "Port buang": { "fungsi": "Saluran yang mengalirkan gas sisa pembakaran dari ruang bakar menuju sistem knalpot. Desain port buang mempengaruhi efisiensi pembuangan dan back-pressure.", "imageUrl": null, "caption": "Gambar port buang" },
+        "Dudukan busi": { "fungsi": "Lubang berulir di kepala silinder tempat busi dipasang. Posisinya tepat di tengah ruang bakar untuk memastikan penyebaran nyala api yang merata ke seluruh campuran.", "imageUrl": null, "caption": "Gambar dudukan busi" },
+        "Dudukan katup": { "fungsi": "Permukaan kerucut yang dibuat dari material keras (besi atau paduan khusus) tempat kepala katup duduk saat menutup untuk menyegel ruang bakar dengan sempurna.", "imageUrl": null, "caption": "Gambar dudukan katup" },
+        "Water jacket": { "fungsi": "Saluran pendingin di kepala silinder yang terhubung dengan water jacket blok silinder. Coolant mengalir di sekitar ruang bakar dan port untuk mencegah detonasi akibat overheat.", "imageUrl": null, "caption": "Gambar water jacket kepala silinder" }
+      }
+    },
+    "Piston": {
+      "fungsi": "Piston bergerak naik-turun di dalam silinder untuk menerima tekanan gas pembakaran dan mengubahnya menjadi gaya mekanis yang diteruskan ke crankshaft melalui connecting rod.",
+      "imageUrl": "/assets/images/piston.glb",
+      "caption": "Model 3D Piston",
+      "subComponents": ["Mahkota piston", "Ring piston", "Pin piston", "Bos pin piston"],
+      "subComponentDetails": {
+        "Mahkota piston": { "fungsi": "Bagian atas piston yang membentuk salah satu dinding ruang bakar dan menerima tekanan ledakan langsung saat pembakaran. Desain permukaannya mempengaruhi turbulensi campuran dan efisiensi pembakaran.", "imageUrl": null, "caption": "Gambar mahkota piston" },
+        "Ring piston": { "fungsi": "Ring piston adalah komponen berbentuk cincin yang dipasang pada alur di bagian luar piston, berfungsi untuk menyegel ruang bakar agar gas bertekanan tinggi tidak bocor ke crankcase (ring kompresi), serta mengontrol pelumasan dengan meratakan oli pada dinding silinder dan menyapu kelebihan oli kembali ke crankcase (ring oli). Ring piston terbagi menjadi tiga jenis: ring kompresi atas (paling dekat dengan mahkota piston), ring kompresi kedua, dan ring oli (biasanya terdiri dari dua ring tipis dengan ring ekspander). Materialnya umumnya terbuat dari besi cor atau baja paduan, dengan lapisan seperti chrome atau nitriding untuk meningkatkan ketahanan aus dan mengurangi gesekan.", "imageUrl": "/assets/images/ringPiston.glb", "caption": "Model 3D Ring piston" },
+        "Pin piston": { "fungsi": "Poros silindris baja paduan yang menghubungkan piston dengan small end connecting rod. Menahan beban geser yang sangat besar saat pembakaran dan meneruskan gaya ke connecting rod.", "imageUrl": null, "caption": "Gambar pin piston" },
+        "Bos pin piston": { "fungsi": "Dudukan berbentuk silinder di dalam piston tempat pin piston dipasang. Strukturnya diperkuat untuk menahan beban konsentrasi tegangan tinggi yang diterima dari pin piston.", "imageUrl": null, "caption": "Gambar bos pin piston" }
+      }
+    },
+    "Crankshaft": {
+      "fungsi": "Crankshaft mengubah gerak translasi (naik-turun) piston menjadi gerak rotasi. Menerima gaya dari connecting rod dan meneruskan tenaga putar ke sistem transmisi dan komponen asesoris engine.",
+      "imageUrl": null,
+      "caption": "Gambar crankshaft",
+      "subComponents": ["Main journal", "Crank pin", "Counterweight", "Oil passage", "Timing sprocket", "Flywheel"],
+      "subComponentDetails": {
+        "Main journal": { "fungsi": "Poros utama crankshaft yang berputar pada main bearing di dalam crankcase. Permukaannya dikeraskan dan digerinda halus untuk ketahanan aus dan kelancaran rotasi.", "imageUrl": null, "caption": "Gambar main journal" },
+        "Crank pin": { "fungsi": "Poros eksentrik crankshaft tempat big end connecting rod dipasang. Jarak crank pin dari sumbu rotasi menentukan langkah (stroke) piston.", "imageUrl": null, "caption": "Gambar crank pin" },
+        "Counterweight": { "fungsi": "Beban penyeimbang yang berlawanan dengan crank pin untuk menyeimbangkan gaya inersial piston dan connecting rod, mengurangi getaran engine pada semua kecepatan.", "imageUrl": null, "caption": "Gambar counterweight" },
+        "Oil passage": { "fungsi": "Saluran oli yang dibor di dalam crankshaft untuk menyalurkan oli bertekanan dari main journal ke crank pin, melumasi bearing connecting rod.", "imageUrl": null, "caption": "Gambar oil passage crankshaft" },
+        "Timing sprocket": { "fungsi": "Sproket/gear di ujung crankshaft yang menggerakkan rantai atau sabuk timing untuk memutar camshaft dengan rasio 2:1 (crankshaft berputar 2x, camshaft 1x).", "imageUrl": null, "caption": "Gambar timing sprocket" },
+        "Flywheel": { "fungsi": "Roda gila berat di ujung crankshaft yang menyimpan energi kinetik untuk mempertahankan rotasi engine selama langkah yang tidak menghasilkan tenaga (isap, kompresi, buang).", "imageUrl": null, "caption": "Gambar flywheel" }
+      }
+    },
+    "Camshaft": {
+      "fungsi": "Camshaft mengatur waktu pembukaan dan penutupan katup masuk dan buang sesuai siklus kerja engine. Diputar crankshaft melalui rantai atau sabuk timing dengan rasio 1:2.",
+      "imageUrl": null,
+      "caption": "Gambar camshaft",
+      "subComponents": ["Cam lobe masuk", "Cam lobe buang", "Journal camshaft", "Timing sprocket", "Oil passage"],
+      "subComponentDetails": {
+        "Cam lobe masuk": { "fungsi": "Tonjolan eksentrik pada camshaft yang mendorong katup masuk membuka pada timing yang tepat. Profil cam lobe menentukan durasi dan lift katup masuk.", "imageUrl": null, "caption": "Gambar cam lobe masuk" },
+        "Cam lobe buang": { "fungsi": "Tonjolan eksentrik yang mendorong katup buang membuka untuk mengeluarkan gas sisa pembakaran. Timing pembukaannya sedikit sebelum TMA untuk memanfaatkan inersia gas buang.", "imageUrl": null, "caption": "Gambar cam lobe buang" },
+        "Journal camshaft": { "fungsi": "Bagian silindris camshaft yang berputar pada bearing di kepala silinder atau di blok (OHV). Dilumasi oli bertekanan untuk mengurangi keausan.", "imageUrl": null, "caption": "Gambar journal camshaft" },
+        "Timing sprocket": { "fungsi": "Sproket di ujung camshaft yang dihubungkan dengan crankshaft melalui rantai timing. Berukuran dua kali lebih besar dari sproket crankshaft untuk rasio putaran 1:2.", "imageUrl": null, "caption": "Gambar timing sprocket camshaft" },
+        "Oil passage": { "fungsi": "Saluran oli dalam camshaft dan kepala silinder yang memastikan pelumasan pada setiap journal dan permukaan cam lobe untuk mencegah keausan prematur.", "imageUrl": null, "caption": "Gambar oil passage camshaft" }
+      }
+    },
+    "Connecting rod": {
+      "fungsi": "Connecting rod menghubungkan piston dengan crankshaft, meneruskan gaya dorong dari piston dan mengkonversi gerak translasi menjadi gerak rotasi bersama crankshaft.",
+      "imageUrl": null,
+      "caption": "Gambar connecting rod",
+      "subComponents": ["Small end", "Big end", "Batang conrod", "Baut conrod", "Bearing big end", "Bushing small end"],
+      "subComponentDetails": {
+        "Small end": { "fungsi": "Ujung kecil connecting rod yang terhubung ke pin piston melalui bushing. Bergerak secara osilasi mengikuti gerakan piston.", "imageUrl": null, "caption": "Gambar small end" },
+        "Big end": { "fungsi": "Ujung besar connecting rod yang memeluk crank pin crankshaft melalui bearing. Berputar mengikuti rotasi crankshaft dan menjadi titik konversi gerak.", "imageUrl": null, "caption": "Gambar big end" },
+        "Batang conrod": { "fungsi": "Bagian tengah connecting rod berbentuk I-beam atau H-beam yang menerima beban tekan dan tarik bergantian setiap siklus. Dirancang ringan namun kuat untuk mengurangi gaya inersial.", "imageUrl": null, "caption": "Gambar batang connecting rod" },
+        "Baut conrod": { "fungsi": "Baut presisi yang mengunci tutup big end ke connecting rod. Harus dikencangkan sesuai torsi spesifikasi dan tidak boleh digunakan ulang setelah dibongkar.", "imageUrl": null, "caption": "Gambar baut connecting rod" },
+        "Bearing big end": { "fungsi": "Bantalan setengah lingkaran (shell bearing) yang dipasang di big end untuk mengurangi gesekan antara crank pin dan connecting rod. Dilumasi oli bertekanan dari oil passage crankshaft.", "imageUrl": null, "caption": "Gambar bearing big end" },
+        "Bushing small end": { "fungsi": "Bushing bronz/baja yang dipasang di small end sebagai bantalan pin piston. Dapat diganti saat aus tanpa mengganti seluruh connecting rod.", "imageUrl": null, "caption": "Gambar bushing small end" }
+      }
+    },
+    "Valve": {
+      "fungsi": "Katup (valve) mengontrol aliran gas masuk dan buang dari ruang bakar. Katup masuk mengijinkan campuran udara-bahan bakar masuk, katup buang mengeluarkan gas sisa pembakaran.",
+      "imageUrl": null,
+      "caption": "Gambar valve (katup)",
+      "subComponents": ["Katup masuk", "Katup buang", "Pegas katup", "Stem seal", "Pengunci katup", "Rocker arm"],
+      "subComponentDetails": {
+        "Katup masuk": { "fungsi": "Katup yang membuka saluran masuk untuk mengijinkan campuran udara-bahan bakar masuk ke ruang bakar. Berdiameter lebih besar dari katup buang untuk memaksimalkan pengisian silinder.", "imageUrl": null, "caption": "Gambar katup masuk" },
+        "Katup buang": { "fungsi": "Katup yang membuka saluran buang untuk mengeluarkan gas sisa pembakaran. Terbuat dari material tahan panas tinggi (paduan nikel) karena terkena gas buang bersuhu di atas 700°C.", "imageUrl": null, "caption": "Gambar katup buang" },
+        "Pegas katup": { "fungsi": "Pegas spiral yang menekan katup ke posisi tertutup (dudukan katup). Memberikan gaya penutupan yang cukup agar katup mengikuti profil cam lobe tanpa floating di rpm tinggi.", "imageUrl": null, "caption": "Gambar pegas katup" },
+        "Stem seal": { "fungsi": "Segel karet/PTFE yang dipasang pada batang katup (valve stem) di kepala silinder untuk mencegah oli masuk ke ruang bakar melalui celah antara stem dan guide.", "imageUrl": null, "caption": "Gambar stem seal" },
+        "Pengunci katup": { "fungsi": "Sepasang klem berbentuk kerucut (valve keeper/collet) yang mengunci pegas katup ke alur di ujung batang katup, memastikan pegas tidak lepas saat engine beroperasi.", "imageUrl": null, "caption": "Gambar pengunci katup" },
+        "Rocker arm": { "fungsi": "Lengan pengungkit yang meneruskan gerakan dari cam lobe (atau pushrod pada OHV) ke ujung batang katup untuk mendorong katup membuka. Dilumasi oli untuk mengurangi keausan.", "imageUrl": null, "caption": "Gambar rocker arm" }
+      }
+    }
+  }
+}

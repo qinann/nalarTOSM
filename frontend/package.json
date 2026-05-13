@@ -1,0 +1,8 @@
+{
+  "name": "tosm-frontend",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "watch": "tsc --project tsconfig.json --watch"
+  }
+}

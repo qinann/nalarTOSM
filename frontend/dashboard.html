@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOSM — Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg:        #03071a;
+      --purple:    #7c3aed;
+      --blue:      #3b82f6;
+      --sidebar-w: 210px;
+      --text:      #f1f5f9;
+      --muted:     rgba(241,245,249,.45);
+      --glass-bg:  rgba(255,255,255,.04);
+      --glass-bd:  rgba(255,255,255,.08);
+    }
+    html, body { height: 100%; font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); overflow: hidden; }
+
+    #bg { position: fixed; inset: 0; z-index: 0; }
+
+    /* ════════════════════════════════════════
+       SIDEBAR
+    ════════════════════════════════════════ */
+    .sidebar {
+      position: fixed; left: 0; top: 0;
+      width: var(--sidebar-w); height: 100vh;
+      background: rgba(10,8,30,.7);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-right: 1px solid var(--glass-bd);
+      display: flex; flex-direction: column;
+      padding: 24px 14px;
+      z-index: 20;
+    }
+
+    /* Logo */
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      padding: 6px 8px 24px;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .logo-icon {
+      width: 36px; height: 36px; flex-shrink: 0;
+      background: linear-gradient(135deg, var(--purple), var(--blue));
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 0 20px rgba(124,58,237,.4);
+    }
+    .logo-text {
+      font-size: 18px; font-weight: 700; letter-spacing: -.3px;
+      background: linear-gradient(135deg, #e0e7ff, #a5b4fc);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+
+    /* Nav */
+    .nav { flex: 1; padding-top: 18px; display: flex; flex-direction: column; gap: 4px; }
+    .nav-label { font-size: 10px; font-weight: 600; color: rgba(255,255,255,.25); text-transform: uppercase; letter-spacing: 1px; padding: 0 10px; margin: 10px 0 4px; }
+
+    .nav-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 12px; border-radius: 10px;
+      font-size: 14px; font-weight: 500; color: var(--muted);
+      cursor: pointer; transition: all .18s ease;
+      user-select: none; border: 1px solid transparent;
+    }
+    .nav-item:hover { background: rgba(255,255,255,.05); color: var(--text); }
+    .nav-item.active {
+      background: rgba(124,58,237,.2);
+      color: #c4b5fd;
+      border-color: rgba(124,58,237,.3);
+    }
+    .nav-item svg { flex-shrink: 0; opacity: .7; }
+    .nav-item.active svg { opacity: 1; }
+
+    /* Logout */
+    .sidebar-footer { padding-top: 14px; border-top: 1px solid rgba(255,255,255,.06); }
+    .btn-logout {
+      display: flex; align-items: center; gap: 10px;
+      width: 100%; padding: 10px 12px; border-radius: 10px;
+      background: none; border: 1px solid transparent;
+      color: rgba(252,165,165,.6); font-size: 14px; font-weight: 500; font-family: inherit;
+      cursor: pointer; transition: all .18s;
+    }
+    .btn-logout:hover { background: rgba(239,68,68,.1); border-color: rgba(239,68,68,.2); color: #fca5a5; }
+
+    /* ════════════════════════════════════════
+       MAIN CONTENT
+    ════════════════════════════════════════ */
+    .main {
+      position: relative; z-index: 10;
+      margin-left: var(--sidebar-w);
+      height: 100vh;
+      display: flex; flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* Topbar */
+    .topbar {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 28px;
+      height: 60px; flex-shrink: 0;
+      background: rgba(10,8,30,.5);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--glass-bd);
+    }
+    .page-title { font-size: 16px; font-weight: 600; }
+
+    .user-pill {
+      display: flex; align-items: center; gap: 10px;
+    }
+    .avatar {
+      width: 34px; height: 34px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--purple), var(--blue));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px; font-weight: 700;
+    }
+    .user-name { font-size: 13px; color: var(--muted); font-weight: 500; }
+
+    /* Content wrapper */
+    .content {
+      flex: 1; overflow-y: auto; padding: 28px;
+    }
+    .content::-webkit-scrollbar { width: 5px; }
+    .content::-webkit-scrollbar-thumb { background: rgba(124,58,237,.3); border-radius: 99px; }
+
+    /* ── BERANDA ── */
+    #page-beranda {}
+
+    .hero-card {
+      width: 100%;
+      aspect-ratio: 16 / 7;
+      border-radius: 18px;
+      overflow: hidden;
+      position: relative;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-bd);
+      backdrop-filter: blur(12px);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg,
+        rgba(124,58,237,.15) 0%,
+        rgba(59,130,246,.1) 50%,
+        rgba(6,182,212,.08) 100%
+      );
+    }
+    .hero-glow {
+      position: absolute;
+      width: 500px; height: 300px;
+      background: radial-gradient(ellipse, rgba(124,58,237,.25) 0%, transparent 70%);
+      top: 50%; left: 50%; transform: translate(-50%,-50%);
+      pointer-events: none;
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      display: flex; flex-direction: column; align-items: center; gap: 16px;
+    }
+    .hero-motor-svg { opacity: .9; filter: drop-shadow(0 0 24px rgba(124,58,237,.6)); }
+    .hero-title {
+      font-size: 26px; font-weight: 700; letter-spacing: -.4px;
+      background: linear-gradient(135deg, #e0e7ff, #a5b4fc);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      text-align: center;
+    }
+    .hero-sub { font-size: 14px; color: var(--muted); text-align: center; }
+
+    /* Stats row */
+    .stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; margin-top: 20px; }
+    .stat {
+      background: var(--glass-bg); border: 1px solid var(--glass-bd);
+      backdrop-filter: blur(12px); border-radius: 14px;
+      padding: 18px 16px;
+      transition: border-color .2s;
+    }
+    .stat:hover { border-color: rgba(124,58,237,.35); }
+    .stat-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .6px; margin-bottom: 8px; }
+    .stat-val {
+      font-size: 28px; font-weight: 700;
+      background: linear-gradient(135deg, #c4b5fd, #818cf8);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .stat:nth-child(2) .stat-val { background: linear-gradient(135deg, #93c5fd, #60a5fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .stat:nth-child(3) .stat-val { background: linear-gradient(135deg, #86efac, #4ade80); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .stat:nth-child(4) .stat-val { background: linear-gradient(135deg, #fde68a, #fbbf24); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+    /* ── GENERIC PAGE ── */
+    .generic-page { display: none; } /* initial hide only — JS controls display */
+    #page-beranda { display: block; }
+    .page-header-text { margin-bottom: 20px; }
+    .page-header-text h2 { font-size: 20px; font-weight: 700; margin-bottom: 4px; }
+    .page-header-text p  { font-size: 13px; color: var(--muted); }
+
+    .empty-state {
+      background: var(--glass-bg); border: 1px solid var(--glass-bd);
+      border-radius: 16px; padding: 60px 24px;
+      display: flex; flex-direction: column; align-items: center; gap: 12px;
+      backdrop-filter: blur(12px);
+    }
+    .empty-state svg { opacity: .3; }
+    .empty-state p { font-size: 14px; color: var(--muted); }
+
+    /* ── MODULE GRID ── */
+    .modul-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .modul-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-bd);
+      border-radius: 14px;
+      padding: 20px;
+      backdrop-filter: blur(12px);
+      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+    .modul-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, var(--purple), var(--blue));
+      opacity: 0; transition: opacity .2s;
+    }
+    .modul-card:hover { transform: translateY(-3px); border-color: rgba(124,58,237,.35); box-shadow: 0 8px 24px rgba(0,0,0,.3); }
+    .modul-card:hover::before { opacity: 1; }
+
+    .modul-card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+    .modul-num {
+      width: 34px; height: 34px; border-radius: 9px; flex-shrink: 0;
+      background: rgba(124,58,237,.2); border: 1px solid rgba(124,58,237,.3);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px; font-weight: 700; color: #c4b5fd;
+    }
+
+    .modul-id { font-size: 10px; font-weight: 600; color: rgba(124,58,237,.6); letter-spacing: .8px; margin-bottom: 6px; font-family: monospace; }
+    .modul-title { font-size: 14px; font-weight: 600; margin-bottom: 6px; line-height: 1.4; }
+    .modul-desc  { font-size: 12px; color: var(--muted); line-height: 1.5; margin-bottom: 14px; }
+
+    .modul-progress-label { display: flex; justify-content: space-between; font-size: 11px; color: var(--muted); margin-bottom: 5px; }
+    .modul-bar { height: 4px; background: rgba(255,255,255,.08); border-radius: 99px; overflow: hidden; }
+    .modul-bar-fill { height: 100%; border-radius: 99px; background: linear-gradient(90deg, var(--purple), var(--blue)); transition: width .6s ease; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      :root { --sidebar-w: 68px; }
+      .logo-text, .nav-item span, .btn-logout span, .user-name, .nav-label { display: none; }
+      .logo { justify-content: center; padding-bottom: 20px; }
+      .nav-item { justify-content: center; padding: 10px; }
+      .btn-logout { justify-content: center; padding: 10px; }
+      .stats { grid-template-columns: repeat(2,1fr); }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="bg"></canvas>
+
+  <!-- ══ SIDEBAR ══ -->
+  <aside class="sidebar">
+    <div class="logo">
+      <div class="logo-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M2 17L12 22L22 17" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M2 12L12 17L22 12" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <span class="logo-text">TOSM</span>
+    </div>
+
+    <nav class="nav">
+      <div class="nav-label">Menu Utama</div>
+
+      <div class="nav-item active" data-page="beranda" onclick="navigate(this)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+        <span>Beranda</span>
+      </div>
+
+      <div class="nav-item" data-page="kelas" onclick="navigate(this)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+        </svg>
+        <span>Kelas</span>
+      </div>
+
+      <div class="nav-item" data-page="siswa" onclick="navigate(this)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+        </svg>
+        <span>Siswa</span>
+      </div>
+
+      <div class="nav-item" data-page="modul" onclick="navigate(this)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+        </svg>
+        <span>Modul</span>
+      </div>
+
+      <div class="nav-item" data-page="ujian" onclick="navigate(this)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/><path d="M9 12h6M9 16h4"/>
+        </svg>
+        <span>Ujian</span>
+      </div>
+    </nav>
+
+    <div class="sidebar-footer">
+      <button class="btn-logout" onclick="logout()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/>
+        </svg>
+        <span>Keluar</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ══ MAIN ══ -->
+  <div class="main">
+
+    <!-- Topbar -->
+    <div class="topbar">
+      <span class="page-title" id="page-title">Beranda</span>
+      <div class="user-pill">
+        <div class="avatar" id="avatar">?</div>
+        <span class="user-name" id="user-name">—</span>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+
+      <!-- ── Beranda ── -->
+      <div id="page-beranda">
+
+        <!-- Hero / Gambar Motor -->
+        <div class="hero-card">
+          <div class="hero-bg"></div>
+          <div class="hero-glow"></div>
+          <div class="hero-content">
+            <!-- Motor SVG -->
+            <svg class="hero-motor-svg" width="320" height="140" viewBox="0 0 320 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Roda belakang -->
+              <circle cx="72" cy="104" r="30" stroke="#7c3aed" stroke-width="3" fill="none"/>
+              <circle cx="72" cy="104" r="20" stroke="#a855f7" stroke-width="1.5" fill="none" stroke-dasharray="4 4"/>
+              <circle cx="72" cy="104" r="6" fill="#7c3aed"/>
+              <!-- Roda depan -->
+              <circle cx="248" cy="104" r="30" stroke="#3b82f6" stroke-width="3" fill="none"/>
+              <circle cx="248" cy="104" r="20" stroke="#60a5fa" stroke-width="1.5" fill="none" stroke-dasharray="4 4"/>
+              <circle cx="248" cy="104" r="6" fill="#3b82f6"/>
+              <!-- Rangka utama -->
+              <path d="M72 104 L100 60 L160 55 L200 60 L248 104" stroke="#c4b5fd" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- Tangki -->
+              <path d="M120 58 Q160 40 200 58 L200 72 Q160 80 120 72 Z" fill="rgba(124,58,237,.35)" stroke="#a855f7" stroke-width="1.5"/>
+              <!-- Jok -->
+              <path d="M140 72 Q160 68 195 70 L190 80 Q160 78 140 82 Z" fill="rgba(79,70,229,.5)" stroke="#818cf8" stroke-width="1.2"/>
+              <!-- Mesin -->
+              <rect x="118" y="80" width="60" height="28" rx="5" fill="rgba(30,20,60,.8)" stroke="#6d28d9" stroke-width="1.5"/>
+              <line x1="128" y1="85" x2="128" y2="103" stroke="#7c3aed" stroke-width="1"/>
+              <line x1="138" y1="85" x2="138" y2="103" stroke="#7c3aed" stroke-width="1"/>
+              <line x1="148" y1="85" x2="148" y2="103" stroke="#7c3aed" stroke-width="1"/>
+              <line x1="158" y1="85" x2="158" y2="103" stroke="#7c3aed" stroke-width="1"/>
+              <line x1="168" y1="85" x2="168" y2="103" stroke="#7c3aed" stroke-width="1"/>
+              <!-- Knalpot -->
+              <path d="M118 100 Q90 110 72 104" stroke="#f59e0b" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <!-- Setang -->
+              <path d="M235 60 L248 55 M248 55 L260 58" stroke="#93c5fd" stroke-width="2.5" stroke-linecap="round"/>
+              <!-- Lampu depan -->
+              <ellipse cx="264" cy="84" rx="8" ry="7" fill="rgba(250,204,21,.2)" stroke="#fbbf24" stroke-width="1.5"/>
+              <ellipse cx="264" cy="84" rx="4" ry="3.5" fill="rgba(250,204,21,.5)"/>
+              <!-- Suspensi depan -->
+              <line x1="235" y1="60" x2="248" y2="80" stroke="#93c5fd" stroke-width="2" stroke-linecap="round"/>
+              <line x1="240" y1="62" x2="252" y2="80" stroke="#93c5fd" stroke-width="2" stroke-linecap="round"/>
+              <!-- Suspensi belakang -->
+              <line x1="100" y1="60" x2="87" y2="80" stroke="#c4b5fd" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+
+            <div class="hero-title">Selamat Datang di TOSM</div>
+            <div class="hero-sub">Platform Manajemen Otomotif & Keterampilan</div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-label">Total Kelas</div>
+            <div class="stat-val">12</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Total Siswa</div>
+            <div class="stat-val">248</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Total Modul</div>
+            <div class="stat-val">15</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Ujian Hari Ini</div>
+            <div class="stat-val">5</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Kelas ── -->
+      <div id="page-kelas" class="generic-page">
+        <div class="page-header-text">
+          <h2>Kelas</h2>
+          <p>Kelola data kelas dan ruang belajar</p>
+        </div>
+        <div class="empty-state">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          <p>Data kelas akan ditampilkan di sini</p>
+        </div>
+      </div>
+
+      <!-- ── Siswa ── -->
+      <div id="page-siswa" class="generic-page">
+        <div class="page-header-text">
+          <h2>Siswa</h2>
+          <p>Kelola data siswa dan peserta didik</p>
+        </div>
+        <div class="empty-state">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          <p>Data siswa akan ditampilkan di sini</p>
+        </div>
+      </div>
+
+      <!-- ── Modul ── -->
+      <div id="page-modul" class="generic-page">
+        <div class="page-header-text">
+          <h2>Modul Pembelajaran</h2>
+          <p>15 modul materi otomotif & keterampilan teknik</p>
+        </div>
+        <div class="modul-grid">
+
+          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-001'">
+            <div class="modul-card-top">
+              <div class="modul-num">01</div>
+            </div>
+            <div class="modul-id">TOSM-001</div>
+            <div class="modul-title">Komponen Utama Engine</div>
+            <div class="modul-desc">Blok mesin, kepala silinder, piston, connecting rod, crankshaft, camshaft, dan fungsi masing-masing komponen utama engine.</div>
+          </div>
+
+          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-002'">
+            <div class="modul-card-top">
+              <div class="modul-num">02</div>
+            </div>
+            <div class="modul-id">TOSM-002</div>
+            <div class="modul-title">Siklus Kerja Engine 4 Tak</div>
+            <div class="modul-desc">Langkah hisap, kompresi, usaha, dan buang; diagram P-V, timing katup, serta analisis efisiensi termal mesin 4 tak.</div>
+          </div>
+
+          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-003'">
+            <div class="modul-card-top">
+              <div class="modul-num">03</div>
+            </div>
+            <div class="modul-id">TOSM-003</div>
+            <div class="modul-title">Sistem Bahan Bakar Karburator</div>
+            <div class="modul-desc">Konstruksi karburator, venturi, jarum skep, main jet, pilot jet, sinkronisasi, dan prosedur penyetelan karburator.</div>
+          </div>
+
+          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-004'">
+            <div class="modul-card-top">
+              <div class="modul-num">04</div>
+            </div>
+            <div class="modul-id">TOSM-004</div>
+            <div class="modul-title">Sistem Pelumasan</div>
+            <div class="modul-desc">Jenis dan spesifikasi oli mesin, pompa oli, oil gallery, filter oli, tekanan pelumasan, dan jadwal penggantian oli berkala.</div>
+          </div>
+
+          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-005'">
+            <div class="modul-card-top">
+              <div class="modul-num">05</div>
+            </div>
+            <div class="modul-id">TOSM-005</div>
+            <div class="modul-title">Sistem Penerangan & Sinyal</div>
+            <div class="modul-desc">Lampu utama, lampu rem, sein, klakson, reflektor, wiring lampu, dan prosedur penggantian serta pengaturan arah sorot.</div>
+          </div>
+
+          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-006'">
+            <div class="modul-card-top">
+              <div class="modul-num">06</div>
+            </div>
+            <div class="modul-id">TOSM-006</div>
+            <div class="modul-title">Sistem Pendinginan Udara</div>
+            <div class="modul-desc">Prinsip pendinginan udara alami, sirip pendingin (fin), aliran udara, suhu kerja optimal, dan diagnosa overheating motor udara.</div>
+          </div>
+
+          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-007'">
+            <div class="modul-card-top">
+              <div class="modul-num">07</div>
+            </div>
+            <div class="modul-id">TOSM-007</div>
+            <div class="modul-title">Sistem Pendinginan Cairan</div>
+            <div class="modul-desc">Radiator, thermostat, water pump, selang coolant, reservoir, pengisian & bleeding coolant, dan diagnosa kebocoran sistem.</div>
+          </div>
+
+          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-008'">
+            <div class="modul-card-top">
+              <div class="modul-num">08</div>
+            </div>
+            <div class="modul-id">TOSM-008</div>
+            <div class="modul-title">Sistem Bahan Bakar Injeksi (EFI)</div>
+            <div class="modul-desc">ECU, sensor MAP/TPS/O2/IAT, fuel pump, fuel rail, injektor, kalibrasi idle speed, dan diagnosa sistem EFI dengan scan tool.</div>
+          </div>
+
+          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-009'">
+            <div class="modul-card-top">
+              <div class="modul-num">09</div>
+            </div>
+            <div class="modul-id">TOSM-009</div>
+            <div class="modul-title">Injektor & Pola Semprotan Bahan Bakar</div>
+            <div class="modul-desc">Konstruksi injektor, solenoida, duty cycle, pola atomisasi, pengujian semprotan, pembersihan, dan penggantian injektor.</div>
+          </div>
+
+          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-010'">
+            <div class="modul-card-top">
+              <div class="modul-num">10</div>
+            </div>
+            <div class="modul-id">TOSM-010</div>
+            <div class="modul-title">Sistem Pengapian TCI (Transistor)</div>
+            <div class="modul-desc">Cara kerja TCI, pick-up coil, igniter unit, koil pengapian, busi, timing pengapian, dan diagnosa misfire pada sistem TCI.</div>
+          </div>
+
+          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-011'">
+            <div class="modul-card-top">
+              <div class="modul-num">11</div>
+            </div>
+            <div class="modul-id">TOSM-011</div>
+            <div class="modul-title">Sistem Pengisian (Charging)</div>
+            <div class="modul-desc">Alternator/spul, rectifier, regulator tegangan, aki, pengukuran tegangan pengisian, dan diagnosa sistem charging lemah.</div>
+          </div>
+
+          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-012'">
+            <div class="modul-card-top">
+              <div class="modul-num">12</div>
+            </div>
+            <div class="modul-id">TOSM-012</div>
+            <div class="modul-title">Sistem Starter</div>
+            <div class="modul-desc">Motor starter, mekanisme pinion & ring gear, relay starter, kick starter, dan diagnosa sistem starter yang tidak bekerja.</div>
+          </div>
+
+          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-013'">
+            <div class="modul-card-top">
+              <div class="modul-num">13</div>
+            </div>
+            <div class="modul-id">TOSM-013</div>
+            <div class="modul-title">Sistem Instrumen & Panel Indikator</div>
+            <div class="modul-desc">Speedometer, takometer, indikator bahan bakar, suhu, MIL (check engine), wiring panel, dan kalibrasi instrumen kendaraan.</div>
+          </div>
+
+          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-014'">
+            <div class="modul-card-top">
+              <div class="modul-num">14</div>
+            </div>
+            <div class="modul-id">TOSM-014</div>
+            <div class="modul-title">Sistem CVT (Continuously Variable Transmission)</div>
+            <div class="modul-desc">Konstruksi CVT, puli primer & sekunder, v-belt, roller weight, kampas kopling, dan prosedur overhaul CVT skuter matik.</div>
+          </div>
+
+          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-015'">
+            <div class="modul-card-top">
+              <div class="modul-num">15</div>
+            </div>
+            <div class="modul-id">TOSM-015</div>
+            <div class="modul-title">Sistem Kopling Manual & Transmisi</div>
+            <div class="modul-desc">Kopling manual basah, mekanisme perpindahan gigi, garpu pemilih, poros transmisi, dan overhaul gearbox motor bebek/sport.</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── Ujian ── -->
+      <div id="page-ujian" class="generic-page">
+        <div class="page-header-text">
+          <h2>Ujian</h2>
+          <p>Kelola ujian dan penilaian siswa</p>
+        </div>
+        <div class="empty-state">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/><path d="M9 12h6M9 16h4"/></svg>
+          <p>Data ujian akan ditampilkan di sini</p>
+        </div>
+      </div>
+
+    </div><!-- /content -->
+  </div><!-- /main -->
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+  <script>
+  // ── Auth guard ──────────────────────────────────────────
+  const token = localStorage.getItem('tosm_token');
+  const user  = JSON.parse(localStorage.getItem('tosm_user') || 'null');
+  if (!token || !user) { window.location.href = 'index.html'; }
+  else {
+    const init = (user.username || '?')[0].toUpperCase();
+    document.getElementById('avatar').textContent    = init;
+    document.getElementById('user-name').textContent = user.username;
+  }
+
+  // ── Navigation ────────────────────────────────────────
+  const pageNames = { beranda:'Beranda', kelas:'Kelas', siswa:'Siswa', modul:'Modul', ujian:'Ujian' };
+
+  function navigate(el) {
+    const page = el.dataset.page;
+    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+    el.classList.add('active');
+    document.getElementById('page-title').textContent = pageNames[page];
+    ['beranda','kelas','siswa','modul','ujian'].forEach(p => {
+      document.getElementById('page-' + p).style.display = p === page ? 'block' : 'none';
+    });
+  }
+
+  function logout() {
+    localStorage.removeItem('tosm_token');
+    localStorage.removeItem('tosm_user');
+    window.location.href = 'index.html';
+  }
+
+  // ── Three.js minimal background ─────────────────────
+  (function () {
+    const canvas   = document.getElementById('bg');
+    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+    renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+    renderer.setSize(innerWidth, innerHeight);
+    renderer.setClearColor(0x03071a, 1);
+
+    const scene  = new THREE.Scene();
+    scene.fog    = new THREE.FogExp2(0x03071a, 0.07);
+    const camera = new THREE.PerspectiveCamera(70, innerWidth/innerHeight, 0.1, 100);
+    camera.position.z = 30;
+
+    const COUNT = 1400;
+    const pos = new Float32Array(COUNT * 3);
+    const col = new Float32Array(COUNT * 3);
+    const vel = new Float32Array(COUNT * 3);
+    const pal = [new THREE.Color(0x7c3aed), new THREE.Color(0x3b82f6), new THREE.Color(0x06b6d4), new THREE.Color(0xa855f7)];
+    for (let i = 0; i < COUNT; i++) {
+      pos[i*3]=(Math.random()-.5)*80; pos[i*3+1]=(Math.random()-.5)*80; pos[i*3+2]=(Math.random()-.5)*60;
+      vel[i*3]=(Math.random()-.5)*.006; vel[i*3+1]=(Math.random()-.5)*.006; vel[i*3+2]=(Math.random()-.5)*.003;
+      const c=pal[i%pal.length]; col[i*3]=c.r; col[i*3+1]=c.g; col[i*3+2]=c.b;
+    }
+    const geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.BufferAttribute(pos,3));
+    geo.setAttribute('color',    new THREE.BufferAttribute(col,3));
+    const posAttr = geo.attributes.position;
+    const pts = new THREE.Points(geo, new THREE.PointsMaterial({size:.15,vertexColors:true,transparent:true,opacity:.55,sizeAttenuation:true}));
+    scene.add(pts);
+
+    // Orbs
+    const orbs = [];
+    [
+      {r:8, x:-15,y:8, z:-12, c:0x7c3aed, rx:.002, ry:.003},
+      {r:11,x:14, y:-12,z:-20,c:0x3b82f6, rx:.0015,ry:.002},
+      {r:5, x:-18,y:-10,z:-8,c:0xa855f7, rx:.004, ry:.003},
+    ].forEach(d => {
+      const m = new THREE.Mesh(
+        new THREE.IcosahedronGeometry(d.r,1),
+        new THREE.MeshBasicMaterial({color:d.c,wireframe:true,transparent:true,opacity:.06})
+      );
+      m.position.set(d.x,d.y,d.z);
+      m.userData={rx:d.rx,ry:d.ry,baseY:d.y,phase:Math.random()*Math.PI*2};
+      scene.add(m); orbs.push(m);
+    });
+
+    let t=0;
+    (function loop(){
+      requestAnimationFrame(loop); t+=.005;
+      camera.lookAt(scene.position);
+      for(let i=0;i<COUNT;i++){
+        pos[i*3]+=vel[i*3]; pos[i*3+1]+=vel[i*3+1]; pos[i*3+2]+=vel[i*3+2];
+        if(Math.abs(pos[i*3])>40) vel[i*3]*=-1;
+        if(Math.abs(pos[i*3+1])>40) vel[i*3+1]*=-1;
+        if(Math.abs(pos[i*3+2])>30) vel[i*3+2]*=-1;
+      }
+      posAttr.needsUpdate=true;
+      orbs.forEach(o=>{
+        const u=o.userData;
+        o.rotation.x+=u.rx; o.rotation.y+=u.ry;
+        o.position.y=u.baseY+Math.sin(t+u.phase)*1.0;
+      });
+      renderer.render(scene,camera);
+    })();
+
+    window.addEventListener('resize',()=>{
+      camera.aspect=innerWidth/innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(innerWidth,innerHeight);
+    });
+  })();
+  </script>
+</body>
+</html>

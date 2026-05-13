@@ -1,0 +1,10 @@
+{
+  "imageUrl": "/assets/images/praktekKerja.jpg",
+  "steps": [
+    { "title": "Persiapan & K3", "desc": "Siapkan APD (sarung tangan, kacamata), letakkan motor di atas stand, pastikan mesin dingin sebelum dibongkar." },
+    { "title": "Pembongkaran Engine", "desc": "Lepas penutup kepala silinder, rantai timing, kepala silinder, piston, dan connecting rod secara berurutan menggunakan SST." },
+    { "title": "Identifikasi Komponen", "desc": "Tandai setiap komponen, ukur diameter piston, celah ring piston, dan kebengkokan connecting rod menggunakan alat ukur." },
+    { "title": "Pemeriksaan Keausan", "desc": "Bandingkan hasil pengukuran dengan spesifikasi pabrik. Tandai komponen yang sudah melebihi batas keausan untuk diganti." },
+    { "title": "Perakitan Kembali", "desc": "Rakit engine sesuai urutan kebalikan pembongkaran. Pastikan torsi pengencangan baut sesuai spesifikasi dan uji kompresi." }
+  ]
+}

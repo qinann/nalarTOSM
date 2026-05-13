@@ -1,0 +1,8 @@
+{
+  "questions": [
+    { "q": "Komponen yang berfungsi mengubah gerak bolak-balik piston menjadi gerak putar adalah?", "opts": ["Connecting Rod", "Crankshaft", "Camshaft", "Flywheel"], "ans": 1 },
+    { "q": "Fungsi ring piston pada engine adalah?", "opts": ["Mendinginkan piston", "Menyegel ruang bakar dan mengontrol oli", "Menghubungkan piston ke crankshaft", "Mengatur timing katup"], "ans": 1 },
+    { "q": "Kepala silinder berfungsi sebagai?", "opts": ["Tempat gerak piston", "Penutup ruang bakar dan dudukan katup", "Penyimpan oli mesin", "Penghubung ke transmisi"], "ans": 1 },
+    { "q": "Camshaft berfungsi untuk?", "opts": ["Memutar crankshaft", "Menggerakkan kopling", "Mengatur waktu buka-tutup katup", "Memompa bahan bakar"], "ans": 2 }
+  ]
+}

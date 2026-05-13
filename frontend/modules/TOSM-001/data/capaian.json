@@ -1,0 +1,13 @@
+{
+  "cp": "Pada akhir pembelajaran modul ini, peserta didik mampu memahami konstruksi, mengidentifikasi nama, fungsi, dan letak komponen utama engine sepeda motor — yang meliputi blok silinder, kepala silinder, piston, crankshaft, camshaft, connecting rod, dan valve (katup) beserta seluruh sub-komponennya. Peserta didik juga mampu melakukan pembongkaran dan pemasangan komponen engine sesuai SOP, melakukan pengukuran tingkat keausan komponen dengan alat ukur yang tepat, serta mendiagnosis gangguan atau kerusakan dan melakukan tindakan perbaikan yang tepat secara menyeluruh pada berbagai jenis dan merek sepeda motor.",
+  "tp": [
+    "1.1 Menjelaskan klasifikasi, fungsi, dan prinsip kerja komponen utama engine sepeda motor.",
+    "1.2 Mengidentifikasi nama, letak, dan sub-komponen dari blok silinder, kepala silinder, piston, crankshaft, camshaft, connecting rod, dan valve (katup).",
+    "1.3 Menjelaskan hubungan kerja antar-komponen utama engine dalam siklus kerja motor.",
+    "1.4 Melakukan pembongkaran (overhaul) dan pemasangan komponen utama engine sesuai prosedur (SOP) dan torsi spesifikasi pabrikan.",
+    "1.5 Melakukan pengukuran keausan komponen (silinder, piston, ring piston, crankshaft, camshaft, valve) menggunakan alat ukur (jangka sorong, mikrometer, dial gauge, feeler gauge) dan membandingkan dengan spesifikasi pabrikan.",
+    "1.6 Mendiagnosis gangguan/kerusakan pada komponen utama engine berdasarkan gejala, pemeriksaan visual, dan hasil pengukuran.",
+    "1.7 Menentukan dan melakukan tindakan perbaikan, penggantian, atau penyetelan komponen yang rusak sesuai standar pabrikan dengan menerapkan K3 (Keselamatan dan Kesehatan Kerja)."
+  ],
+  "asesmen": "Asesmen dilakukan melalui pilihan ganda dan identifikasi komponen (sesuai kolom Evaluasi pada modul), serta praktik bongkar-pasang engine virtual dan pengukuran keausan komponen."
+}
