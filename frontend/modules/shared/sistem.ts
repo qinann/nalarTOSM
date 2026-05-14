@@ -12,11 +12,37 @@ export function render(data: SistemData, container: HTMLElement): void {
   app.addEventListener('click', e => {
     if (!container.classList.contains('active')) return;
 
-    // Sub-component click — navigate to sub-component page
+    // Sub-component click — show inline
     const subEl = (e.target as HTMLElement).closest<HTMLElement>('[data-subcomp]');
     if (subEl && activeComp) {
       const subName = subEl.dataset['subcomp']!;
-      location.href = `modul-detail.html?id=${encodeURIComponent(id)}&comp=${encodeURIComponent(activeComp)}&sub=${encodeURIComponent(subName)}`;
+      const detail = data.componentDetails?.[activeComp];
+      const sub = detail?.subComponentDetails?.[subName];
+      if (!sub) return;
+
+      // Show sub-component media in main panel
+      container.innerHTML = mediaBlock(sub.imageUrl, sub.caption);
+
+      // Update sub-component bar slot
+      updateSubCompBar(app, detail?.subComponents ?? [], subName);
+
+      // Update right panel with sub-component fungsi + list
+      const right = app.querySelector<HTMLElement>('[data-right="sistem"]');
+      if (right) {
+        right.innerHTML = `
+          <div class="right-section">
+            <h4>Fungsi Komponen</h4>
+            <p>${esc(sub.fungsi)}</p>
+          </div>
+          <div class="right-section">
+            <h4>Sub-Komponen</h4>
+            <ul class="sub-comp-list">
+              ${(detail?.subComponents ?? []).map(sc =>
+                `<li data-subcomp="${esc(sc)}"${sc === subName ? ' class="active"' : ''}>${esc(sc)}</li>`
+              ).join('')}
+            </ul>
+          </div>`;
+      }
       return;
     }
 
@@ -31,6 +57,7 @@ export function render(data: SistemData, container: HTMLElement): void {
     const detail = data.componentDetails[name];
     renderDetail(detail, container);
     updateRight(app, detail);
+    updateSubCompBar(app, detail.subComponents, null);
   });
 }
 
@@ -128,6 +155,14 @@ function renderOverview(data: SistemData, container: HTMLElement): void {
 
 function renderDetail(detail: SistemComponentDetail, container: HTMLElement): void {
   container.innerHTML = mediaBlock(detail.imageUrl, detail.caption);
+}
+
+function updateSubCompBar(app: HTMLElement, subComponents: string[], active: string | null): void {
+  const slot = app.querySelector<HTMLElement>('.subcomp-bar-slot');
+  if (!slot) return;
+  slot.innerHTML = subComponents.map(sc => `
+    <button class="subcomp-btn${sc === active ? ' active' : ''}" data-subcomp="${escA(sc)}">${esc(sc)}</button>
+  `).join('');
 }
 
 function mediaBlock(url: string | null | undefined, caption: string): string {

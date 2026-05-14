@@ -68,6 +68,8 @@ function buildShell(meta: ModuleMeta, praktekSteps: string[]): string {
     <div class="tab-panel"        data-panel="praktek"></div>
     <div class="tab-panel"        data-panel="evaluasi"></div>
 
+    <div class="subcomp-bar-slot"></div>
+
   </main>
 
   <!-- RIGHT PANEL -->
@@ -143,6 +145,10 @@ function setupShellEvents(root: HTMLElement): void {
     const btn = (e.target as HTMLElement).closest<HTMLElement>('.tab-btn');
     if (!btn) return;
     const tab = btn.dataset['tab']!;
+
+    // Clear sub-component bar slot
+    const slot = root.querySelector<HTMLElement>('.subcomp-bar-slot');
+    if (slot) slot.innerHTML = '';
 
     // Restore right-views to their originals before switching
     root.querySelectorAll<HTMLElement>('.right-view').forEach(rv => {

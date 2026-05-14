@@ -65,6 +65,8 @@ function buildShell(meta, praktekSteps) {
     <div class="tab-panel"        data-panel="praktek"></div>
     <div class="tab-panel"        data-panel="evaluasi"></div>
 
+    <div class="subcomp-bar-slot"></div>
+
   </main>
 
   <!-- RIGHT PANEL -->
@@ -138,6 +140,10 @@ function setupShellEvents(root) {
         if (!btn)
             return;
         const tab = btn.dataset['tab'];
+        // Clear sub-component bar slot
+        const slot = root.querySelector('.subcomp-bar-slot');
+        if (slot)
+            slot.innerHTML = '';
         // Restore right-views to their originals before switching
         root.querySelectorAll('.right-view').forEach(rv => {
             if (rv.dataset['original'])

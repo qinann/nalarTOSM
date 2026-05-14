@@ -288,6 +288,28 @@
     .sistem-step-label { font-size: 11px; font-weight: 700; color: #c4b5fd; }
     .sistem-step-desc  { font-size: 12px; color: var(--muted); line-height: 1.6; }
 
+    /* ════ SUB-COMPONENT BAR ════ */
+    .subcomp-bar-slot {
+      display: flex; flex-wrap: wrap;
+      border-top: 1px solid var(--glass-bd);
+      background: rgba(8,6,24,.85);
+      backdrop-filter: blur(16px);
+      flex-shrink: 0;
+    }
+    .subcomp-btn {
+      flex: 1; min-width: 0;
+      padding: 13px 10px;
+      font-size: 13px; font-weight: 500;
+      cursor: pointer; color: var(--muted);
+      background: none;
+      border: none; border-right: 1px solid var(--glass-bd);
+      transition: all .2s; font-family: inherit;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .subcomp-btn:last-child { border-right: none; }
+    .subcomp-btn:hover { background: rgba(124,58,237,.1); color: var(--text); }
+    .subcomp-btn.active { background: rgba(124,58,237,.18); color: #c4b5fd; }
+
     /* ════ SUB-COMPONENT PAGE ════ */
     .breadcrumb-link {
       color: #c4b5fd; text-decoration: none; font-weight: 500;

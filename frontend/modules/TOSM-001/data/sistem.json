@@ -4,7 +4,7 @@
   "componentDetails": {
     "Blok silinder": {
       "fungsi": "Blok silinder adalah kerangka utama engine yang menjadi tempat bergeraknya piston. Berfungsi sebagai rumah silinder, menyalurkan panas ke sistem pendingin, dan menjadi dudukan seluruh komponen internal engine.",
-      "imageUrl": null,
+      "imageUrl": "/assets/images/blokSilinder.glb",
       "caption": "Gambar blok silinder",
       "subComponents": ["Lubang silinder", "Liner / sleeve", "Water jacket", "Crankcase", "Oil passage", "Baut tanam"],
       "subComponentDetails": {
@@ -18,7 +18,7 @@
     },
     "Kepala silinder": {
       "fungsi": "Kepala silinder menutup bagian atas blok silinder dan membentuk ruang bakar. Menjadi dudukan katup, busi, camshaft (OHC), serta saluran masuk dan buang gas pembakaran.",
-      "imageUrl": null,
+      "imageUrl": "/assets/images/kepalaSilinder.glb",
       "caption": "Gambar kepala silinder",
       "subComponents": ["Ruang bakar", "Port masuk", "Port buang", "Dudukan busi", "Dudukan katup", "Water jacket"],
       "subComponentDetails": {
@@ -44,8 +44,8 @@
     },
     "Crankshaft": {
       "fungsi": "Crankshaft mengubah gerak translasi (naik-turun) piston menjadi gerak rotasi. Menerima gaya dari connecting rod dan meneruskan tenaga putar ke sistem transmisi dan komponen asesoris engine.",
-      "imageUrl": null,
-      "caption": "Gambar crankshaft",
+      "imageUrl": "/assets/images/crankshaft.glb",
+      "caption": "Model 3D Crankshaft",
       "subComponents": ["Main journal", "Crank pin", "Counterweight", "Oil passage", "Timing sprocket", "Flywheel"],
       "subComponentDetails": {
         "Main journal": { "fungsi": "Poros utama crankshaft yang berputar pada main bearing di dalam crankcase. Permukaannya dikeraskan dan digerinda halus untuk ketahanan aus dan kelancaran rotasi.", "imageUrl": null, "caption": "Gambar main journal" },
@@ -58,8 +58,8 @@
     },
     "Camshaft": {
       "fungsi": "Camshaft mengatur waktu pembukaan dan penutupan katup masuk dan buang sesuai siklus kerja engine. Diputar crankshaft melalui rantai atau sabuk timing dengan rasio 1:2.",
-      "imageUrl": null,
-      "caption": "Gambar camshaft",
+      "imageUrl": "/assets/images/camshaft.glb",
+      "caption": "Model 3D Camshaft",
       "subComponents": ["Cam lobe masuk", "Cam lobe buang", "Journal camshaft", "Timing sprocket", "Oil passage"],
       "subComponentDetails": {
         "Cam lobe masuk": { "fungsi": "Tonjolan eksentrik pada camshaft yang mendorong katup masuk membuka pada timing yang tepat. Profil cam lobe menentukan durasi dan lift katup masuk.", "imageUrl": null, "caption": "Gambar cam lobe masuk" },
@@ -71,8 +71,8 @@
     },
     "Connecting rod": {
       "fungsi": "Connecting rod menghubungkan piston dengan crankshaft, meneruskan gaya dorong dari piston dan mengkonversi gerak translasi menjadi gerak rotasi bersama crankshaft.",
-      "imageUrl": null,
-      "caption": "Gambar connecting rod",
+      "imageUrl": "/assets/images/connectingRod.glb",
+      "caption": "Model 3D Connecting Rod",
       "subComponents": ["Small end", "Big end", "Batang conrod", "Baut conrod", "Bearing big end", "Bushing small end"],
       "subComponentDetails": {
         "Small end": { "fungsi": "Ujung kecil connecting rod yang terhubung ke pin piston melalui bushing. Bergerak secara osilasi mengikuti gerakan piston.", "imageUrl": null, "caption": "Gambar small end" },
@@ -85,8 +85,8 @@
     },
     "Valve": {
       "fungsi": "Katup (valve) mengontrol aliran gas masuk dan buang dari ruang bakar. Katup masuk mengijinkan campuran udara-bahan bakar masuk, katup buang mengeluarkan gas sisa pembakaran.",
-      "imageUrl": null,
-      "caption": "Gambar valve (katup)",
+      "imageUrl": "/assets/images/valve.glb",
+      "caption": "Model 3D Valve",
       "subComponents": ["Katup masuk", "Katup buang", "Pegas katup", "Stem seal", "Pengunci katup", "Rocker arm"],
       "subComponentDetails": {
         "Katup masuk": { "fungsi": "Katup yang membuka saluran masuk untuk mengijinkan campuran udara-bahan bakar masuk ke ruang bakar. Berdiameter lebih besar dari katup buang untuk memaksimalkan pengisian silinder.", "imageUrl": null, "caption": "Gambar katup masuk" },
