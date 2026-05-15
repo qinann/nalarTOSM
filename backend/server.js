@@ -1,13 +1,13 @@
 require('dotenv').config();
-const express = require('express');
-const mysql   = require('mysql2/promise');
-const bcrypt  = require('bcryptjs');
-const jwt     = require('jsonwebtoken');
-const cors    = require('cors');
-const path    = require('path');
+const express  = require('express');
+const Database = require('better-sqlite3');
+const bcrypt   = require('bcryptjs');
+const jwt      = require('jsonwebtoken');
+const cors     = require('cors');
+const path     = require('path');
 
-const app  = express();
-const PORT = process.env.PORT || 3000;
+const app        = express();
+const PORT       = process.env.PORT || 3000;
 const JWT_SECRET = process.env.JWT_SECRET || 'tosm-dev-secret';
 
 // ── Middleware ────────────────────────────────────────────────────────────────
@@ -17,20 +17,25 @@ app.use(cors({ origin: (origin, cb) => cb(null, true) }));
 // ── Serve frontend statically ─────────────────────────────────────────────────
 app.use(express.static(path.join(__dirname, '../frontend')));
 
-// ── Database pool ─────────────────────────────────────────────────────────────
-const pool = mysql.createPool({
-  host:             process.env.DB_HOST     || 'localhost',
-  user:             process.env.DB_USER     || 'root',
-  password:         process.env.DB_PASSWORD || '',
-  database:         process.env.DB_NAME     || 'tosm_db',
-  waitForConnections: true,
-  connectionLimit:  10,
-  charset:          'utf8mb4',
-});
+// ── Database ──────────────────────────────────────────────────────────────────
+const db = new Database(path.join(__dirname, '../database/tosm.db'));
+db.pragma('journal_mode = WAL');
+db.pragma('foreign_keys = ON');
 
-pool.getConnection()
-  .then(conn => { console.log('✓ Database connected'); conn.release(); })
-  .catch(err  => console.error('✗ Database error:', err.message));
+db.exec(`
+  CREATE TABLE IF NOT EXISTS users (
+    id            INTEGER PRIMARY KEY AUTOINCREMENT,
+    username      TEXT    NOT NULL UNIQUE,
+    email         TEXT    NOT NULL UNIQUE,
+    password_hash TEXT    NOT NULL,
+    role          TEXT    NOT NULL DEFAULT 'user' CHECK(role IN ('user','admin')),
+    last_login    TEXT,
+    created_at    TEXT    NOT NULL DEFAULT (datetime('now')),
+    updated_at    TEXT    NOT NULL DEFAULT (datetime('now'))
+  )
+`);
+
+console.log('✓ Database connected (SQLite)');
 
 // ── Auth middleware ───────────────────────────────────────────────────────────
 function authMiddleware(req, res, next) {
@@ -56,20 +61,19 @@ app.post('/api/auth/register', async (req, res) => {
     if (password.length < 8)
       return res.status(400).json({ message: 'Kata sandi minimal 8 karakter' });
 
-    const [existing] = await pool.query(
-      'SELECT id FROM users WHERE email = ? OR username = ?',
-      [email.toLowerCase(), username.trim()]
-    );
-    if (existing.length > 0)
+    const existing = db.prepare(
+      'SELECT id FROM users WHERE email = ? OR username = ?'
+    ).get(email.toLowerCase(), username.trim());
+
+    if (existing)
       return res.status(409).json({ message: 'Email atau username sudah terdaftar' });
 
     const passwordHash = await bcrypt.hash(password, 12);
-    const [result] = await pool.query(
-      'INSERT INTO users (username, email, password_hash) VALUES (?, ?, ?)',
-      [username.trim(), email.toLowerCase(), passwordHash]
-    );
+    const result = db.prepare(
+      'INSERT INTO users (username, email, password_hash) VALUES (?, ?, ?)'
+    ).run(username.trim(), email.toLowerCase(), passwordHash);
 
-    res.status(201).json({ message: 'Akun berhasil dibuat', userId: result.insertId });
+    res.status(201).json({ message: 'Akun berhasil dibuat', userId: result.lastInsertRowid });
   } catch (err) {
     console.error('Register error:', err);
     res.status(500).json({ message: 'Terjadi kesalahan server' });
@@ -84,15 +88,13 @@ app.post('/api/auth/login', async (req, res) => {
     if (!email?.trim() || !password)
       return res.status(400).json({ message: 'Email dan kata sandi wajib diisi' });
 
-    const [rows] = await pool.query(
-      'SELECT * FROM users WHERE email = ?',
-      [email.toLowerCase()]
-    );
+    const user = db.prepare(
+      'SELECT * FROM users WHERE email = ?'
+    ).get(email.toLowerCase());
 
-    if (rows.length === 0)
+    if (!user)
       return res.status(401).json({ message: 'Email atau kata sandi salah' });
 
-    const user = rows[0];
     const valid = await bcrypt.compare(password, user.password_hash);
     if (!valid)
       return res.status(401).json({ message: 'Email atau kata sandi salah' });
@@ -103,7 +105,8 @@ app.post('/api/auth/login', async (req, res) => {
       { expiresIn: '7d' }
     );
 
-    await pool.query('UPDATE users SET last_login = NOW() WHERE id = ?', [user.id]);
+    db.prepare("UPDATE users SET last_login = datetime('now'), updated_at = datetime('now') WHERE id = ?")
+      .run(user.id);
 
     res.json({
       token,
@@ -116,14 +119,14 @@ app.post('/api/auth/login', async (req, res) => {
 });
 
 // ── GET /api/me ───────────────────────────────────────────────────────────────
-app.get('/api/me', authMiddleware, async (req, res) => {
+app.get('/api/me', authMiddleware, (req, res) => {
   try {
-    const [rows] = await pool.query(
-      'SELECT id, username, email, role, last_login, created_at FROM users WHERE id = ?',
-      [req.user.userId]
-    );
-    if (rows.length === 0) return res.status(404).json({ message: 'Pengguna tidak ditemukan' });
-    res.json(rows[0]);
+    const user = db.prepare(
+      'SELECT id, username, email, role, last_login, created_at FROM users WHERE id = ?'
+    ).get(req.user.userId);
+
+    if (!user) return res.status(404).json({ message: 'Pengguna tidak ditemukan' });
+    res.json(user);
   } catch (err) {
     console.error('Me error:', err);
     res.status(500).json({ message: 'Terjadi kesalahan server' });

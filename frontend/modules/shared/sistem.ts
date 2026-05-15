@@ -1,4 +1,4 @@
-import type { SistemData, SistemComponentDetail, SubComponentDetail } from '../types.js';
+import type { SistemData, SistemComponentDetail } from '../types.js';
 import type { ModuleMeta } from '../types.js';
 
 let activeComp: string | null = null;
@@ -7,12 +7,12 @@ export function render(data: SistemData, container: HTMLElement): void {
   renderOverview(data, container);
 
   const app = container.closest<HTMLElement>('#app')!;
-  const id = new URLSearchParams(location.search).get('id') || 'TOSM-001';
+
 
   app.addEventListener('click', e => {
     if (!container.classList.contains('active')) return;
 
-    // Sub-component click — show inline
+    // Sub-component click from left panel — show inline
     const subEl = (e.target as HTMLElement).closest<HTMLElement>('[data-subcomp]');
     if (subEl && activeComp) {
       const subName = subEl.dataset['subcomp']!;
@@ -20,44 +20,38 @@ export function render(data: SistemData, container: HTMLElement): void {
       const sub = detail?.subComponentDetails?.[subName];
       if (!sub) return;
 
+      // Highlight active sub-comp in left panel sub-list
+      app.querySelectorAll<HTMLElement>('.sub-comp-list-left [data-subcomp]').forEach(el =>
+        el.classList.toggle('active', el.dataset['subcomp'] === subName)
+      );
+
       // Show sub-component media in main panel
       container.innerHTML = mediaBlock(sub.imageUrl, sub.caption);
 
-      // Update sub-component bar slot
-      updateSubCompBar(app, detail?.subComponents ?? [], subName);
-
-      // Update right panel with sub-component fungsi + list
+      // Update right panel with fungsi
       const right = app.querySelector<HTMLElement>('[data-right="sistem"]');
       if (right) {
         right.innerHTML = `
           <div class="right-section">
             <h4>Fungsi Komponen</h4>
             <p>${esc(sub.fungsi)}</p>
-          </div>
-          <div class="right-section">
-            <h4>Sub-Komponen</h4>
-            <ul class="sub-comp-list">
-              ${(detail?.subComponents ?? []).map(sc =>
-                `<li data-subcomp="${esc(sc)}"${sc === subName ? ' class="active"' : ''}>${esc(sc)}</li>`
-              ).join('')}
-            </ul>
           </div>`;
       }
       return;
     }
 
-    // Main component click — show detail
-    const item = (e.target as HTMLElement).closest<HTMLElement>('.comp-item');
+    // Main component click — switch left panel to sub-component list
+    const item = (e.target as HTMLElement).closest<HTMLElement>('.comp-item[data-comp]');
     if (!item) return;
 
-    const name = item.dataset['comp'];
-    if (!name || !data.componentDetails?.[name]) return;
+    const name = item.dataset['comp']!;
+    if (!data.componentDetails?.[name]) return;
 
     activeComp = name;
     const detail = data.componentDetails[name];
     renderDetail(detail, container);
     updateRight(app, detail);
-    updateSubCompBar(app, detail.subComponents, null);
+    updateLeftToSubComps(app, name, detail.subComponents);
   });
 }
 
@@ -157,12 +151,28 @@ function renderDetail(detail: SistemComponentDetail, container: HTMLElement): vo
   container.innerHTML = mediaBlock(detail.imageUrl, detail.caption);
 }
 
-function updateSubCompBar(app: HTMLElement, subComponents: string[], active: string | null): void {
-  const slot = app.querySelector<HTMLElement>('.subcomp-bar-slot');
-  if (!slot) return;
-  slot.innerHTML = subComponents.map(sc => `
-    <button class="subcomp-btn${sc === active ? ' active' : ''}" data-subcomp="${escA(sc)}">${esc(sc)}</button>
-  `).join('');
+function updateLeftToSubComps(app: HTMLElement, compName: string, subComponents: string[]): void {
+  const left = app.querySelector<HTMLElement>('[data-left="komponen"]');
+  if (!left) return;
+
+  // Collapse main list to only the selected component
+  const mainList = left.querySelector<HTMLElement>('.comp-list');
+  if (mainList) {
+    mainList.innerHTML = `
+      <li class="comp-item active" data-comp="${escA(compName)}">${esc(compName)}</li>`;
+  }
+
+  // Populate and show sub-section
+  const section = left.querySelector<HTMLElement>('.sub-left-section');
+  const label   = left.querySelector<HTMLElement>('.sub-left-label');
+  const list    = left.querySelector<HTMLElement>('.sub-comp-list-left');
+  if (label) label.textContent = compName;
+  if (list) {
+    list.innerHTML = subComponents.map(sc => `
+      <li class="comp-item" data-subcomp="${escA(sc)}">${esc(sc)}</li>
+    `).join('');
+  }
+  if (section) section.style.display = '';
 }
 
 function mediaBlock(url: string | null | undefined, caption: string): string {
@@ -189,12 +199,6 @@ function updateRight(app: HTMLElement, detail: SistemComponentDetail): void {
     <div class="right-section">
       <h4>Fungsi Komponen</h4>
       <p>${esc(detail.fungsi)}</p>
-    </div>
-    <div class="right-section">
-      <h4>Sub-Komponen</h4>
-      <ul class="sub-comp-list">
-        ${detail.subComponents.map(sc => `<li data-subcomp="${esc(sc)}">${esc(sc)}</li>`).join('')}
-      </ul>
     </div>`;
 }
 

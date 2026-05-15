@@ -12,6 +12,7 @@ export interface CapaianData {
   cp: string;
   tp: string[];
   asesmen: string;
+  skkni?: string[];
 }
 
 export interface SubComponentDetail {

@@ -2,11 +2,10 @@ let activeComp = null;
 export function render(data, container) {
     renderOverview(data, container);
     const app = container.closest('#app');
-    const id = new URLSearchParams(location.search).get('id') || 'TOSM-001';
     app.addEventListener('click', e => {
         if (!container.classList.contains('active'))
             return;
-        // Sub-component click — show inline
+        // Sub-component click from left panel — show inline
         const subEl = e.target.closest('[data-subcomp]');
         if (subEl && activeComp) {
             const subName = subEl.dataset['subcomp'];
@@ -14,39 +13,33 @@ export function render(data, container) {
             const sub = detail?.subComponentDetails?.[subName];
             if (!sub)
                 return;
+            // Highlight active sub-comp in left panel sub-list
+            app.querySelectorAll('.sub-comp-list-left [data-subcomp]').forEach(el => el.classList.toggle('active', el.dataset['subcomp'] === subName));
             // Show sub-component media in main panel
             container.innerHTML = mediaBlock(sub.imageUrl, sub.caption);
-            // Update sub-component bar slot
-            updateSubCompBar(app, detail?.subComponents ?? [], subName);
-            // Update right panel with sub-component fungsi + list
+            // Update right panel with fungsi
             const right = app.querySelector('[data-right="sistem"]');
             if (right) {
                 right.innerHTML = `
           <div class="right-section">
             <h4>Fungsi Komponen</h4>
             <p>${esc(sub.fungsi)}</p>
-          </div>
-          <div class="right-section">
-            <h4>Sub-Komponen</h4>
-            <ul class="sub-comp-list">
-              ${(detail?.subComponents ?? []).map(sc => `<li data-subcomp="${esc(sc)}"${sc === subName ? ' class="active"' : ''}>${esc(sc)}</li>`).join('')}
-            </ul>
           </div>`;
             }
             return;
         }
-        // Main component click — show detail
-        const item = e.target.closest('.comp-item');
+        // Main component click — switch left panel to sub-component list
+        const item = e.target.closest('.comp-item[data-comp]');
         if (!item)
             return;
         const name = item.dataset['comp'];
-        if (!name || !data.componentDetails?.[name])
+        if (!data.componentDetails?.[name])
             return;
         activeComp = name;
         const detail = data.componentDetails[name];
         renderDetail(detail, container);
         updateRight(app, detail);
-        updateSubCompBar(app, detail.subComponents, null);
+        updateLeftToSubComps(app, name, detail.subComponents);
     });
 }
 export function renderSubComp(meta, data, compName, subName, container) {
@@ -134,13 +127,29 @@ function renderOverview(data, container) {
 function renderDetail(detail, container) {
     container.innerHTML = mediaBlock(detail.imageUrl, detail.caption);
 }
-function updateSubCompBar(app, subComponents, active) {
-    const slot = app.querySelector('.subcomp-bar-slot');
-    if (!slot)
+function updateLeftToSubComps(app, compName, subComponents) {
+    const left = app.querySelector('[data-left="komponen"]');
+    if (!left)
         return;
-    slot.innerHTML = subComponents.map(sc => `
-    <button class="subcomp-btn${sc === active ? ' active' : ''}" data-subcomp="${escA(sc)}">${esc(sc)}</button>
-  `).join('');
+    // Collapse main list to only the selected component
+    const mainList = left.querySelector('.comp-list');
+    if (mainList) {
+        mainList.innerHTML = `
+      <li class="comp-item active" data-comp="${escA(compName)}">${esc(compName)}</li>`;
+    }
+    // Populate and show sub-section
+    const section = left.querySelector('.sub-left-section');
+    const label = left.querySelector('.sub-left-label');
+    const list = left.querySelector('.sub-comp-list-left');
+    if (label)
+        label.textContent = compName;
+    if (list) {
+        list.innerHTML = subComponents.map(sc => `
+      <li class="comp-item" data-subcomp="${escA(sc)}">${esc(sc)}</li>
+    `).join('');
+    }
+    if (section)
+        section.style.display = '';
 }
 function mediaBlock(url, caption) {
     if (!url) {
@@ -166,12 +175,6 @@ function updateRight(app, detail) {
     <div class="right-section">
       <h4>Fungsi Komponen</h4>
       <p>${esc(detail.fungsi)}</p>
-    </div>
-    <div class="right-section">
-      <h4>Sub-Komponen</h4>
-      <ul class="sub-comp-list">
-        ${detail.subComponents.map(sc => `<li data-subcomp="${esc(sc)}">${esc(sc)}</li>`).join('')}
-      </ul>
     </div>`;
 }
 function placeholderSvg() {

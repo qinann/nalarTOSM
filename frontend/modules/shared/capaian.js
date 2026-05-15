@@ -1,6 +1,13 @@
 export function render(data, container) {
     container.innerHTML = `
 <div class="cp-block">
+  ${data.skkni?.length ? `
+  <div class="cp-section">
+    <div class="cp-section-title">Referensi SKKNI</div>
+    <div class="skkni-list">
+      ${data.skkni.map(s => `<span class="skkni-badge">${esc(s)}</span>`).join('')}
+    </div>
+  </div>` : ''}
   <div class="cp-section">
     <div class="cp-section-title">Capaian Pembelajaran (CP) Modul</div>
     <p class="cp-text">${esc(data.cp)}</p>

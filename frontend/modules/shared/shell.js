@@ -40,6 +40,10 @@ function buildShell(meta, praktekSteps) {
           <li class="comp-item" data-comp="${escA(c)}">${esc(c)}</li>
         `).join('')}
       </ul>
+      <div class="sub-left-section" style="display:none">
+        <div class="left-section-label sub-left-label"></div>
+        <ul class="comp-list sub-comp-list-left"></ul>
+      </div>
     </div>
 
     <button class="btn-back" id="btn-back">
@@ -64,8 +68,6 @@ function buildShell(meta, praktekSteps) {
     <div class="tab-panel"        data-panel="sistem"></div>
     <div class="tab-panel"        data-panel="praktek"></div>
     <div class="tab-panel"        data-panel="evaluasi"></div>
-
-    <div class="subcomp-bar-slot"></div>
 
   </main>
 
@@ -133,6 +135,9 @@ function setupShellEvents(root) {
         root.querySelectorAll('.right-view').forEach(rv => {
             rv.dataset['original'] = rv.innerHTML;
         });
+        const leftKomponen = root.querySelector('[data-left="komponen"]');
+        if (leftKomponen)
+            leftKomponen.dataset['original'] = leftKomponen.innerHTML;
     });
     // Tab switching — main panel + left view + right view + hide-right for evaluasi
     root.addEventListener('click', e => {
@@ -140,15 +145,14 @@ function setupShellEvents(root) {
         if (!btn)
             return;
         const tab = btn.dataset['tab'];
-        // Clear sub-component bar slot
-        const slot = root.querySelector('.subcomp-bar-slot');
-        if (slot)
-            slot.innerHTML = '';
-        // Restore right-views to their originals before switching
+        // Restore right-views and left komponen panel to originals
         root.querySelectorAll('.right-view').forEach(rv => {
             if (rv.dataset['original'])
                 rv.innerHTML = rv.dataset['original'];
         });
+        const leftKomponen = root.querySelector('[data-left="komponen"]');
+        if (leftKomponen?.dataset['original'])
+            leftKomponen.innerHTML = leftKomponen.dataset['original'];
         // Restore sistem panel overview when switching to sistem tab
         if (tab === 'sistem') {
             const p = root.querySelector('[data-panel="sistem"]');
