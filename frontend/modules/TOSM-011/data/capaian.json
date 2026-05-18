@@ -1,0 +1,12 @@
+{
+  "skkni": ["SKKNI No. 391 Tahun 2014 – Teknik Otomotif Kendaraan Ringan", "SKKNI No. 212 Tahun 2019 – Pemeliharaan dan Perbaikan Mesin Sepeda Motor"],
+  "cp": "Pada akhir pembelajaran modul ini, peserta didik mampu menjelaskan prinsip kerja sistem pengisian sepeda motor secara menyeluruh, mengidentifikasi fungsi setiap komponen sistem pengisian beserta sub-komponennya, serta melakukan pemeriksaan dan diagnosis kerusakan sistem pengisian menggunakan multimeter sesuai prosedur standar. Peserta didik juga mampu melakukan pengukuran output alternator, memeriksa tegangan pengisian, menguji kondisi baterai, dan menentukan tindakan perbaikan yang tepat berdasarkan hasil pemeriksaan.",
+  "tp": [
+    "11.1 Menjelaskan prinsip induksi elektromagnetik dan cara kerja sistem pengisian sepeda motor dari alternator hingga baterai.",
+    "11.2 Mengidentifikasi nama, fungsi, dan lokasi setiap komponen sistem pengisian (alternator/magneto, kiprok, baterai, kabel pengisian) beserta sub-komponennya.",
+    "11.3 Melakukan pemeriksaan output alternator dengan mengukur tegangan AC dan resistansi kumparan stator menggunakan multimeter sesuai spesifikasi pabrikan.",
+    "11.4 Mengukur tegangan pengisian sistem (charging voltage) di terminal baterai pada berbagai RPM dan mengevaluasi hasil pengukuran terhadap spesifikasi normal 13,5–14,5V DC.",
+    "11.5 Mendiagnosis kerusakan sistem pengisian berdasarkan gejala, hasil pengukuran, dan prosedur pemeriksaan sistematis, serta menentukan komponen yang perlu diperbaiki atau diganti."
+  ],
+  "asesmen": "Asesmen dilakukan melalui soal pilihan ganda tentang komponen dan cara kerja sistem pengisian, simulasi pengukuran output alternator dan tegangan pengisian secara virtual, serta studi kasus diagnosis kerusakan sistem pengisian berdasarkan gejala yang diberikan."
+}

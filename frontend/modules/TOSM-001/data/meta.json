@@ -1,8 +1,16 @@
 {
   "title": "Komponen Utama Engine",
   "level": "dasar",
-  "desc": "Engine sepeda motor tersusun dari komponen-komponen mekanis yang bekerja secara sinergis untuk mengubah energi kimia bahan bakar menjadi energi gerak. Pemahaman mendalam terhadap setiap komponen menjadi dasar penguasaan teknik otomotif.",
+  "desc": "Modul ini membahas tujuh komponen utama engine sepeda motor 4-tak secara menyeluruh — blok silinder, kepala silinder, piston, crankshaft, camshaft, connecting rod, dan valve — beserta seluruh sub-komponennya. Peserta didik mempelajari fungsi, konstruksi, dan cara kerja setiap komponen dalam siklus 4-langkah, mulai dari identifikasi fisik hingga prosedur overhaul sesuai SOP pabrikan. Kompetensi ini mencakup teknik pengukuran keausan menggunakan alat ukur presisi (jangka sorong, mikrometer, dial gauge, feeler gauge), diagnosis kerusakan berdasarkan gejala dan hasil ukur, serta penerapan K3 di bengkel. Penguasaan materi ini menjadi fondasi kompetensi teknik otomotif sepeda motor.",
   "sistemDesc": "Berikut adalah urutan lengkap dari keempat langkah yang membentuk satu siklus kerja:\n\n1. Langkah Hisap (Intake): Piston bergerak dari Titik Mati Atas (TMA) ke Titik Mati Bawah (TMB), menciptakan ruang hampa. Klep hisap membuka, dan campuran udara-bahan bakar masuk ke dalam silinder.\n\n2. Langkah Kompresi (Compression): Piston bergerak kembali dari TMB ke TMA, dengan kedua klep (hisap dan buang) tertutup. Piston memampatkan campuran udara-bahan bakar, meningkatkan tekanan dan suhunya agar siap untuk dibakar.\n\n3. Langkah Tenaga (Power): Pada akhir langkah kompresi, busi memercikkan api dan membakar campuran padat tersebut. Ledakan ini mendorong piston dengan keras dari TMA kembali ke TMB. Inilah satu-satunya langkah yang menghasilkan daya untuk memutar poros engkol.\n\n4. Langkah Buang (Exhaust): Piston bergerak dari TMB ke TMA, kali ini dengan klep buang yang terbuka. Gerakan piston mendorong sisa gas hasil pembakaran keluar dari silinder melalui saluran buang menuju knalpot.",
   "kd": "Peserta mampu mengidentifikasi, menjelaskan fungsi, dan melakukan pemeriksaan visual komponen utama engine sepeda motor sesuai standar pabrik.",
-  "components": ["Blok silinder", "Kepala silinder", "Piston", "Crankshaft", "Camshaft", "Connecting rod", "Valve"]
+  "components": [
+    "Blok silinder",
+    "Kepala silinder",
+    "Piston",
+    "Crankshaft",
+    "Camshaft",
+    "Connecting rod",
+    "Katup Intake & Exhaust"
+  ]
 }

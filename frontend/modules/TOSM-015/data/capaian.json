@@ -1,0 +1,14 @@
+{
+  "skkni": ["SKKNI No. 391 Tahun 2014 – Teknik Otomotif Kendaraan Ringan", "SKKNI No. 212 Tahun 2019 – Pemeliharaan dan Perbaikan Mesin Sepeda Motor"],
+  "cp": "Pada akhir pembelajaran modul ini, peserta didik mampu mengidentifikasi seluruh komponen sistem kopling manual basah dan transmisi roda gigi sepeda motor, menjelaskan cara kerja kopling dalam menghubungkan dan memutus tenaga mesin, memahami mekanisme pemilihan gigi melalui shift drum dan shift fork, serta melakukan prosedur overhaul gearbox termasuk pengukuran keausan pelat kopling dan pemeriksaan komponen transmisi.",
+  "tp": [
+    "15.1 Menjelaskan fungsi kopling manual dalam sistem pemindah tenaga sepeda motor dan perbedaannya dengan kopling sentrifugal pada motor matic.",
+    "15.2 Mengidentifikasi konstruksi kopling manual basah (wet clutch): rumah kopling, hub kopling, pelat gesek (friction plate), pelat baja (steel plate), pelat penekan, dan pegas kopling.",
+    "15.3 Menjelaskan cara kerja kopling saat tuas kopling ditarik dan dilepas, termasuk mekanisme push rod/ball bearing yang menekan pelat penekan.",
+    "15.4 Mengukur ketebalan pelat gesek, kerataan pelat baja, dan panjang bebas pegas kopling menggunakan jangka sorong dan membandingkan dengan batas keausan (wear limit) pabrikan.",
+    "15.5 Mengidentifikasi komponen transmisi: poros utama (mainshaft), poros keluaran (countershaft), roda gigi transmisi (gear train), dan cara kerja dog engagement dalam memilih gigi.",
+    "15.6 Menjelaskan cara kerja shift drum dalam mengarahkan shift fork untuk menggeser roda gigi dan memilih rasio transmisi yang diinginkan.",
+    "15.7 Melakukan prosedur overhaul gearbox: bongkar, cuci, periksa keausan, ukur, rakitan ulang dengan torsi sesuai spesifikasi pabrikan."
+  ],
+  "asesmen": "Asesmen dilakukan melalui soal pilihan ganda tentang konstruksi dan cara kerja kopling manual dan transmisi, serta simulasi prosedur pengukuran keausan pelat kopling dan diagnosis masalah gearbox berdasarkan gejala."
+}

@@ -1,0 +1,14 @@
+{
+  "skkni": ["SKKNI No. 391 Tahun 2014 – Teknik Otomotif Kendaraan Ringan", "SKKNI No. 212 Tahun 2019 – Pemeliharaan dan Perbaikan Mesin Sepeda Motor"],
+  "cp": "Pada akhir pembelajaran modul ini, peserta didik mampu mengidentifikasi seluruh komponen sistem pengapian TCI, menjelaskan cara kerja pembangkitan tegangan tinggi dari pulser hingga percikan busi, mengukur tegangan pulser dan hambatan koil pengapian menggunakan multimeter, serta mendiagnosis gangguan sistem pengapian berdasarkan gejala dan hasil pengukuran.",
+  "tp": [
+    "10.1 Menjelaskan prinsip kerja sistem pengapian TCI (Transistor Controlled Ignition) dan keunggulannya dibandingkan sistem pengapian konvensional (CDI).",
+    "10.2 Mengidentifikasi pulser (pickup coil) dan magnet rotor: konstruksi, posisi pemasangan, dan cara menghasilkan sinyal tegangan AC.",
+    "10.3 Menjelaskan fungsi TCI unit dalam memproses sinyal pulser, menentukan timing pengapian, dan mengontrol transistor daya untuk memutus arus primer koil.",
+    "10.4 Menjelaskan konstruksi koil pengapian: kumparan primer, kumparan sekunder, rasio belitan, dan cara menghasilkan tegangan tinggi 10–25 kV.",
+    "10.5 Mengidentifikasi kabel busi: konstruksi konduktor, resistor peredam EMI, dan pentingnya tahanan kabel (5–15 kΩ) untuk perlindungan komponen elektronik.",
+    "10.6 Menjelaskan konstruksi busi dan fungsi celah elektroda (0,6–0,9 mm) dalam menghasilkan percikan api yang optimal.",
+    "10.7 Mengukur tegangan sinyal pulser dan hambatan kumparan primer/sekunder koil pengapian menggunakan multimeter."
+  ],
+  "asesmen": "Asesmen dilakukan melalui soal pilihan ganda tentang cara kerja sistem pengapian TCI, serta simulasi pengukuran tegangan pulser virtual dan pemeriksaan kondisi busi."
+}

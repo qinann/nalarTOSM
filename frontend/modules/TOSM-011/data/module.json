@@ -1,0 +1,13 @@
+{
+  "id": "TOSM-011",
+  "title": "Sistem Pengisian (Charging System)",
+  "level": "menengah",
+  "desc": "Modul ini membahas sistem pengisian sepeda motor yang mencakup alternator/magneto, regulator/rectifier (kiprok), baterai, dan kabel pengisian. Peserta didik mempelajari cara kerja, pemeriksaan, diagnosis kerusakan, dan prosedur perbaikan komponen sistem pengisian sesuai standar pabrikan.",
+  "kd": "Peserta mampu menjelaskan cara kerja sistem pengisian sepeda motor, memeriksa output alternator dan tegangan pengisian menggunakan multimeter, mendiagnosis kerusakan komponen sistem pengisian, serta melakukan penggantian komponen sesuai prosedur standar.",
+  "components": [
+    "Alternator/Magneto",
+    "Regulator/Rectifier (Kiprok)",
+    "Baterai",
+    "Kabel Pengisian"
+  ]
+}

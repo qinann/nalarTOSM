@@ -1,0 +1,13 @@
+{
+  "skkni": ["SKKNI No. 391 Tahun 2014 – Teknik Otomotif Kendaraan Ringan", "SKKNI No. 212 Tahun 2019 – Pemeliharaan dan Perbaikan Mesin Sepeda Motor"],
+  "cp": "Pada akhir pembelajaran modul ini, peserta didik mampu mengidentifikasi seluruh komponen sistem pelumasan engine sepeda motor 4-tak, menjelaskan prinsip kerja dan alur sirkulasi oli dari bak oli hingga titik pelumasan kritis, melakukan perawatan sistem pelumasan sesuai SOP, serta mendiagnosis gangguan sistem berdasarkan gejala dan kondisi oli.",
+  "tp": [
+    "4.1 Menjelaskan fungsi dan prinsip kerja sistem pelumasan bertekanan (force feed lubrication) pada engine sepeda motor 4-tak.",
+    "4.2 Mengidentifikasi dan menjelaskan fungsi komponen sistem pelumasan: pompa oli, strainer, pressure relief valve, galeri oli, bearing crankshaft, dan filter oli.",
+    "4.3 Menjelaskan alur sirkulasi oli dari bak oli melalui strainer, pompa, filter, galeri utama, hingga seluruh titik pelumasan dan kembali ke bak oli.",
+    "4.4 Melakukan prosedur perawatan sistem pelumasan: penggantian oli mesin, penggantian filter oli, dan pembersihan strainer sesuai interval dan spesifikasi pabrikan.",
+    "4.5 Mengukur tekanan oli menggunakan oil pressure gauge dan membandingkan dengan spesifikasi pabrikan.",
+    "4.6 Mendiagnosis gangguan sistem pelumasan berdasarkan gejala (tekanan rendah, konsumsi oli tinggi, oli hitam pekat, asap biru/putih) dan melakukan tindakan perbaikan yang tepat."
+  ],
+  "asesmen": "Asesmen dilakukan melalui pilihan ganda dan identifikasi komponen sistem pelumasan (sesuai kolom Evaluasi modul), serta praktik ganti oli, bersihkan strainer, dan pengukuran tekanan oli virtual."
+}

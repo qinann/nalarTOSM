@@ -1,0 +1,132 @@
+{
+  "imageUrl": null,
+  "caption": "Sistem Injeksi Bahan Bakar Elektronik (EFI)",
+  "componentDetails": {
+    "Injektor": {
+      "fungsi": "Injektor (fuel injector) adalah katup solenoid elektromagnetik yang membuka dan menutup dengan sangat cepat (milidetik) sesuai sinyal dari ECU untuk menyemprotkan bahan bakar bertekanan tinggi ke dalam port masuk atau ruang bakar. Durasi pembukaan injektor (pulse width, diukur dalam milidetik) dikontrol ECU berdasarkan kebutuhan bahan bakar yang dihitung dari data sensor — semakin panjang pulse width, semakin banyak bahan bakar yang disemprotkan.\n\nInjektor bekerja berdasarkan prinsip elektromagnetik: saat ECU memberi pulsa tegangan, koil solenoid menghasilkan medan magnet yang menarik jarum katup (needle) melawan gaya pegas pengembali, membuka jalur bahan bakar dari nozzle ke intake port. Saat pulsa berhenti, pegas mendorong jarum kembali menutup dengan sangat cepat (respon time <1 ms untuk injektor berkualitas baik).\n\nKerusakan injektor dapat berupa: tersumbat (menyebabkan semprotan tidak merata atau tidak keluar sama sekali), bocor (menyebabkan tetesan bahan bakar saat injektor harusnya tertutup — campuran kaya berlebihan), atau hambatan koil di luar spesifikasi (koil terbuka = tidak menyemprot; koil short = ECU rusak). Diagnosis: ukur hambatan injektor (biasanya 10–14 Ω tipe high impedance atau 1,5–3 Ω tipe low impedance), dan uji pola semprotan menggunakan injector tester.",
+      "imageUrl": null,
+      "caption": "Injektor menyemprotkan BBM presisi sesuai perintah ECU",
+      "subComponents": [
+        "Koil Solenoid",
+        "Jarum Katup (Needle)",
+        "Pegas Pengembali",
+        "Nozzle",
+        "Filter Injektor",
+        "O-ring Atas & Bawah",
+        "Terminal Listrik"
+      ],
+      "subComponentDetails": {
+        "Koil Solenoid": {
+          "fungsi": "Koil solenoid adalah kumparan kawat tembaga halus yang dililitkan di sekitar inti besi di dalam injektor. Saat ECU mengalirkan arus listrik melalui koil, medan elektromagnetik yang terbentuk menarik jangkar (armature) besi beserta jarum katup yang menempel padanya, membuka jalur bahan bakar melalui nozzle.\n\nResistensi koil menentukan tipe injektor dan cara ECU mengendalikannya: high impedance (10–14 Ω) digunakan langsung dengan tegangan baterai; low impedance (1,5–3 Ω) memerlukan peak-and-hold driver di ECU untuk mencegah overheating koil. Mencampur tipe injektor yang salah dengan ECU yang tidak kompatibel dapat merusak koil atau ECU.\n\nKoil solenoid yang putus (open circuit) menyebabkan injektor tidak membuka sama sekali — satu silinder mati. Koil yang short circuit menyebabkan arus berlebihan yang dapat merusak driver circuit ECU. Ukur hambatan koil dengan multimeter: nilai di luar rentang spesifikasi (misalnya >20 Ω atau <1 Ω untuk high impedance type) menunjukkan koil rusak dan injektor harus diganti.",
+          "imageUrl": null,
+          "caption": "Koil solenoid menghasilkan gaya elektromagnetik untuk membuka katup"
+        },
+        "Jarum Katup (Needle)": {
+          "fungsi": "Jarum katup (needle / pintle) adalah komponen yang menutup dan membuka aliran bahan bakar pada seat nozzle injektor. Saat koil solenoid aktif, needle terangkat dari dudukan (seat) sehingga bahan bakar bertekanan dapat mengalir melalui lubang nozzle. Saat arus berhenti, pegas pengembali mendorong needle kembali menutup dengan rapat dan cepat.\n\nNeedle terbuat dari baja keras yang dilapisi titanium nitrida atau chromium untuk ketahanan terhadap aus dan korosi bahan bakar. Permukaan ujung needle (tip) dan seat nozzle harus sangat halus dan presisi untuk memastikan segel sempurna saat tertutup — kebocoran di sini menyebabkan tetes bahan bakar yang tidak terkontrol (injector drip leak).\n\nDeposit (karbon atau gum dari bahan bakar teroksidasi) dapat menumpuk di sekitar needle dan seat, menghambat gerakan needle atau mencegah penutupan sempurna. Bersihkan injektor dengan injector cleaner yang dicampurkan ke bahan bakar sesuai dosis, atau dengan ultrasonic cleaning untuk pembersihan menyeluruh. Needle yang aus atau seat yang rusak mengharuskan penggantian injektor.",
+          "imageUrl": null,
+          "caption": "Jarum katup membuka-tutup aliran BBM di seat nozzle"
+        },
+        "Pegas Pengembali": {
+          "fungsi": "Pegas pengembali (return spring) adalah pegas kecil yang menekan jarum katup ke posisi tertutup (menutup nozzle) saat tidak ada arus listrik di koil solenoid. Gaya pegas harus cukup kuat untuk menutup needle dengan cepat dan rapat, namun tidak terlalu kuat sehingga koil solenoid masih mampu mengangkat needle.\n\nKekuatan pegas juga menentukan minimum pulse width yang dapat dikontrol ECU. Pegas yang lemah menyebabkan needle lambat menutup (closing time bertambah) sehingga jumlah bahan bakar aktual yang masuk lebih banyak dari yang diperintahkan ECU — campuran kaya, terutama terasa pada injeksi durasi singkat (idle, deselerasi).\n\nPegas pengembali jarang rusak sendiri — kerusakan pegas biasanya terjadi bersamaan dengan kerusakan komponen lain di dalam injektor akibat kontaminasi bahan bakar atau overheating. Saat melakukan ultrasonic cleaning injektor, pastikan metode pembersihan tidak merusak atau melonggarkan pegas dari posisinya.",
+          "imageUrl": null,
+          "caption": "Pegas menutup needle saat tidak ada arus — mencegah bocor BBM"
+        },
+        "Nozzle": {
+          "fungsi": "Nozzle adalah ujung injektor yang berisi satu atau beberapa lubang sangat kecil (0,1–0,3 mm diameter) tempat bahan bakar disemprotkan ke intake port. Jumlah dan susunan lubang nozzle (1, 2, 4, atau 6 hole) menentukan pola semprotan (spray pattern) yang dirancang untuk mengoptimalkan atomisasi bahan bakar dan pencampuran dengan udara.\n\nAtomsasi yang baik (butiran bahan bakar kecil dan merata) sangat penting untuk pembakaran yang efisien. Nozzle dengan banyak lubang (multi-hole) menghasilkan semprotan berbentuk kerucut yang luas dan butiran yang sangat halus. Desain nozzle disesuaikan dengan geometri intake port dan posisi injektor (port injection atau direct injection).\n\nDeposit pada lubang nozzle menyebabkan pola semprotan yang tidak merata atau menyempit — bahan bakar tidak teratomisasi dengan baik, pembakaran tidak sempurna, emisi HC naik, dan konsumsi bahan bakar meningkat. Pembersihan nozzle dapat dilakukan dengan injector cleaner atau ultrasonic cleaning. Nozzle yang tersumbat penuh (tidak ada semprotan sama sekali) mengharuskan penggantian injektor.",
+          "imageUrl": null,
+          "caption": "Lubang nozzle mengatomisasi BBM menjadi kabut halus"
+        },
+        "Filter Injektor": {
+          "fungsi": "Filter injektor (inlet filter) adalah kasa halus berbentuk tabung kecil yang terpasang di inlet atas injektor (sisi yang terhubung ke fuel rail). Filter ini menyaring partikel sangat halus yang mungkin lolos dari main fuel filter dan melindungi needle seat dari kontaminan yang dapat merusak segel.\n\nUkuran mesh filter injektor sangat halus (<10 mikron) karena lubang nozzle injektor berdiameter 0,1–0,3 mm. Partikel yang lebih besar dari 10 mikron berpotensi menyumbat atau menggores lubang nozzle. Material filter: stainless steel mesh atau sintered bronze.\n\nFilter injektor yang tersumbat menyebabkan tekanan di dalam injektor lebih rendah dari tekanan fuel rail — semprotan bahan bakar berkurang tidak sesuai perhitungan ECU. Gejala: campuran miskin di satu silinder, misfire spesifik pada silinder tersebut. Filter injektor tidak dapat dibersihkan secara memuaskan dan penggantinya harus merupakan injektor baru atau injektor rekondisi yang filter-nya sudah diganti.",
+          "imageUrl": null,
+          "caption": "Filter inlet injektor menahan partikel <10 mikron dari fuel rail"
+        },
+        "O-ring Atas & Bawah": {
+          "fungsi": "O-ring atas dan bawah injektor adalah seal karet yang mencegah kebocoran bahan bakar bertekanan di kedua ujung injektor. O-ring atas menyegel sambungan antara injektor dengan fuel rail (sisi bertekanan tinggi); O-ring bawah menyegel antara injektor dengan intake manifold atau throttle body (sisi atmosfer).\n\nMaterial O-ring harus kompatibel dengan bahan bakar (bensin, bensin-etanol, dll.) dan tahan suhu tinggi hingga 150°C. Bahan NBR (nitrile) standar mungkin kurang cocok untuk bahan bakar dengan kadar etanol tinggi — gunakan O-ring VITON jika kendaraan sering menggunakan bahan bakar premium beretanol.\n\nO-ring yang mengeras, retak, atau deformasi (akibat usia atau bahan bakar yang tidak kompatibel) menyebabkan kebocoran bahan bakar dari sambungan injektor — sangat berbahaya. Ganti O-ring setiap kali injektor dilepas dari fuel rail atau throttle body. O-ring injektor tersedia dalam kit servis injektor yang murah — tidak ada alasan untuk menggunakan O-ring lama yang sudah dilepas.",
+          "imageUrl": null,
+          "caption": "O-ring menyegel injektor di fuel rail dan intake manifold"
+        },
+        "Terminal Listrik": {
+          "fungsi": "Terminal listrik injektor adalah konektor 2-pin yang menghubungkan kabel dari ECU ke koil solenoid injektor. Pin pertama mendapat tegangan positif dari relay injeksi; ECU mengontrol injektor dengan memberikan massa (ground) ke pin kedua. Desain ini (ECU sebagai saklar massa) melindungi ECU dari tegangan baterai langsung yang lebih merusak.\n\nKonektor injektor menggunakan locking mechanism (kait pengunci) yang harus ditekan untuk melepasnya. Memaksa konektor tanpa menekan kait merusak housing konektor dan menyebabkan koneksi tidak aman. Konektor yang tidak terkunci penuh (setengah masuk) menyebabkan kontak intermittent — engine misfire yang tidak dapat diprediksi, terutama saat getaran engine tinggi.\n\nKorosi pada pin terminal menyebabkan resistansi meningkat yang mengurangi arus efektif di koil solenoid — injektor lambat membuka atau gagal membuka di RPM tinggi. Semprotkan electrical contact cleaner dan bersihkan pin dengan cotton bud saat servis. Jika pin sudah terkorosi parah atau terminal rusak, ganti harness (kabel) konektor injektor — lebih mudah daripada mengganti injektor hanya karena masalah konektor.",
+          "imageUrl": null,
+          "caption": "Terminal 2-pin menghubungkan sinyal ECU ke koil solenoid injektor"
+        }
+      }
+    },
+    "Fuel Rail": {
+      "fungsi": "Fuel rail adalah komponen distribusi bahan bakar yang berfungsi sebagai reservoir bertekanan dan menyalurkan bahan bakar dari pompa ke semua injektor secara merata. Tekanan di dalam fuel rail dijaga konstan pada 250–300 kPa oleh pressure regulator, memastikan setiap injektor menerima bahan bakar pada tekanan yang sama sehingga dosis semprotan akurat dan konsisten.\n\nVolume internal fuel rail yang cukup besar berfungsi sebagai buffer — meredam fluktuasi tekanan yang terjadi setiap kali injektor membuka dan menutup. Tanpa buffer ini, setiap injection event akan menyebabkan drop tekanan sesaat yang membuat dosis bahan bakar tidak konsisten antar siklus.\n\nPemeriksaan fuel rail meliputi pengecekan kebocoran di sambungan selang dan O-ring dudukan injektor, pengukuran tekanan bahan bakar menggunakan fuel pressure gauge, serta memastikan dudukan injektor bersih dari kotoran dan karat.",
+      "imageUrl": null,
+      "caption": "Fuel rail distribusi bahan bakar",
+      "subComponents": [
+        "Pipa Distribusi",
+        "Dudukan Injektor",
+        "Sambungan Inlet & Pressure Regulator"
+      ],
+      "subComponentDetails": {
+        "Pipa Distribusi": {
+          "fungsi": "Pipa distribusi adalah tabung logam utama fuel rail yang menjadi reservoir bahan bakar bertekanan tinggi dan mendistribusikannya ke semua injektor secara merata. Pada motor satu silinder, fuel rail berbentuk pendek dengan satu dudukan injektor; pada motor multi-silinder, fuel rail memanjang dengan satu dudukan per silinder.\n\nVolume internal pipa distribusi dirancang cukup besar untuk meredam fluktuasi tekanan yang terjadi setiap injektor membuka dan menutup. Tanpa buffer volume yang cukup, tekanan bahan bakar akan berfluktuasi setiap injection event, menyebabkan dosis bahan bakar tidak konsisten antar siklus.\n\nMaterial pipa distribusi umumnya baja tahan karat atau aluminium anodized yang tahan terhadap tekanan kerja 250–300 kPa secara terus-menerus, tahan terhadap korosi dari bahan bakar modern yang mengandung etanol, dan tahan terhadap suhu tinggi di ruang mesin.",
+          "imageUrl": null,
+          "caption": "Pipa distribusi fuel rail"
+        },
+        "Dudukan Injektor": {
+          "fungsi": "Dudukan injektor adalah soket silindris yang terpasang tegak lurus pada pipa distribusi, di mana ujung atas injektor dimasukkan dan dikunci dengan klip penjepit. Diameter dalam dudukan dikalibrasi presisi agar O-ring atas injektor dapat duduk rapat dan mencegah kebocoran, sementara injektor tetap dapat dilepas untuk perawatan.\n\nPermukaan dalam dudukan harus halus dan bersih untuk memastikan O-ring bekerja optimal. Goresan atau kotoran pada permukaan dudukan dapat merusak O-ring dan menyebabkan kebocoran meskipun O-ring baru saja dipasang. Itulah mengapa saat memasang injektor, area dudukan harus dibersihkan terlebih dahulu.\n\nPada beberapa desain, dudukan dilengkapi dengan heat shield atau insulating sleeve yang mencegah panas dari mesin merambat ke fuel rail dan menyebabkan bahan bakar di dalamnya menguap (vapor lock), yang akan membuat injektor menyemprotkan uap alih-alih bahan bakar cair.",
+          "imageUrl": null,
+          "caption": "Dudukan injektor pada fuel rail"
+        },
+        "Sambungan Inlet & Pressure Regulator": {
+          "fungsi": "Sambungan inlet adalah fitting di salah satu ujung fuel rail tempat selang bertekanan tinggi dari fuel pump terhubung. Fitting ini biasanya menggunakan sistem quick-connect atau sambungan berulir dengan seal O-ring untuk memastikan tidak ada kebocoran di bawah tekanan 300 kPa.\n\nPada sistem returnless fuel injection (yang umum digunakan pada sepeda motor modern), tidak ada sambungan return ke tangki — tekanan diregulasi oleh pressure regulator yang terintegrasi di dalam tangki bersama fuel pump. Pada sistem older return-type, fuel rail memiliki sambungan kedua untuk selang return ke tangki.\n\nSambungan pressure regulator pada beberapa desain fuel rail menjadi tempat pemasangan pressure regulator mekanis eksternal yang mempertahankan tekanan differensial konstan antara fuel rail dan intake manifold. Pemeriksaan tekanan fuel rail dilakukan melalui katup Schrader (mirip katup ban) yang terpasang di salah satu ujung fuel rail.",
+          "imageUrl": null,
+          "caption": "Sambungan inlet dan pressure regulator"
+        }
+      }
+    },
+    "O-ring": {
+      "fungsi": "O-ring injektor adalah cincin elastomer yang berfungsi sebagai seal kedap di dua titik kritis: antara injektor dan fuel rail (O-ring atas) serta antara injektor dan intake manifold (O-ring bawah). Meskipun berukuran kecil, O-ring memegang peran vital dalam menjaga integritas sistem bahan bakar — kebocoran sekecil apapun dapat menyebabkan fire hazard dan gangguan campuran udara-bahan bakar.\n\nMaterial O-ring harus kompatibel dengan bahan bakar modern yang mengandung etanol (E10, E20) serta tahan terhadap suhu tinggi di ruang mesin. Fluorosilicone (FVMQ) atau Viton dipilih karena tahan terhadap bahan bakar dan panas hingga 150°C, berbeda dengan O-ring NBR standar yang dapat rusak akibat kandungan etanol.\n\nO-ring harus diganti setiap kali injektor dilepas dari fuel rail atau intake manifold. Melumasi O-ring baru dengan oli mesin bersih sebelum pemasangan adalah prosedur wajib untuk mencegah O-ring terpotong saat dimasukkan ke dudukan.",
+      "imageUrl": null,
+      "caption": "O-ring dan seal injektor",
+      "subComponents": [
+        "O-ring Atas",
+        "O-ring Bawah",
+        "Spacer / Insulating Sleeve"
+      ],
+      "subComponentDetails": {
+        "O-ring Atas": {
+          "fungsi": "O-ring atas injektor adalah cincin karet elastomer yang dipasang di alur bagian atas body injektor — di titik pertemuan antara injektor dan dudukan fuel rail. O-ring ini bertugas mencegah bahan bakar bertekanan 250–300 kPa bocor ke luar dari sambungan injektor-fuel rail.\n\nMaterial O-ring biasanya fluorosilicone (FVMQ) atau Viton yang tahan terhadap bahan bakar bensin, etanol, dan berbagai aditif modern, serta tahan terhadap suhu tinggi hingga 150°C di ruang mesin. O-ring standar karet nitril (NBR) tidak direkomendasikan karena dapat mengembang dan rusak akibat kandungan etanol dalam bahan bakar.\n\nO-ring atas sering mengalami kerusakan saat injektor dipasang kembali tanpa pelumasan — O-ring terpotong oleh tepi dudukan fuel rail akibat gesekan. Prosedur yang benar adalah melumasi O-ring dengan sedikit oli mesin bersih sebelum memasukkan injektor ke fuel rail, lalu mendorong dengan gerakan lurus tanpa memutar.",
+          "imageUrl": null,
+          "caption": "O-ring atas injektor"
+        },
+        "O-ring Bawah": {
+          "fungsi": "O-ring bawah injektor dipasang di alur bagian bawah body injektor — di titik pertemuan antara ujung nozzle injektor dan intake manifold atau throttle body. O-ring ini berfungsi mencegah kebocoran udara masuk dari luar ke intake manifold (vacuum leak) yang dapat mengacaukan pembacaan sensor MAP dan menyebabkan campuran udara-bahan bakar terlalu miskin.\n\nBerbeda dengan O-ring atas yang menghadapi tekanan bahan bakar dari dalam, O-ring bawah menghadapi kondisi tekanan negatif (vacuum) dari dalam intake manifold. Kebocoran kecil pun dapat menyebabkan udara non-terukur masuk dan mengganggu kalibrasi ECU, mengakibatkan idle yang kasar, konsumsi bahan bakar boros, dan kode DTC terkait lean mixture.\n\nO-ring bawah juga berfungsi sebagai bantalan getaran antara injektor logam dan intake manifold, mengurangi transmisi getaran yang dapat melonggarkan koneksi soket listrik injektor seiring waktu. Ganti O-ring bawah bersamaan dengan O-ring atas setiap kali injektor dilepas dari tempatnya.",
+          "imageUrl": null,
+          "caption": "O-ring bawah injektor"
+        },
+        "Spacer / Insulating Sleeve": {
+          "fungsi": "Spacer atau insulating sleeve adalah cincin atau selongsong plastik/karet yang dipasang antara body injektor dan dudukan di intake manifold, berfungsi sebagai isolator termal untuk mencegah panas dari mesin merambat langsung ke body injektor dan memanaskan bahan bakar di dalamnya.\n\nBahan bakar yang terlalu panas di dalam injektor dapat menguap dan membentuk gelembung uap (vapor bubbles) yang ketika disemprotkan tidak menghasilkan atomisasi cair yang efektif melainkan uap panas. Kondisi ini dikenal sebagai hot soak vapor lock dan sering menyebabkan mesin susah dihidupkan kembali setelah baru saja dimatikan dalam kondisi panas.\n\nPada beberapa desain, spacer juga berfungsi sebagai pengatur kedalaman pemasangan injektor ke dalam intake manifold, memastikan ujung nozzle berada pada posisi optimal relatif terhadap aliran udara di intake port. Spacer yang aus atau rusak harus diganti bersamaan dengan O-ring untuk memastikan seal yang sempurna.",
+          "imageUrl": null,
+          "caption": "Spacer / insulating sleeve injektor"
+        }
+      }
+    },
+    "Filter Injektor": {
+      "fungsi": "Filter injektor adalah saringan halus yang dipasang di ujung inlet injektor sebagai perlindungan terakhir sebelum bahan bakar memasuki bagian presisi injektor. Dengan ukuran pori 20–30 mikron, filter ini menangkap partikel padat yang lolos dari filter utama dan strainer dalam tangki, mencegah penyumbatan pada jarum katup dan nozzle injektor.\n\nMeskipun berukuran sangat kecil, filter injektor bekerja keras menyaring ribuan liter bahan bakar sepanjang usia pakai injektor. Kondisi filter yang tersumbat akan mengurangi aliran bahan bakar ke injektor, menyebabkan campuran miskin terutama pada beban tinggi meskipun pompa bahan bakar dan fuel rail bekerja normal.\n\nPada sebagian besar injektor standar, filter bersifat permanen dan tidak dapat diganti secara terpisah. Pemeliharaan filter bahan bakar utama secara teratur adalah cara terbaik untuk memperpanjang usia filter injektor dan mencegah penyumbatan.",
+      "imageUrl": null,
+      "caption": "Filter injektor",
+      "subComponents": [
+        "Kasa Filter (Strainer Mesh)",
+        "Dudukan Filter & Retensi"
+      ],
+      "subComponentDetails": {
+        "Kasa Filter (Strainer Mesh)": {
+          "fungsi": "Kasa filter atau strainer mesh adalah saringan berbentuk silinder kecil yang dipasang di ujung inlet injektor — tepat di tempat bahan bakar masuk dari fuel rail ke dalam body injektor. Kasa ini terbuat dari anyaman kawat stainless steel atau nilon dengan ukuran pori sangat kecil (sekitar 20–30 mikron) yang cukup untuk mencegah partikel padat memasuki saluran jarum katup dan nozzle.\n\nFilter ini merupakan lapisan pertahanan terakhir sebelum bahan bakar masuk ke bagian presisi injektor — melengkapi fungsi filter utama (main fuel filter) dan filter dalam tangki (intank strainer). Meski ukurannya kecil, kasa filter bekerja keras menyaring ribuan liter bahan bakar sepanjang usia pakai injektor.\n\nKasa filter yang tersumbat oleh kotoran, endapan gum, atau partikel karat dari fuel rail akan menyebabkan aliran bahan bakar ke injektor terhambat, mengakibatkan dosis semprotan kurang dari target ECU meskipun pompa bensin dan fuel rail bekerja normal — mesin akan beroperasi dengan campuran miskin terutama pada beban tinggi.",
+          "imageUrl": null,
+          "caption": "Kasa filter (strainer mesh) injektor"
+        },
+        "Dudukan Filter & Retensi": {
+          "fungsi": "Dudukan filter adalah struktur plastik atau logam yang menahan kasa filter pada posisinya di ujung inlet injektor. Desainnya memastikan kasa tidak bergeser atau terlepas akibat getaran mesin atau tekanan aliran bahan bakar yang kuat — filter yang bergeser dapat membiarkan bahan bakar melewatinya tanpa tersaring.\n\nPada sebagian besar injektor, kasa filter bersifat permanen dan tidak dapat dilepas tanpa merusak injektor. Ini berarti jika kasa tersumbat, satu-satunya solusi adalah cleaning profesional menggunakan ultrasonik atau penggantian injektor baru. Tidak seperti filter oli atau filter bahan bakar utama yang dapat diganti sendiri, filter injektor bukan komponen servis reguler yang dijual terpisah.\n\nBeberapa injektor aftermarket high-performance dirancang dengan filter yang dapat dilepas untuk memudahkan pembersihan, namun untuk sepeda motor standar, desain filter permanen dipilih karena lebih andal dan lebih kecil kemungkinan pemasangan yang salah saat perawatan. Menjaga filter bahan bakar utama dalam kondisi baik adalah cara terbaik untuk memperpanjang usia filter injektor.",
+          "imageUrl": null,
+          "caption": "Dudukan filter dan retensi"
+        }
+      }
+    }
+  }
+}

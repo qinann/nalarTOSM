@@ -1,0 +1,25 @@
+{
+  "imageUrl": "/assets/images/praktekKerja.jpg",
+  "steps": [
+    {
+      "title": "Persiapan & K3",
+      "desc": "Pastikan mesin dalam keadaan mati dan sudah dingin sempurna (minimal 30 menit setelah dimatikan) sebelum melakukan pemeriksaan — sirip pendingin dan kepala silinder dapat mencapai suhu berbahaya saat mesin baru dimatikan. Siapkan peralatan: kuas nilon halus, kuas logam kuningan (brass wire brush), kompresor udara dengan nozzle kecil, obeng (+) dan (–), senter, cermin inspeksi kecil, dan formulir lembar pemeriksaan. Kenakan APD: sarung tangan, kacamata pelindung, dan masker debu. Tempatkan kendaraan di area berventilasi baik dan teralis dari lalu lintas."
+    },
+    {
+      "title": "Pemeriksaan Visual Sirip Pendingin Blok & Kepala Silinder",
+      "desc": "Mulai dari blok silinder, periksa setiap sirip secara sistematis dari atas ke bawah dan dari kiri ke kanan. Catat jumlah sirip yang bengkok, patah, atau tersumbat kotoran. Gunakan senter dan cermin inspeksi untuk memeriksa sirip di sisi yang tidak terlihat langsung. Pindah ke kepala silinder — perhatikan khusus area di sekitar port exhaust (titik terpanas) dan area sekitar dudukan busi. Catat perubahan warna logam yang mencurigakan (kehitaman berlebih, atau perubahan warna biru yang mengindikasikan episode overheat). Foto kondisi sirip sebagai dokumentasi awal sebelum pembersihan."
+    },
+    {
+      "title": "Pembersihan Sirip Pendingin dan Saluran Udara",
+      "desc": "Gunakan kuas lembut untuk menyapu kotoran kering dari permukaan sirip dan celah antar sirip. Untuk kotoran yang menempel keras, semprotkan air bersih atau degreaser yang aman untuk aluminium, diamkan 2–3 menit, lalu sikat perlahan dengan kuas kuningan yang digerakkan searah sirip (jangan menyikat melintang yang dapat membengkokkan sirip). Gunakan semprotan udara bertekanan rendah (maksimal 2 bar) untuk mengeluarkan kotoran dari celah yang dalam — arahkan nozzle searah alur antar sirip. Bersihkan lubang sirkulasi udara pada cover dengan kuas lembut. Lap kering seluruh area sirip yang telah dibersihkan."
+    },
+    {
+      "title": "Identifikasi Aliran Udara Sistem Forced Air Cooling",
+      "desc": "Pada sepeda motor matik dengan sistem forced air cooling, lakukan identifikasi jalur aliran udara: (1) Tentukan posisi inlet udara pada housing kipas; (2) Ikuti jalur saluran udara (air shroud) dari housing kipas ke area sirip pendingin; (3) Tentukan posisi outlet udara panas keluar dari sistem. Hidupkan mesin pada putaran idle, gunakan potongan kertas tipis atau benang untuk memverifikasi aliran udara pada inlet housing kipas (kertas/benang harus tertarik ke arah inlet). Rasakan (hati-hati, jangan menyentuh bagian berputar atau panas) aliran udara hangat yang keluar dari outlet shroud. Periksa integritas cover dan shroud — cari celah yang mengeluarkan aliran udara yang seharusnya tidak ada."
+    },
+    {
+      "title": "Diagnosis Overheat & Dokumentasi Hasil",
+      "desc": "Analisis kondisi yang ditemukan untuk mengidentifikasi potensi penyebab overheat: (1) Sirip tersumbat kotoran tebal → efisiensi pendinginan turun; (2) Cover engine retak atau tidak terpasang → udara kipas bocor; (3) Blade kipas patah/bengkok → volume udara berkurang dan ketidakseimbangan; (4) Saluran udara (shroud) tersumbat atau bocor → aliran udara tidak mencapai sirip; (5) Penggunaan oli yang salah spesifikasi → kelebihan panas internal. Dokumentasikan semua temuan dalam formulir pemeriksaan, lengkap dengan foto kondisi sebelum dan setelah pembersihan. Buat rekomendasi tindakan perbaikan untuk setiap temuan. Tes akhir: jalankan mesin dan verifikasi tidak ada gejala overheat dalam kondisi idle selama 10 menit."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Injektor & Pola Semprotan Bahan Bakar",
+  "level": "menengah",
+  "desc": "Modul ini membahas injektor EFI dan sistem penyemprotan bahan bakar pada sepeda motor injeksi secara menyeluruh. Peserta didik mempelajari konstruksi internal injektor (koil solenoid, jarum katup, nozzle), cara kerja kontrol ECU berbasis pulsewidth, fungsi fuel rail sebagai distribusi bahan bakar bertekanan, peran O-ring dalam mencegah kebocoran, serta karakteristik pola semprotan yang menentukan kualitas atomisasi. Kompetensi mencakup pengukuran hambatan koil solenoid, inspeksi O-ring dan filter strainer, serta analisis pola semprotan untuk diagnosis kondisi injektor.",
+  "kd": "Peserta mampu mengidentifikasi sub-komponen injektor EFI, menjelaskan cara kerja solenoid berdasarkan sinyal ECU, memeriksa kondisi injektor menggunakan multimeter dan inspeksi visual, serta menganalisis pola semprotan sesuai prosedur standar pabrikan.",
+  "sistemDesc": "Injektor EFI bekerja sebagai katup elektromagnetik yang dikontrol ECU: arus listrik dari ECU mengaktifkan koil solenoid, menarik inti besi dan jarum katup ke atas, membuka nozzle sehingga bahan bakar bertekanan dari fuel rail (250-300 kPa) tersemprot dan teratomisasi masuk ke intake port. Lama buka (pulsewidth) menentukan dosis bahan bakar. Pegas pengembali menutup jarum katup saat arus diputus. O-ring atas dan bawah mencegah kebocoran ke fuel rail dan intake manifold. Filter strainer di inlet injektor menjadi penyaring terakhir sebelum bahan bakar masuk ke nozzle yang presisi.",
+  "components": [
+    "Injektor",
+    "Fuel Rail",
+    "O-ring",
+    "Filter Injektor"
+  ]
+}

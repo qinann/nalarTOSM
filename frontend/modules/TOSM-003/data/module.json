@@ -1,0 +1,8 @@
+{
+  "id": "TOSM-003",
+  "title": "Sistem Bahan Bakar Karburator",
+  "level": "dasar",
+  "desc": "Modul ini mengupas sistem bahan bakar tipe karburator secara menyeluruh — mulai dari tangki, keran bensin, filter, karburator dengan seluruh komponen internalnya, hingga intake manifold — beserta prosedur bongkar, bersih, setel, dan diagnosis gangguan.",
+  "kd": "Peserta mampu mengidentifikasi, menjelaskan fungsi komponen sistem bahan bakar karburator, melakukan pembongkaran, pembersihan, penyetelan, dan pemasangan karburator sesuai SOP dan spesifikasi pabrikan.",
+  "components": ["Tangki", "Keran Bensin", "Filter Bensin", "Karburator", "Intake Manifold"]
+}

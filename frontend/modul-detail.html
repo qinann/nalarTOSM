@@ -278,6 +278,7 @@
       text-transform: uppercase; letter-spacing: .8px; margin-bottom: 10px;
     }
     .right-section p { font-size: 13px; color: var(--muted); line-height: 1.7; }
+    .right-section p + p { margin-top: 8px; }
     .info-row {
       display: flex; justify-content: space-between; align-items: center;
       padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,.05); font-size: 12px;
@@ -462,7 +463,7 @@
     }
   } catch (err) {
     console.error(err);
-    app.innerHTML = `<p style="padding:40px;color:var(--muted)">Modul tidak ditemukan: ${id}</p>`;
+    app.innerHTML = `<p style="padding:40px;color:var(--muted)">Modul tidak ditemukan: ${id}<br><small style="color:red;font-size:11px">${err?.message || err}</small></p>`;
   }
   </script>
 </body>

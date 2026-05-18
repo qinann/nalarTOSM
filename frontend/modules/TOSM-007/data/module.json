@@ -1,0 +1,18 @@
+{
+  "id": "TOSM-007",
+  "title": "Sistem Pendinginan Cairan",
+  "level": "menengah",
+  "desc": "Mempelajari sistem pendinginan cairan sepeda motor — radiator, pompa air, thermostat, water jacket, selang, tutup radiator, reservoir, dan coolant — beserta prinsip sirkulasi dan prosedur perawatannya.",
+  "kd": "Peserta mampu mengidentifikasi komponen sistem pendinginan cairan, menjelaskan prinsip sirkulasi coolant, melakukan perawatan (ganti coolant, cek thermostat), serta mendiagnosis penyebab overheat.",
+  "components": [
+    "Radiator",
+    "Kipas Radiator",
+    "Pompa Air (Water Pump)",
+    "Thermostat",
+    "Water Jacket",
+    "Selang Radiator",
+    "Tutup Radiator (Radiator Cap)",
+    "Reservoir Tank",
+    "Coolant"
+  ]
+}

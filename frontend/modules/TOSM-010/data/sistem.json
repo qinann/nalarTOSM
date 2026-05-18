@@ -1,0 +1,258 @@
+{
+  "imageUrl": null,
+  "caption": "Sistem Pengapian Elektronik (CDI/TCI)",
+  "componentDetails": {
+    "Pulser (Pickup Coil)": {
+      "fungsi": "Pulser atau pickup coil adalah sensor elektromagnetik yang bertugas mendeteksi posisi dan kecepatan rotasi crankshaft, kemudian menghasilkan sinyal tegangan AC yang dikirim ke TCI unit sebagai acuan timing pengapian. Sinyal pulser adalah referensi utama sistem pengapian — tanpa sinyal ini, TCI tidak tahu kapan harus memicu pengapian dan mesin tidak dapat dihidupkan.\n\nPulser bekerja berdasarkan prinsip induksi elektromagnetik: saat tonjolan ferromagnetik pada magnet rotor melewati celah udara di depan inti besi pulser, fluks magnetik berubah secara dramatis dan menginduksi tegangan AC pada kumparan. Pola tegangan inilah yang diinterpretasikan TCI unit untuk menentukan posisi TDC dan RPM mesin.\n\nPemeriksaan pulser meliputi pengukuran hambatan kumparan (biasanya 100–300 Ω), pengukuran celah udara antara pulser dan tonjolan rotor (0,3–0,5 mm), dan pemeriksaan tegangan output AC saat crankshaft diputar. Pulser yang rusak menyebabkan tidak ada pengapian sama sekali atau pengapian tidak konsisten.",
+      "imageUrl": null,
+      "caption": "Pulser / pickup coil sistem pengapian",
+      "subComponents": [
+        "Kumparan Pulser",
+        "Inti Besi Permanen",
+        "Soket 2-Pin",
+        "Bracket Pulser",
+        "Kabel Pulser"
+      ],
+      "subComponentDetails": {
+        "Kumparan Pulser": {
+          "fungsi": "Kumparan pulser adalah lilitan kawat tembaga yang melilit di sekitar inti besi permanen dan menjadi sumber pembangkit sinyal tegangan AC. Ketika tonjolan ferromagnetik pada magnet rotor (reluctor tooth) berputar melewati celah udara sempit di depan inti besi kumparan, fluks magnetik berubah secara dramatis — meningkat saat tonjolan mendekat dan menurun saat tonjolan menjauh.\n\nPerubahan fluks magnetik yang cepat ini menginduksi tegangan AC pada kumparan mengikuti hukum Faraday. Tegangan yang dihasilkan berbentuk pulsa sinusoidal — naik positif saat tonjolan mendekat, turun negatif saat menjauh — dengan amplitudo yang meningkat seiring putaran mesin karena laju perubahan fluks yang lebih cepat.\n\nFrekuensi pulsa sinyal kumparan berbanding lurus dengan RPM mesin, sehingga TCI unit tidak hanya menggunakan sinyal ini untuk memicu pengapian, tetapi juga dapat menghitung kecepatan putaran mesin secara real-time. Kumparan pulser yang putus atau hubung singkat akan menyebabkan tidak ada sinyal sama sekali dan mesin tidak dapat dihidupkan.",
+          "imageUrl": null,
+          "caption": "Kumparan pulser penghasil sinyal tegangan AC"
+        },
+        "Inti Besi Permanen": {
+          "fungsi": "Inti besi permanen adalah batang magnet kuat yang berada di tengah lilitan kumparan dan menjadi sumber medan magnet statik untuk memulai kerja sensor. Tanpa magnet permanen, tidak ada fluks magnetik yang dapat berubah ketika tonjolan rotor melewati, dan tidak akan ada sinyal yang diinduksi ke kumparan.\n\nMagnet permanen pada pulser biasanya berbahan ferit atau alnico yang memiliki sifat magnetis kuat dan tahan terhadap panas tinggi di sekitar mesin. Jika magnet kehilangan kekuatannya (demagnetisasi) akibat panas atau benturan mekanis, amplitudo sinyal yang dihasilkan berkurang dan TCI unit mungkin tidak dapat mendeteksi sinyal dengan andal pada putaran rendah.\n\nOrientasi magnet — kutub mana yang menghadap ke rotor — menentukan polaritas sinyal yang dihasilkan. Jika pulser dipasang terbalik setelah perbaikan, sinyal yang diterima TCI unit akan terbalik fasenya, dan timing pengapian yang terkalibrasi untuk polaritas tertentu akan menjadi salah, menyebabkan mesin beroperasi dengan timing tidak optimal atau tidak mau hidup sama sekali.",
+          "imageUrl": null,
+          "caption": "Inti besi permanen sumber medan magnet statik pulser"
+        },
+        "Soket 2-Pin": {
+          "fungsi": "Soket 2-pin adalah konektor yang menghubungkan output sinyal kumparan pulser ke input TCI unit. Dua pin tersebut mewakili kedua ujung kumparan — sinyal AC positif dan negatif. Soket biasanya dirancang anti-salah pasang (polarized) agar tidak dapat dihubungkan terbalik.\n\nKonektor yang longgar atau terkorosi menyebabkan hambatan kontak meningkat, melemahkan amplitudo sinyal pulser yang sampai ke TCI. Pada RPM rendah di mana sinyal pulser sudah kecil, kontak yang buruk dapat menyebabkan TCI gagal mendeteksi sinyal dan mesin mati mendadak.\n\nPeriksa kondisi soket secara berkala: pastikan kait pengunci masih berfungsi, pin tidak terkorosi, dan tidak ada kabel yang putus di dekat konektor. Semprotkan electrical contact cleaner jika terlihat korosi pada pin, dan keringkan sebelum disambungkan kembali.",
+          "imageUrl": null,
+          "caption": "Soket 2-pin penghubung pulser ke TCI unit"
+        },
+        "Bracket Pulser": {
+          "fungsi": "Bracket adalah dudukan logam yang mengunci posisi pulser relatif terhadap magnet rotor dengan presisi tinggi. Celah udara antara ujung inti besi pulser dan permukaan tonjolan rotor sangat kritis — celah spesifikasi biasanya 0,3–0,5 mm. Celah terlalu besar mengurangi amplitudo sinyal; celah terlalu kecil berisiko gesekan mekanis antara pulser dan rotor saat mesin panas dan komponen mengembang.\n\nBaut pemasangan bracket harus dikencangkan dengan torsi yang tepat dan diberi thread locker untuk mencegah kendur akibat getaran. Bracket yang longgar menyebabkan celah udara pulser berubah-ubah seiring getaran mesin — sinyal pulser tidak konsisten, timing pengapian tidak stabil.\n\nSaat memasang pulser setelah perbaikan, selalu ukur celah udara menggunakan feeler gauge dan sesuaikan posisi bracket hingga celah masuk dalam spesifikasi. Jangan mengandalkan perkiraan visual — perbedaan 0,1 mm saja dapat mempengaruhi kualitas sinyal secara signifikan.",
+          "imageUrl": null,
+          "caption": "Bracket dudukan pulser penentu celah udara presisi"
+        },
+        "Kabel Pulser": {
+          "fungsi": "Kabel pulser adalah kabel sinyal yang membawa output tegangan AC dari kumparan pulser ke input TCI unit. Kabel ini harus dijauhkan dari kabel tegangan tinggi koil pengapian dan kabel busi karena interferensi elektromagnetik (EMI) dari kabel tegangan tinggi dapat menghasilkan sinyal palsu di kumparan pulser yang sensitif.\n\nItulah mengapa kabel pulser biasanya dilindungi dengan shielding (lapisan anyaman logam) dan diikat terpisah dari kabel sistem pengapian lainnya. Shielding harus terhubung ke massa di satu titik (biasanya di sisi TCI unit) untuk mengalirkan interferensi ke ground tanpa membentuk ground loop.\n\nKabel yang tertekuk tajam, terjepit, atau tergesek komponen bergerak (rantai, pulley) lama-kelamaan akan putus di dalamnya meski insulasi luar masih tampak utuh. Lakukan pemeriksaan visual sepanjang jalur kabel dan gerak-gerakkan kabel saat mesin menyala — jika mesin berubah idle atau mati, ada putus dalam (open circuit intermittent) di titik yang digerakkan.",
+          "imageUrl": null,
+          "caption": "Kabel pulser terlindung shielding dari interferensi elektromagnetik"
+        }
+      }
+    },
+    "Magnet Rotor": {
+      "fungsi": "Magnet rotor adalah komponen berputar yang terpasang di ujung crankshaft dan berfungsi ganda: sebagai rotor alternator yang membangkitkan listrik untuk pengisian baterai dan beban kelistrikan, serta sebagai pembawa tonjolan pulser (reluctor tooth) yang berinteraksi dengan pickup coil untuk menghasilkan sinyal timing pengapian.\n\nKarena terpasang langsung di crankshaft, magnet rotor selalu berputar sinkron dengan mesin. Posisi angular tonjolan pulser pada rotor menentukan timing dasar pengapian — sudut sebelum TDC di mana sinyal dikirim ke TCI. Kesalahan posisi rotor (pasak/key yang geser atau hilang) langsung mengakibatkan timing pengapian yang salah.\n\nMagnet rotor juga berfungsi sebagai flywheel, menstabilkan putaran crankshaft dengan inersia rotasinya. Ring gear starter di tepi rotor menjadi tempat engagement pinion starter saat menghidupkan mesin. Pemeriksaan rotor meliputi kondisi magnet, kekencangan baut crankshaft, dan kondisi ring gear starter.",
+      "imageUrl": null,
+      "caption": "Magnet rotor pembangkit sinyal dan listrik",
+      "subComponents": [
+        "Magnet Permanen",
+        "Tonjolan Pulser (Reluctor Tooth)",
+        "Key/Pasak",
+        "Baut Crankshaft",
+        "Balancer (Flywheel)",
+        "Ring Gear Starter"
+      ],
+      "subComponentDetails": {
+        "Magnet Permanen": {
+          "fungsi": "Magnet permanen pada rotor adalah susunan magnet kuat yang menghasilkan medan magnet untuk membangkitkan listrik di kumparan stator alternator (pengisian baterai). Medan magnet yang dihasilkan berputar melewati kumparan stator yang diam, menginduksi tegangan AC yang kemudian disearahkan oleh regulator/rectifier menjadi tegangan DC untuk mengisi baterai dan menyuplai beban kelistrikan.\n\nMaterial magnet permanen pada rotor modern umumnya adalah ferrite atau neodymium yang memiliki kekuatan magnetis tinggi dan stabil. Magnet yang demagnetisasi (kehilangan kekuatan) akibat panas berlebih atau benturan akan mengurangi output alternator secara permanen.\n\nMagnet permanen tidak dapat diperbaiki jika sudah terdemagnetisasi — rotor harus diganti. Pastikan tidak mendekatkan alat magnetis kuat ke rotor saat pengerjaan di bengkel.",
+          "imageUrl": null,
+          "caption": "Magnet permanen rotor sumber medan magnet alternator"
+        },
+        "Tonjolan Pulser (Reluctor Tooth)": {
+          "fungsi": "Tonjolan pulser atau reluctor tooth adalah bagian yang menonjol dari permukaan rotor berbahan ferromagnetik yang memodulasi fluks magnetik di depan kumparan pulser setiap kali rotor berputar. Setiap kali tonjolan melewati pickup coil, terjadi perubahan fluks yang menginduksi pulsa tegangan sebagai sinyal timing pengapian.\n\nPosisi angular tonjolan terhadap TDC (Top Dead Center) piston menentukan timing dasar pengapian. Pada sebagian besar motor, tonjolan berada pada posisi 10-25 derajat sebelum TDC. TCI unit kemudian menyesuaikan timing ini berdasarkan RPM menggunakan advance curve yang terprogram.\n\nTonjolan yang aus, retak, atau patah menyebabkan sinyal pulser lemah atau tidak ada sama sekali. Kerusakan ini biasanya terjadi akibat gesekan mekanis karena celah udara terlalu kecil atau korosi. Periksa kondisi tonjolan secara visual saat cover generator dibuka.",
+          "imageUrl": null,
+          "caption": "Tonjolan pulser (reluctor tooth) pemicu sinyal timing pengapian"
+        },
+        "Key/Pasak": {
+          "fungsi": "Key atau pasak (Woodruff key) adalah sepotong logam kecil berbentuk setengah bulan yang masuk ke alur (keyway) pada crankshaft dan alur yang sesuai di dalam hub rotor, mengunci posisi angular rotor terhadap crankshaft dengan presisi. Komponen ini sangat kritis karena menentukan fase timing pengapian.\n\nPasak yang aus atau patah menyebabkan rotor dapat berputar sedikit relatif terhadap crankshaft sehingga timing pengapian menjadi tidak stabil dan berubah-ubah secara acak seiring beban dan getaran. Gejala ini sangat sulit didiagnosis tanpa membuka cover generator.\n\nSaat memasang rotor baru atau setelah overhaul, pastikan pasak terpasang dengan benar di alurnya sebelum mendorong rotor ke crankshaft. Pasak yang tidak terpasang sempurna dapat mengganjal rotor di posisi yang salah atau rusak saat baut dikencangkan.",
+          "imageUrl": null,
+          "caption": "Key/pasak pengunci posisi angular rotor terhadap crankshaft"
+        },
+        "Baut Crankshaft": {
+          "fungsi": "Baut crankshaft adalah baut besar yang mengikat rotor ke ujung crankshaft dan harus dikencangkan dengan torsi yang tepat sesuai spesifikasi pabrikan (biasanya 50-80 Nm). Baut ini menahan seluruh gaya sentrifugal rotor yang berputar pada RPM tinggi.\n\nBaut yang kendor menyebabkan rotor bergerak aksial dan angular pada crankshaft sehingga timing pengapian berubah-ubah secara acak dan suara ketukan terdengar dari area cover generator. Proses pelepasan baut crankshaft memerlukan penahan rotor (rotor holder tool) agar crankshaft tidak ikut berputar.\n\nSetelah baut dilepas, pelepasan rotor dari taper crankshaft memerlukan puller khusus. Jangan memukul rotor karena dapat merusak bearing crankshaft atau menggores permukaan taper yang presisi.",
+          "imageUrl": null,
+          "caption": "Baut crankshaft pengikat rotor dengan torsi spesifik"
+        },
+        "Balancer (Flywheel)": {
+          "fungsi": "Balancer atau flywheel mass adalah massa rotor itu sendiri yang berfungsi sebagai roda gila untuk menstabilkan putaran crankshaft. Inersia rotasi rotor menyimpan energi kinetik antara siklus pembakaran, menghaluskan getaran torsi dan membuat mesin berjalan lebih halus terutama di putaran rendah dan idle.\n\nMassa rotor yang lebih besar menghasilkan putaran mesin yang lebih halus namun respons akselerasi lebih lambat. Sebaliknya, rotor lebih ringan membuat mesin lebih responsif namun idle terasa kasar. Pabrikan menyeimbangkan kedua aspek ini dalam desain rotor.\n\nRotor yang retak akibat benturan atau material fatigue harus segera diganti meskipun retakan terlihat kecil. Rotor yang pecah saat mesin berputar dapat merusak seluruh cover generator dan blok mesin secara katastrofik.",
+          "imageUrl": null,
+          "caption": "Balancer flywheel menstabilkan putaran crankshaft"
+        },
+        "Ring Gear Starter": {
+          "fungsi": "Ring gear starter adalah cincin bergigi yang terpasang di tepi luar rotor dan menjadi tempat pinion gear starter motor berengagement untuk menghidupkan mesin. Saat tombol starter ditekan, motor starter mendorong pinion untuk mesh dengan ring gear dan memutar crankshaft hingga mesin hidup sendiri.\n\nGigi ring gear terbuat dari baja keras yang dikeraskan permukaan untuk menahan aus akibat kontak berulang dengan pinion starter. Gigi tetap dapat aus atau patah terutama jika kebiasaan menghidupkan mesin dengan kasar sehingga pinion tidak engage penuh sebelum memutar.\n\nGigi ring gear yang aus atau patah menyebabkan starter tidak dapat menghidupkan mesin karena pinion selip atau tidak dapat engage. Ciri khasnya adalah suara grinding atau starter berputar tapi mesin tidak engkol. Pemeriksaan dilakukan dengan membuka cover generator dan memeriksa kondisi setiap gigi secara visual.",
+          "imageUrl": null,
+          "caption": "Ring gear starter tempat engagement pinion motor starter"
+        }
+      }
+    },
+    "TCI Unit": {
+      "fungsi": "TCI (Transistor Controlled Ignition) unit adalah modul kontrol elektronik yang memproses sinyal dari pulser dan mengendalikan timing serta energi pengapian secara presisi. TCI menerima sinyal tegangan AC dari pulser, menginterpretasikan waktunya, lalu memutus arus primer koil pengapian pada saat yang tepat untuk menghasilkan percikan busi.\n\nKeunggulan sistem TCI dibanding sistem konvensional (platina) adalah tidak ada komponen yang bergerak atau bergesekan dalam sirkuit kontrol timing, sehingga tidak ada keausan dan timing tidak berubah seiring waktu. TCI juga dapat mengimplementasikan advance curve (kurva maju timing pengapian seiring naiknya RPM) secara elektronik tanpa mekanisme sentrifugal.\n\nTCI unit yang rusak menyebabkan tidak ada pengapian sama sekali, pengapian lemah, atau timing yang tidak stabil. TCI umumnya tidak dapat diperbaiki — harus diganti sebagai unit penuh karena sirkuitnya tertanam dalam potting compound.",
+      "imageUrl": null,
+      "caption": "TCI unit kontrol pengapian elektronik",
+      "subComponents": [
+        "IC Kontrol",
+        "Transistor Daya",
+        "Dioda",
+        "Kapasitor",
+        "Casing"
+      ],
+      "subComponentDetails": {
+        "IC Kontrol": {
+          "fungsi": "IC kontrol (Integrated Circuit) adalah otak TCI unit — chip semikonduktor yang memproses sinyal tegangan AC dari pulser, menginterpretasikan timing-nya, dan menghasilkan sinyal trigger ke transistor daya setelah menerapkan koreksi advance curve. IC ini juga memiliki advance table yang terprogram: semakin tinggi RPM, semakin awal timing pengapian dilakukan.",
+          "imageUrl": null,
+          "caption": "IC kontrol pemroses sinyal dan pengatur advance curve"
+        },
+        "Transistor Daya": {
+          "fungsi": "Transistor daya (biasanya IGBT atau power MOSFET) adalah saklar elektronik yang mengontrol arus primer koil pengapian. Ketika IC memberi sinyal ON, transistor mengalirkan arus besar (1–8 A) melalui kumparan primer koil, membangun medan magnet. Ketika IC memberi sinyal OFF, transistor memutus arus secara tiba-tiba, menyebabkan medan magnet runtuh dan menginduksi tegangan tinggi di kumparan sekunder.\n\nTransistor daya menghasilkan panas yang signifikan saat mengontrol arus besar ini dan memerlukan heatsink untuk pendinginan. TCI unit yang terlalu panas dapat mengalami thermal shutdown atau kerusakan permanen jika heatsink kotor, terhalang, atau kontak termal ke casing buruk.",
+          "imageUrl": null,
+          "caption": "Transistor daya saklar arus primer koil pengapian"
+        },
+        "Dioda": {
+          "fungsi": "Dioda dalam TCI unit berfungsi sebagai pelindung dari tegangan balik (flyback voltage) yang terjadi setiap kali transistor memutus arus primer koil — tegangan spike yang tanpa dioda dapat merusak transistor. Dioda zener juga digunakan sebagai pembatas tegangan untuk melindungi IC kontrol dari fluktuasi tegangan baterai.",
+          "imageUrl": null,
+          "caption": "Dioda pelindung tegangan balik dan pembatas tegangan"
+        },
+        "Kapasitor": {
+          "fungsi": "Kapasitor berfungsi sebagai filter dan penyimpan energi sementara dalam sirkuit TCI. Kapasitor filter menghaluskan riak tegangan dari alternator sebelum masuk ke sirkuit sensitif, sementara kapasitor coupling memisahkan komponen DC dan AC dari sinyal pulser. Kapasitor yang bocor atau mengering (kapasitor elektrolitik yang berumur) dapat menyebabkan TCI unit bekerja tidak stabil.",
+          "imageUrl": null,
+          "caption": "Kapasitor filter dan penyimpan energi sirkuit TCI"
+        },
+        "Casing": {
+          "fungsi": "Casing TCI unit biasanya terbuat dari aluminium die-cast atau plastik ABS yang tahan panas, berfungsi sebagai heatsink sekaligus pelindung mekanis terhadap getaran dan kelembapan. TCI unit umumnya di-seal (potting compound) dengan resin epoksi untuk perlindungan terhadap air dan kelembapan — ini juga yang membuat TCI unit tidak dapat diperbaiki komponen per komponen dan harus diganti sebagai unit penuh jika rusak.",
+          "imageUrl": null,
+          "caption": "Casing TCI unit sebagai heatsink dan pelindung mekanis"
+        }
+      }
+    },
+    "Koil Pengapian": {
+      "fungsi": "Koil pengapian adalah transformator tegangan tinggi yang mengubah tegangan baterai 12 V menjadi tegangan sangat tinggi (10.000–25.000 V) yang diperlukan untuk membuat percikan melewati celah busi. Koil bekerja berdasarkan prinsip induksi elektromagnetik — ketika arus primer diputus mendadak oleh transistor TCI, perubahan fluks magnetik yang cepat menginduksi tegangan sangat tinggi di kumparan sekunder yang memiliki jauh lebih banyak lilitan.\n\nEnergi pengapian yang dihasilkan koil sangat menentukan kualitas percikan busi. Koil yang sudah lemah menghasilkan tegangan sekunder yang tidak cukup tinggi untuk menerobos resistansi celah busi terutama saat mesin dalam kondisi kompresi tinggi atau beban berat. Hasilnya adalah misfire yang terasa sebagai kehilangan tenaga mendadak.\n\nPemeriksaan koil meliputi pengukuran hambatan kumparan primer (0,5–3 Ω) dan sekunder (10.000–15.000 Ω), serta pemeriksaan isolasi kabel koil terhadap ground.",
+      "imageUrl": null,
+      "caption": "Koil pengapian transformator tegangan tinggi",
+      "subComponents": [
+        "Kumparan Primer",
+        "Terminal Koil",
+        "Kumparan Sekunder",
+        "Inti Laminasi"
+      ],
+      "subComponentDetails": {
+        "Kumparan Primer": {
+          "fungsi": "Kumparan primer adalah lilitan kawat tembaga tebal (diameter lebih besar, jumlah lilitan sedikit, biasanya 100–300 lilitan) yang dihubungkan ke sirkuit arus rendah kendaraan — satu terminal ke positif baterai melalui kunci kontak, terminal lainnya ke transistor daya di TCI unit. Arus primer yang mengalir besarnya 1–8 A.\n\nKetika transistor TCI memutus arus primer secara tiba-tiba, energi yang tersimpan dalam medan magnet (induktansi) kumparan primer terpaksa mencari jalan keluar. Energi ini dipindahkan ke kumparan sekunder melalui induksi mutual, dengan rasio tegangan sesuai rasio jumlah lilitan. Hambatan normal kumparan primer adalah 0,5–3 Ω.",
+          "imageUrl": null,
+          "caption": "Kumparan primer lilitan tebal sisi tegangan rendah koil"
+        },
+        "Terminal Koil": {
+          "fungsi": "Terminal primer koil (biasanya dilabeli (+) dan (-) atau (B) dan (C)) adalah titik pengukuran pertama saat mendiagnosis sistem pengapian. Mengukur hambatan terminal primer membantu mengidentifikasi apakah kumparan putus atau short. Tegangan di terminal positif primer seharusnya sama dengan tegangan baterai saat kunci kontak ON.",
+          "imageUrl": null,
+          "caption": "Terminal koil titik pengukuran dan diagnosis sistem pengapian"
+        },
+        "Kumparan Sekunder": {
+          "fungsi": "Kumparan sekunder adalah lilitan kawat tembaga sangat tipis dengan jumlah lilitan sangat banyak (sekitar 10.000–15.000 lilitan) yang menghasilkan tegangan tinggi melalui induksi dari kumparan primer. Rasio lilitan sekunder terhadap primer yang sangat besar (50:1 hingga 100:1) menghasilkan step-up tegangan yang proporsional — dari 12–14 V primer menjadi 10.000–25.000 V sekunder.\n\nSalah satu ujung kumparan sekunder terhubung ke terminal tegangan tinggi (colokan kabel busi), ujung lainnya terhubung ke massa mesin (ground). Tegangan tinggi ini mengalir melalui kabel busi ke elektroda tengah busi dan melompati celah menuju elektroda massa — inilah percikan api yang membakar campuran di ruang bakar.",
+          "imageUrl": null,
+          "caption": "Kumparan sekunder penghasil tegangan tinggi 10.000–25.000 V"
+        },
+        "Inti Laminasi": {
+          "fungsi": "Inti besi laminasi (laminated iron core) adalah inti berupa tumpukan lembaran besi tipis yang dilapisi isolator di antaranya, memperkuat medan magnet sekaligus mengurangi kerugian arus Eddy (eddy current losses). Inti laminasi jauh lebih efisien dibandingkan inti solid dalam aplikasi frekuensi tinggi seperti koil pengapian yang bekerja pada frekuensi ratusan Hz.",
+          "imageUrl": null,
+          "caption": "Inti besi laminasi penguat medan magnet dan pengurang arus Eddy"
+        }
+      }
+    },
+    "Kabel Busi": {
+      "fungsi": "Kabel busi (spark plug wire / ignition lead) adalah kabel berinsulasi tebal yang menghantarkan tegangan tinggi dari terminal sekunder koil pengapian ke terminal busi. Tegangan yang dialirkan mencapai 10.000–25.000 V, jauh melebihi tegangan listrik rumah tangga, sehingga insulasi kabel harus sangat handal untuk mencegah kebocoran arus (arcing) ke komponen lain.\n\nSelain menghantarkan tegangan tinggi, kabel busi modern juga berfungsi meredam interferensi elektromagnetik (EMI) yang dihasilkan saat percikan busi terjadi. Tanpa resistor peredam EMI, gangguan frekuensi tinggi yang dihasilkan percikan dapat mengganggu sistem EFI, sensor, GPS, dan radio kendaraan.\n\nKabel busi yang sudah tua, retak, atau bocor menyebabkan sebagian energi pengapian terbuang sebelum mencapai busi, melemahkan percikan terutama dalam kondisi basah atau lembap. Ganti kabel busi setiap 20.000–40.000 km atau sesuai interval pabrikan.",
+      "imageUrl": null,
+      "caption": "Kabel busi penghantar tegangan tinggi",
+      "subComponents": [
+        "Konduktor",
+        "Isolator",
+        "Resistor",
+        "Cap (Boot)",
+        "Terminal"
+      ],
+      "subComponentDetails": {
+        "Konduktor": {
+          "fungsi": "Konduktor kabel busi adalah inti kabel yang menghantarkan tegangan tinggi dari terminal sekunder koil pengapian ke elektroda busi. Berbeda dengan kabel listrik biasa, konduktor kabel busi tidak harus berupa kawat tembaga — banyak kabel busi modern menggunakan konduktor resistif berupa serat karbon atau kumparan kawat resistif untuk meredam emisi elektromagnetik yang dapat mengganggu sistem elektronik kendaraan.",
+          "imageUrl": null,
+          "caption": "Konduktor kabel busi penghantar tegangan tinggi ke busi"
+        },
+        "Isolator": {
+          "fungsi": "Isolator adalah selubung tebal di luar konduktor yang harus mampu menahan tegangan 20.000–30.000 V tanpa bocor (arcing). Material isolator biasanya silikon atau EPDM (Ethylene Propylene Diene Monomer) yang tahan panas tinggi hingga 250°C, tahan minyak, dan fleksibel agar tidak retak saat dilekukkan. Kabel busi standar karet yang lebih murah kurang tahan panas dan dapat mengeras dan retak lebih cepat.\n\nKebocoran tegangan (tracking) di isolator kabel yang sudah tua, retak, atau kotor menyebabkan sebagian energi pengapian terbuang ke massa mesin sebelum mencapai busi — hasilnya percikan busi lemah dan mesin terasa kehilangan tenaga terutama saat kondisi basah atau lembap.",
+          "imageUrl": null,
+          "caption": "Isolator kabel busi penahan tegangan 20.000–30.000 V"
+        },
+        "Resistor": {
+          "fungsi": "Resistor dalam kabel busi (biasanya 5.000–10.000 Ω atau 5–10 kΩ) berfungsi meredam laju naik-turun tegangan (dV/dt) yang sangat cepat saat percikan terjadi, mengurangi emisi elektromagnetik frekuensi tinggi yang dapat mengganggu sistem EFI, sensor-sensor, unit GPS, dan radio kendaraan. Beberapa motor menggunakan resistor di dalam cap busi (bukan di kabel) atau di kedua tempat.",
+          "imageUrl": null,
+          "caption": "Resistor peredam emisi elektromagnetik frekuensi tinggi"
+        },
+        "Cap (Boot)": {
+          "fungsi": "Cap atau boot adalah ujung karet berbentuk silinder yang menghubungkan kabel busi ke terminal koil di satu ujung, dan ke busi di ujung lainnya. Cap harus menutup rapat untuk mencegah arcing tegangan tinggi ke luar dan melindungi koneksi dari kelembapan. Cap yang sobek, longgar, atau retak mudah menyebabkan kebocoran tegangan terutama saat hujan.",
+          "imageUrl": null,
+          "caption": "Cap/boot konektor penutup sambungan ke koil dan busi"
+        },
+        "Terminal": {
+          "fungsi": "Terminal di dalam cap adalah kontak logam yang menghubungkan secara elektris antara konduktor kabel dan terminal koil atau terminal busi. Terminal yang berkarat atau longgar meningkatkan hambatan kontak dan dapat menyebabkan drop tegangan yang berarti, melemahkan percikan busi. Kencangkan cap dengan klik yang terasa saat terpasang pada koil maupun busi untuk memastikan kontak yang baik.",
+          "imageUrl": null,
+          "caption": "Terminal kontak logam penghubung konduktor ke koil atau busi"
+        }
+      }
+    },
+    "Busi": {
+      "fungsi": "Busi (spark plug) adalah komponen terakhir dalam sistem pengapian yang bertugas mengubah energi listrik tegangan tinggi menjadi percikan api di dalam ruang bakar. Percikan yang melompat antara elektroda tengah dan elektroda samping membakar campuran udara-bahan bakar yang telah dikompresi, menghasilkan tenaga dorong untuk menggerakkan piston.\n\nBusi harus bekerja dalam kondisi yang sangat ekstrem: suhu ruang bakar mencapai 2.000°C saat pembakaran, tekanan hingga 60 bar, dan menghasilkan percikan ribuan kali per menit. Busi juga harus membuang panas secukupnya untuk mencegah pre-ignition, namun cukup panas untuk membakar deposit karbon.\n\nKondisi busi adalah cermin kondisi mesin. Warna insulator tip mengindikasikan campuran bahan bakar, kondisi pendinginan, dan kesehatan mesin secara keseluruhan. Ganti busi sesuai interval pabrikan (biasanya 8.000–20.000 km untuk busi standar, lebih lama untuk busi platinum/iridium).",
+      "imageUrl": "assets/images/busi.glb",
+      "caption": "Busi komponen penghasil percikan api",
+      "subComponents": [
+        "Terminal",
+        "Insulator",
+        "Ribs",
+        "Gasket",
+        "Metal Case",
+        "Insulator Tip",
+        "Centre Electrode",
+        "Side Electrode"
+      ],
+      "subComponentDetails": {
+        "Terminal": {
+          "fungsi": "Terminal adalah ujung logam paling atas busi yang menjadi titik sambungan antara kabel busi (spark plug wire / ignition lead) dengan badan busi. Terminal biasanya berulir atau berbentuk tiang logam yang dapat dipasangi boot kabel busi dengan cara dicolokkan atau dikencangkan dengan mur kecil, tergantung desain pabrikan.\n\nMaterial terminal terbuat dari baja berlapis nikel atau tembaga yang tahan terhadap korosi dan kondukif secara listrik. Terminal harus mampu meneruskan pulsa tegangan tinggi dari koil pengapian (10.000-25.000 V) dengan kehilangan energi seminimal mungkin ke elektroda di ujung bawah busi.\n\nTerminal yang berkarat atau korosi meningkatkan hambatan kontak antara kabel busi dan badan busi, sehingga sebagian energi pengapian terbuang sebagai panas di sambungan dan percikan busi menjadi lemah. Bersihkan korosi dengan amplas halus atau ganti busi jika terminal sudah sangat rusak.",
+          "imageUrl": null,
+          "caption": "Terminal — titik sambungan kabel busi ke badan busi"
+        },
+        "Insulator": {
+          "fungsi": "Insulator adalah komponen berbahan keramik alumina (Al2O3) berkemurnian tinggi yang membungkus elektroda tengah dan memisahkannya secara elektrik dari metal case (selongsong logam) busi. Fungsi utamanya adalah mencegah kebocoran arus listrik tegangan tinggi dari elektroda tengah ke bodi busi sebelum mencapai celah elektroda.\n\nKeramik alumina dipilih karena kombinasi unik sifat-sifatnya: ketahanan listrik sangat tinggi (kekuatan dielektrik >10 kV/mm), konduktivitas termal yang baik untuk membuang panas dari elektroda tengah, ketahanan terhadap suhu ekstrem (hingga 1000 derajat C), dan ketahanan terhadap kejutan termal mendadak.\n\nInsulator yang retak, bahkan retak halus yang tidak terlihat secara visual, menyebabkan kebocoran arus (flashover) yang mencegah percikan terbentuk di celah elektroda. Busi dengan insulator retak harus segera diganti karena tidak dapat diperbaiki. Retak biasanya terjadi akibat benturan mekanis atau pendinginan mendadak (menyiram mesin panas dengan air).",
+          "imageUrl": null,
+          "caption": "Insulator keramik isolasi elektroda tengah dari metal case"
+        },
+        "Ribs": {
+          "fungsi": "Ribs (rusuk insulator) adalah tonjolan-tonjolan melingkar yang terdapat di bagian atas insulator keramik, tepat di bawah terminal dan di atas metal case. Ribs berfungsi untuk memperpanjang jalur permukaan (creepage distance) antara terminal bertegangan tinggi dan metal case yang terhubung ke massa mesin.\n\nTanpa ribs, jalur permukaan terpendek antara terminal dan metal case adalah garis lurus yang sangat pendek. Dengan adanya ribs, arus harus melewati lembah dan puncak ribs yang berliku-liku, sehingga jalur permukaan menjadi jauh lebih panjang. Ini sangat penting dalam kondisi lembab atau basah ketika lapisan air tipis di permukaan insulator dapat menjadi konduktor.\n\nJumlah dan profil ribs disesuaikan dengan tegangan pengapian yang digunakan. Busi untuk mesin performa tinggi dengan koil pengapian tegangan lebih tinggi biasanya memiliki lebih banyak ribs atau ribs yang lebih dalam. Ribs yang kotor oleh oli atau karbon harus dibersihkan karena kotoran menghubungkan puncak-puncak ribs dan mengurangi efektivitas pemanjangan jalur permukaan.",
+          "imageUrl": null,
+          "caption": "Ribs memperpanjang jalur permukaan untuk mencegah flashover"
+        },
+        "Gasket": {
+          "fungsi": "Gasket (ring busi) adalah cincin logam tipis yang terpasang di pangkal ulir busi, berfungsi sebagai penyegel antara dudukan busi di kepala silinder dengan badan busi saat busi dikencangkan. Gasket memastikan tidak ada kebocoran gas bertekanan tinggi dari ruang bakar keluar melalui celah ulir busi.\n\nGasket biasanya terbuat dari baja lunak atau tembaga yang dapat berdeformasi plastis saat dikencangkan, mengisi ketidaksempurnaan permukaan mikro antara busi dan dudukan kepala silinder. Deformasi ini menciptakan segel metalik yang efektif bahkan pada tekanan pembakaran hingga 60 bar dan suhu hingga 400 derajat C.\n\nSaat busi dilepas dan dipasang kembali, gasket bekas yang sudah terdeformasi tidak boleh digunakan ulang untuk garansi segel yang sempurna — meskipun banyak mekanik yang menggunakannya kembali jika kondisi masih baik. Torsi pengencangan busi harus sesuai spesifikasi: terlalu kencang dapat merusak ulir kepala silinder, terlalu kendor menyebabkan kebocoran kompresi dan busi bisa terlepas sendiri.",
+          "imageUrl": null,
+          "caption": "Gasket menyegel antara busi dan dudukan kepala silinder"
+        },
+        "Metal Case": {
+          "fungsi": "Metal case (selongsong logam / badan busi) adalah casing baja heksagonal yang membungkus bagian bawah insulator dan menjadi struktur mekanis utama busi. Metal case memiliki dua fungsi utama: sebagai pegangan untuk kunci busi (hex wrench) saat pemasangan dan pelepasan, serta sebagai konduktor massa (ground) yang menghubungkan elektroda samping dan keseluruhan busi ke kepala silinder mesin.\n\nBagian bawah metal case dilengkapi ulir (thread) yang dikencangkan ke lubang berulir di kepala silinder. Standar ulir busi yang umum adalah M10, M12, atau M14 dengan berbagai panjang ulir (reach). Penggunaan busi dengan ukuran ulir yang tidak sesuai dapat merusak ulir kepala silinder yang mahal untuk diperbaiki.\n\nMetal case juga berperan dalam menentukan nilai panas busi (heat range). Panjang jalur konduksi panas dari ujung insulator melalui metal case ke kepala silinder menentukan seberapa cepat panas dibuang dari busi. Busi dingin (cold plug) membuang panas lebih cepat, cocok untuk mesin berperforma tinggi. Busi panas (hot plug) mempertahankan panas lebih lama untuk pembakaran deposit, cocok untuk mesin standar putaran rendah.",
+          "imageUrl": null,
+          "caption": "Metal case sebagai struktur mekanis dan konduktor massa busi"
+        },
+        "Insulator Tip": {
+          "fungsi": "Insulator tip adalah bagian ujung bawah insulator keramik yang menonjol ke dalam ruang bakar, mengelilingi dan melindungi bagian bawah elektroda tengah. Insulator tip terpapar langsung ke suhu dan tekanan pembakaran yang ekstrem, serta ke campuran udara-bahan bakar yang bergolak di dalam ruang bakar.\n\nPanjang dan bentuk insulator tip sangat menentukan karakteristik termal busi (heat range). Insulator tip yang panjang memiliki luas permukaan lebih besar yang terpapar ke ruang bakar, menyerap lebih banyak panas, dan memerlukan jalur konduksi yang lebih panjang untuk membuang panas ke metal case — ini adalah karakteristik busi panas. Insulator tip yang pendek membuang panas lebih cepat — karakteristik busi dingin.\n\nWarna dan kondisi insulator tip adalah indikator penting kondisi pembakaran mesin. Insulator tip berwarna coklat muda atau abu-abu beige menandakan pembakaran normal. Hitam dan berkarbon menandakan campuran terlalu kaya atau busi terlalu dingin. Putih atau keabuan menandakan campuran terlalu miskin atau busi terlalu panas (overheating). Meleleh atau berlubang menandakan detonasi parah atau pre-ignition yang mengancam kerusakan mesin.",
+          "imageUrl": null,
+          "caption": "Insulator tip terpapar langsung ke ruang bakar sebagai indikator pembakaran"
+        },
+        "Centre Electrode": {
+          "fungsi": "Centre electrode (elektroda tengah) adalah konduktor logam di pusat busi yang menjadi titik asal percikan api pengapian. Elektroda tengah terhubung ke terminal di atas melalui konduktor internal, dan menerima tegangan tinggi dari koil pengapian. Percikan melompat dari ujung elektroda tengah melewati celah udara (spark gap) menuju elektroda samping yang terhubung ke massa.\n\nMaterial elektroda tengah sangat menentukan usia pakai busi. Busi standar menggunakan nikel-alloy yang tahan panas namun relatif cepat aus. Busi premium menggunakan inti tembaga (copper core) untuk konduktivitas termal lebih baik. Busi long-life menggunakan platinum atau iridium di ujung elektroda — material sangat keras dengan titik leleh sangat tinggi yang menghasilkan keausan sangat lambat dan umur pakai 3-5 kali lebih lama.\n\nElektroda tengah yang aus terlihat dari ujungnya yang sudah bulat atau terkikis, bukan lagi tajam/datar. Ujung elektroda yang aus memerlukan tegangan lebih tinggi untuk memicu percikan (karena efek corona berkurang pada ujung yang bulat), memperberat beban koil pengapian dan menyebabkan misfire pada kondisi beban tinggi. Ukur celah elektroda dengan feeler gauge secara berkala dan ganti busi sesuai interval servis pabrikan.",
+          "imageUrl": null,
+          "caption": "Centre electrode sumber percikan api pengapian"
+        },
+        "Side Electrode": {
+          "fungsi": "Side electrode (elektroda samping / elektroda massa) adalah elektroda yang menekuk dari metal case busi ke arah elektroda tengah, membentuk celah (gap) tempat percikan api melompat. Elektroda samping terhubung secara elektrik ke metal case dan melaluinya ke massa mesin, sehingga berfungsi sebagai elektroda negatif (ground) dalam rangkaian pengapian.\n\nCelah antara elektroda tengah dan elektroda samping (spark gap) adalah salah satu spesifikasi paling kritis pada busi. Celah yang terlalu kecil menghasilkan percikan yang terlalu lemah dan pendek, pembakaran tidak sempurna. Celah yang terlalu besar memerlukan tegangan lebih tinggi untuk memicu percikan, berisiko misfire terutama saat mesin dalam kondisi beban tinggi atau komponen pengapian sudah sedikit lemah. Celah standar umumnya 0,6-0,9 mm, diukur dan disetel dengan feeler gauge.\n\nElektroda samping juga mengalami keausan seiring waktu akibat erosi ion saat setiap percikan terjadi. Keausan terlihat dari bentuk elektroda yang semakin tirus atau berlubang di sisi yang menghadap elektroda tengah. Busi dengan elektroda samping yang aus harus diganti karena celah yang sudah tidak sesuai spesifikasi tidak dapat disetel ulang dengan akurat — elektroda yang lemah mudah patah jika dibengkokkan.",
+          "imageUrl": null,
+          "caption": "Side electrode membentuk celah percikan dan terhubung ke massa mesin"
+        }
+      }
+    }
+  }
+}

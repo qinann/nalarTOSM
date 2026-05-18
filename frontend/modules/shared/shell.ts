@@ -89,6 +89,10 @@ function buildShell(meta: ModuleMeta, praktekSteps: string[]): string {
           <span class="info-val">${esc(meta.id)}</span>
         </div>
         <div class="info-row">
+          <span class="info-key">Level</span>
+          <span class="info-val">${esc(meta.level.charAt(0).toUpperCase() + meta.level.slice(1))}</span>
+        </div>
+        <div class="info-row">
           <span class="info-key">Komponen</span>
           <span class="info-val">${meta.components.length} komponen</span>
         </div>

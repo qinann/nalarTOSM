@@ -1,0 +1,240 @@
+{
+  "caption": "Sistem Instrumen & Panel Indikator",
+  "imageUrl": null,
+  "componentDetails": {
+    "Sensor Kecepatan (VSS)": {
+      "fungsi": "Sensor kecepatan atau VSS (Vehicle Speed Sensor) adalah sensor yang mengukur kecepatan putaran roda atau output transmisi dan mengonversinya menjadi sinyal listrik untuk ditransmisikan ke speedometer dan kadang ke ECU untuk keperluan kontrol injeksi bahan bakar, ABS, atau sistem lainnya. Sensor menghasilkan sinyal frekuensi atau pulsa yang proporsional dengan kecepatan kendaraan.\n\nTerdapat dua tipe utama VSS pada sepeda motor: tipe reed switch yang menggunakan magnet pada hub roda untuk menggerakkan switch mekanis saat melewati sensor, dan tipe hall effect yang menggunakan magnet dan semikonduktor hall untuk menghasilkan pulsa digital yang lebih akurat dan tahan lama. Semakin tinggi kecepatan, semakin tinggi frekuensi pulsa yang dihasilkan.\n\nPemeriksaan VSS meliputi pengukuran tegangan output dengan multimeter oscilloscope mode saat roda diputar — sinyal pulsa harus muncul dan frekuensinya meningkat proporsional dengan kecepatan. Periksa jarak celah antara sensor dan magnet (air gap) menggunakan feeler gauge sesuai spesifikasi pabrikan. Sensor yang rusak ditandai speedometer tidak bergerak atau bergerak tidak akurat.",
+      "imageUrl": null,
+      "caption": "Sensor Kecepatan (VSS) — Pendeteksi kecepatan putaran roda untuk speedometer",
+      "subComponents": [
+        "Magnet pada hub roda atau output transmisi",
+        "Hall sensor atau reed switch",
+        "Kabel",
+        "Soket",
+        "Bracket pemegang sensor"
+      ],
+      "subComponentDetails": {
+        "Magnet pada hub roda atau output transmisi": {
+          "fungsi": "Magnet adalah komponen penghasil medan magnet yang berputar bersama roda atau poros output transmisi. Saat magnet melewati sensor (hall sensor atau reed switch), medan magnetnya mengaktifkan sensor untuk menghasilkan satu pulsa sinyal listrik. Jumlah pulsa per putaran roda menentukan resolusi pengukuran kecepatan.\n\nPada sistem berbasis hub roda, magnet dipasang pada rotor rem cakram atau hub roda dengan penjepit atau baut. Pada sistem berbasis transmisi, magnet terpasang pada gigi output transmisi atau adaptor khusus. Jumlah magnet yang digunakan bervariasi — lebih banyak magnet menghasilkan sinyal lebih banyak per putaran untuk pengukuran yang lebih halus.\n\nPemeriksaan: periksa kondisi magnet dari retak, lepas, atau demagnetisasi. Magnet yang lepas dapat masuk ke mekanisme roda dan menyebabkan kerusakan serius. Periksa apakah jarak antara magnet dan sensor sesuai spesifikasi dengan feeler gauge. Magnet yang terdemagnetisasi menghasilkan sinyal yang lemah dan tidak konsisten, menyebabkan pembacaan kecepatan yang tidak akurat.",
+          "imageUrl": null,
+          "caption": "Sumber medan magnet rotating penghasil pulsa sinyal kecepatan"
+        },
+        "Hall sensor atau reed switch": {
+          "fungsi": "Hall sensor adalah semikonduktor yang menghasilkan tegangan output saat terpapar medan magnet — tipe aktif yang memerlukan tegangan suplai 5V atau 12V dan menghasilkan sinyal digital (high/low) yang bersih. Reed switch adalah komponen mekanis yang kontak internalnya menutup saat magnet dekat dan membuka saat magnet menjauh — tipe pasif yang lebih sederhana namun lebih rentan aus karena memiliki bagian bergerak mekanis.\n\nHall sensor modern lebih disukai karena tidak ada bagian mekanis yang aus, respons lebih cepat, dan sinyal output lebih bersih tanpa bouncing (noise). Reed switch masih digunakan pada kendaraan yang lebih tua atau pada aplikasi di mana kesederhanaan dan biaya rendah lebih dipentingkan.\n\nPemeriksaan hall sensor: ukur tegangan suplai (5V) dan tegangan output saat magnet dekat dan jauh — output harus beralih antara tegangan tinggi dan rendah. Pemeriksaan reed switch: ukur kontinuitas dengan multimeter saat magnet didekatkan dan dijauhkan — harus terhubung saat magnet dekat, terputus saat magnet jauh. Sensor yang tidak merespons atau output tidak berubah menunjukkan kerusakan.",
+          "imageUrl": null,
+          "caption": "Elemen sensing elektromagnetik penghasil sinyal pulsa digital"
+        },
+        "Kabel": {
+          "fungsi": "Kabel VSS menghubungkan sensor dari lokasi pemasangannya (dekat roda atau transmisi) ke panel instrumen atau ECU. Karena sensor berada di area yang terekspos getaran dan guncangan, kabel harus fleksibel dengan isolasi yang tahan abrasi dan kelembaban.\n\nKabel membawa sinyal tegangan rendah (pulsa 0–5V atau 0–12V) yang sensitif terhadap gangguan elektromagnetik (EMI). Kabel yang terlalu dekat dengan kabel tegangan tinggi (kabel pengapian) dapat mengalami interferensi yang menyebabkan pembacaan kecepatan tidak akurat atau berfluktuasi. Routing kabel harus diperhatikan saat pemasangan.\n\nPemeriksaan: periksa kondisi kabel dari kerusakan isolasi di titik-titik lenturan dan area yang terjepit. Ukur tegangan di ujung kabel di panel saat roda diputar — sinyal harus terdeteksi. Kabel yang putus dalam isolasi (tampak baik dari luar) dapat dideteksi dengan menggerak-gerakkan kabel sambil mengukur sinyal.",
+          "imageUrl": null,
+          "caption": "Penghantar sinyal kecepatan dari sensor ke instrumen panel"
+        },
+        "Soket": {
+          "fungsi": "Soket VSS adalah konektor multi-pin waterproof yang memungkinkan pelepasan sensor untuk servis tanpa memotong kabel. Desain waterproof penting karena sensor berada di area dekat roda yang terekspos air hujan, lumpur, dan percikan air. Seal karet di setiap pin mencegah korosi yang dapat mengganggu sinyal berkualitas rendah dari sensor.\n\nSoket VSS biasanya 2–3 pin: satu pin tegangan suplai, satu pin output sinyal, dan satu pin massa. Koneksi yang buruk pada soket ini dapat menyebabkan noise pada sinyal atau sinyal hilang sama sekali. Bahkan kontaminasi ringan pada pin dapat menambahkan resistansi yang mengganggu sinyal tegangan rendah.\n\nPemeriksaan: periksa kondisi soket dari korosi, pin bengkok, atau seal karet yang rusak. Bersihkan pin dengan contact cleaner. Ukur tegangan suplai di pin yang sesuai — harus ada 5V atau 12V tergantung tipe sensor. Soket yang parah korosinya atau pin yang rusak harus diganti untuk memastikan sinyal yang andal.",
+          "imageUrl": null,
+          "caption": "Konektor waterproof pelepas-pasang sensor kecepatan"
+        },
+        "Bracket pemegang sensor": {
+          "fungsi": "Bracket atau dudukan sensor adalah komponen logam atau plastik yang memposisikan sensor pada jarak yang tepat (air gap) dari magnet yang berputar. Jarak yang tepat sangat kritis — terlalu dekat berisiko sensor terbentur magnet saat komponen bergerak; terlalu jauh menyebabkan sinyal terlalu lemah untuk dideteksi.\n\nBracket dipasang ke rangka, garpu, atau swingarm menggunakan baut. Material bracket harus cukup kaku untuk mempertahankan posisi sensor meskipun terpapar getaran. Pergerakan atau pelonggaran bracket menyebabkan air gap berubah dan sinyal tidak konsisten.\n\nPemeriksaan: periksa kekencangan baut bracket dan kondisi fisik bracket dari retak atau deformasi. Setelah pemasangan atau penggantian sensor, verifikasi air gap dengan feeler gauge sesuai spesifikasi pabrikan. Bracket yang bengkok akibat benturan harus diperbaiki atau diganti sebelum memasang sensor baru.",
+          "imageUrl": null,
+          "caption": "Dudukan logam penjaga jarak tepat antara sensor dan magnet"
+        }
+      }
+    },
+    "Speedometer": {
+      "fungsi": "Speedometer adalah instrumen penunjuk kecepatan kendaraan yang biasanya terintegrasi dengan odometer dan tripmeter dalam satu unit panel. Speedometer mengonversi sinyal dari sensor kecepatan menjadi tampilan visual yang mudah dibaca pengendara — baik dalam bentuk jarum penunjuk analog maupun tampilan digital.\n\nTerdapat dua tipe speedometer: mekanis yang menggunakan kabel fleksibel dari hub roda ke mekanisme spiral dan jarum penunjuk, dan elektronik yang menerima sinyal dari VSS dan menggerakkan jarum via motor stepper atau menampilkan angka digital. Speedometer modern umumnya elektronik karena lebih akurat, tidak memerlukan perawatan kabel, dan dapat menampilkan informasi lebih banyak.\n\nPemeriksaan speedometer meliputi verifikasi akurasi pembacaan kecepatan dengan GPS atau alat kalibrasi, pemeriksaan jarum dari selip atau tidak kembali ke nol, pemeriksaan odometer dan tripmeter dari berfungsi atau tidak, serta pemeriksaan pencahayaan panel dari lampu yang mati atau terlalu redup.",
+      "imageUrl": null,
+      "caption": "Speedometer — Instrumen penunjuk kecepatan, jarak, dan informasi perjalanan",
+      "subComponents": [
+        "Jarum penunjuk",
+        "Dial/skala (km/h, mph)",
+        "Mekanisme penggerak (kabel mekanis atau motor stepper elektrik)",
+        "Odometer (total jarak)",
+        "Tripmeter",
+        "Lampu penerangan dial",
+        "Housing speedometer"
+      ],
+      "subComponentDetails": {
+        "Jarum penunjuk": {
+          "fungsi": "Jarum penunjuk adalah elemen visual utama speedometer yang bergerak secara angular untuk menunjukkan kecepatan kendaraan. Jarum terbuat dari material ringan (aluminium atau plastik) dengan ujung yang biasanya berwarna merah atau putih untuk kontras maksimal terhadap latar dial. Dipasang pada poros yang terhubung ke mekanisme penggerak.\n\nPada speedometer analog mekanis, jarum digerakkan oleh pegas spiral (hair spring) yang berinteraksi dengan magnet eddy current yang berputar sesuai kecepatan kabel. Pada tipe elektronik, poros jarum terhubung ke motor stepper yang dikendalikan elektronik berdasarkan sinyal VSS. Damping diperlukan agar jarum tidak bergetar saat kecepatan tidak stabil.\n\nPemeriksaan: jarum yang tidak kembali ke nol saat kendaraan berhenti menunjukkan pegas pengembali yang melemah (tipe mekanis) atau kalibrasi elektronik yang bergeser (tipe digital). Jarum yang bergetar berlebih menunjukkan sinyal VSS yang tidak bersih atau mekanisme motor stepper yang aus. Jangan mencoba menekuk jarum untuk menyetel posisi nol tanpa prosedur yang benar.",
+          "imageUrl": null,
+          "caption": "Elemen penunjuk angular visual kecepatan pada speedometer"
+        },
+        "Dial/skala (km/h, mph)": {
+          "fungsi": "Dial atau skala speedometer adalah permukaan bergambar yang menampilkan angka kecepatan (km/h, mph, atau keduanya), tanda-tanda peringatan zona kecepatan, dan label instrumen lainnya. Desain dial menggunakan tinta atau cat yang tahan terhadap cahaya UV agar tidak pudar, dicetak di atas material yang tahan kelembaban.\n\nKesalahan dalam membaca skala dapat terjadi jika dial tidak terpasang dengan benar (rotasi tidak pada posisi 0 yang tepat). Beberapa speedometer menggunakan skala non-linear — angka kecepatan rendah lebih rapat dan kecepatan tinggi lebih jarang — untuk kemudahan membaca pada kecepatan yang sering digunakan.\n\nPemeriksaan: periksa kondisi dial dari kondensasi di balik kaca yang dapat mengaburkan pandangan, jamur, atau kerusakan fisik akibat cairan masuk ke housing. Dial yang rusak tidak dapat diperbaiki secara individual — speedometer biasanya harus diganti sebagai unit. Pastikan skala terbaca jelas dan pencahayaan dari belakang (backlight) merata.",
+          "imageUrl": null,
+          "caption": "Permukaan bergambar skala angka kecepatan instrumen"
+        },
+        "Mekanisme penggerak (kabel mekanis atau motor stepper elektrik)": {
+          "fungsi": "Mekanisme penggerak mengonversi sinyal kecepatan menjadi gerakan jarum speedometer. Pada tipe mekanis, kabel speedometer yang fleksibel berputar sesuai kecepatan roda dan menggerakkan magnet eddy current di dalam speedometer head — gaya tarik magnet terhadap cakram aluminium menarik jarum melawan pegas spiral. Tipe ini tidak memerlukan listrik untuk penggerak jarum.\n\nPada tipe elektronik (motor stepper), sinyal dari VSS diproses oleh sirkuit elektronik di dalam speedometer dan menggerakkan motor stepper kecil yang memutar poros jarum ke posisi angular yang sesuai dengan kecepatan. Motor stepper memungkinkan penunjukan yang sangat akurat, respons cepat, dan kemampuan menampilkan kecepatan nol secara tepat.\n\nPemeriksaan mekanis: periksa kondisi kabel speedometer dari putus, tertekuk, atau bersuara saat berputar. Kabel yang aus menghasilkan suara mencicit dan jarum yang bergetar. Mekanis: motor stepper yang aus menghasilkan gerakan jarum yang tersendat atau tidak akurat. Periksa sinyal input ke speedometer dan respon jarum terhadap perubahan sinyal.",
+          "imageUrl": null,
+          "caption": "Sistem penggerak jarum melalui kabel mekanis atau motor stepper"
+        },
+        "Odometer (total jarak)": {
+          "fungsi": "Odometer adalah penghitung jarak tempuh total yang tidak dapat direset — mencatat akumulasi total kilometer sejak kendaraan pertama kali digunakan. Data odometer digunakan untuk menentukan jadwal servis berkala, menilai kondisi kendaraan bekas, dan sebagai referensi garansi pabrikan.\n\nPada speedometer mekanis, odometer menggunakan serangkaian roda gigi angka yang berputar secara bertahap setiap kali kabel mencapai jumlah putaran tertentu. Pada speedometer digital, odometer disimpan dalam memori non-volatile (seperti EEPROM) yang mempertahankan data meskipun baterai dilepas.\n\nPemeriksaan: odometer yang tidak berjalan saat kendaraan bergerak (namun jarum kecepatan bergerak normal) menunjukkan kerusakan pada mekanisme hitung di dalam speedometer. Manipulasi odometer digital memerlukan peralatan programmer khusus dan merupakan tindakan ilegal di banyak yurisdiksi. Catat dan simpan data odometer saat servis untuk referensi.",
+          "imageUrl": null,
+          "caption": "Penghitung jarak tempuh total kendaraan yang tidak dapat direset"
+        },
+        "Tripmeter": {
+          "fungsi": "Tripmeter adalah penghitung jarak yang dapat direset ke nol oleh pengendara menggunakan tombol reset. Berguna untuk mengukur jarak perjalanan tertentu, memperkirakan jarak tersisa sebelum isi bensin, atau mencatat jarak yang ditempuh untuk keperluan tertentu. Beberapa kendaraan memiliki dua tripmeter (Trip A dan Trip B) untuk keperluan yang berbeda.\n\nPada speedometer mekanis, tripmeter memiliki mekanisme gigi yang terpisah dari odometer namun digerakkan oleh kabel yang sama. Tombol reset mekanis menggunakan roda gigi atau tuas yang mengembalikan semua roda angka ke posisi nol. Pada speedometer digital, tripmeter diimplementasikan sepenuhnya dalam software dengan tombol reset elektronik.\n\nPemeriksaan: verifikasi tripmeter dapat direset dengan menekan tombol reset dan menunjukkan '0' atau '000.0'. Periksa bahwa tripmeter berjalan bersamaan dengan odometer saat kendaraan bergerak. Tripmeter yang tidak dapat direset atau tidak berjalan (sementara odometer berjalan normal) mengindikasikan kerusakan pada mekanisme reset atau komponen penghitung tripmeter.",
+          "imageUrl": null,
+          "caption": "Penghitung jarak perjalanan yang dapat direset pengendara"
+        },
+        "Lampu penerangan dial": {
+          "fungsi": "Lampu penerangan dial (dial illumination) adalah lampu kecil di belakang atau di sekitar dial speedometer yang menerangi skala dan angka agar dapat dibaca di kondisi gelap atau malam hari. Terhubung ke sirkuit penerangan kendaraan dan menyala bersama lampu kota atau lampu utama.\n\nDua tipe pencahayaan yang umum: bohlam kecil T5 atau bohlam filamen yang dapat diganti, dan LED yang tertanam di PCB instrumen yang lebih tahan lama dan tidak dapat diganti secara individual. Pencahayaan LED menghasilkan penerangan yang lebih merata, lebih hemat energi, dan umur yang jauh lebih panjang.\n\nPemeriksaan: periksa penerangan dial saat lampu kendaraan dinyalakan — semua bagian dial harus terterangi dengan merata. Area yang gelap menunjukkan bohlam mati (pada tipe bohlam) yang dapat diganti, atau LED yang mati pada tipe LED (memerlukan penggantian PCB instrumen). Periksa kesamaan warna dan kecerahan pencahayaan yang harus konsisten di seluruh panel.",
+          "imageUrl": null,
+          "caption": "Pencahayaan latar dial agar terbaca di kondisi gelap"
+        },
+        "Housing speedometer": {
+          "fungsi": "Housing speedometer adalah casing plastik atau logam yang melindungi mekanisme internal speedometer dari debu, kelembaban, dan benturan. Dilengkapi kaca atau lensa transparan di bagian depan untuk memungkinkan pembacaan dial dari luar. Housing harus tersegel dengan baik untuk mencegah masuknya air yang dapat menyebabkan kondensasi dan korosi.\n\nDesain housing menentukan kemudahan pembacaan instrumen — sudut pandang, ketinggian pemasangan, dan kemiringan kaca sangat berpengaruh. Beberapa housing dilengkapi anti-reflective coating pada kaca untuk mengurangi silau matahari dan meningkatkan keterbacaan di siang hari.\n\nPemeriksaan: periksa kondisi kaca atau lensa dari retak, goresan dalam, atau kondensasi di dalam (tanda seal bocor). Kaca yang retak harus segera diganti untuk mencegah masuknya air ke mekanisme. Periksa kondisi housing dari retak atau deformasi yang dapat mengompromikan segel. Kondensasi di dalam panel instrumen dapat menyebabkan korosi pada komponen elektronik dan harus diatasi dengan memperbaiki seal.",
+          "imageUrl": null,
+          "caption": "Badan pelindung mekanisme speedometer dari elemen eksternal"
+        }
+      }
+    },
+    "Sensor Level Bensin": {
+      "fungsi": "Sensor level bensin adalah transduser yang mengubah ketinggian permukaan bahan bakar di tangki menjadi sinyal listrik (perubahan resistansi) yang dapat diinterpretasikan oleh fuel gauge di panel instrumen. Sensor ini memungkinkan pengendara memantau perkiraan jumlah bahan bakar yang tersisa tanpa harus membuka tutup tangki.\n\nKonstruksi sensor level bensin terdiri dari pelampung (float) dari material plastik atau foam yang mengapung di permukaan bahan bakar, terhubung ke lengan logam tipis yang bergerak bersama pelampung sesuai ketinggian bensin. Ujung lengan yang lain terhubung ke wiper pada potensiometer (variable resistor) — posisi wiper menentukan nilai resistansi output yang dikirim ke fuel gauge.\n\nPemeriksaan sensor level bensin meliputi pengukuran resistansi antara terminal sensor saat tangki penuh dan kosong — nilai harus berubah secara proporsional dan mulus. Nilai resistansi yang tidak berubah menunjukkan pelampung macet, lengan bengkok, atau potensiometer rusak. Sensor dapat diuji di luar tangki dengan menggerakkan pelampung secara manual sambil mengukur resistansi.",
+      "imageUrl": null,
+      "caption": "Sensor Level Bensin — Pengukur dan pelapor ketinggian bahan bakar di tangki",
+      "subComponents": [
+        "Pelampung (float)",
+        "Lengan pelampung",
+        "Potensiometer (variable resistor)",
+        "Terminal listrik",
+        "Dudukan di tangki",
+        "Seal/gasket"
+      ],
+      "subComponentDetails": {
+        "Pelampung (float)": {
+          "fungsi": "Pelampung adalah bola atau bentuk aerodinamis kecil yang terbuat dari material plastik atau foam tertutup yang tidak menyerap bahan bakar dan memiliki densitas lebih rendah dari bahan bakar, sehingga selalu mengapung di permukaan. Posisi ketinggian pelampung secara langsung merepresentasikan ketinggian permukaan bahan bakar.\n\nMaterial pelampung harus tahan terhadap bahan bakar dalam jangka panjang — bensin dan alkohol blend dapat menyebabkan pembengkakan atau kerusakan pada material plastik atau foam yang tidak sesuai. Pelampung dari material nitril atau viton lebih tahan terhadap alkohol dalam bahan bakar modern.\n\nPemeriksaan: periksa kondisi pelampung dari kerusakan (retak, berlubang) yang menyebabkan pelampung terisi bahan bakar dan tenggelam. Pelampung yang tenggelam menyebabkan fuel gauge selalu menunjukkan 'E' meskipun tangki penuh. Goncangkan pelampung — jika terdengar suara cairan di dalamnya, pelampung sudah berlubang dan harus diganti.",
+          "imageUrl": null,
+          "caption": "Bola pengapung pengikut permukaan level bahan bakar"
+        },
+        "Lengan pelampung": {
+          "fungsi": "Lengan pelampung adalah batang logam tipis (biasanya baja tahan karat atau aluminium) yang menghubungkan pelampung ke wiper potensiometer. Gerakan naik-turun pelampung diteruskan melalui lengan sebagai gerakan rotasi pada poros potensiometer. Panjang dan geometri lengan menentukan jangkauan gerakan wiper untuk seluruh rentang level bensin.\n\nBentuk lengan biasanya dibengkokkan sesuai kontur tangki agar pergerakan pelampung optimal di seluruh rentang level bensin — baik saat tangki hampir kosong (pelampung di bawah) maupun penuh (pelampung di atas). Lengan yang terlalu pendek menyebabkan pembacaan tidak akurat di salah satu ekstrem.\n\nPemeriksaan: periksa kondisi lengan dari bengkok atau deformasi yang menyebabkan pelampung macet atau pembacaan tidak akurat. Lengan yang bengkok sering terjadi saat sensor diangkat dari tangki tanpa hati-hati — bentur ke tepi lubang pemasangan. Luruskan lengan yang bengkok ringan dengan hati-hati menggunakan tang; lengan yang patah memerlukan penggantian sensor.",
+          "imageUrl": null,
+          "caption": "Lengan logam penghubung gerak pelampung ke potensiometer"
+        },
+        "Potensiometer (variable resistor)": {
+          "fungsi": "Potensiometer adalah resistor variabel yang nilai resistansinya berubah secara proporsional dengan posisi sudut wiper. Dalam sensor level bensin, wiper terhubung ke poros lengan pelampung sehingga posisi pelampung menentukan nilai resistansi. Resistansi tinggi biasanya mewakili tangki kosong dan resistansi rendah mewakili tangki penuh (atau sebaliknya, tergantung desain).\n\nElemen resistor di dalam potensiometer terbuat dari karbon atau kawat nikrom yang dilalui wiper tembaga. Arus yang mengalir melalui elemen resistor harus rendah (microampere range) untuk mencegah panas yang dapat mengubah nilai resistansi atau merusak elemen. Potensiometer level bensin harus tahan terhadap perendaman dalam bahan bakar.\n\nPemeriksaan: ukur resistansi antara terminal ground dan terminal wiper saat pelampung digerakkan dari posisi bawah ke atas. Nilai harus berubah secara mulus dan proporsional — nilai yang melompat-lompat atau ada posisi mati (dead spot) menunjukkan keausan pada jalur resistor. Sensor dengan dead spot menyebabkan jarum fuel gauge tiba-tiba melompat yang sangat mengganggu.",
+          "imageUrl": null,
+          "caption": "Resistor variabel pengubah posisi pelampung menjadi sinyal resistansi"
+        },
+        "Terminal listrik": {
+          "fungsi": "Terminal listrik sensor level bensin adalah titik koneksi kabel dari panel fuel gauge ke sensor di dalam tangki. Biasanya terdiri dari dua terminal: terminal output (wiper potensiometer) dan terminal ground. Desain terminal harus tahan terhadap uap bahan bakar dan cairan bahan bakar.\n\nMaterial terminal dari tembaga berlapis nikel atau perak untuk ketahanan terhadap korosi dari uap bensin. Koneksi soket di luar tangki harus dalam kondisi baik — resistansi kontak yang tinggi akibat korosi menambahkan nilai pada sinyal resistansi sensor, menyebabkan pembacaan fuel gauge yang selalu lebih rendah dari seharusnya.\n\nPemeriksaan: periksa kondisi terminal dan soket dari korosi, terutama pada terminal yang terekspos uap bensin. Ukur resistansi di soket saat pelampung di posisi penuh dan kosong — bandingkan dengan spesifikasi. Perbedaan dari nilai spesifikasi yang konsisten menunjukkan resistansi kontak soket yang dapat menyebabkan pembacaan tidak akurat.",
+          "imageUrl": null,
+          "caption": "Titik koneksi listrik sensor ke kabel panel instrumen"
+        },
+        "Dudukan di tangki": {
+          "fungsi": "Dudukan sensor adalah flens atau pelat yang memposisikan sensor secara tepat di dalam tangki bahan bakar. Sensor dipasang ke tangki dari atas atau samping menggunakan ring berulir atau baut. Posisi pemasangan menentukan orientasi pelampung dan jangkauan pengukuran — sensor harus dipasang pada posisi yang memungkinkan pelampung bergerak bebas di seluruh rentang level bensin tanpa terhalang dinding tangki atau komponen lain.\n\nDudukan sensor biasanya terbuat dari plastik atau aluminium yang tahan terhadap bahan bakar. Beberapa desain dudukan sekaligus berfungsi sebagai modul pompa bahan bakar untuk sistem injeksi — sensor dan pompa terpasang dalam satu unit yang dimasukkan ke dalam tangki.\n\nPemeriksaan: saat melepas atau memasang sensor, periksa kondisi ring pengunci dari kerusakan ulir atau deformasi. Pastikan orientasi sensor sesuai tanda yang ada — memasang sensor dalam posisi terbalik menyebabkan pembacaan fuel gauge yang terbalik (penuh saat tangki kosong). Bersihkan area dudukan dari kotoran sebelum memasang kembali.",
+          "imageUrl": null,
+          "caption": "Flens pemasangan dan posisi sensor di dalam tangki bensin"
+        },
+        "Seal/gasket": {
+          "fungsi": "Seal atau gasket adalah perapat antara dudukan sensor dan lubang di tangki bahan bakar untuk mencegah kebocoran bahan bakar ke luar. Material seal harus tahan terhadap bahan bakar (bensin, alkohol blend) dan panas, biasanya menggunakan karet NBR (Nitrile Butadiene Rubber) atau material fluoro-elastomer.\n\nKebocoran bahan bakar di sekitar sensor level bensin merupakan bahaya kebakaran yang serius. Seal yang keras, retak, atau terpasang tidak sempurna dapat menyebabkan kebocoran yang mungkin tidak langsung terlihat karena berlangsung perlahan. Selalu ganti seal saat sensor level bensin dilepas dari tangki.\n\nPemeriksaan: periksa kondisi seal dari kekerasan, retakan, atau deformasi saat sensor dilepas. Seal yang mengeras atau retak harus selalu diganti dengan seal baru yang sesuai spesifikasi. Jangan memaksakan pemasangan seal yang sudah rusak dengan lem atau sealant karena tidak akan memberikan penyegelan yang andal terhadap bahan bakar. Kencangkan ring pengunci dengan torsi yang tepat untuk kompres seal secara merata.",
+          "imageUrl": null,
+          "caption": "Perapat karet pencegah kebocoran bahan bakar di sekitar sensor"
+        }
+      }
+    },
+    "Indikator Oli": {
+      "fungsi": "Indikator oli adalah sistem peringatan yang memberitahu pengendara jika tekanan oli mesin turun di bawah batas minimum yang aman. Sistem ini terdiri dari switch tekanan oli (oil pressure switch) yang terpasang di blok engine pada jalur oli bertekanan, dan lampu indikator berwarna merah di panel instrumen yang terhubung ke switch tersebut.\n\nSaat mesin mati atau tekanan oli sangat rendah, spring di dalam switch menekan plunger kontak ke posisi tertutup (closed/grounded), sehingga lampu indikator terhubung ke massa dan menyala. Saat mesin menyala dan tekanan oli naik melampaui batas setting switch (biasanya 20–50 kPa), tekanan oli mendorong plunger melawan spring dan memutus kontak — lampu indikator mati.\n\nPemeriksaan indikator oli: verifikasi lampu menyala saat kunci kontak ON dan mesin belum dinyalakan, kemudian mati dalam beberapa detik setelah mesin menyala (tekanan oli sudah terbentuk). Lampu yang tidak menyala saat kunci ON menunjukkan bohlam mati atau koneksi putus. Lampu yang tidak mati setelah mesin menyala (dengan tekanan oli terverifikasi normal menggunakan pressure gauge) menunjukkan switch tekanan oli rusak.",
+      "imageUrl": null,
+      "caption": "Indikator Oli — Sistem peringatan tekanan oli mesin kritis",
+      "subComponents": [
+        "Switch tekanan oli (oil pressure switch) di blok engine",
+        "Lampu indikator oli (merah) di panel",
+        "Kabel",
+        "Soket"
+      ],
+      "subComponentDetails": {
+        "Switch tekanan oli (oil pressure switch) di blok engine": {
+          "fungsi": "Switch tekanan oli adalah transduser mekanis sederhana yang merespons tekanan oli mesin. Di dalamnya terdapat diafragma atau piston kecil yang bergerak menggunakan tekanan oli — saat tekanan mencukupi, diafragma mendorong kontak listrik ke posisi terbuka (open circuit) sehingga lampu mati. Saat tekanan rendah atau mesin mati, pegas internal menutup kontak dan lampu menyala sebagai peringatan.\n\nSwitch tekanan oli biasanya memiliki tekanan aktivasi (pressure trip point) antara 20–100 kPa tergantung pabrikan — ini jauh lebih rendah dari tekanan oli operasi normal (200–600 kPa). Fungsi switch hanya sebagai indikator peringatan minimum, bukan pengukur tekanan aktual. Untuk mengetahui tekanan oli aktual, harus menggunakan oil pressure gauge khusus.\n\nPemeriksaan: lepas switch dan ukur kontinuitas antara terminal dan body (massa) saat switch tidak ada tekanan — harus terhubung (lampu akan menyala). Pasang fitting adaptorr dan hubungkan oil pressure gauge ke lubang switch — tekanan saat mesin hidup harus sesuai spesifikasi. Switch rusak biasanya terjadi akibat diafragma yang robek atau terdapat kebocoran yang menyebabkan switch tidak membuka kontaknya meski tekanan oli normal.",
+          "imageUrl": null,
+          "caption": "Sensor tekanan oli mekanis di blok engine penyebab lampu indikator"
+        },
+        "Lampu indikator oli (merah) di panel": {
+          "fungsi": "Lampu indikator oli adalah bohlam kecil atau LED berwarna merah di panel instrumen yang menjadi perantara peringatan kepada pengendara. Warna merah dipilih secara internasional untuk menandai kondisi kritis yang memerlukan perhatian segera. Lampu ini terhubung di antara sumber tegangan dan switch tekanan oli.\n\nPada sistem modern yang menggunakan LCD atau MFD (Multi-Function Display), indikator oli mungkin berupa ikon gambar tetes oli yang muncul di layar digital. Prinsip kerjanya sama — ikon muncul (peringatan) ketika switch tekanan oli menutup sirkuit.\n\nPemeriksaan: untuk memeriksa bohlam indikator, aktifkan kunci kontak ke posisi ON — semua lampu indikator harus menyala sesaat (self-test) sebelum beberapa di antaranya mati tergantung kondisi sensor. Jika lampu indikator oli tidak menyala saat kunci kontak ON (sementara lampu lain menyala), periksa bohlam yang mungkin mati, koneksi kabel yang longgar, atau fuse yang putus.",
+          "imageUrl": null,
+          "caption": "Lampu merah peringatan tekanan oli rendah di panel instrumen"
+        },
+        "Kabel": {
+          "fungsi": "Kabel menghubungkan switch tekanan oli di blok engine ke lampu indikator di panel instrumen. Kabel harus tahan terhadap panas karena melewati area dekat mesin yang beroperasi pada suhu tinggi. Soket konektor di switch tekanan oli biasanya satu pin (karena switch menggunakan body sebagai massa melalui body engine).\n\nKabel yang rusak isolasinya dan bersentuhan dengan body engine (massa) akan menyebabkan lampu indikator oli terus menyala meskipun tekanan oli normal — situasi yang dapat menyebabkan pengendara mengabaikan lampu karena dianggap rusak, padahal suatu saat lampu tersebut mungkin menyala karena masalah tekanan oli yang sebenarnya.",
+          "imageUrl": null,
+          "caption": "Kabel penghubung switch tekanan oli ke lampu indikator panel"
+        },
+        "Soket": {
+          "fungsi": "Soket konektor pada switch tekanan oli memungkinkan pelepasan kabel dari switch untuk keperluan servis tanpa memotong kabel. Switch tekanan oli biasanya menggunakan konektor single-pin karena menggunakan body engine sebagai jalur massa (ground). Soket harus tahan terhadap panas dan minyak karena berada di area mesin.\n\nKorosi pada soket di area mesin sangat umum terjadi akibat uap oli dan panas yang tinggi. Korosi pada pin soket menambah resistansi yang dapat memengaruhi pembacaan sinyal meski dampaknya lebih kecil dibandingkan pada sirkuit sinyal analog seperti sensor level bensin.\n\nPemeriksaan: periksa kondisi soket dari korosi atau pin yang bengkok. Bersihkan dengan electrical contact cleaner. Pastikan soket terpasang dengan klik yang terasa agar tidak terlepas akibat getaran mesin. Soket yang rusak atau pin yang gosong harus diganti untuk memastikan koneksi yang andal ke switch tekanan oli.",
+          "imageUrl": null,
+          "caption": "Soket konektor penghubung kabel ke switch tekanan oli"
+        }
+      }
+    },
+    "Indikator Netral": {
+      "fungsi": "Indikator netral adalah sistem yang memberitahu pengendara bahwa transmisi sepeda motor berada pada posisi gigi netral (posisi 'N'). Sistem ini terdiri dari switch posisi gigi netral (neutral switch) yang terpasang di dalam atau di sisi transmisi, dan lampu indikator berwarna hijau di panel instrumen yang terhubung ke switch tersebut.\n\nSwitch netral bekerja dengan prinsip yang berlawanan dengan switch tekanan oli: saat transmisi di posisi netral, mekanisme internal switch menutup kontak (menghubungkan terminal ke massa) sehingga lampu hijau menyala. Saat transmisi di posisi gigi lain, kontak terbuka dan lampu mati. Lampu hijau yang menyala memberikan konfirmasi visual bahwa engine dapat dinyalakan dengan aman pada banyak model sepeda motor.\n\nPemeriksaan switch netral: verifikasi lampu hijau menyala saat transmisi di posisi N dan mati saat gigi dipindah ke posisi lain. Untuk menguji switch secara terpisah, lepas konektor switch dan hubungkan kabel secara singkat ke massa — lampu netral harus menyala. Switch yang rusak sering ditandai lampu netral yang tidak menyala di posisi N atau menyala di semua posisi gigi.",
+      "imageUrl": null,
+      "caption": "Indikator Netral — Konfirmasi visual posisi gigi netral transmisi",
+      "subComponents": [
+        "Switch posisi gigi netral (neutral switch) di transmisi",
+        "Lampu indikator netral (hijau)",
+        "Kabel"
+      ],
+      "subComponentDetails": {
+        "Switch posisi gigi netral (neutral switch) di transmisi": {
+          "fungsi": "Switch netral adalah switch mekanis yang dipasang di sisi transmisi dan diaktifkan oleh mekanisme pemindah gigi di dalam transmisi. Saat shift drum atau mekanisme pemilih gigi berada di posisi netral, tonjolan mekanis pada drum menekan plunger switch sehingga kontaknya menutup dan mengalirkan sinyal ke lampu indikator hijau.\n\nDesain switch netral sangat sederhana — berupa switch normally open yang menutup saat diaktifkan secara mekanis. Disegel dengan seal karet untuk mencegah kebocoran oli transmisi melalui lubang pemasangan switch. Rating tegangan dan arus switch harus sesuai dengan tegangan sistem kendaraan (12V) dan arus lampu indikator yang kecil.\n\nPemeriksaan: lepas soket kabel dari switch dan ukur kontinuitas antara terminal switch dan body (massa) saat transmisi di posisi N — harus terhubung. Saat gigi dipindah dari N, koneksi harus terputus. Switch yang terus terhubung di semua posisi gigi menunjukkan plunger macet di posisi tertekan — bersihkan atau ganti switch. Switch yang tidak pernah terhubung meski di posisi N menunjukkan plunger aus atau mekanisme aktivasi yang bermasalah.",
+          "imageUrl": null,
+          "caption": "Switch mekanis pendeteksi posisi gigi netral di transmisi"
+        },
+        "Lampu indikator netral (hijau)": {
+          "fungsi": "Lampu indikator netral berwarna hijau adalah petunjuk visual bahwa transmisi berada di posisi netral dan engine aman untuk dinyalakan tanpa kendaraan melaju. Warna hijau dipilih secara internasional untuk menandai kondisi aman atau normal. Pada banyak model sepeda motor, engine hanya dapat dihidupkan dengan starter elektrik jika lampu hijau ini menyala (interlock starter).\n\nPada sistem digital modern, indikator netral mungkin berupa huruf 'N' yang muncul di display MFD (Multi-Function Display). Lampu ini harus cukup terang untuk terlihat jelas di bawah sinar matahari langsung namun tidak terlalu menyilaukan di malam hari. Beberapa panel instrumen menggunakan dimmer otomatis berdasarkan sensor cahaya ambient.\n\nPemeriksaan: verifikasi lampu menyala saat transmisi di posisi N dengan kunci kontak ON. Jika lampu tidak menyala, periksa switch, kabel, dan bohlam/LED secara berurutan. Periksa juga fuse yang mungkin terhubung ke sirkuit indikator netral. Bohlam indikator yang mati pada tipe yang dapat diganti dapat diganti secara individual; pada tipe LED yang tertanam di PCB, penggantian memerlukan penggantian panel instrumen.",
+          "imageUrl": null,
+          "caption": "Lampu hijau penanda kondisi aman transmisi di posisi netral"
+        },
+        "Kabel": {
+          "fungsi": "Kabel indikator netral menghubungkan switch netral di transmisi ke lampu indikator di panel instrumen. Kabel melewati area yang bergerak (swingarm, frame) sehingga harus memiliki panjang ekstra dan routing yang benar agar tidak tertarik atau terjepit saat suspensi bergerak atau setang dibelokkan.\n\nKabel switch netral membawa arus yang sangat kecil (hanya untuk lampu indikator, biasanya 50–200 mA). Karena arus sangat kecil, masalah koneksi atau resistansi tinggi akibat korosi dapat menyebabkan lampu tidak menyala atau redup. Periksa routing kabel dengan saksama — kabel yang terjepit di antara komponen bergerak dapat putus secara internal tanpa terlihat dari luar.\n\nPemeriksaan: ukur tegangan di kabel dari panel ke switch saat kunci kontak ON — harus ada tegangan baterai di kabel ini (sebelum switch). Jika tidak ada tegangan, lacak kembali ke fuse atau sumber tegangan. Periksa kontinuitas kabel dengan menggerak-gerakkan kabel di seluruh panjangnya saat mengukur — putus parsial terdeteksi dengan perubahan pembacaan.",
+          "imageUrl": null,
+          "caption": "Penghubung sinyal switch netral ke lampu indikator panel"
+        }
+      }
+    },
+    "Fuel Gauge": {
+      "fungsi": "Fuel gauge atau pengukur bahan bakar adalah instrumen di panel yang menampilkan perkiraan jumlah bahan bakar tersisa di tangki berdasarkan sinyal resistansi dari sensor level bensin. Fuel gauge memungkinkan pengendara merencanakan pengisian bahan bakar sebelum kehabisan di jalan, meningkatkan keselamatan dan kenyamanan berkendara.\n\nFuel gauge tersedia dalam dua format: analog (jarum penunjuk di atas skala E-F) dan digital (tampilan segmen atau bar di display MFD). Pada tipe analog, jarum digerakkan oleh kumparan elektromagnet (bobbin type) atau bimetal yang merespons arus yang berubah sesuai resistansi sensor. Pada tipe digital, sinyal resistansi diproses oleh sirkuit ADC dan ditampilkan secara numerik atau bar.\n\nPemeriksaan fuel gauge: hubungkan resistor dengan nilai yang sesuai posisi 'penuh' (sesuai spesifikasi sensor) ke terminal sensor — jarum harus menunjuk ke 'F'. Ubah ke nilai resistansi 'kosong' — jarum harus menunjuk ke 'E'. Jika respons tidak tepat, periksa sensor level bensin terlebih dahulu sebelum menyimpulkan fuel gauge yang rusak, karena keduanya bekerja bersama.",
+      "imageUrl": null,
+      "caption": "Fuel Gauge — Instrumen penunjuk perkiraan level bahan bakar tersisa",
+      "subComponents": [
+        "Jarum penunjuk",
+        "Skala E (empty) – F (full)",
+        "Soket",
+        "Kabel",
+        "Peredam (damper) gerakan jarum"
+      ],
+      "subComponentDetails": {
+        "Jarum penunjuk": {
+          "fungsi": "Jarum fuel gauge bergerak antara posisi E (empty/kosong) dan F (full/penuh) berdasarkan nilai resistansi dari sensor level bensin. Jarum digerakkan oleh mekanisme elektromagnetik — bobbin (kumparan) yang dialiri arus dari sensor menciptakan medan magnet yang menarik jarum ke posisi yang proporsional dengan arus.\n\nBerbeda dari jarum speedometer, jarum fuel gauge bergerak sangat lambat dan stabil — pergerakan terlalu cepat tidak diperlukan dan bahkan mengganggu. Mekanisme damping memastikan jarum bergerak secara gradual bahkan saat level bensin berfluktuasi akibat guncangan kendaraan.\n\nPemeriksaan: jarum yang selalu menunjuk E meskipun tangki penuh menunjukkan masalah di sensor level bensin (pelampung tenggelam atau short circuit) atau kabel yang putus. Jarum yang selalu menunjuk F menunjukkan open circuit di sirkuit sensor. Jarum yang bergerak tetapi tidak akurat menunjukkan kalibrasi yang bergeser atau potensiometer sensor yang aus.",
+          "imageUrl": null,
+          "caption": "Elemen penunjuk level bahan bakar pada skala E-F"
+        },
+        "Skala E (empty) – F (full)": {
+          "fungsi": "Skala fuel gauge menampilkan rentang pengukuran dari E (empty/kosong di sisi kiri atau bawah) hingga F (full/penuh di sisi kanan atau atas). Beberapa desain menambahkan zona warna merah di area E untuk memperingatkan bahwa level sudah sangat rendah, sering dikombinasikan dengan lampu peringatan bahan bakar yang menyala saat level mencapai reservasi.\n\nSkala fuel gauge umumnya tidak linear — area sekitar F lebih dikompresi (jarak antar garis besar) dan area sekitar E lebih diperluas. Ini disengaja karena dari sisi desain, penting bagi pengendara mendapat peringatan lebih awal saat mendekati kosong daripada mendapat presisi tinggi saat tangki penuh.\n\nPemeriksaan: verifikasi skala terbaca jelas dan tidak terhalang kondensasi atau kotoran. Periksa bahwa posisi jarum pada E dan F berkorelasi dengan level bahan bakar aktual di tangki. Perbedaan besar antara pembacaan gauge dan level aktual menunjukkan perlunya kalibrasi atau penggantian sensor level bensin.",
+          "imageUrl": null,
+          "caption": "Rentang visual pengukuran bahan bakar dari kosong ke penuh"
+        },
+        "Peredam (damper) gerakan jarum": {
+          "fungsi": "Peredam atau damper adalah mekanisme yang memperlambat gerakan jarum fuel gauge agar tidak bergoyang mengikuti pergerakan bahan bakar saat kendaraan melaju di jalan yang tidak rata. Tanpa damping, bensin yang bergelombang di dalam tangki saat berkendara akan membuat jarum fuel gauge bergerak naik-turun tidak teratur, mengganggu dan mengaburkan pembacaan.\n\nDamping dapat diimplementasikan secara mekanis (menggunakan oli silikon dalam mekanisme jarum), elektris (kapasitor atau rangkaian RC dalam sirkuit sensor yang memfilter fluktuasi cepat), atau melalui software (rata-rata bergerak/moving average pada instrumen digital). Efek damping membuat perubahan level bahan bakar terlihat lambat — fuel gauge biasanya butuh beberapa menit untuk menunjukkan perubahan setelah isi ulang bensin.\n\nPemeriksaan: damping yang berlebihan menyebabkan fuel gauge sangat lambat merespons perubahan level — kadang dianggap sebagai kerusakan sensor. Damping yang tidak mencukupi menyebabkan jarum bergetar terus. Pada instrumen digital, parameter damping biasanya tidak dapat diakses pengguna. Pada instrumen analog, mekanisme damping mekanis yang rusak (oli merembes keluar) menyebabkan jarum bergetar berlebihan.",
+          "imageUrl": null,
+          "caption": "Mekanisme penstabil gerakan jarum dari guncangan bahan bakar"
+        },
+        "Soket": {
+          "fungsi": "Soket konektor adalah titik sambungan terlepas-pasang antara kabel dari panel instrumen dan kabel dari sensor level bensin di tangki. Soket harus memiliki resistansi kontak yang sangat rendah karena sinyal sensor adalah perubahan resistansi — resistansi soket yang tinggi akibat korosi akan menambah nilai total resistansi terukur dan membuat fuel gauge menunjukkan level lebih rendah dari yang sebenarnya.\n\nSoket biasanya berada di dekat tangki bahan bakar dan perlu waterproofing yang baik karena lokasi tersebut dapat terpapar air dan kelembaban. Pin soket terbuat dari tembaga berlapis nikel untuk ketahanan terhadap korosi, dan dirancang agar hanya bisa dipasang satu arah untuk mencegah pemasangan terbalik.\n\nPemeriksaan: lepas soket dan periksa kondisi pin dari korosi kehijauan. Ukur resistansi di terminal soket sisi sensor saat tangki penuh dan kosong — bandingkan dengan spesifikasi. Bersihkan pin dengan electrical contact cleaner jika ada korosi ringan. Soket dengan pin yang rusak atau korosi parah harus diganti untuk memastikan pembacaan fuel gauge yang akurat.",
+          "imageUrl": null,
+          "caption": "Soket konektor penghubung fuel gauge ke sensor level bensin"
+        },
+        "Kabel": {
+          "fungsi": "Kabel fuel gauge menghubungkan soket dekat tangki ke sirkuit fuel gauge di panel instrumen. Kabel melewati rangka kendaraan dan harus diproteksi dari abrasi menggunakan pelindung atau conduit di titik-titik yang berpotensi tergesek komponen logam. Penampang kabel cukup kecil karena sinyal yang dibawa adalah sinyal resistansi arus rendah.\n\nKarena sinyal yang dibawa adalah tegangan dan arus rendah, kabel fuel gauge sensitif terhadap gangguan — kabel yang terkelupas dan menyentuh massa rangka akan menyebabkan fuel gauge selalu menunjukkan F (short circuit pada jalur sinyal). Sebaliknya, kabel yang putus menyebabkan fuel gauge selalu menunjukkan E (open circuit).\n\nPemeriksaan: ukur total resistansi dari terminal panel instrumen ke terminal soket dekat tangki — nilainya tidak boleh berbeda jauh dari pengukuran langsung di soket sisi sensor. Selisih besar menunjukkan resistansi tinggi di kabel. Periksa isolasi kabel di seluruh jalurnya dari keretakan atau bekas gesekan yang dapat menyebabkan hubungan singkat ke rangka.",
+          "imageUrl": null,
+          "caption": "Kabel penghubung sinyal resistansi dari soket tangki ke panel"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "q": "Mengapa sistem starter menggunakan relay untuk menghubungkan arus ke motor starter, bukan langsung dari tombol starter?",
+      "opts": ["Agar tombol starter dapat menyala secara otomatis", "Karena arus motor starter sangat besar sehingga tidak aman dilewatkan melalui tombol kecil di setang", "Untuk membuat sistem starter lebih mudah diperbaiki", "Karena motor starter membutuhkan tegangan yang lebih tinggi dari baterai"],
+      "ans": 1
+    },
+    {
+      "q": "Seorang teknisi menekan tombol starter dan mendengar bunyi 'klik' dari relay starter, namun motor starter tidak berputar sama sekali. Kemungkinan penyebab yang paling tepat adalah?",
+      "opts": ["Kumparan relay starter putus (open circuit)", "Baterai habis total sehingga relay tidak dapat aktif", "Kontaktor utama relay aus atau terbakar sehingga tidak menghantarkan arus ke motor starter", "Switch interlock kopling rusak dalam keadaan terbuka"],
+      "ans": 2
+    },
+    {
+      "q": "Fungsi one-way clutch (sprag clutch) pada mekanisme gigi starter adalah?",
+      "opts": ["Meningkatkan torsi motor starter saat memutar ring gear", "Mencegah ring gear crankshaft berputar berlawanan arah saat starter aktif", "Memutus koneksi antara motor starter dan ring gear secara otomatis setelah engine menyala", "Mengatur kecepatan putaran gigi pinion sesuai RPM engine"],
+      "ans": 2
+    },
+    {
+      "q": "Pengukuran tegangan di terminal baterai saat starter aktif menunjukkan 8,5 Volt padahal tegangan diam baterai adalah 12,6 Volt. Apa yang dapat disimpulkan?",
+      "opts": ["Hasil normal — tegangan baterai memang turun drastis saat starter aktif", "Baterai sudah sangat lemah atau ada masalah short circuit yang menyebabkan arus berlebih", "Relay starter tidak berfungsi sehingga arus tidak terdistribusi dengan benar", "Motor starter dalam kondisi baik karena arus yang ditarik besar"],
+      "ans": 1
+    },
+    {
+      "q": "Engine sepeda motor tidak dapat dihidupkan dengan tombol starter meskipun baterai penuh dan semua komponen starter lainnya normal. Namun engine dapat dihidupkan dengan kick starter. Switch manakah yang paling mungkin rusak dalam kondisi terbuka (open)?",
+      "opts": ["Switch lampu depan", "Switch interlock kopling atau standar samping", "Switch sein kiri", "Switch klakson"],
+      "ans": 1
+    },
+    {
+      "q": "Tanda aus pada brush (sikat karbon) motor starter yang memerlukan penggantian segera adalah?",
+      "opts": ["Permukaan brush berubah warna menjadi keabu-abuan", "Panjang brush sudah mencapai atau di bawah batas minimum yang ditentukan pabrikan", "Brush mengeluarkan serbuk karbon hitam yang normal", "Tegangan drop sebesar 0,1 Volt di brush saat motor starter bekerja"],
+      "ans": 1
+    },
+    {
+      "q": "Seorang teknisi mendapati gigi starter (pinion) berputar bebas ke dua arah saat diputar dengan tangan. Apa artinya?",
+      "opts": ["Gigi starter dalam kondisi baik karena harus berputar bebas", "One-way clutch rusak (slip) sehingga tidak dapat meneruskan torsi ke ring gear", "Reduksi gigi bekerja dengan baik untuk mengurangi kecepatan putar", "Ring gear crankshaft perlu diganti karena aus"],
+      "ans": 1
+    },
+    {
+      "q": "Gigi ring gear crankshaft yang hanya rusak pada beberapa gigi (bukan seluruh lingkaran) akan menyebabkan gejala starter yang bagaimana?",
+      "opts": ["Starter sama sekali tidak bisa menyala", "Starter bekerja normal di semua kondisi karena gigi yang baik masih banyak", "Starter gagal hanya pada posisi crankshaft tertentu, namun berhasil jika crankshaft diputar sedikit terlebih dahulu", "Starter berputar namun engine cepat mati kembali"],
+      "ans": 2
+    }
+  ]
+}

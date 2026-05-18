@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "q": "Komponen karburator yang berfungsi mengontrol jumlah bahan bakar pada kondisi idle dan bukaan throttle kecil adalah?",
+      "opts": ["Main jet", "Pilot jet (slow jet)", "Jarum skep (jet needle)", "Air screw"],
+      "ans": 1
+    },
+    {
+      "q": "Gejala needle valve karburator yang bocor adalah?",
+      "opts": ["Mesin tidak dapat mencapai putaran tinggi", "Bahan bakar meluap dari selang overflow saat mesin mati", "Putaran idle terlalu rendah dan tidak stabil", "Akselerasi lambat pada throttle menengah"],
+      "ans": 1
+    },
+    {
+      "q": "Saat menyetel air screw karburator, kondisi yang paling tepat untuk penyetelan adalah?",
+      "opts": ["Mesin dingin dan throttle penuh terbuka", "Mesin panas dan pada kondisi idle yang stabil", "Mesin baru dinyalakan dan choke aktif", "Mesin mati untuk mencegah risiko kebakaran"],
+      "ans": 1
+    },
+    {
+      "q": "Fungsi pelampung (float) pada karburator adalah?",
+      "opts": ["Mengatur jumlah udara yang masuk ke venturi", "Mempertahankan ketinggian permukaan bahan bakar yang konstan di mangkuk", "Mengontrol pembukaan skep berdasarkan putaran mesin", "Menyaring kotoran dalam bahan bakar sebelum masuk ke jet"],
+      "ans": 1
+    },
+    {
+      "q": "Keran bensin tipe vakum otomatis tidak membuka aliran bahan bakar saat mesin mati karena?",
+      "opts": ["Tuas pemilih otomatis bergerak ke posisi OFF", "Tidak ada tekanan vakum dari intake manifold yang menggerakkan diafragma", "Filter cup tersumbat oleh partikel dari tangki", "Level bahan bakar di tangki berada di bawah batas minimum"],
+      "ans": 1
+    },
+    {
+      "q": "Mesin sepeda motor tiba-tiba mati saat berkendara namun dapat dinyalakan kembali setelah tutup tangki dibuka sedikit. Penyebab paling mungkin adalah?",
+      "opts": ["Karburator tersumbat oleh kotoran", "Ventilasi/breather tangki tersumbat sehingga terjadi vakum di dalam tangki", "Keran bensin dalam posisi OFF", "Filter bensin penuh dan harus diganti"],
+      "ans": 1
+    },
+    {
+      "q": "Pada karburator tipe CV (Constant Velocity), skep diangkat oleh?",
+      "opts": ["Tarikan langsung kabel gas dari grip throttle", "Perbedaan tekanan vakum antara ruang atas dan bawah diafragma", "Gaya sentrifugal saat mesin berputar cepat", "Tekanan bahan bakar dari pompa bensin"],
+      "ans": 1
+    },
+    {
+      "q": "Cara yang benar untuk membersihkan main jet karburator yang tersumbat adalah?",
+      "opts": ["Tusuk lubang jet dengan kawat tembaga tipis untuk membuka sumbatan", "Rendam dalam bensin dan semprot udara bertekanan dari dalam ke luar", "Amplas permukaan jet hingga lubang terlihat bersih dan bulat", "Perbesar sedikit diameter lubang jet agar tidak tersumbat lagi"],
+      "ans": 1
+    },
+    {
+      "q": "Kebocoran udara pada sambungan intake manifold dengan kepala silinder menyebabkan?",
+      "opts": ["Campuran bahan bakar terlalu kaya dan konsumsi bahan bakar meningkat", "Campuran bahan bakar terlalu miskin, idle tidak stabil, dan sulit disetel", "Tekanan kompresi silinder menurun secara signifikan", "Bahan bakar bocor ke luar dari sela-sela sambungan manifold"],
+      "ans": 1
+    },
+    {
+      "q": "Klip pada jarum skep karburator dipindahkan ke alur yang lebih atas (jarum turun). Efek yang terjadi pada campuran bahan bakar-udara adalah?",
+      "opts": ["Campuran menjadi lebih kaya pada putaran menengah", "Campuran menjadi lebih miskin pada putaran menengah", "Tidak ada perubahan — klip hanya mengunci jarum agar tidak jatuh", "Campuran lebih kaya pada idle tetapi lebih miskin pada putaran tinggi"],
+      "ans": 1
+    }
+  ]
+}

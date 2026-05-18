@@ -1,0 +1,222 @@
+{
+  "caption": "Sistem Pengisian (Charging System)",
+  "imageUrl": null,
+  "componentDetails": {
+    "Alternator/Magneto": {
+      "fungsi": "Alternator atau magneto adalah generator listrik yang dipasang pada crankshaft engine untuk mengubah energi mekanik rotasi menjadi energi listrik arus bolak-balik (AC). Pada sepeda motor, alternator berjenis magneto karena menggunakan magnet permanen pada rotornya — tidak memerlukan sumber listrik eksternal untuk membangkitkan medan magnet seperti pada alternator mobil.\n\nKonstruksi magneto terdiri dari stator berisi kumparan kawat tembaga yang dililitkan pada inti besi, dan rotor berupa flywheel yang dilengkapi magnet permanen di sisi dalamnya. Saat mesin berputar, magnet rotor melewati kumparan stator secara berulang, menyebabkan perubahan fluks magnetik yang menginduksi arus AC pada kumparan. Frekuensi dan tegangan output meningkat seiring dengan putaran mesin.\n\nPemeriksaan alternator meliputi pengukuran tegangan output AC antara terminal spul pengisian menggunakan multimeter pada rentang AC Volt — spesifikasi umum adalah 14–18V AC pada 5000 RPM. Periksa juga resistansi kumparan stator menggunakan multimeter ohmmeter; resistansi terlalu tinggi atau tak terhingga menunjukkan kumparan putus, resistansi mendekati nol menunjukkan hubungan singkat.",
+      "imageUrl": null,
+      "caption": "Alternator/Magneto — Pembangkit listrik utama sepeda motor",
+      "subComponents": [
+        "Spul pengisian (charging coil)",
+        "Spul penerangan (lighting coil)",
+        "Stator",
+        "Magnet rotor (flywheel magnet)",
+        "Soket output",
+        "Baut pengikat stator"
+      ],
+      "subComponentDetails": {
+        "Spul pengisian (charging coil)": {
+          "fungsi": "Spul pengisian (charging coil) adalah kumparan kawat tembaga berenamel yang dililit pada inti besi stator dengan jumlah lilitan tertentu untuk menghasilkan tegangan AC yang cukup bagi pengisian baterai. Kumparan ini dirancang khusus untuk beban pengisian — menghasilkan arus lebih besar pada beban rendah dan tegangan yang dapat diatur oleh kiprok.\n\nDalam satu stator biasanya terdapat beberapa kutub pengisian yang dihubungkan seri atau paralel untuk meningkatkan output. Kawat tembaga berdiameter 0,3–0,8 mm dilindungi oleh lapisan enamel tipis sebagai isolator antar lilitan. Seluruh kumparan dilapisi resin epoksi untuk perlindungan terhadap getaran, kelembaban, dan panas.\n\nPemeriksaan: ukur resistansi spul pengisian dengan multimeter (biasanya 0,1–1,5 Ohm tergantung pabrikan). Resistansi tak terhingga menunjukkan putus (open circuit), nilai sangat rendah atau nol menunjukkan short circuit. Ukur juga tegangan AC output antara terminal spul dan massa saat mesin berputar pada RPM tertentu sesuai spesifikasi buku servis.",
+          "imageUrl": null,
+          "caption": "Kumparan yang menghasilkan arus untuk pengisian baterai"
+        },
+        "Spul penerangan (lighting coil)": {
+          "fungsi": "Spul penerangan (lighting coil) adalah kumparan terpisah pada stator yang dikhususkan untuk menyuplai listrik bagi sistem penerangan sepeda motor. Pada beberapa desain, sistem penerangan dioperasikan langsung dari arus AC spul penerangan tanpa melalui baterai, sehingga kecerahan lampu berubah seiring putaran mesin.\n\nDalam desain yang lebih modern, spul penerangan output-nya digabungkan dengan spul pengisian dan seluruh keluaran melalui kiprok untuk diubah menjadi DC yang stabil. Spul penerangan umumnya menghasilkan tegangan dan arus yang lebih besar dari spul pengisian karena beban penerangan cukup signifikan.\n\nPemeriksaan: ukur resistansi spul penerangan dengan multimeter — nilainya biasanya sedikit berbeda dari spul pengisian. Uji tegangan AC output saat mesin menyala; nilai normal berkisar 12–18V AC tergantung RPM dan desain sistem. Spul yang terbakar ditandai bau hangus dari area alternator dan voltase drop signifikan.",
+          "imageUrl": null,
+          "caption": "Kumparan untuk suplai listrik sistem penerangan"
+        },
+        "Stator": {
+          "fungsi": "Stator adalah kerangka tetap (tidak berputar) dari alternator yang terbuat dari pelat besi laminasi berbentuk bintang atau poligon, tempat kumparan-kumparan (spul) dililitkan. Fungsi utamanya sebagai inti besi yang memperkuat medan magnet dari rotor dan sebagai dudukan mekanis untuk seluruh kumparan.\n\nLaminasi besi yang digunakan untuk stator dipilih untuk meminimalkan rugi-rugi eddy current (arus pusar) yang timbul akibat perubahan fluks magnetik cepat. Stator dipasang secara tetap ke cover crankcase kiri dengan beberapa baut pengikat, dengan celah udara (air gap) yang sangat presisi antara permukaan stator dan magnet rotor — biasanya 0,2–0,5 mm.\n\nPemeriksaan: periksa kondisi fisik stator dari tanda terbakar, retak, atau isolasi kumparan yang meleleh. Periksa kelonggaran baut pengikat yang dapat menyebabkan stator bergeser dan magnet rotor bersentuhan dengan stator — kerusakan fatal yang langsung merusak keduanya. Ukur air gap dengan feeler gauge jika stator harus dilepas dan dipasang kembali.",
+          "imageUrl": null,
+          "caption": "Kerangka tetap dudukan kumparan alternator"
+        },
+        "Magnet rotor (flywheel magnet)": {
+          "fungsi": "Magnet rotor atau flywheel magnet adalah komponen berputar dari alternator yang terpasang langsung pada ujung crankshaft. Berbentuk seperti mangkuk atau cakram dengan magnet permanen (biasanya magnet ferit atau magnet neodimium pada tipe modern) yang tertanam di sisi dalam, menghadap ke kumparan stator.\n\nSebagai flywheel, komponen ini juga berfungsi sebagai penyimpan energi rotasi untuk menjaga kelancaran putaran mesin antar langkah tenaga. Massa flywheel yang besar menghasilkan momen inersia yang membantu engine berjalan halus di putaran rendah. Magnet permanen yang kuat menghasilkan fluks magnetik besar untuk output alternator yang tinggi.\n\nPemeriksaan: periksa kondisi magnet dari demagnetisasi atau retak (magnet yang lemah ditandai output alternator rendah). Periksa kebersihan permukaan dalam rotor dari serpihan besi yang menempel pada magnet — bersihkan dengan kain bersih saat servis. Periksa kondisi pasak (woodruff key) dan keyway crankshaft yang menentukan posisi timing pengapian.",
+          "imageUrl": null,
+          "caption": "Rotor bermagnet permanen yang berputar bersama crankshaft"
+        },
+        "Soket output": {
+          "fungsi": "Soket output alternator adalah konektor listrik multi-pin yang menghubungkan terminal kumparan stator dengan kabel menuju regulator/rectifier (kiprok). Desain soket waterproof dengan seal karet di setiap pin untuk mencegah korosi akibat air dan kelembaban di area engine yang sering terkena percikan air.\n\nSetiap pin soket dihubungkan ke terminal spul pengisian atau spul penerangan melalui kabel berpenampang sesuai kapasitas arus. Konektor dirancang untuk memudahkan diagnosis — teknisi dapat mengukur tegangan AC langsung di soket ini tanpa membongkar cover alternator.\n\nPemeriksaan: periksa kondisi fisik soket dari retak, pin bengkok, atau korosi kehijauan pada pin tembaga. Korosi pada soket menyebabkan resistansi kontak meningkat, mengakibatkan panas berlebih dan drop tegangan yang dapat merusak sistem. Bersihkan pin yang terkorosi dengan contact cleaner dan sikat kawat halus.",
+          "imageUrl": null,
+          "caption": "Konektor penghubung output spul ke kabel sistem"
+        },
+        "Baut pengikat stator": {
+          "fungsi": "Baut pengikat stator adalah baut-baut (biasanya 3 buah) yang mengencangkan stator ke cover crankcase. Posisi stator yang tepat sangat kritis karena menentukan air gap antara stator dan rotor, serta pada beberapa model menentukan timing pengapian melalui posisi relatif pulser coil terhadap magnet rotor.\n\nPada beberapa model sepeda motor, lubang baut stator dibuat oval (slotted) untuk memungkinkan penyetelan posisi stator secara rotasional guna mengatur timing pengapian. Torsi pengencangan baut harus sesuai spesifikasi (umumnya 8–12 Nm) — terlalu longgar menyebabkan stator bergeser, terlalu kencang dapat meretakkan stator.\n\nPemeriksaan: periksa kekencangan baut stator saat servis berkala. Baut yang kendur menyebabkan getaran stator dan kemungkinan kontak fisik antara stator dan rotor. Gunakan thread locker (Loctite) sesuai rekomendasi pabrikan pada baut pengikat stator untuk mencegah kendur akibat getaran mesin.",
+          "imageUrl": null,
+          "caption": "Pengikat stator ke crankcase dengan posisi presisi"
+        }
+      }
+    },
+    "Regulator/Rectifier (Kiprok)": {
+      "fungsi": "Regulator/rectifier atau yang populer disebut kiprok adalah unit elektronik yang menjalankan dua fungsi sekaligus: menyearahkan arus AC dari alternator menjadi DC (fungsi rectifier), dan mengatur tegangan output agar tetap stabil di sekitar 13,5–14,5 Volt DC meskipun putaran mesin berubah-ubah (fungsi regulator). Tanpa kiprok, tegangan tinggi dari alternator di RPM tinggi dapat merusak baterai dan komponen elektronik.\n\nKonstruksi kiprok modern berbentuk modul kompak berisi komponen semikonduktor — dioda penyearah, transistor atau thyristor/SCR — yang disusun dalam satu blok epoksi dan dipasang pada heatsink aluminium untuk pembuangan panas. Kiprok dipasang di lokasi yang mendapat aliran udara baik, biasanya di bawah jok atau di sisi rangka.\n\nPemeriksaan kiprok dilakukan dengan multimeter: ukur tegangan DC di terminal baterai saat mesin hidup pada 3000–5000 RPM — nilai normal 13,5–14,5 Volt. Tegangan di bawah 13,5V menunjukkan kiprok lemah atau alternator bermasalah; tegangan di atas 15V menunjukkan kiprok rusak (overcharging) yang akan merusak baterai. Kiprok yang panas berlebih tanpa beban listrik besar adalah tanda kerusakan.",
+      "imageUrl": null,
+      "caption": "Regulator/Rectifier (Kiprok) — Penyearah dan pengatur tegangan pengisian",
+      "subComponents": [
+        "Dioda penyearah (rectifier diode)",
+        "Transistor regulator",
+        "Thyristor/SCR",
+        "Heatsink (pendingin)",
+        "Terminal input AC",
+        "Terminal output DC (ke aki)",
+        "Terminal massa",
+        "Casing aluminium"
+      ],
+      "subComponentDetails": {
+        "Dioda penyearah (rectifier diode)": {
+          "fungsi": "Dioda penyearah adalah komponen semikonduktor yang hanya mengizinkan arus listrik mengalir satu arah. Dalam kiprok, beberapa dioda disusun dalam konfigurasi bridge rectifier (jembatan penyearah) untuk mengubah arus AC bolak-balik menjadi arus DC searah yang dibutuhkan baterai dan sistem elektronik.\n\nPada penyearahan gelombang penuh (full-wave rectification), setidaknya empat dioda digunakan. Setiap siklus AC, dua dioda aktif menyearahkan setengah gelombang positif dan dua dioda lainnya menyearahkan setengah gelombang negatif, sehingga menghasilkan output DC yang lebih halus. Pada sistem 3-fasa (banyak digunakan pada sepeda motor modern), enam dioda digunakan.\n\nPemeriksaan: uji dioda dengan multimeter pada mode dioda — kondisi baik menunjukkan tegangan maju (forward voltage) sekitar 0,5–0,7V dalam satu arah dan OL (tak terhingga) pada arah sebaliknya. Dioda yang short circuit (nilai nol di kedua arah) atau open circuit (OL di kedua arah) menyebabkan kiprok tidak berfungsi dan harus diganti sebagai unit.",
+          "imageUrl": null,
+          "caption": "Komponen penyearah arus AC menjadi DC"
+        },
+        "Transistor regulator": {
+          "fungsi": "Transistor regulator adalah komponen semikonduktor aktif yang berfungsi mengontrol jumlah arus yang dibuang (shunt) atau diblokir dari output pengisian untuk menjaga tegangan sistem tetap stabil. Pada tipe shunt regulator (paling umum pada sepeda motor), transistor membuka jalur bypass ke massa ketika tegangan melebihi nilai referensi.\n\nTransistor bekerja berdasarkan sinyal dari rangkaian pembanding tegangan (voltage comparator) — saat tegangan output melebihi 14,5V, transistor diberi sinyal untuk mengalihkan arus berlebih ke massa sebagai panas. Operasi ini berlangsung sangat cepat (switching) sehingga tegangan output tampak stabil secara rata-rata.\n\nPemeriksaan: transistor dalam kiprok tidak dapat diperiksa secara individual tanpa membongkar unit. Tanda kerusakan transistor regulator adalah tegangan pengisian tidak terkontrol (terlalu tinggi atau terlalu rendah) atau kiprok menjadi sangat panas dalam waktu singkat. Penggantian dilakukan pada level unit kiprok secara keseluruhan.",
+          "imageUrl": null,
+          "caption": "Pengontrol tegangan output pengisian"
+        },
+        "Thyristor/SCR": {
+          "fungsi": "Thyristor atau SCR (Silicon Controlled Rectifier) adalah komponen semikonduktor empat lapis yang berfungsi sebagai saklar elektronik yang dapat dikontrol. Dalam kiprok tipe SCR (banyak digunakan pada sepeda motor modern), SCR menggantikan atau melengkapi transistor untuk regulasi tegangan dengan efisiensi lebih tinggi.\n\nSCR dapat dikontrol secara presisi untuk membuka atau menutup jalur arus dalam periode waktu tertentu (phase control), memungkinkan regulasi tegangan yang lebih halus dibandingkan tipe shunt sederhana. Pada kiprok 3-fasa, SCR sering dipasangkan dengan dioda dalam konfigurasi half-controlled atau full-controlled bridge.\n\nPemeriksaan: seperti transistor, SCR dalam kiprok tidak dapat diperiksa secara individual di lapangan. Gejala SCR rusak antara lain: tegangan output tidak stabil, pengisian tidak terjadi sama sekali, atau baterai terus-menerus overcharge. Selalu ganti kiprok sebagai unit lengkap dan pastikan spesifikasi pengganti sesuai dengan tipe dan rating tegangan asli.",
+          "imageUrl": null,
+          "caption": "Semikonduktor pengontrol untuk regulasi tegangan presisi"
+        },
+        "Heatsink (pendingin)": {
+          "fungsi": "Heatsink adalah pelat aluminium bersirip (finned) yang berfungsi membuang panas yang dihasilkan oleh komponen semikonduktor (dioda, transistor, SCR) selama proses penyearahan dan regulasi tegangan. Aluminium dipilih karena konduktivitas termal tinggi dan bobot ringan.\n\nProses regulasi tegangan tipe shunt membuang energi berlebih dalam bentuk panas — semakin besar selisih tegangan alternator dengan tegangan regulasi, semakin banyak panas yang dihasilkan. Heatsink harus berukuran memadai dan mendapat aliran udara yang cukup untuk mencegah overheating yang dapat merusak semikonduktor di dalamnya.\n\nPemeriksaan: periksa kondisi heatsink dari kotoran, lumpur, atau cat yang menyumbat sirip-siripnya — hambatan thermal yang meningkat dapat menyebabkan overheat kiprok. Pastikan lokasi pemasangan kiprok mendapat aliran udara yang cukup. Heatsink yang terlalu panas untuk disentuh bahkan saat idle menandakan kiprok bekerja terlalu keras atau ada masalah pada sistem pengisian.",
+          "imageUrl": null,
+          "caption": "Pendingin logam aluminium bersirip untuk disipasi panas"
+        },
+        "Terminal input AC": {
+          "fungsi": "Terminal input AC adalah titik koneksi pada kiprok yang menerima arus AC dari kumparan stator alternator. Pada sistem 1-fasa, terdapat satu atau dua terminal input AC; pada sistem 3-fasa modern (lebih umum pada sepeda motor 150cc ke atas), terdapat tiga terminal input AC yang diberi label Y atau W.\n\nKabel dari soket output alternator terhubung langsung ke terminal-terminal ini. Kondisi koneksi yang baik sangat penting karena resistansi kontak yang tinggi dapat menyebabkan panas berlebih pada terminal dan penurunan efisiensi pengisian. Terminal biasanya diberi warna atau label sesuai standar kabel pabrikan.\n\nPemeriksaan: ukur tegangan AC antara setiap terminal input dan massa saat mesin menyala untuk memverifikasi output alternator normal. Tegangan tidak seimbang antara terminal input AC pada sistem 3-fasa mengindikasikan salah satu kumparan stator rusak. Periksa kondisi soket dan kabel dari korosi atau terminasi yang longgar.",
+          "imageUrl": null,
+          "caption": "Titik masukan arus AC dari alternator/magneto"
+        },
+        "Terminal output DC (ke aki)": {
+          "fungsi": "Terminal output DC adalah titik keluaran arus searah yang sudah diatur dari kiprok menuju baterai (aki) dan sistem kelistrikan. Biasanya diberi label (+) atau B+ dan dihubungkan ke terminal positif baterai melalui kabel berpenampang besar (umumnya 1,5–2,5 mm²) untuk mengurangi drop tegangan.\n\nTegangan pada terminal ini harus stabil di 13,5–14,5V DC saat mesin berputar — ini adalah parameter utama diagnosis sistem pengisian. Arus yang mengalir melalui terminal ini bisa mencapai 5–15 Ampere tergantung kondisi pengisian dan beban listrik yang aktif.\n\nPemeriksaan: ukur tegangan DC di terminal ini dengan multimeter saat mesin hidup pada berbagai RPM. Variasi tegangan yang besar (misalnya 12V di idle dan 16V di RPM tinggi) menunjukkan regulator tidak berfungsi. Periksa kabel dan soket dari tanda hangus atau panas berlebih yang menandakan arus berlebih atau koneksi longgar.",
+          "imageUrl": null,
+          "caption": "Titik keluaran arus DC yang sudah diregulasi ke baterai"
+        },
+        "Terminal massa": {
+          "fungsi": "Terminal massa kiprok adalah titik penghubung rangkaian negatif kiprok ke massa kendaraan (rangka). Kualitas koneksi massa yang baik sangat kritis — resistansi massa yang tinggi menyebabkan tegangan referensi regulator tidak akurat, mengakibatkan tegangan output yang tidak stabil atau terlalu tinggi.\n\nPada banyak sepeda motor, kiprok dipasang langsung ke rangka logam melalui baut pemasangnya, sehingga bodi kiprok sekaligus berfungsi sebagai terminal massa. Namun beberapa model menggunakan kabel massa terpisah yang harus dalam kondisi baik tanpa korosi atau putus.\n\nPemeriksaan: ukur tegangan antara terminal massa kiprok dan terminal negatif baterai — idealnya mendekati 0V. Perbedaan lebih dari 0,5V menunjukkan resistansi massa yang bermasalah. Bersihkan titik koneksi massa dari karat atau cat menggunakan amplas halus dan kencangkan baut dengan torsi yang tepat.",
+          "imageUrl": null,
+          "caption": "Koneksi negatif kiprok ke massa rangka kendaraan"
+        },
+        "Casing aluminium": {
+          "fungsi": "Casing aluminium adalah badan luar kiprok yang membungkus dan melindungi seluruh komponen elektronik di dalamnya. Material aluminium digunakan karena memberikan perlindungan mekanis yang kuat sekaligus berkontribusi pada pembuangan panas dari komponen semikonduktor di dalamnya.\n\nKomponen elektronik di dalam casing biasanya di封封 (potted) menggunakan resin epoksi atau silikon untuk perlindungan terhadap getaran, guncangan, kelembaban, dan korosi. Desain casing yang sealed ini membuat kiprok tidak dapat diperbaiki di lapangan — jika ada komponen internal yang rusak, seluruh unit harus diganti.\n\nPemeriksaan: periksa kondisi fisik casing dari retak, pecah, atau tanda panas berlebih (perubahan warna atau melembung). Casing yang retak memungkinkan kelembaban masuk dan merusak komponen elektronik di dalamnya. Pastikan kiprok terpasang kuat dengan baut pengikatnya karena pemasangan yang longgar mengurangi efisiensi transfer panas ke rangka/heatsink.",
+          "imageUrl": null,
+          "caption": "Badan pelindung komponen elektronik kiprok"
+        }
+      }
+    },
+    "Baterai": {
+      "fungsi": "Baterai (aki) adalah sumber energi listrik utama pada sepeda motor yang menyimpan energi kimia dan mengubahnya menjadi energi listrik saat dibutuhkan. Baterai menyuplai arus ke seluruh sistem kelistrikan saat mesin belum hidup dan menstabilkan tegangan saat mesin sudah berputar. Baterai 12 Volt adalah standar yang digunakan pada hampir seluruh sepeda motor modern.\n\nBaterai timbal-asam (lead-acid) tipe basah terdiri dari sel-sel elektrokimia yang masing-masing menghasilkan 2 volt, sehingga baterai 12V memiliki 6 sel yang dihubungkan seri. Setiap sel berisi pelat positif (lead dioxide/PbO₂), pelat negatif (lead/Pb murni), dan elektrolit larutan asam sulfat (H₂SO₄) encer. Tipe MF (Maintenance Free) menggunakan desain tertutup dengan teknologi AGM atau gel yang tidak memerlukan penambahan air.\n\nPemeriksaan: ukur tegangan baterai dengan multimeter — tegangan penuh 12,6–12,8 V (istirahat), di bawah 12,0 V menunjukkan baterai lemah. Periksa kondisi fisik terminal dari korosi (bersihkan dengan air panas dan sikat), ukur berat jenis elektrolit dengan hidrometer (standar 1,250–1,280 pada suhu 20°C), dan uji kemampuan beban (load test) menggunakan battery tester.",
+      "imageUrl": null,
+      "caption": "Baterai — sumber daya listrik utama sepeda motor",
+      "subComponents": [
+        "Terminal positif (+)",
+        "Terminal negatif (–)",
+        "Sel-sel (cell)",
+        "Elektrolit (asam sulfat untuk basah)",
+        "Pelat positif",
+        "Pelat negatif",
+        "Separator",
+        "Casing/wadah",
+        "Tutup ventilasi",
+        "Indikator level"
+      ],
+      "subComponentDetails": {
+        "Terminal positif (+)": {
+          "fungsi": "Terminal positif adalah kutub keluaran arus listrik dari baterai yang terhubung ke rangkaian beban dan sistem pengisian alternator. Ditandai dengan simbol (+) dan biasanya berukuran lebih besar dari terminal negatif untuk mencegah pemasangan terbalik. Dibuat dari paduan timbal dengan ketahanan korosi yang baik.\n\nTerminal positif mengalirkan arus searah ke sekring utama, kemudian didistribusikan ke seluruh sirkuit kelistrikan sepeda motor. Sambungan yang longgar pada terminal positif menyebabkan tegangan drop yang signifikan sehingga komponen kelistrikan tidak bekerja optimal atau mati sama sekali.\n\nPemeriksaan: periksa kondisi terminal dari korosi putih-kehijauan (sulfasi), kencangkan baut pengikat kabel sesuai torsi (biasanya 4–6 Nm), dan oleskan grease atau vaselin khusus baterai setelah pembersihan untuk mencegah korosi lebih lanjut.",
+          "imageUrl": null,
+          "caption": "Terminal positif baterai"
+        },
+        "Terminal negatif (–)": {
+          "fungsi": "Terminal negatif adalah kutub return arus listrik yang terhubung ke rangka/chasis sepeda motor sebagai ground (massa). Semua komponen kelistrikan memiliki jalur ground yang kembali ke terminal negatif baterai melalui rangka. Dibuat dari paduan timbal dan biasanya berukuran lebih kecil dari terminal positif.\n\nKoneksi ground yang buruk pada terminal negatif atau pada titik ground di rangka merupakan penyebab umum berbagai masalah kelistrikan yang sulit didiagnosis. Resistansi pada jalur ground dapat menyebabkan tegangan referensi sistem elektronik bergeser sehingga sensor dan aktuator bekerja tidak normal.\n\nPemeriksaan: ukur resistansi antara terminal negatif baterai dan titik ground di rangka menggunakan ohmmeter — nilai ideal mendekati 0 Ω. Nilai di atas 0,5 Ω mengindikasikan koneksi ground yang buruk. Bersihkan titik ground dari cat atau korosi, dan kencangkan sambungan kabel ground.",
+          "imageUrl": null,
+          "caption": "Terminal negatif baterai"
+        },
+        "Sel-sel (cell)": {
+          "fungsi": "Sel elektrokimia adalah unit dasar penghasil listrik di dalam baterai. Setiap sel terdiri dari sepasang pelat (positif dan negatif) yang terendam dalam elektrolit asam sulfat dan menghasilkan beda potensial sekitar 2 volt melalui reaksi elektrokimia. Enam sel dihubungkan secara seri di dalam baterai 12V.\n\nReaksi pengisian dan pengosongan pada setiap sel bersifat reversibel (dapat diulang). Saat pengosongan (discharge), PbO₂ pada pelat positif dan Pb pada pelat negatif bereaksi dengan H₂SO₄ membentuk PbSO₄ dan air, menghasilkan arus listrik. Proses ini terbalik saat pengisian (charge) oleh alternator.\n\nPemeriksaan: ketidakseimbangan tegangan antar sel (perbedaan lebih dari 0,1 V pada pengukuran individual) mengindikasikan sel yang rusak. Sel yang rusak tidak dapat diperbaiki — seluruh baterai harus diganti. Hindari pengosongan baterai secara total (deep discharge) karena mempercepat sulfasi yang merusak sel secara permanen.",
+          "imageUrl": null,
+          "caption": "Sel-sel baterai"
+        },
+        "Elektrolit (asam sulfat untuk basah)": {
+          "fungsi": "Elektrolit adalah larutan asam sulfat (H₂SO₄) encer yang berfungsi sebagai media konduksi ion antara pelat positif dan negatif, memungkinkan reaksi elektrokimia berlangsung. Konsentrasi asam sulfat yang tepat (berat jenis 1,265–1,280 g/cm³ pada 20°C) menentukan kapasitas dan tegangan baterai.\n\nLevel elektrolit harus selalu berada antara batas UPPER dan LOWER pada dinding transparan baterai. Elektrolit yang berkurang karena penguapan air saat charging atau operasi normal harus ditambah dengan air suling (aquades) — bukan air keran yang mengandung mineral. Menambahkan asam sulfat saat level rendah adalah kesalahan fatal yang meningkatkan konsentrasi secara berlebihan.\n\nPemeriksaan: ukur berat jenis elektrolit setiap bulan menggunakan hidrometer. Berat jenis di bawah 1,220 menunjukkan baterai hampir habis dan perlu pengisian. Berat jenis yang rendah meskipun sudah di-charge penuh mengindikasikan sulfasi pelat yang tidak dapat dipulihkan. Hindari kontak elektrolit dengan kulit atau mata karena bersifat korosif.",
+          "imageUrl": null,
+          "caption": "Elektrolit asam sulfat baterai"
+        },
+        "Pelat positif": {
+          "fungsi": "Pelat positif adalah elektroda dalam baterai yang terbuat dari timbal dioksida (PbO₂) berwarna coklat gelap. Pelat ini merupakan sisi oksidasi dalam reaksi elektrokimia dan bertanggung jawab atas kapasitas penyimpanan energi baterai bersama pelat negatif. Beberapa pelat positif disusun paralel dan terhubung ke terminal positif.\n\nPbO₂ pada pelat positif secara alami mudah rontok (shedding) akibat ekspansi dan kontraksi siklus charge-discharge. Lumpur timbal yang rontok mengendap di bagian bawah baterai. Jika endapan terlalu tebal dan menyentuh tepi bawah pelat, terjadi korsleting internal antar sel.\n\nPemeriksaan: baterai dengan korsleting internal sel akan menunjukkan tegangan total di bawah 12V dan tidak dapat mencapai kapasitas penuh meskipun di-charge lama. Kondisi ini tidak dapat diperbaiki — baterai harus diganti. Hindari getaran berlebih dan discharge dalam yang mempercepat pengelupasan material aktif dari pelat positif.",
+          "imageUrl": null,
+          "caption": "Pelat positif baterai"
+        },
+        "Pelat negatif": {
+          "fungsi": "Pelat negatif adalah elektroda dalam baterai yang terbuat dari timbal murni (Pb) dengan struktur berpori berwarna abu-abu. Pelat negatif lebih tahan terhadap degradasi dibanding pelat positif, namun rentan terhadap sulfasi — pembentukan kristal PbSO₄ yang keras pada permukaan pelat saat baterai dibiarkan dalam keadaan kosong terlalu lama.\n\nSulfasi pada pelat negatif menghalangi reaktan dari mencapai permukaan aktif pelat, mengurangi kapasitas dan kemampuan pengisian baterai. Sulfasi ringan dapat diatasi dengan pengisian lambat (trickle charge) menggunakan pengisi baterai khusus, namun sulfasi berat bersifat permanen.\n\nPemeriksaan: baterai yang tersulfasi menunjukkan tegangan cepat naik saat charging namun juga cepat turun saat beban diberikan — kapasitas efektif jauh lebih rendah dari nilai nominal. Hindari penyimpanan baterai dalam keadaan kosong — isi daya penuh sebelum disimpan dan charge ulang setiap 1–2 bulan selama penyimpanan jangka panjang.",
+          "imageUrl": null,
+          "caption": "Pelat negatif baterai"
+        },
+        "Separator": {
+          "fungsi": "Separator adalah lapisan penyekat tipis berpori yang ditempatkan di antara pelat positif dan negatif untuk mencegah korsleting langsung antar pelat sambil tetap memungkinkan ion-ion elektrolit melewatinya. Material separator umumnya polyethylene (PE) atau polypropylene (PP) berpori mikro yang tahan terhadap asam sulfat.\n\nPori-pori pada separator harus cukup kecil untuk mencegah partikel timbal yang rontok dari pelat menembus ke sisi seberangnya, namun cukup besar untuk memungkinkan aliran ion dengan hambatan minimal. Separator yang rusak atau tertembus menyebabkan hubungan singkat internal yang merusak sel secara permanen.\n\nPemeriksaan: kerusakan separator umumnya tidak dapat didiagnosis dari luar baterai. Tanda tidak langsung adalah baterai yang discharge sangat cepat tanpa beban (self-discharge tinggi) atau panas berlebih saat pengisian pada salah satu sel. Kondisi ini mengharuskan penggantian baterai.",
+          "imageUrl": null,
+          "caption": "Separator baterai"
+        },
+        "Casing/wadah": {
+          "fungsi": "Casing baterai adalah wadah luar berbahan polipropilena (PP) yang menampung seluruh komponen internal baterai dan elektrolit secara kedap. Dirancang tahan terhadap asam sulfat, getaran mekanis, dan rentang suhu operasi yang lebar. Dinding transparan atau semitransparan memungkinkan pemeriksaan level elektrolit dari luar.\n\nCasing harus mampu menahan tekanan internal yang dapat timbul saat pengisian berlebih (overcharge) yang menghasilkan gas hidrogen dan oksigen. Gasket antara tutup atas dan bodi casing harus tersegel sempurna untuk mencegah tumpahan elektrolit yang korosif.\n\nPemeriksaan: periksa kondisi casing dari retak, bengkak (buckling — tanda overcharge atau suhu berlebih), atau kebocoran elektrolit. Casing yang retak atau bocor harus segera diganti untuk menghindari bahaya korosi asam pada rangka dan komponen di sekitarnya. Bersihkan tumpahan elektrolit dengan larutan soda kue (sodium bicarbonate) yang bersifat basa.",
+          "imageUrl": null,
+          "caption": "Casing/wadah baterai"
+        },
+        "Tutup ventilasi": {
+          "fungsi": "Tutup ventilasi adalah penutup lubang pengisian elektrolit pada setiap sel baterai basah yang dilengkapi saluran kecil untuk melepaskan gas hidrogen dan oksigen yang terbentuk selama proses pengisian. Gas ini harus dapat keluar agar tidak menumpuk dan menimbulkan tekanan berlebih yang bisa menyebabkan baterai meledak.\n\nTutup ventilasi biasanya memiliki selang ventilasi kecil (vent tube) yang mengarahkan gas ke luar dari kompartemen baterai. Beberapa baterai memiliki tutup ventilasi tipe labirin untuk mencegah percikan elektrolit keluar sekaligus memungkinkan gas lolos dengan bebas.\n\nPemeriksaan: pastikan tutup ventilasi terpasang kencang dan selang ventilasi tidak tertekuk atau tersumbat. Selang ventilasi tersumbat menyebabkan akumulasi gas hidrogen yang sangat mudah terbakar di kompartemen baterai. Baterai MF (Maintenance Free) menggunakan sistem tertutup dengan safety valve internal sehingga tidak memiliki tutup ventilasi yang dapat dibuka.",
+          "imageUrl": null,
+          "caption": "Tutup ventilasi baterai"
+        },
+        "Indikator level": {
+          "fungsi": "Indikator level elektrolit adalah tanda batas pada dinding transparan atau semitransparan casing baterai yang menunjukkan volume elektrolit yang benar. Terdiri dari dua garis batas — UPPER LEVEL (batas atas) dan LOWER LEVEL (batas bawah) — yang harus selalu diperhatikan secara berkala.\n\nBeberapa baterai modern dilengkapi indikator status berbentuk hydrometer built-in (magic eye) pada tutup salah satu sel. Warna hijau menunjukkan baterai terisi penuh dan elektrolit cukup, warna hitam menunjukkan perlu pengisian, dan warna bening/kuning menunjukkan level elektrolit terlalu rendah.\n\nPemeriksaan: periksa level elektrolit setiap bulan pada baterai basah. Jika level berada di bawah LOWER, tambahkan air suling (aquades) hingga batas UPPER. Jangan isi melebihi batas UPPER karena kelebihan elektrolit akan tumpah saat pengisian dan merusak komponen di sekitar baterai.",
+          "imageUrl": null,
+          "caption": "Indikator level elektrolit baterai"
+        }
+      }
+    },
+    "Kabel Pengisian": {
+      "fungsi": "Kabel pengisian adalah jaringan konduktor listrik yang menghubungkan seluruh komponen sistem pengisian — dari alternator ke kiprok, dari kiprok ke baterai, dan dari baterai ke seluruh beban listrik kendaraan. Kabel berperan sebagai jalur distribusi energi listrik yang harus memiliki kapasitas hantar arus (KHA) memadai dan resistansi serendah mungkin untuk meminimalkan rugi-rugi daya.\n\nSetiap kabel dalam sistem pengisian memiliki penampang konduktor yang disesuaikan dengan arus yang dilewatkan — kabel dari alternator ke kiprok biasanya berpenampang 1,0–1,5 mm², sementara kabel dari kiprok ke baterai dan kabel starter berpenampang lebih besar (1,5–4,0 mm²) untuk menangani arus yang lebih besar. Kode warna kabel mengikuti standar pabrikan untuk memudahkan diagnosis.\n\nPemeriksaan kabel pengisian meliputi: inspeksi visual dari isolasi yang retak, terbakar, atau terjepit; pengukuran voltage drop di sepanjang kabel kritis menggunakan multimeter saat beban penuh (nilai lebih dari 0,5V drop menunjukkan masalah); pemeriksaan soket konektor dari korosi, pin bengkok, atau koneksi longgar yang meningkatkan resistansi kontak.",
+      "imageUrl": null,
+      "caption": "Kabel Pengisian — Jaringan penghantar energi listrik sistem pengisian",
+      "subComponents": [
+        "Konduktor tembaga",
+        "Isolator",
+        "Soket konektor (ke alternator, ke kiprok, ke aki)",
+        "Terminal mata/skun",
+        "Fuse pengaman utama",
+        "Kabel massa ke rangka"
+      ],
+      "subComponentDetails": {
+        "Konduktor tembaga": {
+          "fungsi": "Konduktor tembaga adalah inti kabel yang terdiri dari beberapa helai kawat tembaga tipis yang dipintal bersama (stranded conductor). Konstruksi multi-helai lebih fleksibel dari kawat tunggal dan lebih tahan terhadap kelelahan material akibat getaran dan lenturan berulang pada kendaraan bermotor.\n\nTembaga dipilih sebagai konduktor karena konduktivitas listrik yang sangat tinggi (hanya kalah dari perak) dan ketahanan terhadap korosi yang baik. Diameter total konduktor menentukan resistansi per satuan panjang dan kapasitas hantar arus — semakin besar penampang, semakin rendah resistansi dan semakin besar arus yang dapat dihantarkan.\n\nPemeriksaan: kabel yang terjepit atau tertekuk tajam dapat memutuskan beberapa helai kawat di dalamnya tanpa terlihat dari luar. Periksa dengan menekuk-nekuk kabel di area yang dicurigai sambil mengukur resistansi — nilai yang berubah-ubah menunjukkan konduktor putus sebagian. Kabel dengan lebih dari 20% helai kawat putus harus diganti untuk mencegah panas berlebih.",
+          "imageUrl": null,
+          "caption": "Inti kawat tembaga multi-helai penghantar arus listrik"
+        },
+        "Isolator": {
+          "fungsi": "Isolator adalah lapisan plastik yang membungkus konduktor tembaga, berfungsi mencegah kontak listrik dengan komponen logam lain, melindungi konduktor dari korosi dan kelembaban, serta memberikan identifikasi warna kabel. Material isolator umumnya PVC (polyvinyl chloride) atau pada kabel bersuhu tinggi menggunakan PE (polietilena) atau silikon.\n\nKetebalan dan kualitas isolator menentukan tegangan kerja maksimum dan ketahanan terhadap panas. Isolator kabel di dekat exhaust atau mesin harus tahan suhu tinggi. Isolator yang keras dan getas akibat panas berlebih atau usia mudah retak dan mengelupas, meningkatkan risiko hubungan singkat.\n\nPemeriksaan: periksa kondisi isolator secara visual, terutama di titik-titik lenturan, dekat sumber panas, dan di area yang sering bergetar. Isolator yang retak, mengelupas, atau meleleh harus segera diperbaiki dengan membungkusnya menggunakan tape isolasi listrik berkualitas atau mengganti kabel. Jangan biarkan kabel berinsulasi rusak karena dapat menyebabkan kebakaran.",
+          "imageUrl": null,
+          "caption": "Lapisan pelindung plastik konduktor kabel"
+        },
+        "Soket konektor (ke alternator, ke kiprok, ke aki)": {
+          "fungsi": "Soket konektor adalah titik sambungan terlepas-pasang yang memungkinkan pelepasan komponen untuk servis tanpa harus memotong kabel. Soket di sistem pengisian biasanya bertipe waterproof dengan seal karet di setiap pin untuk mencegah masuknya air dan kotoran yang dapat menyebabkan korosi.\n\nSetiap soket memiliki jumlah pin sesuai kebutuhan: soket ke alternator 3-5 pin (untuk spul pengisian, spul penerangan, dan pulser), soket ke kiprok 4-6 pin (input AC dan output DC), dan soket ke baterai menggunakan terminal langsung ke klem baterai. Material housing soket dari nilon atau ABS tahan panas dan kimia.\n\nPemeriksaan: periksa kondisi soket dari retakan housing, pin yang bengkok atau tertarik ke dalam, seal karet yang rusak, dan korosi kehijauan pada pin tembaga. Bersihkan pin dengan contact cleaner dan sikat kawat halus jika terdapat korosi ringan. Soket dengan korosi parah atau pin rusak harus diganti — koneksi yang buruk di titik ini menyebabkan drop tegangan dan panas berlebih.",
+          "imageUrl": null,
+          "caption": "Konektor terlepas-pasang waterproof penghubung komponen"
+        },
+        "Terminal mata/skun": {
+          "fungsi": "Terminal mata atau skun adalah komponen logam yang dipasang (dikrimping atau disolder) di ujung kabel untuk membuat koneksi ke baut, sekrup, atau pin. Jenis terminal mata (ring terminal) berbentuk cincin melingkar yang dikencangkan dengan baut, sedangkan skun (spade terminal atau blade terminal) berbentuk garpu atau pisau.\n\nTerminal mata digunakan di ujung kabel massa yang disambungkan ke baut di rangka, dan di koneksi-koneksi yang memerlukan sambungan tetap yang dapat dilepas dengan membuka baut. Material tembaga berlapis timah (tinned copper) untuk ketahanan korosi yang baik.\n\nPemeriksaan: periksa kondisi terminal dari deformasi, korosi, atau krimping yang longgar (kabel mudah ditarik keluar dari terminal). Krimping yang longgar adalah penyebab umum masalah kelistrikan yang intermiten. Jika terminal rusak, potong kabel sekitar 20mm dari terminal lama, pasang terminal baru dengan alat krimping yang sesuai, dan lindungi dengan heat shrink tube.",
+          "imageUrl": null,
+          "caption": "Ujung koneksi kabel ke baut atau terminal komponen"
+        },
+        "Fuse pengaman utama": {
+          "fungsi": "Fuse pengaman utama (main fuse) adalah komponen proteksi yang dipasang pada kabel positif utama dari baterai, biasanya berupa fuse blade 10–30 Ampere dalam holder waterproof. Fungsinya memutus sirkuit secara otomatis saat terjadi arus berlebih akibat hubungan singkat, mencegah kebakaran kabel dan kerusakan komponen.\n\nFuse harus selalu dipasang sedekat mungkin dengan terminal positif baterai — idealnya dalam jarak 30 cm — agar mampu memproteksi seluruh panjang kabel utama. Nilai fuse ditentukan berdasarkan beban total sistem dan kapasitas kabel, bukan kapasitas komponen terbesar yang dilindungi.\n\nPemeriksaan: periksa kondisi fuse secara visual — elemen kawat yang putus di dalam fuse terlihat jelas pada tipe fuse transparan. Ukur kontinuitas fuse dengan multimeter mode ohm atau buzzer — nilai mendekati nol berarti baik, tak terhingga berarti putus. Selalu ganti fuse yang putus dengan nilai yang sama dan cari penyebab putusnya sebelum mengganti — jangan menggunakan kawat atau foil sebagai pengganti fuse.",
+          "imageUrl": null,
+          "caption": "Pengaman arus lebih pada kabel utama sistem kelistrikan"
+        },
+        "Kabel massa ke rangka": {
+          "fungsi": "Kabel massa ke rangka adalah koneksi negatif yang menghubungkan terminal negatif baterai ke titik massa utama di rangka kendaraan. Rangka logam kendaraan kemudian berfungsi sebagai konduktor massa bersama untuk seluruh sistem kelistrikan, menggantikan kebutuhan kabel negatif terpisah ke setiap komponen.\n\nKualitas kabel dan titik koneksi massa sangat kritis — resistansi massa yang tinggi menyebabkan seluruh sistem kelistrikan bermasalah: starter lemah, lampu redup, regulator tidak akurat, dan modul ECU berperilaku tidak normal. Penampang kabel massa harus sama atau lebih besar dari kabel positif utama.\n\nPemeriksaan: periksa kondisi fisik kabel massa dari korosi atau kerusakan isolator. Ukur resistansi antara terminal negatif baterai dan rangka di beberapa titik — nilai lebih dari 0,1 Ohm menunjukkan masalah. Periksa titik koneksi di rangka dari karat atau cat yang menghalangi kontak logam — sambungan massa yang baik harus logam ke logam yang bersih, dikencangkan dengan baut yang cukup torsinya.",
+          "imageUrl": null,
+          "caption": "Konduktor massa baterai ke rangka sebagai ground bersama"
+        }
+      }
+    }
+  }
+}

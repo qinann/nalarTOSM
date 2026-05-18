@@ -1,0 +1,13 @@
+{
+  "skkni": ["SKKNI No. 391 Tahun 2014 – Teknik Otomotif Kendaraan Ringan", "SKKNI No. 212 Tahun 2019 – Pemeliharaan dan Perbaikan Mesin Sepeda Motor"],
+  "cp": "Pada akhir pembelajaran modul ini, peserta didik mampu mengidentifikasi fungsi dan cara kerja komponen sistem instrumen dan panel indikator sepeda motor, melakukan prosedur kalibrasi sensor kecepatan, mengukur sinyal sensor dengan multimeter, serta mendiagnosis gangguan sistem instrumen berdasarkan gejala yang ditampilkan panel.",
+  "tp": [
+    "13.1 Menjelaskan fungsi dan prinsip kerja masing-masing komponen sistem instrumen: VSS, speedometer, sensor level bensin, fuel gauge, indikator oli, dan indikator netral.",
+    "13.2 Menjelaskan perbedaan speedometer mekanis (kabel) dan speedometer elektronik (motor stepper) beserta cara kerjanya.",
+    "13.3 Mengukur resistansi sensor level bensin menggunakan multimeter pada berbagai posisi pelampung dan memvalidasi pembacaan fuel gauge.",
+    "13.4 Melakukan prosedur kalibrasi sensor kecepatan (VSS) dan verifikasi akurasi speedometer.",
+    "13.5 Mendiagnosis gangguan sistem instrumen: speedometer tidak bergerak, indikator oli menyala terus, fuel gauge tidak akurat, indikator netral tidak menyala.",
+    "13.6 Melakukan perbaikan atau penggantian komponen instrumen yang rusak sesuai prosedur pabrikan."
+  ],
+  "asesmen": "Asesmen dilakukan melalui soal pilihan ganda dan studi kasus indikator menyala terus, serta praktik kalibrasi sensor kecepatan dan pemeriksaan indikator virtual."
+}

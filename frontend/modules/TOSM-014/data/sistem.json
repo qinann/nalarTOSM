@@ -1,0 +1,193 @@
+{
+  "imageUrl": null,
+  "caption": "Sistem Transmisi Otomatis CVT (Continuously Variable Transmission)",
+  "componentDetails": {
+    "Primary Pulley (Drive Pulley)": {
+      "fungsi": "Primary pulley atau drive pulley adalah komponen pertama dalam sistem CVT yang terpasang langsung ke crankshaft dan menerima tenaga dari mesin. Primary pulley berfungsi sebagai penggerak utama yang mengubah putaran mesin menjadi pergeseran V-belt berdasarkan gaya sentrifugal yang dihasilkan oleh roller weight di dalamnya.\n\nSaat putaran mesin meningkat, gaya sentrifugal mendorong roller weight ke luar, menggerakkan sliding sheave dan mempersempit celah antara kedua sheave. V-belt dipaksa bergerak ke diameter lebih besar, menghasilkan rasio transmisi tinggi (kecepatan output lebih tinggi). Sebaliknya pada putaran rendah, pegas secondary pulley mendorong V-belt ke diameter yang lebih kecil pada primary.\n\nKomposisi roller weight menentukan karakter akselerasi kendaraan secara langsung. Penggantian roller weight dengan bobot berbeda adalah modifikasi CVT yang paling umum untuk menyesuaikan respons akselerasi dengan kebutuhan pengendara.",
+      "imageUrl": null,
+      "caption": "Primary pulley penggerak CVT",
+      "subComponents": [
+        "Fixed Sheave",
+        "Sliding Sheave",
+        "Roller Weight",
+        "Ramp Plate",
+        "Primary Fixed Boss"
+      ],
+      "subComponentDetails": {
+        "Fixed Sheave": {
+          "fungsi": "Fixed sheave adalah bagian kerucut statis yang terpasang langsung ke crankshaft dan tidak bergerak secara aksial. Posisi fixed sheave selalu tetap menjadi referensi — satu sisi celah antara kedua sheave yang tidak berubah — sementara sliding sheave yang bergerak untuk mengubah lebar celah dan diameter efektif belt.\n\nPermukaan kerucut kedua sheave dilapisi dengan material tahan aus yang harus dirawat kebersihannya. Oli, grease, atau bahan bakar yang menempel pada permukaan sheave akan menyebabkan V-belt selip, terasa berat, dan aus tidak merata. Itulah mengapa area CVT harus dijaga bersih dan kering, serta oil seal di sekitar poros tidak boleh bocor.",
+          "imageUrl": null,
+          "caption": "Fixed sheave kerucut statis primary pulley terpasang ke crankshaft"
+        },
+        "Sliding Sheave": {
+          "fungsi": "Sliding sheave adalah bagian kerucut kedua yang dapat bergeser maju-mundur sepanjang sumbu crankshaft, didorong oleh tekanan roller weight dari belakang. Gerakan aksial sliding sheave inilah yang mengubah jarak antara kedua sheave dan secara langsung mengubah diameter efektif tempat V-belt berjalan.\n\nKetika jarak antara kedua sheave menyempit (sliding sheave bergerak mendekati fixed sheave), V-belt dipaksa bergerak ke luar ke diameter yang lebih besar — mewakili rasio transmisi tinggi (high ratio / overdrive) yang membuat roda berputar lebih cepat dari mesin. Ketika sheave merenggang, V-belt jatuh ke diameter lebih kecil, mewakili rasio rendah (torsi tinggi, kecepatan rendah).",
+          "imageUrl": null,
+          "caption": "Sliding sheave kerucut bergerak pengubah diameter efektif primary pulley"
+        },
+        "Roller Weight": {
+          "fungsi": "Roller weight adalah 6 buah bola atau silinder logam (biasanya aluminium atau baja berlapis) yang ditempatkan di antara ramp plate dan permukaan dalam sliding sheave primary pulley. Saat crankshaft berputar, gaya sentrifugal mendorong roller ke luar (menjauhi pusat rotasi), dan tekanan roller yang mendorong ramp plate inilah yang menggeser sliding sheave untuk mempersempit celah antara kedua sheave.\n\nBerat roller (biasanya 8–15 gram per butir sesuai spesifikasi pabrikan) menentukan putaran mesin (RPM) di mana perpindahan rasio mulai terjadi. Roller lebih berat menghasilkan tekanan sentrifugal lebih besar pada RPM yang sama, sehingga perpindahan ke rasio tinggi terjadi lebih awal (pada RPM lebih rendah) — akselerasi awal lebih berat namun kecepatan puncak lebih tinggi. Roller lebih ringan membuat perpindahan rasio terjadi kemudian.\n\nRoller yang aus atau berbentuk flat spot (tidak bulat sempurna) menyebabkan perpindahan rasio tidak mulus — terjadi lonjakan atau getaran saat akselerasi karena sliding sheave bergerak tidak konsisten. Ganti roller selalu dalam set lengkap 6 buah dengan berat identik; mencampur roller berbeda berat akan menyebabkan ketidakseimbangan dan getaran pada primary pulley.",
+          "imageUrl": null,
+          "caption": "Roller weight penggerak sentrifugal primary pulley"
+        },
+        "Ramp Plate": {
+          "fungsi": "Ramp plate adalah piringan berlekuk yang menjadi landasan roller weight dan menerjemahkan gerakan roller ke arah luar menjadi gaya aksial yang mendorong sliding sheave. Bentuk profil lekukan ramp plate menentukan karakteristik akselerasi — lekukan yang lebih curam menghasilkan perpindahan rasio yang lebih agresif.",
+          "imageUrl": null,
+          "caption": "Ramp plate landasan roller dan pengubah gaya sentrifugal ke gaya aksial"
+        },
+        "Primary Fixed Boss": {
+          "fungsi": "Primary fixed boss adalah selongsong atau hub yang terpasang ke crankshaft dan menjadi bantalan tempat sliding sheave bergerak aksial. Boss ini harus terlumasi dengan baik agar sliding sheave dapat bergerak bebas tanpa hambatan. Pelumasan biasanya menggunakan grease khusus temperature tinggi — jangan gunakan oli biasa yang dapat menyebar ke V-belt dan menyebabkan selip.\n\nBaut crankshaft yang mengikat seluruh assembly primary pulley ke ujung crankshaft harus dikencangkan dengan torsi yang tepat menggunakan kunci momen. Baut yang kendor menyebabkan primary pulley bergoyang yang terasa sebagai getaran dan suara dengungan pada kecepatan tertentu. Baut yang terlalu kencang dapat merusak ulir crankshaft yang biaya perbaikannya sangat mahal.",
+          "imageUrl": null,
+          "caption": "Primary fixed boss selongsong dudukan sliding sheave pada crankshaft"
+        }
+      }
+    },
+    "V-Belt": {
+      "fungsi": "V-belt adalah sabuk penggerak berbentuk V yang menghubungkan primary pulley dengan secondary pulley dan menjadi media transfer tenaga dalam sistem CVT. V-belt bergerak di antara kedua pulley dan menyesuaikan posisinya di diameter yang berbeda secara kontinu sesuai dengan kondisi berkendara — inilah yang membuat CVT dapat mengubah rasio transmisi tanpa perpindahan gigi.\n\nV-belt CVT adalah komponen yang paling cepat aus dalam sistem CVT karena selalu dalam kondisi bergerak dan bergesekan dengan permukaan sheave. Keausan V-belt ditandai oleh pelebaran lebar belt atau kerusakan visual seperti retak, permukaan mengkilap, atau serat yang terlihat.\n\nPenggantian V-belt tepat waktu sesuai interval pabrikan (biasanya setiap 20.000–25.000 km) sangat penting untuk mencegah belt putus di jalan. Belt yang putus di tengah perjalanan menyebabkan motor tidak dapat bergerak sama sekali.",
+      "imageUrl": null,
+      "caption": "V-belt media transfer tenaga CVT",
+      "subComponents": [],
+      "subComponentDetails": {}
+    },
+    "Secondary Pulley (Driven Pulley)": {
+      "fungsi": "Secondary pulley atau driven pulley adalah komponen penerima tenaga dari V-belt yang terhubung ke kopling sentrifugal dan selanjutnya ke roda belakang. Berbeda dengan primary pulley yang dikontrol oleh gaya sentrifugal roller, secondary pulley dikontrol oleh pegas CVT yang selalu berusaha menutup (memperkecil celah sheave), menciptakan tegangan berlawanan terhadap pergerakan primary.\n\nMekanisme secondary pulley juga dilengkapi torque cam yang secara otomatis meningkatkan cengkeraman belt saat torsi tinggi diterima. Ini memungkinkan CVT beradaptasi terhadap perubahan beban tanpa memerlukan kontrol elektronik — sebuah keeleganan mekanis yang membuat CVT dapat beroperasi secara pasif namun adaptif.\n\nPemeriksaan secondary pulley meliputi kondisi sheave (keausan permukaan, oval), kondisi pegas CVT (panjang bebas, kekuatan), dan kondisi mekanisme torque cam (alur dan pin). Secondary pulley yang bermasalah menyebabkan akselerasi tidak responsif atau motor terasa kehilangan tenaga terutama di beban berat.",
+      "imageUrl": null,
+      "caption": "Secondary pulley penerima tenaga CVT",
+      "subComponents": [
+        "Fixed Sheave",
+        "Sliding Sheave",
+        "Pegas CVT",
+        "Torque Cam"
+      ],
+      "subComponentDetails": {
+        "Fixed Sheave": {
+          "fungsi": "Secondary pulley memiliki dua sheave seperti primary, namun mekanismenya terbalik: sliding sheave di sini didorong oleh pegas CVT agar selalu menutup (menyempit), sementara pada primary pulley, gaya yang menutup berasal dari roller. Ketika primary pulley membuka lebar (diameter kecil) saat putaran rendah, belt mendorong sliding sheave secondary untuk membuka (diameter kecil juga), dan pegas secondary menjaga tegangan belt tetap konstan.",
+          "imageUrl": null,
+          "caption": "Fixed sheave secondary pulley sebagai referensi posisi tetap"
+        },
+        "Sliding Sheave": {
+          "fungsi": "Saat primary pulley menutup (diameter besar) karena roller centrifugal, belt naik ke diameter lebih besar di primary dan memaksa secondary membuka lebih lebar — sliding sheave secondary bergerak menjauh dari fixed sheave melawan tekanan pegas, sehingga belt berjalan di diameter lebih kecil di secondary. Kombinasi primary besar + secondary kecil ini menghasilkan rasio overdrive.\n\nPermukaan dalam sheave secondary harus bersih dari kontaminasi oli — oil seal di poros secondary harus dalam kondisi baik. Bocoran oli ke dalam ruang CVT akan menempel pada permukaan sheave dan belt, menyebabkan selip parah bahkan pada kondisi akselerasi ringan.",
+          "imageUrl": null,
+          "caption": "Sliding sheave secondary pulley pengubah diameter efektif"
+        },
+        "Pegas CVT": {
+          "fungsi": "Pegas CVT adalah pegas koil kuat yang menekan sliding sheave secondary agar selalu berusaha menutup dan menjepit belt. Kekuatan pegas ini menentukan tegangan preload belt di seluruh range operasi — pegas yang terlalu lemah menyebabkan belt selip; terlalu kuat memerlukan gaya centrifugal roller yang lebih besar untuk menggeser primary.",
+          "imageUrl": null,
+          "caption": "Pegas CVT penjaga tegangan belt pada secondary pulley"
+        },
+        "Torque Cam": {
+          "fungsi": "Torque cam adalah pasangan komponen berbentuk groove dan pin yang berada di antara sliding sheave dan output shaft secondary pulley. Ketika torsi yang diteruskan belt sangat besar (misalnya saat akselerasi kencang menanjak), reaksi torsi menyebabkan sliding sheave secondary sedikit memutar relatif terhadap fixed sheave — pin torque cam bergerak di dalam groove miring dan mendorong sliding sheave menutup lebih erat, meningkatkan cengkeraman belt dan mencegah selip saat beban berat.\n\nEfek torque cam ini berarti secondary pulley tidak hanya responsif terhadap kondisi kecepatan (melalui pegas), tetapi juga terhadap kondisi beban torsi. Kombinasi ini membuat CVT mampu mempertahankan rasio transmisi yang optimal bahkan saat kondisi operasi berubah-ubah.",
+          "imageUrl": null,
+          "caption": "Torque cam penyesuai cengkeraman belt pada secondary pulley"
+        }
+      }
+    },
+    "Kopling Sentrifugal": {
+      "fungsi": "Kopling sentrifugal adalah kopling otomatis yang menghubungkan secondary pulley ke mangkok kopling berdasarkan gaya sentrifugal — secara otomatis terhubung saat RPM mesin cukup tinggi dan terputus saat RPM turun ke idle. Kopling ini menggantikan fungsi kopling manual, memungkinkan motor berdiri dengan mesin menyala tanpa bergerak dan bergerak secara mulus saat gas dibuka.\n\nEngagement RPM kopling sentrifugal (RPM di mana motor mulai bergerak) dikalibrasi oleh pabrikan melalui kekuatan pegas kopling dan berat sepatu kopling. Engagement yang terlalu cepat (pada RPM terlalu rendah) menyebabkan motor terasa menyentak saat gas dibuka perlahan. Engagement yang terlalu lambat menyebabkan motor kehilangan respons akselerasi.\n\nKeausan kopling sentrifugal ditandai oleh bau terbakar saat akselerasi, motor yang bergetar saat melepas gas, atau sepatu kopling yang tipis. Pemeriksaan meliputi pengukuran ketebalan lining gesek dan kondisi permukaan mangkok kopling.",
+      "imageUrl": null,
+      "caption": "Kopling sentrifugal penghubung otomatis CVT",
+      "subComponents": [
+        "Sepatu Kopling",
+        "Lining Gesek",
+        "Pegas Kopling",
+        "Dudukan (Spider)"
+      ],
+      "subComponentDetails": {
+        "Sepatu Kopling": {
+          "fungsi": "Sepatu kopling (clutch shoe) atau kampas kopling adalah 3 buah komponen berbentuk arc yang terbuat dari besi tuang berlapis material friksi di sisi luarnya. Setiap sepatu terpasang pada pivot pin yang memungkinkannya bergerak ke luar (centrifugal) dan ke dalam (pegas kembali) secara bebas.",
+          "imageUrl": null,
+          "caption": "Sepatu kopling kopling sentrifugal"
+        },
+        "Lining Gesek": {
+          "fungsi": "Lining gesek adalah lapisan material friksi (sejenis asbestos-free friction material) yang dipress atau diriveting ke permukaan luar sepatu, menjadi permukaan yang bergesekan dengan mangkok kopling. Ketebalan lining gesek menentukan usia pakai kopling — semakin tipis, semakin dekat ke batas ganti (limit wear yang tercantum di buku panduan, biasanya 2,0–2,5 mm).\n\nLining yang terkontaminasi oli (dari oil seal bocor) harus diganti meskipun ketebalannya masih cukup, karena oli drastis mengurangi koefisien gesek dan kopling akan selip bahkan pada RPM tinggi. Jangan pernah mencoba 'membersihkan' lining yang terkena oli — satu kali kontaminasi sudah meresap ke dalam pori material dan akan terus mempengaruhi performa.",
+          "imageUrl": null,
+          "caption": "Lining gesek lapisan friksi sepatu kopling sentrifugal"
+        },
+        "Pegas Kopling": {
+          "fungsi": "Tiga buah pegas (satu per sepatu kopling) berfungsi menarik sepatu kembali ke posisi netral (tidak bersentuhan dengan mangkok) saat RPM mesin di bawah engagement speed. Tanpa pegas ini, kopling akan selalu terhubung dan motor tidak dapat berdiri dengan mesin menyala di posisi netral tanpa bergerak.\n\nKekuatan pegas menentukan engagement RPM — RPM di mana kopling mulai menyentuh mangkok dan motor mulai bergerak. Pegas standar pabrikan dikalibrasi untuk engagement yang halus pada RPM tertentu. Mengganti pegas lebih keras meningkatkan engagement RPM (motor baru bergerak pada RPM lebih tinggi — berguna untuk motor yang dimodifikasi untuk drag racing); pegas lebih lemah menurunkan engagement RPM.",
+          "imageUrl": null,
+          "caption": "Pegas kopling sentrifugal penarik sepatu ke posisi netral"
+        },
+        "Dudukan (Spider)": {
+          "fungsi": "Dudukan atau spider adalah hub sentral yang menghubungkan sepatu-sepatu kopling ke poros output secondary pulley. Spider mentransmisikan torsi dari sepatu yang sudah engaged ke mangkok kopling dan selanjutnya ke roda belakang. Keausan pada pin pivot spider tempat sepatu terpasang menyebabkan sepatu bergerak tidak simetris dan kopling engage tidak merata, menimbulkan getaran saat akselerasi.",
+          "imageUrl": null,
+          "caption": "Dudukan spider hub sentral kopling sentrifugal"
+        }
+      }
+    },
+    "Mangkok Kopling": {
+      "fungsi": "Mangkok kopling (clutch drum atau clutch housing) adalah drum silindris yang menjadi permukaan gesekan tempat sepatu kopling menekan dan menghasilkan transmisi torsi. Mangkok terhubung ke gigi input gearbox reduksi dan akhirnya ke roda belakang — saat sepatu kopling engaged dengan permukaan dalam mangkok, tenaga dari mesin diteruskan ke roda.\n\nKualitas permukaan dalam mangkok sangat menentukan kelancaran dan keandalan engagement kopling. Permukaan yang aus, bergores dalam, atau mengalami blue spots akibat panas berlebih akan menyebabkan kopling bergetar, selip, atau engage tidak merata. Permukaan yang mengkilap akibat glazing juga mengurangi koefisien gesek efektif.\n\nMangkok kopling juga harus seimbang dengan baik — mangkok yang tidak seimbang menyebabkan getaran pada kecepatan tertentu terutama saat kopling engaged.",
+      "imageUrl": null,
+      "caption": "Mangkok kopling penerima gaya gesek kopling sentrifugal",
+      "subComponents": [
+        "Drum Mangkok",
+        "Mur Pengunci",
+        "Gigi Penggerak Roda"
+      ],
+      "subComponentDetails": {
+        "Drum Mangkok": {
+          "fungsi": "Mangkok kopling (clutch drum atau clutch housing) adalah drum silindris yang menjadi permukaan gesekan tempat sepatu kopling bersentuhan. Mangkok terhubung ke gigi input gearbox reduksi dan akhirnya ke roda belakang. Saat sepatu kopling menekan permukaan dalam mangkok dengan cukup kuat, gesekan mentransmisikan torsi dari crankshaft ke roda.\n\nPermukaan dalam mangkok yang menjadi bidang gesek terbuat dari besi tuang yang keras dan memiliki finishing permukaan yang teliti. Alur atau striae halus pada permukaan gesek sebenarnya normal setelah pemakaian biasa. Yang tidak normal adalah alur dalam (groove) yang terbentuk akibat kopling selip terlalu lama, atau titik-titik biru (blue spot) akibat panas berlebih yang menandakan material lokal sudah berubah struktur mikronya.\n\nMangkok yang sudah sangat aus (alur terlalu dalam) harus diganti karena permukaan tidak merata menyebabkan engagement dan disengagement kopling menjadi kasar dan tidak terprediksi. Diameter dalam mangkok juga perlu diukur — mangkok yang mengembang (oval) akibat panas berlebih tidak akan memberikan engagement yang konstan.",
+          "imageUrl": null,
+          "caption": "Drum mangkok silindris kopling sentrifugal"
+        },
+        "Mur Pengunci": {
+          "fungsi": "Mangkok kopling terpasang ke poros output gearbox (atau poros roda pada beberapa desain) menggunakan mur pengunci berulir kiri (kiri-kanan tergantung desain, namun seringkali berlawanan dengan arah putaran untuk mencegah mengendur saat operasi). Mur ini harus dikencangkan dengan torsi yang sangat tepat — terlalu kendor menyebabkan mangkok bergoyang, terlalu kencang dapat merusak poros atau membuat mur tidak dapat dilepas.",
+          "imageUrl": null,
+          "caption": "Mur pengunci mangkok kopling pada poros gearbox"
+        },
+        "Gigi Penggerak Roda": {
+          "fungsi": "Pada motor matic modern, mangkok kopling terintegrasi dengan gigi penggerak (drive gear) yang menghubungkan ke gearbox reduksi di dalam casing CVT yang sama. Tidak ada sambungan mekanis langsung antara mangkok dan roda — torsi dari mangkok harus melalui gearbox reduksi terlebih dahulu untuk menurunkan kecepatan putaran dan meningkatkan torsi sebelum sampai ke roda.\n\nKetika motor diparkir di tanjakan dengan mesin mati dan gigi ditahan oleh kopling sentrifugal yang sudah dilepas, seluruh gaya menahan motor bergantung pada gearbox dan rem parkir — bukan pada kopling sentrifugal. Kopling sentrifugal hanya berfungsi saat mesin menyala dan RPM di atas engagement speed.",
+          "imageUrl": null,
+          "caption": "Gigi penggerak roda terintegrasi pada mangkok kopling"
+        }
+      }
+    },
+    "Torque Cam": {
+      "fungsi": "Torque cam adalah mekanisme pasif dalam secondary pulley yang secara otomatis menyesuaikan cengkeraman belt terhadap beban torsi. Saat torsi meningkat (akselerasi berat, tanjakan), torque cam meningkatkan tekanan jepit belt pada secondary pulley sehingga belt tidak selip. Saat deselerasi, torque cam membantu menaikkan rasio transmisi untuk memperkuat engine braking.\n\nKeunggulan torque cam adalah responsivitasnya yang instan dan tanpa memerlukan sensor atau aktuator elektronik. Mekanisme ini murni mekanis — memanfaatkan reaksi torsi sendiri untuk mencegah selip belt. Ini membuat CVT mampu menangani lonjakan torsi tiba-tiba (seperti wheelie) tanpa slip.\n\nTorque cam yang aus ditandai oleh CVT yang sering selip di bawah beban berat meskipun V-belt dan kampas kopling masih dalam kondisi baik. Pemeriksaan memerlukan pembongkaran secondary pulley.",
+      "imageUrl": null,
+      "caption": "Torque cam pengatur cengkeraman belt otomatis",
+      "subComponents": [
+        "Pin Pengikut"
+      ],
+      "subComponentDetails": {
+        "Pin Pengikut": {
+          "fungsi": "Ketika torsi tinggi diterima oleh secondary pulley saat akselerasi berat, reaksi torsi menyebabkan sedikit putaran relatif antara sliding sheave dan fixed sheave atau output shaft. Gerakan relatif ini membuat pin pengikut bergerak di dalam alur miring, menghasilkan gaya aksial yang mendorong sliding sheave lebih erat menjepit belt — secara otomatis meningkatkan cengkeraman dan mencegah selip tanpa memerlukan kontrol elektronik apapun.",
+          "imageUrl": null,
+          "caption": "Pin pengikut follower pin torque cam"
+        }
+      }
+    },
+    "Gearbox Reduksi": {
+      "fungsi": "Gearbox reduksi adalah tahap akhir penurun kecepatan dan peningkat torsi setelah CVT sebelum tenaga mencapai roda belakang. CVT mengubah rasio secara kontinu namun outputnya masih berputar terlalu cepat untuk poros roda — gearbox reduksi memberikan penurunan rasio tetap (fixed reduction ratio, biasanya 3–5:1) yang disesuaikan dengan karakteristik kecepatan roda yang diinginkan.\n\nGearbox reduksi menggunakan roda gigi helical atau spur yang direndam dalam oli gearbox untuk pelumasan. Volume oli sangat kecil (100–150 mL) dan tidak ada pompa oli aktif — sirkulasi oli mengandalkan percikan dari roda gigi yang berputar. Kurangnya oli gearbox adalah penyebab umum kerusakan prematur.\n\nGejala masalah gearbox reduksi: suara dengungan (whining) dari area CVT terutama saat mesin dingin, suara grinding yang berubah dengan kecepatan (bukan RPM mesin), atau kebocoran oli dari cover gearbox.",
+      "imageUrl": null,
+      "caption": "Gearbox reduksi penurun kecepatan dan peningkat torsi",
+      "subComponents": [
+        "Roda Gigi Reduksi",
+        "Idle Gear",
+        "Oli Gearbox",
+        "Drain Plug"
+      ],
+      "subComponentDetails": {
+        "Roda Gigi Reduksi": {
+          "fungsi": "Gearbox reduksi adalah tahap akhir penurun rasio putaran setelah CVT. CVT mengubah rasio secara kontinu namun outputnya masih berputar terlalu cepat untuk poros roda — gearbox reduksi memberikan penurunan rasio tetap (fixed reduction ratio, biasanya 3–5:1) untuk menurunkan putaran ke level yang sesuai untuk roda.",
+          "imageUrl": null,
+          "caption": "Roda gigi reduksi penurun rasio putaran gearbox CVT"
+        },
+        "Idle Gear": {
+          "fungsi": "Gigi reduksi pertama (primary drive gear) terpasang pada poros output mangkok kopling dan berinteraksi dengan gigi idle atau counter shaft gear. Gigi idle berfungsi sebagai perantara untuk mengubah arah atau hanya meneruskan torsi tergantung tata letak gearbox. Gigi output akhir terhubung langsung ke poros roda belakang atau ke final drive chain/shaft pada beberapa desain.\n\nSemua roda gigi dalam gearbox direndam dalam oli khusus gearbox (Gear Oil ATF atau oli khusus matic) yang mendinginkan dan melumasi permukaan gigi yang bergesekan. Kurangnya oli gearbox adalah penyebab umum kerusakan prematur yang ditandai oleh suara dengungan (whining) atau grinding dari area CVT, terutama saat mesin dingin.",
+          "imageUrl": null,
+          "caption": "Idle gear perantara torsi dalam gearbox reduksi CVT"
+        },
+        "Oli Gearbox": {
+          "fungsi": "Oli gearbox CVT adalah cairan khusus yang diformulasikan untuk memberikan pelumasan pada roda gigi spiral bevel atau helical gear di dalam gearbox reduksi. Volume oli biasanya 100–150 mL — jumlah yang kecil namun sangat kritikal karena tidak ada sistem sirkulasi aktif (pompa oli) seperti di mesin. Oli mengandalkan percikan dan perendaman untuk mencapai semua permukaan gigi.\n\nInterval penggantian oli gearbox yang disarankan pabrikan biasanya setiap 5.000–10.000 km atau setiap tahun, mana yang lebih dahulu. Oli yang sudah degradasi kehilangan viskositas dan kemampuan film strength-nya, menyebabkan keausan gigi yang lebih cepat. Oli yang terkontaminasi air (dari seal bocor) dapat menyebabkan korosi pada permukaan gigi.",
+          "imageUrl": null,
+          "caption": "Oli gearbox pelumas roda gigi reduksi CVT"
+        },
+        "Drain Plug": {
+          "fungsi": "Drain plug terletak di titik terendah casing gearbox untuk memudahkan drainase saat penggantian. Level plug terletak di sisi casing pada ketinggian yang menentukan volume pengisian yang tepat. Baut filling digunakan untuk mengisi oli baru menggunakan botol squirt atau syringe. Gasket cover dan oil seal pada poros harus diperiksa kondisinya saat penggantian oli — seal yang bocor membiarkan oli gearbox mengotori kampas kopling sentrifugal di ruang CVT yang berdekatan.",
+          "imageUrl": null,
+          "caption": "Drain plug sistem drainase oli gearbox CVT"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "questions": [
+    {
+      "q": "Apakah fungsi utama dari sirip-sirip pendingin yang terdapat pada blok dan kepala silinder sepeda motor berpendingin udara?",
+      "opts": [
+        "Menambah kekuatan struktural blok dan kepala silinder dari tekanan pembakaran",
+        "Memperluas luas permukaan kontak antara logam panas mesin dengan udara untuk meningkatkan pelepasan panas melalui konveksi",
+        "Mengurangi berat mesin secara keseluruhan untuk meningkatkan performa",
+        "Menghasilkan aliran turbulensi di sekitar mesin yang membantu menstabilkan kendaraan"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "Sebuah sepeda motor matik mengalami overheat berulang meskipun sirip pendingin dalam kondisi bersih dan kipas berputar normal. Setelah diperiksa, ditemukan cover engine memiliki retakan besar di bagian tengahnya. Mengapa kondisi ini menyebabkan overheat?",
+      "opts": [
+        "Retakan cover menyebabkan air hujan masuk dan merusak kipas pendingin",
+        "Retakan cover mengakibatkan udara dari kipas bocor sebelum mencapai sirip pendingin, sehingga volume udara efektif yang mendinginkan sirip berkurang drastis",
+        "Retakan cover menyebabkan getaran berlebih yang merusak bearing crankshaft",
+        "Cover engine yang retak menyebabkan kebocoran oli mesin ke permukaan mesin"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "Apa perbedaan mendasar antara sistem natural air cooling dan forced air cooling pada sepeda motor?",
+      "opts": [
+        "Natural air cooling menggunakan cairan pendingin, sementara forced air cooling menggunakan udara murni",
+        "Natural air cooling mengandalkan aliran udara dari gerakan kendaraan, sedangkan forced air cooling menggunakan kipas yang diputar mesin untuk menghasilkan aliran udara paksa",
+        "Natural air cooling hanya digunakan pada motor sport bertenaga tinggi, sedangkan forced air cooling untuk motor matik bertenaga rendah",
+        "Natural air cooling memerlukan pompa udara elektrik, sedangkan forced air cooling menggunakan konveksi alami semata"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "Seorang mekanik menemukan bahwa blade kipas pendingin pada motor matik patah satu bilah. Apa akibat yang paling mungkin terjadi jika kondisi ini dibiarkan?",
+      "opts": [
+        "Motor tidak akan bisa dinyalakan karena kipas terhubung ke sistem pengapian",
+        "Konsumsi bahan bakar meningkat drastis karena komputer mesin mendeteksi kipas rusak",
+        "Terjadi ketidakseimbangan rotasi yang menyebabkan getaran berlebih pada mesin, berpotensi merusak bearing, dan volume aliran udara pendingin berkurang",
+        "Motor akan otomatis beralih ke mode ekonomis dan membatasi RPM maksimum"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "Saat melakukan pembersihan sirip pendingin yang tersumbat kotoran keras, teknik yang benar menggunakan sikat kuningan adalah:",
+      "opts": [
+        "Menyikat secara melingkar dengan gerakan cepat untuk melepaskan kotoran dari seluruh permukaan sirip",
+        "Menyikat melintang (tegak lurus arah sirip) dengan tekanan kuat untuk memaksimalkan pembersihan",
+        "Menyikat searah panjang sirip (paralel dengan alur antar sirip) dengan tekanan ringan agar tidak membengkokkan sirip yang tipis",
+        "Tidak menggunakan sikat sama sekali, cukup semprotkan udara bertekanan tinggi dari kompresor"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "Pada pemeriksaan sirip pendingin kepala silinder, ditemukan perubahan warna logam yang sangat mencolok (gosong kehitaman) di area dekat port exhaust. Apa interpretasi yang paling tepat dari temuan ini?",
+      "opts": [
+        "Kondisi normal karena area exhaust port memang selalu lebih panas dari area lain",
+        "Motor menggunakan oli berkualitas tinggi yang meninggalkan deposit berwarna gelap",
+        "Mesin pernah mengalami episode overheat yang serius, yang berpotensi menyebabkan distorsi kepala silinder dan perlu dilakukan pemeriksaan kelurusan kepala silinder",
+        "Filter udara kotor sehingga campuran terlalu kaya dan meninggalkan deposit hitam"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "Mengapa motor berpendingin udara lebih rentan mengalami overheat saat terjebak kemacetan dibandingkan saat berkendara di jalan bebas hambatan?",
+      "opts": [
+        "Saat kemacetan mesin bekerja lebih keras karena sering memindahkan gigi transmisi",
+        "Sistem bahan bakar memberikan campuran lebih kaya saat kendaraan berjalan lambat",
+        "Saat kemacetan kendaraan bergerak lambat atau berhenti sehingga aliran udara alami yang mendinginkan sirip sangat berkurang atau tidak ada sama sekali",
+        "Suhu aspal panas memantul ke bagian bawah mesin dan menaikkan suhu secara berlebihan"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "Seorang teknisi melepas cover engine matik untuk pemeriksaan dan lupa memasangnya kembali, kemudian menjalankan mesin selama 15 menit. Apa dampak yang paling mungkin terjadi?",
+      "opts": [
+        "Mesin akan bekerja lebih baik karena mendapat pendinginan udara yang lebih banyak tanpa hambatan cover",
+        "Tidak ada perbedaan karena kipas masih berputar dan menghasilkan udara",
+        "Mesin berpotensi overheat karena udara dari kipas tidak diarahkan secara efisien ke sirip pendingin — menyebar ke segala arah tanpa melewati sirip secara optimal",
+        "Mesin menjadi lebih hemat bahan bakar karena beban memutar cover berkurang"
+      ],
+      "ans": 2
+    }
+  ]
+}

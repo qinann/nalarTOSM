@@ -1,0 +1,8 @@
+{
+  "questions": [
+    { "q": "Thermostat pada sistem pendinginan cairan berfungsi untuk?", "opts": ["Memompa coolant ke seluruh sistem", "Mengontrol suhu operasi engine dengan membuka/menutup aliran ke radiator", "Menampung cadangan coolant", "Mengatur tekanan sistem pendinginan"], "ans": 1 },
+    { "q": "Tutup radiator yang bertekanan berfungsi untuk?", "opts": ["Mencegah coolant tumpah saat pengisian", "Meningkatkan titik didih coolant sehingga tidak mudah mendidih", "Mengatur aliran coolant ke reservoir", "Semua jawaban benar"], "ans": 3 },
+    { "q": "Gejala thermostat yang macet dalam posisi tertutup akan menyebabkan?", "opts": ["Mesin terlalu lama mencapai suhu operasi", "Mesin cepat overheat karena coolant tidak mengalir ke radiator", "Tekanan sistem pendinginan turun", "Kipas radiator tidak berputar"], "ans": 1 },
+    { "q": "Campuran coolant dan air murni dengan rasio 50:50 digunakan untuk?", "opts": ["Menghemat biaya pembelian coolant", "Mencegah korosi, melindungi dari pembekuan, dan meningkatkan titik didih", "Mempercepat sirkulasi dalam sistem", "Mengurangi tekanan sistem pendinginan"], "ans": 1 }
+  ]
+}

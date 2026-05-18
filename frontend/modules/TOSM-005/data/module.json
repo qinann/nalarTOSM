@@ -1,0 +1,17 @@
+{
+  "id": "TOSM-005",
+  "title": "Sistem Penerangan & Sinyal",
+  "level": "dasar",
+  "desc": "Modul ini membahas komponen sistem penerangan dan sinyal sepeda motor meliputi baterai, saklar lampu, relay sein, lampu kepala, lampu rem, lampu sein, klakson, dan sekring beserta prosedur pemeriksaan dan perbaikannya.",
+  "kd": "Peserta mampu mengidentifikasi, menjelaskan fungsi, dan melakukan pemeriksaan serta perbaikan komponen sistem penerangan dan sinyal sepeda motor sesuai standar pabrik.",
+  "components": [
+    "Baterai",
+    "Saklar Lampu",
+    "Relay Sein",
+    "Lampu Kepala (HL)",
+    "Lampu Rem",
+    "Lampu Sein",
+    "Klakson",
+    "Sekring"
+  ]
+}

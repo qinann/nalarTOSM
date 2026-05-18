@@ -1,0 +1,15 @@
+{
+  "skkni": [
+    "SKKNI No. 391 Tahun 2014 – Teknik Otomotif Kendaraan Ringan",
+    "SKKNI No. 212 Tahun 2019 – Pemeliharaan dan Perbaikan Mesin Sepeda Motor"
+  ],
+  "cp": "Pada akhir pembelajaran modul ini, peserta didik mampu mengidentifikasi, menjelaskan fungsi, dan melakukan pemeriksaan komponen sistem penerangan dan sinyal sepeda motor secara menyeluruh sesuai standar pabrik. Peserta didik juga mampu mendiagnosis kerusakan pada sistem penerangan, mengganti komponen yang rusak seperti relay sein dan bohlam, serta menyetel arah lampu kepala sesuai regulasi yang berlaku.",
+  "tp": [
+    "5.1 Mengidentifikasi dan menjelaskan fungsi setiap komponen sistem penerangan dan sinyal sepeda motor beserta sub-komponennya",
+    "5.2 Melakukan pemeriksaan tegangan pada komponen sistem penerangan menggunakan multimeter sesuai prosedur K3",
+    "5.3 Mengganti relay sein (flasher) yang rusak dan memverifikasi fungsi lampu sein setelah penggantian",
+    "5.4 Melakukan penyetelan arah lampu kepala (headlight alignment) sesuai prosedur dan regulasi yang berlaku",
+    "5.5 Mendiagnosis dan mengatasi gangguan umum pada sistem penerangan seperti lampu mati, sein tidak berkedip, dan klakson tidak berbunyi"
+  ],
+  "asesmen": "Asesmen dilakukan melalui tes tertulis pilihan ganda untuk mengukur pemahaman teori sistem penerangan dan sinyal, tes praktik pemeriksaan tegangan dan penggantian relay sein di unit simulator kelistrikan, observasi langsung prosedur penyetelan arah lampu kepala, serta penilaian laporan diagnosis troubleshooting gangguan sistem penerangan."
+}

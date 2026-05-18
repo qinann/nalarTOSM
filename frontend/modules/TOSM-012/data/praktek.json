@@ -1,0 +1,25 @@
+{
+  "imageUrl": "/assets/images/praktekKerja.jpg",
+  "steps": [
+    {
+      "title": "Persiapan & K3",
+      "desc": "Siapkan APD (sarung tangan isolasi, kacamata pelindung). Siapkan multimeter digital, amperemeter clamp, wiring diagram sistem starter sepeda motor yang akan diperiksa, dan buku servis pabrikan. Identifikasi lokasi relay starter, motor starter, tombol starter, dan switch interlock pada kendaraan. Pastikan area kerja bebas dari bahan yang mudah terbakar."
+    },
+    {
+      "title": "Pemeriksaan Baterai & Rangkaian Utama",
+      "desc": "Ukur tegangan baterai (harus ≥ 12,6V saat mesin mati). Periksa kondisi terminal baterai dari korosi dan pastikan semua koneksi kencang. Ukur tegangan saat cranking di terminal baterai (tidak boleh di bawah 9,6V). Periksa kondisi kabel dari baterai ke relay starter dan dari relay ke motor starter — cari tanda kabel hangus, isolasi retak, atau koneksi longgar."
+    },
+    {
+      "title": "Pemeriksaan Relay Starter",
+      "desc": "Ukur resistansi kumparan relay (antara terminal S dan massa) dengan multimeter — bandingkan dengan spesifikasi. Aktifkan kunci kontak ke posisi ON, tekan tombol starter sambil mengukur tegangan di terminal kontrol (S) relay — harus ada tegangan baterai. Dengarkan apakah relay berbunyi klik. Jika ada klik, ukur tegangan di terminal output motor (M) relay — harus sama dengan tegangan baterai."
+    },
+    {
+      "title": "Pemeriksaan Arus Starter & Motor Starter",
+      "desc": "Pasang amperemeter clamp pada kabel positif dari relay ke motor starter. Aktifkan starter dan catat arus yang terukur — bandingkan dengan spesifikasi pabrikan (umumnya 60–150 Ampere). Arus terlalu rendah menunjukkan motor starter lemah atau koneksi buruk. Arus sangat tinggi menunjukkan motor starter atau gigi pinion macet. Periksa kondisi brush motor starter jika motor dapat diakses."
+    },
+    {
+      "title": "Pemeriksaan Interlock & Diagnosis",
+      "desc": "Uji fungsional switch interlock: aktifkan kunci kontak, pastikan engine tidak menyala saat standar samping turun atau kopling tidak ditekan. Ukur kontinuitas switch interlock pada posisi aktif dan non-aktif. Rangkum semua hasil pemeriksaan, identifikasi komponen bermasalah, dan susun langkah perbaikan sesuai prioritas. Verifikasi perbaikan dengan uji coba start engine secara penuh."
+    }
+  ]
+}

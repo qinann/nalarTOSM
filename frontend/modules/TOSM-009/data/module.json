@@ -1,0 +1,14 @@
+{
+  "id": "TOSM-009",
+  "title": "Injektor & Pola Semprotan Bahan Bakar",
+  "level": "menengah",
+  "desc": "Mempelajari konstruksi injektor EFI secara mendalam — koil solenoid, jarum katup, nozzle, filter strainer, O-ring — beserta prinsip terbentuknya pola semprotan (spray pattern) yang optimal dan peran fuel rail sebagai distributor bahan bakar bertekanan.",
+  "kd": "Peserta mampu mengidentifikasi setiap bagian injektor, menjelaskan cara kerja solenoid membuka katup berdasarkan sinyal ECU, memahami peran O-ring dan filter injektor, serta menganalisis pola semprotan berdasarkan tekanan dan desain nozzle.",
+  "components": [
+    "Injektor",
+    "Fuel Rail",
+    "O-ring",
+    "Filter Injektor",
+    "Pola Semprotan (Spray Pattern)"
+  ]
+}

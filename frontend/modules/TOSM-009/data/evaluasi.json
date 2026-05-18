@@ -1,0 +1,8 @@
+{
+  "questions": [
+    { "q": "Koil solenoid injektor tipe high impedance pada sepeda motor EFI umumnya memiliki hambatan sebesar?", "opts": ["0,5–2 Ω", "2–5 Ω", "10–17 Ω", "50–100 Ω"], "ans": 2 },
+    { "q": "Filter strainer pada inlet injektor berfungsi untuk?", "opts": ["Menurunkan tekanan bahan bakar sebelum masuk nozzle", "Mencegah kotoran memasuki saluran nozzle yang sempit", "Mengatur timing pembukaan katup jarum injektor", "Menstabilkan tegangan listrik ke koil solenoid"], "ans": 1 },
+    { "q": "O-ring injektor yang retak atau mengeras akan menyebabkan?", "opts": ["Hambatan koil meningkat sehingga injektor tidak dapat membuka", "Pola semprotan menjadi terlalu lebar dan tidak terkontrol", "Kebocoran bahan bakar dan drop tekanan pada fuel rail", "Sinyal pulsa ECU tidak dapat mencapai terminal solenoid"], "ans": 2 },
+    { "q": "Pola semprotan injektor yang baik ditandai dengan?", "opts": ["Aliran bahan bakar tunggal yang kuat dan terarah lurus", "Tetesan besar yang jatuh langsung ke dinding intake port", "Kerucut atomisasi halus dan simetris sesuai desain nozzle", "Semprotan miring 45° mengikuti aliran udara di throttle body"], "ans": 2 }
+  ]
+}

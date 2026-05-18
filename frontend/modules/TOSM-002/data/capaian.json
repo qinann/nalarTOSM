@@ -1,0 +1,43 @@
+{
+  "skkni": [
+    "SKKNI No. 391 Tahun 2014 – Teknik Otomotif Kendaraan Ringan",
+    "SKKNI No. 212 Tahun 2019 – Pemeliharaan dan Perbaikan Mesin Sepeda Motor"
+  ],
+  "waktu": "12 JP (@ 45 menit)",
+  "prasyarat": [
+    "Menyelesaikan TOSM-001: Komponen Utama Engine",
+    "Memahami fungsi piston, katup, crankshaft, camshaft, dan busi",
+    "Mengenal konsep tekanan, volume, dan suhu dalam termodinamika dasar"
+  ],
+  "cp": "Pada akhir pembelajaran modul ini, peserta didik mampu menjelaskan urutan dan mekanisme keempat langkah siklus kerja engine 4-tak (hisap, kompresi, tenaga, buang), menganalisis diagram timing katup dan valve overlap, serta memahami hubungan antara rasio kompresi dengan efisiensi termal dan performa engine sepeda motor.",
+  "tp": [
+    "2.1 Menjelaskan urutan dan mekanisme keempat langkah siklus kerja engine 4-tak beserta posisi komponen pada setiap langkah.",
+    "2.2 Mengidentifikasi kondisi katup masuk dan buang (terbuka/tertutup) pada setiap langkah siklus kerja.",
+    "2.3 Menjelaskan peristiwa blow-down, valve overlap, dan pengaruhnya terhadap efisiensi pengisian dan pembuangan silinder.",
+    "2.4 Membaca dan menganalisis diagram timing katup (valve timing diagram) untuk menentukan IVO, IVC, EVO, dan EVC.",
+    "2.5 Menghitung rasio kompresi engine berdasarkan volume langkah dan volume ruang bakar.",
+    "2.6 Menjelaskan hubungan antara rasio kompresi, oktan bahan bakar, dan kecenderungan detonasi.",
+    "2.7 Mengukur tekanan kompresi engine menggunakan compression tester dan menginterpretasikan hasilnya."
+  ],
+  "materi": [
+    "Pengertian dan urutan siklus 4-tak (hisap, kompresi, tenaga, buang)",
+    "Posisi piston dan kondisi katup pada setiap langkah",
+    "Peristiwa blow-down dan valve overlap pada transisi langkah",
+    "Diagram timing katup: IVO, IVC, EVO, EVC, dan derajat overlap",
+    "Rumus dan perhitungan rasio kompresi (CR = (Vs + Vc) / Vc)",
+    "Hubungan rasio kompresi dengan efisiensi termal dan detonasi",
+    "Diagram P-V (Pressure-Volume) siklus Otto ideal",
+    "Pengukuran tekanan kompresi dengan compression tester"
+  ],
+  "alat": [
+    "Compression Tester",
+    "Timing Light",
+    "Feeler Gauge",
+    "Kunci Busi",
+    "Dial Gauge",
+    "Busur Derajat (Degree Wheel)",
+    "Dial Indicator",
+    "Burette & Cairan Pengukur"
+  ],
+  "asesmen": "Asesmen dilakukan melalui soal pilihan ganda tentang urutan siklus dan timing katup, penghitungan rasio kompresi dari data yang diberikan, serta praktik pengukuran tekanan kompresi pada engine trainer dan interpretasi hasilnya."
+}

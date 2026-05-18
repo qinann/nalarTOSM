@@ -1,0 +1,8 @@
+{
+  "questions": [
+    { "q": "Indikator oli menyala terus saat mesin hidup menandakan?", "opts": ["Oli mesin penuh dan bersih", "Tekanan oli di bawah batas normal — segera matikan mesin dan periksa", "Sensor indikator oli mengalami kerusakan (bisa salah satu penyebabnya)", "Pilihan B dan C keduanya bisa benar"], "ans": 3 },
+    { "q": "Sensor level bensin bekerja berdasarkan prinsip?", "opts": ["Tekanan hidrostatik cairan di dalam tangki", "Perubahan resistansi potensiometer yang digerakkan oleh pelampung", "Kapasitansi pelat konduktor yang terendam bensin", "Berat bahan bakar yang terdeteksi sensor massa"], "ans": 1 },
+    { "q": "Speedometer elektronik menggunakan motor stepper untuk?", "opts": ["Menggerakkan jarum penunjuk secara tepat sesuai sinyal digital dari VSS", "Menghasilkan listrik saat roda berputar", "Mengirimkan sinyal ke ECU", "Mengkalibrasi odometer secara otomatis"], "ans": 0 },
+    { "q": "Jika indikator netral tidak menyala saat transmisi di posisi netral, kemungkinan penyebabnya adalah?", "opts": ["Tangki bensin kosong", "Switch netral di transmisi rusak atau kabel terputus", "Tegangan baterai terlalu rendah", "Jawaban B dan C keduanya mungkin"], "ans": 3 }
+  ]
+}

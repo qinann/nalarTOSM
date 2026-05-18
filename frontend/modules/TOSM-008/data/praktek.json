@@ -1,0 +1,10 @@
+{
+  "imageUrl": "/assets/images/praktekKerja.jpg",
+  "steps": [
+    { "title": "Persiapan & K3", "desc": "Siapkan multimeter digital, buku panduan servis EFI motor yang bersangkutan, dan scan tool (jika tersedia). Pastikan kunci kontak OFF sebelum melepas konektor sensor. Dekati sistem bahan bakar dengan hati-hati — bahan bakar di bawah tekanan tinggi (250–300 kPa) dapat menyemprot. Siapkan kain lap dan wadah untuk menampung tetesan bahan bakar." },
+    { "title": "Pembacaan Kode DTC via MIL", "desc": "Nyalakan kunci kontak tanpa menghidupkan mesin. Amati pola kedipan MIL (Check Engine lamp): kedipan panjang = puluhan, kedipan pendek = satuan. Contoh: 2 kedipan panjang + 1 kedipan pendek = kode 21 (sensor TPS). Catat semua kode yang muncul dan cocokkan dengan tabel DTC di buku panduan servis pabrikan." },
+    { "title": "Pengukuran Sensor TPS", "desc": "Dengan kunci kontak ON dan soket TPS terpasang, colok probe multimeter (mode volt DC) ke terminal signal dan massa TPS. Gerakkan tuas gas dari posisi idle hingga penuh sambil mengamati tegangan: posisi idle sekitar 0,4–1,0 V, posisi penuh sekitar 4,0–4,7 V. Tegangan yang tidak linear atau melompat-lompat mengindikasikan TPS harus diganti." },
+    { "title": "Pengukuran Sensor IAT", "desc": "Lepas soket IAT. Ukur resistansi IAT dengan multimeter: pada suhu udara 20°C, resistansi biasanya sekitar 2,3–2,7 kΩ; pada 80°C turun menjadi sekitar 270–330 Ω (NTC — Negative Temperature Coefficient). Bandingkan dengan tabel spesifikasi di buku panduan. IAT yang membaca di luar rentang menyebabkan campuran terlalu kaya atau miskin." },
+    { "title": "Reset ECU & Verifikasi", "desc": "Setelah perbaikan selesai, lakukan reset ECU (umumnya dengan memutus sambungan baterai selama 30 detik, atau melalui prosedur khusus sesuai pabrikan). Hidupkan mesin dan verifikasi tidak ada kode DTC baru yang muncul. Lakukan test ride singkat dan periksa kembali MIL. Dokumentasikan kode DTC awal, tindakan perbaikan, dan hasil akhir." }
+  ]
+}

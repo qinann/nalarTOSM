@@ -34,7 +34,7 @@ export function render(data: SistemData, container: HTMLElement): void {
         right.innerHTML = `
           <div class="right-section">
             <h4>Fungsi Komponen</h4>
-            <p>${esc(sub.fungsi)}</p>
+            ${renderFungsi(sub.fungsi)}
           </div>`;
       }
       return;
@@ -123,7 +123,7 @@ export function renderSubComp(
   <aside class="right-panel">
     <div class="right-section">
       <h4>Fungsi Komponen</h4>
-      <p>${esc(sub?.fungsi ?? '')}</p>
+      ${renderFungsi(sub?.fungsi ?? '')}
     </div>
   </aside>
 </div>`;
@@ -198,8 +198,12 @@ function updateRight(app: HTMLElement, detail: SistemComponentDetail): void {
   right.innerHTML = `
     <div class="right-section">
       <h4>Fungsi Komponen</h4>
-      <p>${esc(detail.fungsi)}</p>
+      ${renderFungsi(detail.fungsi)}
     </div>`;
+}
+
+function renderFungsi(text: string): string {
+  return text.split(/\n\n+/).map(p => `<p>${esc(p.trim())}</p>`).join('');
 }
 
 function placeholderSvg(): string {

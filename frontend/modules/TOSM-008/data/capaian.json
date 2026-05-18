@@ -1,0 +1,13 @@
+{
+  "skkni": ["SKKNI No. 391 Tahun 2014 – Teknik Otomotif Kendaraan Ringan", "SKKNI No. 212 Tahun 2019 – Pemeliharaan dan Perbaikan Mesin Sepeda Motor"],
+  "cp": "Pada akhir pembelajaran modul ini, peserta didik mampu mengidentifikasi seluruh komponen sistem EFI sepeda motor, menjelaskan fungsi dan cara kerja setiap komponen termasuk sensor-sensor input ECU, melakukan pembacaan dan interpretasi kode DTC, serta melakukan pengukuran sensor TPS dan IAT menggunakan multimeter sesuai prosedur standar pabrikan.",
+  "tp": [
+    "8.1 Menjelaskan prinsip kerja sistem EFI dan perbedaannya dibandingkan sistem karburator.",
+    "8.2 Mengidentifikasi dan menjelaskan fungsi setiap komponen sistem EFI: tangki, fuel pump, filter, pressure regulator, injektor, throttle body, fuel rail, dan ECU/ECM.",
+    "8.3 Menjelaskan sensor-sensor input ECU (TPS, MAP, IAT, EOT, CKP, O2 sensor) dan parameter yang diukur masing-masing sensor.",
+    "8.4 Membaca dan menginterpretasikan kode DTC (Diagnostic Trouble Code) menggunakan MIL (Malfunction Indicator Lamp) atau scan tool.",
+    "8.5 Mengukur tegangan dan resistansi sensor TPS dan IAT menggunakan multimeter dan membandingkan dengan spesifikasi pabrikan.",
+    "8.6 Mendiagnosis gangguan sistem EFI berdasarkan kode DTC dan gejala, serta melakukan reset ECU setelah perbaikan sesuai prosedur."
+  ],
+  "asesmen": "Asesmen dilakukan melalui soal pilihan ganda berbasis diagnosis DTC, serta praktik baca kode DTC virtual dan pengukuran sensor TPS dan IAT."
+}

@@ -1,0 +1,8 @@
+{
+  "questions": [
+    { "q": "Pada sistem CVT, berat roller weight berpengaruh pada?", "opts": ["Kekuatan gigitan kampas kopling sentrifugal ke mangkok kopling", "Kecepatan putaran mesin saat terjadi perpindahan rasio (shift RPM)", "Volume oli gearbox yang dibutuhkan untuk pelumasan", "Sudut kemiringan alur torque cam pada secondary pulley"], "ans": 1 },
+    { "q": "Torque cam pada secondary pulley CVT berfungsi untuk?", "opts": ["Mencegah V-belt terlepas saat motor berjalan di jalan menurun", "Mengoptimalkan rasio CVT berdasarkan beban torsi sehingga V-belt tidak selip saat akselerasi berat", "Mengunci posisi sliding sheave saat kecepatan konstan", "Mengurangi gesekan antara V-belt dan sheave pada putaran tinggi"], "ans": 1 },
+    { "q": "Tanda V-belt CVT yang harus segera diganti adalah?", "opts": ["Warna V-belt berubah menjadi abu-abu gelap akibat debu kampas", "Permukaan V-belt terlihat mengkilap (glasin), retak, atau sobek", "Suara decit saat pertama kali motor dijalankan pagi hari", "V-belt terasa panas saat disentuh setelah berkendara jauh"], "ans": 1 },
+    { "q": "Motor matic terasa slip dan kehilangan tenaga saat akselerasi. Komponen CVT yang paling mungkin menjadi penyebab adalah?", "opts": ["Oli gearbox yang terlalu banyak", "Roller weight aus (flat spot) atau V-belt aus dan glasin", "Pegas CVT pada primary pulley terlalu lemah", "Baut primary fixed boss yang kendor"], "ans": 1 }
+  ]
+}

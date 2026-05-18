@@ -1,0 +1,8 @@
+{
+  "questions": [
+    { "q": "Kopling manual basah (wet clutch) pada sepeda motor disebut 'basah' karena?", "opts": ["Menggunakan sistem hidrolik minyak rem untuk pengoperasiannya", "Pelat kopling terendam dalam oli mesin yang berfungsi sebagai pendingin dan pelumas", "Menggunakan air sebagai media pendingin pelat gesek", "Tuas kopling dioperasikan dengan jari yang basah keringat"], "ans": 1 },
+    { "q": "Pelat gesek (friction plate) kopling yang sudah aus di bawah wear limit akan menyebabkan?", "opts": ["Kopling menjadi lebih responsif dan ringan saat ditarik", "Kopling selip terutama saat akselerasi beban berat karena daya cengkeram berkurang", "Mesin tidak dapat dihidupkan karena kopling tidak dapat menutup", "Perpindahan gigi menjadi lebih halus karena gesekan berkurang"], "ans": 1 },
+    { "q": "Komponen yang bertanggung jawab menggerakkan shift fork untuk memilih gigi pada transmisi sepeda motor adalah?", "opts": ["Tuas gas (throttle) yang terhubung ke kabel gigi", "Shift drum yang memiliki alur spiral sebagai pemandu shift fork", "Poros utama (mainshaft) yang berputar bersama mesin", "Pelat kopling yang menekan roda gigi transmisi"], "ans": 1 },
+    { "q": "Gejala 'loncat gigi' pada transmisi sepeda motor (gigi tiba-tiba pindah sendiri saat beban) paling sering disebabkan oleh?", "opts": ["Oli mesin yang terlalu encer sehingga tidak melumasi gigi dengan baik", "Dog roda gigi yang aus atau patah sehingga engagement tidak penuh", "Pegas kopling yang terlalu kuat sehingga menekan gigi transmisi", "Shift drum yang terlalu longgar dalam casing gearbox"], "ans": 1 }
+  ]
+}

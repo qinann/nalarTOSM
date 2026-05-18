@@ -23,7 +23,7 @@ export function render(data, container) {
                 right.innerHTML = `
           <div class="right-section">
             <h4>Fungsi Komponen</h4>
-            <p>${esc(sub.fungsi)}</p>
+            ${renderFungsi(sub.fungsi)}
           </div>`;
             }
             return;
@@ -102,7 +102,7 @@ export function renderSubComp(meta, data, compName, subName, container) {
   <aside class="right-panel">
     <div class="right-section">
       <h4>Fungsi Komponen</h4>
-      <p>${esc(sub?.fungsi ?? '')}</p>
+      ${renderFungsi(sub?.fungsi ?? '')}
     </div>
   </aside>
 </div>`;
@@ -174,8 +174,11 @@ function updateRight(app, detail) {
     right.innerHTML = `
     <div class="right-section">
       <h4>Fungsi Komponen</h4>
-      <p>${esc(detail.fungsi)}</p>
+      ${renderFungsi(detail.fungsi)}
     </div>`;
+}
+function renderFungsi(text) {
+    return text.split(/\n\n+/).map(p => `<p>${esc(p.trim())}</p>`).join('');
 }
 function placeholderSvg() {
     return `<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="1.2">

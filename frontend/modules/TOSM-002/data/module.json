@@ -1,0 +1,8 @@
+{
+  "id": "TOSM-002",
+  "title": "Siklus Kerja Engine 4 Tak",
+  "level": "dasar",
+  "desc": "Modul ini mempelajari siklus kerja engine 4-tak melalui identifikasi komponen fisik yang terlibat: piston, katup, busi, connecting rod, crankshaft, camshaft, dan flywheel.",
+  "kd": "Peserta mampu mengidentifikasi komponen fisik engine 4-tak, menjelaskan fungsi setiap komponen pada masing-masing langkah siklus, serta mensinkronisasi posisi katup dan piston pada setiap fase siklus.",
+  "components": ["Piston", "Katup Intake & Exhaust", "Busi", "Connecting Rod", "Crankshaft", "Camshaft", "Flywheel"]
+}

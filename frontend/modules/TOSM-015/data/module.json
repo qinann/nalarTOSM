@@ -1,0 +1,8 @@
+{
+  "id": "TOSM-015",
+  "title": "Sistem Kopling Manual & Transmisi",
+  "level": "lanjut",
+  "desc": "Mempelajari sistem kopling manual basah (wet clutch) dan transmisi roda gigi sepeda motor bebek/sport — konstruksi kopling, cara kerja pelat gesek, mekanisme perpindahan gigi melalui shift drum dan shift fork, serta overhaul gearbox sesuai standar pabrikan.",
+  "kd": "Peserta mampu mengidentifikasi seluruh komponen kopling manual dan transmisi, menjelaskan cara kerja setiap komponen dalam memindahkan tenaga dan memilih rasio gigi, mengukur keausan pelat kopling, serta melakukan prosedur overhaul gearbox motor bebek dan sport.",
+  "components": ["Kopling Manual (Wet Clutch)", "Pelat Kopling & Pegas", "Drum Pemilih (Shift Drum)", "Garpu Pemilih (Shift Fork)", "Poros Transmisi (Mainshaft & Countershaft)", "Mekanisme Perpindahan Gigi"]
+}

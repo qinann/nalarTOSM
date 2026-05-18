@@ -1,0 +1,10 @@
+{
+  "imageUrl": "/assets/images/praktekKerja.jpg",
+  "steps": [
+    { "title": "Persiapan & K3", "desc": "Siapkan APD (sarung tangan, kacamata pelindung), pastikan mesin dalam kondisi dingin, siapkan compression tester, degree wheel, dan feeler gauge." },
+    { "title": "Identifikasi Posisi TMA", "desc": "Pasang degree wheel pada crankshaft, gunakan dial indicator untuk menemukan TMA piston secara presisi, tandai posisi TMA pada degree wheel." },
+    { "title": "Pemeriksaan Timing Katup", "desc": "Ukur kapan katup masuk dan buang mulai terbuka/menutup menggunakan dial indicator pada rocker arm. Catat nilai IVO, IVC, EVO, EVC dalam derajat." },
+    { "title": "Pengukuran Tekanan Kompresi", "desc": "Copot busi, pasang compression tester, engkol engine 4–6 kali dengan throttle penuh. Catat tekanan pada setiap silinder dan bandingkan dengan spesifikasi." },
+    { "title": "Analisis Hasil", "desc": "Bandingkan timing katup dengan spesifikasi pabrikan, hitung valve overlap, dan interpretasikan tekanan kompresi untuk menentukan kondisi engine." }
+  ]
+}

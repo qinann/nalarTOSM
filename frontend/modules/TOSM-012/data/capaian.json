@@ -1,0 +1,12 @@
+{
+  "skkni": ["SKKNI No. 391 Tahun 2014 – Teknik Otomotif Kendaraan Ringan", "SKKNI No. 212 Tahun 2019 – Pemeliharaan dan Perbaikan Mesin Sepeda Motor"],
+  "cp": "Pada akhir pembelajaran modul ini, peserta didik mampu menjelaskan cara kerja sistem starter elektrik sepeda motor secara lengkap, mengidentifikasi fungsi setiap komponen dan sub-komponen sistem starter, serta melakukan pemeriksaan dan diagnosis kerusakan sistem starter menggunakan multimeter dan amperemeter sesuai prosedur standar. Peserta didik juga mampu memeriksa relay starter, motor starter, kondisi baterai, dan rangkaian interlock keselamatan, serta menentukan tindakan perbaikan yang tepat berdasarkan hasil diagnosis.",
+  "tp": [
+    "12.1 Menjelaskan prinsip kerja sistem starter elektrik sepeda motor, termasuk fungsi interlock keselamatan dan mekanisme one-way clutch pada gigi pinion.",
+    "12.2 Mengidentifikasi nama, fungsi, dan lokasi setiap komponen sistem starter (kunci kontak, relay starter, motor starter, gigi pinion, ring gear, baterai, switch starter dan interlock) beserta sub-komponennya.",
+    "12.3 Melakukan pemeriksaan rangkaian kontrol relay starter dengan mengukur tegangan di terminal kontrol (S) dan terminal output (M) relay saat tombol starter ditekan.",
+    "12.4 Mengukur arus yang ditarik motor starter menggunakan amperemeter dan mengevaluasi hasil pengukuran terhadap spesifikasi normal untuk mendeteksi motor starter yang terlalu lemah atau terlalu boros arus.",
+    "12.5 Mendiagnosis kerusakan sistem starter secara sistematis berdasarkan gejala (starter tidak bekerja, bunyi klik tanpa putaran, bunyi berderak) dan hasil pengukuran, serta menentukan komponen yang perlu diperbaiki atau diganti."
+  ],
+  "asesmen": "Asesmen dilakukan melalui soal pilihan ganda tentang komponen dan cara kerja sistem starter, simulasi pengukuran tegangan relay dan arus motor starter secara virtual, serta simulasi troubleshooting kasus starter tidak berfungsi berdasarkan skenario gejala yang diberikan."
+}

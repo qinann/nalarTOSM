@@ -1,0 +1,84 @@
+{
+  "questions": [
+    {
+      "q": "Berapakah tegangan baterai sepeda motor yang dinyatakan dalam kondisi penuh (fully charged) dan terukur dalam keadaan istirahat (tanpa beban)?",
+      "opts": [
+        "11,0 – 11,5 V",
+        "12,6 – 12,8 V",
+        "13,5 – 14,5 V",
+        "15,0 – 15,5 V"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "Lampu sein pada sepeda motor berkedip jauh lebih cepat dari biasanya. Apakah penyebab paling umum dari kondisi ini pada sistem dengan relay sein tipe mekanik/termal?",
+      "opts": [
+        "Relay sein rusak dan harus diganti",
+        "Tegangan baterai terlalu tinggi karena alternator berlebih",
+        "Salah satu bohlam lampu sein putus sehingga beban berkurang",
+        "Sekring sistem penerangan hampir putus"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "Seorang teknisi memeriksa sistem rem dan menemukan lampu rem belakang tidak menyala saat rem depan ditekan, namun menyala normal saat rem belakang ditekan. Komponen manakah yang paling mungkin mengalami kerusakan?",
+      "opts": [
+        "Bohlam lampu rem putus",
+        "Switch rem depan rusak atau tidak tersambung",
+        "Relay sein mengalami korsleting internal",
+        "Sekring sistem penerangan putus"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "Saat mengganti sekring yang putus pada sirkuit lampu kepala (nilai asli 10A), pengendara tidak memiliki sekring 10A dan menggantinya dengan sekring 20A yang tersedia. Apakah risiko utama dari tindakan ini?",
+      "opts": [
+        "Lampu kepala akan menjadi lebih terang dari normal",
+        "Relay sein akan berkedip lebih lambat",
+        "Fungsi pengaman hilang — kabel atau komponen dapat terbakar jika terjadi korsleting",
+        "Baterai akan habis lebih cepat dari biasanya"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "Dalam prosedur penyetelan arah lampu kepala (headlight alignment), kendaraan diposisikan tegak pada permukaan datar berjarak 10 meter dari dinding. Pada posisi Lo beam, batas atas berkas cahaya yang benar harus berada di:",
+      "opts": [
+        "Tepat setinggi lampu kepala dari tanah atau sedikit di atasnya",
+        "100–150 mm di bawah tinggi titik pusat lampu kepala dari tanah",
+        "Tepat di tengah dinding tanpa memperhatikan ketinggian lampu",
+        "Sejajar dengan tinggi mata pengendara saat duduk di motor"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "Klakson sepeda motor tidak berbunyi meski tombol klakson ditekan. Teknisi mengukur tegangan pada terminal klakson saat tombol ditekan dan mendapatkan tegangan baterai penuh (12,6 V). Kesimpulan diagnosis yang paling tepat adalah:",
+      "opts": [
+        "Tombol klakson pada saklar setang rusak",
+        "Sekring sirkuit klakson putus",
+        "Klakson itu sendiri yang rusak (koil putus atau kontak getar macet)",
+        "Kabel dari baterai ke saklar klakson putus"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "Bohlam lampu kepala tipe H4 yang digunakan pada sepeda motor memiliki dua filamen. Filamen manakah yang memiliki daya (wattage) lebih tinggi?",
+      "opts": [
+        "Filamen Lo beam, karena sering digunakan dan butuh cahaya lebih kuat",
+        "Keduanya memiliki daya yang sama persis",
+        "Filamen Hi beam, karena memerlukan jangkauan pancaran yang lebih jauh",
+        "Daya filamen bervariasi tergantung merek, tidak ada standar"
+      ],
+      "ans": 2
+    },
+    {
+      "q": "Sebuah sepeda motor memiliki sistem penerangan yang berfungsi normal saat kondisi kering, namun beberapa lampu mati atau berkedip tidak teratur saat hujan. Penyebab yang paling mungkin dari gangguan intermiten seperti ini adalah:",
+      "opts": [
+        "Baterai lemah yang tidak mampu menyuplai arus saat hujan",
+        "Relay sein mengalami kerusakan internal akibat kelembapan",
+        "Air masuk ke dalam soket/konektor atau tutup fuse box yang rusak sehingga terjadi short circuit atau resistansi tinggi",
+        "Alternator tidak mengisi daya baterai saat mesin putaran rendah"
+      ],
+      "ans": 2
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "TOSM-012",
+  "title": "Sistem Starter",
+  "level": "menengah",
+  "desc": "Modul ini membahas sistem starter elektrik sepeda motor yang mencakup kunci kontak, relay starter, motor starter, gigi pinion, ring gear crankshaft, baterai, serta switch starter dan interlock keselamatan. Peserta didik mempelajari cara kerja, pemeriksaan arus dan tegangan, diagnosis kerusakan, dan prosedur perbaikan sistem starter sesuai standar pabrikan.",
+  "kd": "Peserta mampu menjelaskan cara kerja sistem starter sepeda motor, mengidentifikasi fungsi setiap komponen sistem starter, mengukur arus starter dan memeriksa kondisi komponen menggunakan alat ukur, serta mendiagnosis dan memperbaiki kerusakan sistem starter sesuai prosedur standar.",
+  "components": [
+    "Kunci Kontak",
+    "Relay Starter",
+    "Motor Starter",
+    "Gigi Starter (Pinion)",
+    "Ring Gear Crankshaft",
+    "Baterai",
+    "Switch Starter & Interlock"
+  ]
+}

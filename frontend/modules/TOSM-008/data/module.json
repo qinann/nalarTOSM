@@ -1,0 +1,17 @@
+{
+  "id": "TOSM-008",
+  "title": "Sistem Bahan Bakar Injeksi (EFI)",
+  "level": "menengah",
+  "desc": "Mempelajari sistem EFI sepeda motor — tangki, fuel pump, filter, pressure regulator, injektor, throttle body, fuel rail, dan ECU/ECM — beserta cara kerja dan prosedur diagnosis kode DTC.",
+  "kd": "Peserta mampu mengidentifikasi komponen sistem EFI, menjelaskan fungsi dan cara kerja setiap komponen, serta melakukan diagnosis kerusakan menggunakan kode DTC dan pengukuran sensor.",
+  "components": [
+    "Tangki",
+    "Fuel Pump",
+    "Fuel Filter",
+    "Pressure Regulator",
+    "Injektor",
+    "Throttle Body",
+    "Fuel Rail",
+    "ECU/ECM"
+  ]
+}

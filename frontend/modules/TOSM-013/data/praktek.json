@@ -1,0 +1,10 @@
+{
+  "imageUrl": "/assets/images/praktekKerja.jpg",
+  "steps": [
+    { "title": "Persiapan & K3", "desc": "Siapkan multimeter digital, kabel jumper pendek, dan buku panduan servis motor yang akan diperiksa. Pastikan kunci kontak dalam posisi OFF sebelum melepas soket konektor apa pun. Identifikasi letak sensor-sensor pada motor yang akan didiagnosis." },
+    { "title": "Pemeriksaan Sensor Level Bensin", "desc": "Lepas soket sensor level bensin. Ukur resistansi sensor dengan multimeter pada posisi tangki penuh (float di atas) dan posisi tangki kosong (float di bawah). Bandingkan dengan spesifikasi pabrikan (umumnya 4–112 Ω atau 14–88 Ω tergantung merek). Resistansi di luar rentang mengindikasikan sensor harus diganti." },
+    { "title": "Pemeriksaan Sensor Kecepatan (VSS)", "desc": "Dengan kunci kontak ON, ukur tegangan suplai ke VSS (biasanya 5V atau 12V tergantung tipe). Putar roda perlahan sambil mengamati sinyal output VSS dengan multimeter di mode AC volt — harus terlihat tegangan AC kecil yang berubah sesuai kecepatan putaran roda. Tidak ada sinyal saat roda berputar = sensor rusak." },
+    { "title": "Pemeriksaan Indikator Oli & Netral", "desc": "Lepas soket switch tekanan oli di blok mesin. Dengan kunci kontak ON, gunakan kabel jumper untuk menghubungkan terminal switch ke massa (ground) — lampu indikator oli di panel harus menyala. Jika tidak menyala, periksa bohlam atau kabel. Uji switch netral dengan cara serupa. Jika switch tidak merespons saat gigi di netral, switch harus diganti." },
+    { "title": "Kalibrasi Speedometer & Laporan", "desc": "Kalibrasi speedometer dilakukan dengan GPS atau alat ukur jarak referensi. Bandingkan pembacaan speedometer dengan kecepatan aktual pada berbagai kecepatan (40, 60, 80 km/h). Toleransi error speedometer standar: +0 sampai +10% (speedometer boleh menunjukkan lebih tinggi, tidak boleh lebih rendah dari kecepatan aktual). Dokumentasikan hasil pemeriksaan." }
+  ]
+}

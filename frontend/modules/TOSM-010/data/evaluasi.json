@@ -1,0 +1,8 @@
+{
+  "questions": [
+    { "q": "Pulser (pickup coil) pada sistem pengapian TCI menghasilkan sinyal berupa?", "opts": ["Sinyal tegangan DC yang konstan sesuai putaran mesin", "Sinyal tegangan AC yang bervariasi setiap tonjolan magnet rotor lewat", "Sinyal digital 0/5V yang dikirim langsung ke koil pengapian", "Arus listrik tinggi untuk memicu transistor daya di koil"], "ans": 1 },
+    { "q": "Hambatan kumparan primer koil pengapian yang normal umumnya berada pada rentang?", "opts": ["0,5–3 Ω", "5–15 Ω", "100–500 Ω", "5.000–15.000 Ω"], "ans": 0 },
+    { "q": "Mesin tidak mau hidup dan tidak ada percikan busi meski semua sekering baik. Langkah pertama diagnosis sistem pengapian TCI yang paling tepat adalah?", "opts": ["Ganti TCI unit baru langsung", "Ukur tegangan sinyal pulser saat diengkol untuk memastikan pulser berfungsi", "Ganti busi dengan yang baru", "Periksa tekanan kompresi mesin"], "ans": 1 },
+    { "q": "Celah elektroda busi yang terlalu besar (melebihi spesifikasi) akan menyebabkan?", "opts": ["Percikan api terlalu kuat sehingga mesin terasa kasar", "Percikan api sulit terbentuk karena tegangan minimum yang diperlukan meningkat", "ECU tidak dapat mendeteksi sinyal balik dari busi", "Hambatan kabel busi meningkat secara otomatis"], "ans": 1 }
+  ]
+}

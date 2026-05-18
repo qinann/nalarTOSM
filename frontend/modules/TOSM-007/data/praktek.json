@@ -1,0 +1,10 @@
+{
+  "imageUrl": "/assets/images/praktekKerja.jpg",
+  "steps": [
+    { "title": "Persiapan & K3", "desc": "Pastikan mesin dalam kondisi dingin (minimal 2 jam setelah dimatikan). Siapkan wadah penampung coolant bekas, coolant baru sesuai spesifikasi pabrikan, air murni (distilled water), dan senter untuk memeriksa kondisi selang dan radiator. Gunakan sarung tangan — coolant beracun jika tertelan." },
+    { "title": "Pemeriksaan Thermostat", "desc": "Lepas thermostat dari housingnya. Masukkan thermostat ke dalam air yang dipanaskan secara bertahap. Amati suhu pembukaan menggunakan termometer — thermostat normal mulai membuka pada sekitar 80–82°C dan terbuka penuh pada 95°C. Thermostat yang tidak membuka sama sekali pada suhu tersebut harus diganti." },
+    { "title": "Penggantian Coolant", "desc": "Buka tutup radiator dan buka drain plug di bawah radiator untuk membuang coolant lama. Bilas sistem dengan air bersih satu kali jika coolant sangat kotor. Tutup drain plug, isi sistem dengan campuran coolant + air murni sesuai rasio yang direkomendasikan (biasanya 50:50 atau sesuai iklim). Isi juga reservoir tank hingga batas MAX." },
+    { "title": "Bleeding Udara", "desc": "Nyalakan mesin dengan tutup radiator terbuka. Biarkan mesin stasioner dan perhatikan aliran coolant di dalam radiator — saat thermostat mulai membuka, akan terlihat aliran coolant. Gelembung udara yang keluar harus dibiarkan sampai tidak ada lagi. Tambahkan coolant jika level turun, kemudian tutup tutup radiator dengan aman." },
+    { "title": "Pemeriksaan Kebocoran & Akhir", "desc": "Periksa seluruh sambungan selang, klem, dan area pompa air untuk kebocoran. Cek level coolant di reservoir saat mesin panas — harus berada antara MIN dan MAX. Bersihkan sirip radiator dari kotoran menggunakan air bertekanan rendah arah dari belakang ke depan (bukan sebaliknya agar sirip tidak bengkok)." }
+  ]
+}

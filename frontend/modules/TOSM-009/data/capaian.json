@@ -1,0 +1,14 @@
+{
+  "skkni": ["SKKNI No. 391 Tahun 2014 – Teknik Otomotif Kendaraan Ringan", "SKKNI No. 212 Tahun 2019 – Pemeliharaan dan Perbaikan Mesin Sepeda Motor"],
+  "cp": "Pada akhir pembelajaran modul ini, peserta didik mampu mengidentifikasi konstruksi injektor EFI beserta seluruh sub-komponennya, menjelaskan cara kerja solenoid dalam mengontrol aliran bahan bakar berdasarkan sinyal pulsa dari ECU, memahami fungsi fuel rail, O-ring, dan filter strainer, serta menganalisis kualitas pola semprotan berdasarkan desain nozzle dan tekanan kerja sistem.",
+  "tp": [
+    "9.1 Menjelaskan konstruksi injektor EFI: koil solenoid, inti besi, jarum katup, pegas pengembali, dudukan katup, nozzle, lubang nozzle, terminal listrik, body, dan filter inlet.",
+    "9.2 Menjelaskan cara kerja solenoid injektor dalam membuka dan menutup katup berdasarkan sinyal pulsa (duty cycle) dari ECU.",
+    "9.3 Mengidentifikasi fungsi fuel rail sebagai manifold distribusi bahan bakar bertekanan dari pompa ke seluruh injektor.",
+    "9.4 Menjelaskan fungsi O-ring atas dan bawah injektor dalam mencegah kebocoran bahan bakar pada tekanan kerja 250–300 kPa.",
+    "9.5 Menjelaskan fungsi filter strainer pada inlet injektor dalam mencegah kotoran memasuki saluran nozzle yang sempit.",
+    "9.6 Menganalisis pola semprotan (spray pattern) berdasarkan jumlah lubang nozzle, sudut semprotan, ukuran droplet, arah semprotan, dan tekanan kerja.",
+    "9.7 Mengukur hambatan koil solenoid injektor menggunakan multimeter dan membandingkan dengan spesifikasi pabrikan (10–17 Ω untuk tipe high impedance)."
+  ],
+  "asesmen": "Asesmen dilakukan melalui soal pilihan ganda tentang konstruksi dan cara kerja injektor, serta simulasi pemeriksaan hambatan koil injektor dan analisis pola semprotan virtual."
+}

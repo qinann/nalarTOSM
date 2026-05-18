@@ -1,0 +1,8 @@
+{
+  "questions": [
+    { "q": "Komponen yang berfungsi mencegah tekanan oli berlebih agar tidak merusak filter dan seal adalah?", "opts": ["Strainer", "Pompa oli", "Pressure relief valve", "Galeri oli"], "ans": 2 },
+    { "q": "Oli mesin yang berwarna hitam pekat dan berbau terbakar mengindikasikan?", "opts": ["Oli terlalu baru", "Oli perlu diganti karena sudah kotor dan terkontaminasi", "Viskositas oli terlalu tinggi", "Kapasitas oli terlalu banyak"], "ans": 1 },
+    { "q": "Apa fungsi strainer pada sistem pelumasan?", "opts": ["Mengatur tekanan oli", "Memompa oli ke seluruh sistem", "Menyaring partikel kasar sebelum oli masuk ke pompa", "Mendinginkan oli mesin"], "ans": 2 },
+    { "q": "Asap biru-putih keluar dari knalpot saat engine berakselerasi sering disebabkan oleh?", "opts": ["Tekanan oli terlalu tinggi", "Filter oli tersumbat", "Ring piston atau seal katup aus sehingga oli masuk ke ruang bakar", "Viskositas oli terlalu rendah"], "ans": 2 }
+  ]
+}

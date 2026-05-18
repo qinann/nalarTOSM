@@ -1,0 +1,13 @@
+{
+  "skkni": ["SKKNI No. 391 Tahun 2014 – Teknik Otomotif Kendaraan Ringan", "SKKNI No. 212 Tahun 2019 – Pemeliharaan dan Perbaikan Mesin Sepeda Motor"],
+  "cp": "Pada akhir pembelajaran modul ini, peserta didik mampu mengidentifikasi seluruh komponen sistem pendinginan cairan sepeda motor, menjelaskan prinsip kerja dan jalur sirkulasi coolant, melakukan prosedur pemeriksaan thermostat dan penggantian coolant sesuai SOP, serta mendiagnosis penyebab overheat dan menentukan tindakan perbaikan yang tepat.",
+  "tp": [
+    "7.1 Menjelaskan fungsi dan prinsip kerja sistem pendinginan cairan serta keunggulannya dibandingkan pendinginan udara.",
+    "7.2 Mengidentifikasi dan menjelaskan fungsi setiap komponen: radiator, kipas radiator, pompa air, thermostat, water jacket, selang radiator, tutup radiator, reservoir tank, dan coolant.",
+    "7.3 Menjelaskan jalur sirkulasi coolant dalam kondisi mesin dingin (by-pass circuit) dan kondisi mesin panas (full circuit melalui radiator).",
+    "7.4 Melakukan pemeriksaan thermostat dengan metode perendaman air panas dan menginterpretasikan hasilnya.",
+    "7.5 Melakukan prosedur penggantian coolant sesuai interval pabrikan termasuk bleeding udara dari sistem.",
+    "7.6 Mendiagnosis penyebab overheat (thermostat macet, kebocoran coolant, kipas tidak berputar, pompa air rusak) dan menentukan tindakan perbaikan yang tepat."
+  ],
+  "asesmen": "Asesmen dilakukan melalui soal pilihan ganda dan studi kasus overheat, serta praktik pemeriksaan thermostat, penggantian coolant, dan pembersihan radiator virtual."
+}

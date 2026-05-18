@@ -1,0 +1,15 @@
+{
+  "id": "TOSM-004",
+  "title": "Sistem Pelumasan",
+  "level": "dasar",
+  "desc": "Mempelajari komponen sistem pelumasan engine sepeda motor — pompa oli, strainer, pressure relief valve, galeri oli, bearing crankshaft, dan filter oli — beserta alur sirkulasi oli dan prosedur perawatannya.",
+  "kd": "Peserta mampu mengidentifikasi komponen sistem pelumasan, menjelaskan alur sirkulasi oli, melakukan penggantian oli dan filter, serta mendiagnosis gangguan berdasarkan gejala dan kondisi oli.",
+  "components": [
+    "Pompa Oli",
+    "Strainer",
+    "Pressure Relief Valve",
+    "Galeri Oli",
+    "Bearing Crankshaft",
+    "Filter Oli"
+  ]
+}

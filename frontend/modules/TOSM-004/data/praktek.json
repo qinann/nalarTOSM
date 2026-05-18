@@ -1,0 +1,10 @@
+{
+  "imageUrl": "/assets/images/praktekKerja.jpg",
+  "steps": [
+    { "title": "Persiapan & K3", "desc": "Siapkan APD (sarung tangan, kacamata pelindung), siapkan wadah penampung oli bekas (minimal 1,5 liter), kain lap, dan kunci ring 12 mm untuk baut tap oli. Pastikan mesin sudah dingin atau hangat (tidak panas) sebelum dikuras." },
+    { "title": "Penggantian Oli Mesin", "desc": "Lepas baut tap oli di bawah crankcase dan biarkan oli lama mengalir penuh ke wadah penampung. Pasang baut tap dengan O-ring baru dan kencangkan sesuai torsi (10–12 Nm). Isi oli baru sesuai spesifikasi viskositas (misalnya SAE 10W-40 API SL/MA) sebanyak kapasitas yang tertera di buku panduan." },
+    { "title": "Penggantian Filter Oli", "desc": "Lepas filter oli menggunakan filter wrench, pastikan O-ring lama ikut terlepas. Oleskan sedikit oli baru pada O-ring filter baru, pasang filter dengan tangan hingga O-ring menyentuh dudukan, kemudian kencangkan ¾ putaran lagi. Jangan menggunakan kunci — filter oli dikencangkan dengan tangan (hand-tight plus ¾ turn)." },
+    { "title": "Pembersihan Strainer", "desc": "Lepas tutup strainer (biasanya di sisi crankcase), keluarkan strainer dan cuci dengan bensin atau brake cleaner menggunakan sikat kecil. Periksa magnet di dalam housing strainer — bersihkan serbuk logam yang menempel. Pasang kembali dengan gasket baru dan kencangkan sesuai torsi." },
+    { "title": "Pemeriksaan Tekanan Oli", "desc": "Pasang oil pressure gauge pada lubang switch tekanan oli. Hidupkan mesin dan biarkan stasioner. Baca tekanan oli pada rpm idle (spesifikasi normal biasanya 0,8–1,5 bar). Matikan mesin, lepas gauge, pasang kembali switch tekanan oli. Periksa seluruh area untuk kebocoran oli." }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "TOSM-006",
+  "title": "Sistem Pendinginan Udara",
+  "level": "dasar",
+  "desc": "Modul ini membahas sistem pendinginan udara sepeda motor meliputi sirip pendingin blok dan kepala silinder, cover engine, saluran udara, dan kipas pendingin beserta prosedur pemeriksaan dan diagnosis overheat.",
+  "kd": "Peserta mampu mengidentifikasi, menjelaskan fungsi, dan melakukan pemeriksaan komponen sistem pendinginan udara sepeda motor serta mendiagnosis penyebab overheat sesuai standar pabrik.",
+  "components": [
+    "Sirip Pendingin Blok Silinder",
+    "Sirip Pendingin Kepala Silinder",
+    "Tutup/Cover Engine",
+    "Saluran Udara (Air Shroud)",
+    "Kipas Pendingin"
+  ]
+}

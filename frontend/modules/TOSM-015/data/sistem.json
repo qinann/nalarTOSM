@@ -1,0 +1,168 @@
+{
+  "imageUrl": null,
+  "caption": "Sistem Kopling Manual (Wet Clutch) & Transmisi",
+  "componentDetails": {
+    "Kopling Manual (Wet Clutch)": {
+      "fungsi": "Kopling manual basah (wet clutch) pada sepeda motor adalah sistem pemutus/penyambung tenaga yang terendam dalam oli mesin, dioperasikan oleh tuas kopling di setang. Desain 'basah' memungkinkan pendinginan dan pelumasan terus-menerus oleh oli mesin sehingga kapasitas torsi jauh lebih tinggi dibandingkan kopling kering dengan ukuran yang sama.\n\nKetika tuas kopling ditarik, push rod mendorong pelat penekan melawan tekanan pegas, memisahkan tumpukan friction plate dan steel plate sehingga torsi dari crankshaft tidak dapat diteruskan ke transmisi. Saat tuas dilepas, pegas mendorong kembali pelat penekan dan menjepit tumpukan pelat — torsi diteruskan melalui gesekan.\n\nRumah kopling (clutch housing) selalu berputar bersama crankshaft melalui gigi primer, sementara hub kopling (clutch hub) terhubung ke mainshaft transmisi. Saat kopling dihubungkan, keduanya berputar sebagai satu kesatuan. Saat diputus, housing berputar bebas sementara hub dapat diam atau berputar dengan kecepatan berbeda.",
+      "imageUrl": null,
+      "caption": "Komponen kopling manual wet clutch",
+      "subComponents": [
+        "Rumah Kopling (Clutch Housing / Outer)",
+        "Hub Kopling (Clutch Hub / Inner)",
+        "Push Rod",
+        "Bearing Penekan"
+      ],
+      "subComponentDetails": {
+        "Rumah Kopling (Clutch Housing / Outer)": {
+          "fungsi": "Rumah kopling atau clutch housing adalah mangkuk logam berlubang (slot) di sisinya yang terhubung ke roda gigi primer yang digerakkan oleh crankshaft. Slot di sisi rumah kopling berfungsi sebagai tempat masuknya ujung pelat gesek (friction plate) — lidah-lidah pelat gesek masuk ke slot ini sehingga friction plate ikut berputar bersama rumah kopling namun dapat bergerak secara aksial (maju-mundur).\n\nSaat mesin berputar, rumah kopling selalu ikut berputar melalui gigi primer terlepas dari apakah kopling sedang dihubungkan atau diputuskan. Kecepatan putaran rumah kopling berbanding lurus dengan RPM mesin dikali rasio gigi primer. Oleh karena itu, saat tuas kopling ditarik dan pelat dipisahkan, rumah kopling terus berputar bebas sementara hub kopling (terhubung ke transmisi) diam atau berputar dengan kecepatan berbeda.\n\nSlot pada sisi rumah kopling rentan aus terutama di tepi slot tempat beban torsi dari friction plate terpusat. Tanda aus yang khas adalah alur (notch) di tepi slot yang menyebabkan friction plate tersangkut — kopling menjadi kasar saat dilepas atau malah menempel (kopling 'nempel') karena friction plate tidak bisa bergerak bebas secara aksial. Slot yang aus dapat dihaluskan dengan kikir halus, namun jika sudah terlalu dalam harus ganti housing.",
+          "imageUrl": null,
+          "caption": "Rumah kopling / clutch housing outer"
+        },
+        "Hub Kopling (Clutch Hub / Inner)": {
+          "fungsi": "Hub kopling atau clutch hub adalah komponen dalam yang terhubung langsung ke poros utama transmisi (mainshaft) melalui spline. Hub inilah yang mentransmisikan tenaga ke transmisi ketika kopling terhubung. Di sisi luar hub terdapat alur spline yang menjadi dudukan pelat baja (steel plate) — ujung pelat baja masuk ke spline hub sehingga steel plate ikut berputar bersama hub namun dapat bergerak aksial.\n\nKetika kopling dihubungkan (tuas dilepas), pegas mendorong pelat penekan dan menjepit tumpukan friction plate dan steel plate bersama — torsi diteruskan dari friction plate (terhubung ke housing) melalui gesekan ke steel plate (terhubung ke hub), dan selanjutnya ke mainshaft transmisi. Seluruh rangkaian berputar sebagai satu kesatuan.\n\nSpline hub yang aus menyebabkan steel plate dapat bergerak secara circumferential (bergoyang rotasi) dalam hub — ini menghasilkan suara ketukan (backlash noise) khas dari area kopling saat deselerasi atau perubahan torsi mendadak. Hub yang aus harus diganti karena spline yang sudah aus tidak dapat diperbaiki dan akan semakin cepat memburuk.",
+          "imageUrl": null,
+          "caption": "Hub kopling / clutch hub inner"
+        },
+        "Push Rod": {
+          "fungsi": "Push rod adalah batang baja pejal yang meneruskan gaya tarikan tuas kopling (melalui kabel kopling atau sistem hidrolik) ke bearing penekan (release bearing) yang mendorong pelat penekan ke arah berlawanan dari tekanan pegas — memisahkan tumpukan pelat dan memutus penerusan torsi.",
+          "imageUrl": null,
+          "caption": "Push rod penerus gaya tuas kopling"
+        },
+        "Bearing Penekan": {
+          "fungsi": "Pada sistem kopling kabel mekanis, gerakan tuas kopling menarik kabel, yang menggerakkan cam atau lever di sisi luar cover bak mesin. Cam ini mendorong push rod melalui lubang di tengah poros primer. Di ujung push rod terdapat bearing baja kecil yang bersentuhan dengan pelat penekan — bearing ini memungkinkan pelat penekan yang berputar untuk didorong oleh push rod yang diam (atau berputar lebih lambat).\n\nSetelan bebas tuas kopling sangat berkaitan dengan mekanisme push rod ini. Terlalu sedikit freeplay (jarak bebas tuas sebelum kopling mulai melepas) menyebabkan kopling tidak pernah terhubung penuh — kopling selip meski tuas tidak ditarik. Terlalu banyak freeplay menyebabkan kopling tidak terputus sempurna saat tuas ditarik penuh — perpindahan gigi berat atau bergeresekan. Spesifikasi freeplay tuas biasanya 10–20 mm diukur di ujung tuas.",
+          "imageUrl": null,
+          "caption": "Bearing penekan / release bearing kopling"
+        }
+      }
+    },
+    "Pelat Kopling & Pegas": {
+      "fungsi": "Pelat gesek atau friction plate adalah pelat berbahan baja dengan lapisan material friksi (semacam komposit berbasis kertas aramid atau sinter metal) di kedua sisinya. Material friksi inilah yang bergesekan dengan permukaan pelat baja (steel plate) dan menghasilkan gaya gesek yang mentransmisikan torsi ketika kopling dihubungkan.\n\nFriction plate dipasang dengan lidah-lidahnya masuk ke slot rumah kopling (clutch housing), sehingga ia selalu ikut berputar bersama housing. Dalam satu set kopling, terdapat 4–7 buah friction plate (tergantung kapasitas mesin) yang disusun bergantian dengan steel plate. Semakin banyak pelat, semakin besar kapasitas torsi yang dapat diteruskan tanpa selip.\n\nFriction plate yang aus kehilangan ketebalan lapisan friksinya — kapasitas torsi menurun dan kopling selip saat beban tinggi. Keausan yang tidak merata (satu pelat lebih tipis dari yang lain) menyebabkan penekanan tidak merata di seluruh permukaan, menghasilkan panas titik (hot spot) dan keausan yang semakin dipercepat. Selalu ganti friction plate dalam satu set lengkap, tidak hanya yang paling aus saja.",
+      "imageUrl": null,
+      "caption": "Pelat kopling dan pegas wet clutch",
+      "subComponents": [
+        "Pelat Gesek (Friction Plate)",
+        "Pelat Baja (Steel Plate)",
+        "Pegas Kopling"
+      ],
+      "subComponentDetails": {
+        "Pelat Gesek (Friction Plate)": {
+          "fungsi": "Pelat gesek atau friction plate adalah pelat berbahan baja dengan lapisan material friksi (semacam komposit berbasis kertas aramid atau sinter metal) di kedua sisinya. Material friksi inilah yang bergesekan dengan permukaan pelat baja (steel plate) dan menghasilkan gaya gesek yang mentransmisikan torsi ketika kopling dihubungkan.\n\nFriction plate dipasang dengan lidah-lidahnya masuk ke slot rumah kopling (clutch housing), sehingga ia selalu ikut berputar bersama housing. Dalam satu set kopling, terdapat 4–7 buah friction plate (tergantung kapasitas mesin) yang disusun bergantian dengan steel plate. Semakin banyak pelat, semakin besar kapasitas torsi yang dapat diteruskan tanpa selip.\n\nFriction plate yang aus kehilangan ketebalan lapisan friksinya — kapasitas torsi menurun dan kopling selip saat beban tinggi. Keausan yang tidak merata (satu pelat lebih tipis dari yang lain) menyebabkan penekanan tidak merata di seluruh permukaan, menghasilkan panas titik (hot spot) dan keausan yang semakin dipercepat. Selalu ganti friction plate dalam satu set lengkap, tidak hanya yang paling aus saja.",
+          "imageUrl": null,
+          "caption": "Pelat gesek / friction plate kopling"
+        },
+        "Pelat Baja (Steel Plate)": {
+          "fungsi": "Pelat baja atau steel plate adalah pelat logam datar tanpa lapisan friksi yang dipasang bergantian dengan friction plate. Steel plate terpasang dengan spline di sisi dalamnya masuk ke alur hub kopling (clutch hub), sehingga ia terhubung ke transmisi. Permukaan steel plate yang halus harus berkontak merata dengan seluruh permukaan friction plate untuk menghasilkan gaya gesek yang konsisten.\n\nSteel plate cenderung mengalami warp (bengkok) akibat panas yang dihasilkan saat kopling selip — terutama saat berkendara dengan gaya setengah-kopling (slipping the clutch) dalam waktu lama, seperti saat manuver lambat di parkiran atau tanjakan macet. Warp menyebabkan kopling tidak lepas sempurna karena pelat yang bengkok tetap bersentuhan sebagian meski pelat penekan sudah mundur.\n\nPemeriksaan warp dilakukan dengan meletakkan steel plate di atas permukaan datar (kaca atau batu rata) dan menggunakan feeler gauge di tepi dan tengah pelat. Nilai warp maksimum yang diizinkan biasanya 0,1–0,2 mm. Steel plate yang warp lebih dari batas harus diganti — meluruskan dengan memukul tidak menghasilkan permukaan yang cukup rata untuk aplikasi kopling.",
+          "imageUrl": null,
+          "caption": "Pelat baja / steel plate kopling"
+        },
+        "Pegas Kopling": {
+          "fungsi": "Pegas kopling adalah beberapa pegas koil (biasanya 4–6 buah, satu untuk setiap baut pelat penekan) yang menekan pelat penekan ke arah tumpukan pelat, menjaga kopling selalu dalam kondisi terhubung ketika tuas tidak ditarik. Kekuatan total semua pegas menentukan kapasitas torsi maksimum kopling sebelum selip.\n\nPanjang bebas (free length) pegas baru biasanya 35–45 mm, dan pabrikan mencantumkan batas minimum panjang bebas (wear limit). Pegas yang sudah melemah atau mengendek menyebabkan gaya tekan berkurang, kapasitas torsi kopling menurun, dan kopling mudah selip. Pegas juga dapat patah, yang langsung menyebabkan kopling tidak dapat menutup sempurna dan selip parah.\n\nKekuatan pegas yang tidak seragam antar pegas dalam satu set menyebabkan pelat penekan tertekan tidak merata (miring) — gesekan dan keausan pada friction plate tidak terdistribusi merata. Ganti pegas selalu dalam satu set lengkap. Pilihan pegas dengan kekuatan lebih tinggi (progressive atau uprated springs) dapat meningkatkan kapasitas torsi kopling untuk aplikasi performa, namun membuat tuas kopling terasa lebih berat.",
+          "imageUrl": null,
+          "caption": "Pegas kopling penekan pelat kopling"
+        }
+      }
+    },
+    "Drum Pemilih (Shift Drum)": {
+      "fungsi": "Shift drum adalah komponen berputar berbentuk silinder yang menjadi otak mekanis sistem pemilihan gigi transmisi. Permukaannya memiliki alur-alur spiral (guide groove) yang memandu gerakan shift fork untuk memilih gigi yang tepat. Setiap klik tuas gigi memutar shift drum satu posisi, dan profil alur menentukan persis di mana shift fork harus bergerak.\n\nShift drum berputar satu arah untuk pindah gigi naik dan satu arah lagi untuk turun gigi. Stopper arm dan star plate mengunci posisi drum di setiap posisi gigi, memberikan sensasi 'klik' yang dirasakan pengendara dan memastikan drum tidak bergeser sendiri.\n\nKondisi shift drum yang baik sangat menentukan presisi dan kenyamanan perpindahan gigi. Alur yang aus atau stopper yang lemah menyebabkan perpindahan gigi menjadi kasar, tidak presisi, atau bahkan gagal masuk gigi. Pemeriksaan meliputi kondisi alur dan kondisi mekanisme stopper.\n\nAlur pemandu adalah saluran berbentuk kurva/spiral yang terpahat di permukaan silinder shift drum. Setiap shift fork (garpu pemilih) memiliki pin pengikut yang masuk ke dalam salah satu alur ini. Ketika shift drum berputar, pin shift fork dipaksa mengikuti profil alur, menggerakkan shift fork secara aksial sepanjang poros transmisi.\n\nBentuk alur dirancang sedemikian rupa sehingga setiap sudut rotasi drum menghasilkan posisi aksial shift fork yang spesifik, sesuai dengan gigi yang harus diaktifkan. Pada transmisi 5-speed, shift drum memiliki 6 posisi (netral + 5 gigi) yang ditentukan oleh alur dan dikunci oleh stopper arm. Profil alur yang presisi memastikan shift fork hanya bergerak ke satu posisi yang tepat per klik.\n\nAlur yang aus atau melebar di tepinya menyebabkan shift fork memiliki kelonggaran yang berlebih — fork dapat bergerak sedikit dari posisi idealnya sehingga dog engagement tidak penuh. Ini adalah penyebab umum loncat gigi (gear jumping out) terutama pada gigi tertentu. Pemeriksaan alur dilakukan secara visual mencari tanda aus berlebih, dan dengan mengukur lebar alur menggunakan pin gauge.",
+      "imageUrl": null,
+      "caption": "Shift drum pengontrol pemilihan gigi transmisi",
+      "subComponents": [
+        "Stopper Arm",
+        "Star Plate"
+      ],
+      "subComponentDetails": {
+        "Stopper Arm": {
+          "fungsi": "Stopper arm adalah tuas berpegas yang ujungnya bertumpu pada star plate (pelat berbentuk bintang) yang menyatu dengan shift drum. Star plate memiliki lekukan-lekukan (detent) sesuai jumlah posisi gigi. Ketika shift drum berputar ke posisi baru, stopper arm jatuh ke dalam detent berikutnya dan mengunci posisi drum — inilah yang memberikan sensasi 'klik' khas saat memindah gigi.",
+          "imageUrl": null,
+          "caption": "Stopper arm pengunci posisi shift drum"
+        },
+        "Star Plate": {
+          "fungsi": "Tanpa stopper arm dan star plate, shift drum tidak akan terkunci di posisi manapun dan dapat berputar bebas — kopling yang dilepas tiba-tiba saat drum belum terkunci penuh akan mengakibatkan gear tidak terengagement dan mesin dalam kondisi netral meski indikator menunjukkan gigi aktif.\n\nKekuatan pegas stopper arm harus cukup untuk menahan drum di posisinya melawan getaran mesin, namun tidak terlalu kuat sehingga perpindahan gigi menjadi sangat berat. Pegas stopper arm yang patah atau terlalu lemah menyebabkan drum dapat bergeser posisi sendiri akibat getaran, mengakibatkan loncat gigi yang terjadi secara acak tanpa tuas gigi dioperasikan.",
+          "imageUrl": null,
+          "caption": "Star plate detent pengunci posisi gigi"
+        }
+      }
+    },
+    "Garpu Pemilih (Shift Fork)": {
+      "fungsi": "Shift fork atau garpu pemilih adalah komponen penghubung antara shift drum dengan roda gigi geser pada poros transmisi. Shift fork bergerak secara aksial (sepanjang poros) mengikuti profil alur shift drum, mendorong roda gigi geser untuk engage atau disengage dari roda gigi tetap di sebelahnya.\n\nUmumnya sebuah transmisi memiliki 2–3 buah shift fork, masing-masing bertanggung jawab atas satu atau dua pasang roda gigi. Ujung garpu masuk ke dalam groove di sisi roda gigi geser, mendorongnya bergeser secara aksial tanpa mengganggu rotasinya.\n\nShift fork yang aus di ujung garpu atau di pin pengikutnya menyebabkan engagement gigi yang tidak penuh dan loncat gigi. Shaft tempat shift fork bergerak harus lurus dan bersih agar fork bergerak lancar. Pemeriksaan meliputi ketebalan ujung garpu (wear limit) dan kondisi pin pengikut.",
+      "imageUrl": null,
+      "caption": "Shift fork garpu pemilih gigi transmisi",
+      "subComponents": [
+        "Ujung Garpu",
+        "Pin Pengikut",
+        "Poros Garpu (Shift Fork Shaft)"
+      ],
+      "subComponentDetails": {
+        "Ujung Garpu": {
+          "fungsi": "Shift fork berbentuk seperti garpu dengan dua ujung (tine) yang masuk ke dalam alur (groove) roda gigi yang dapat digeser pada poros transmisi. Kedua ujung garpu ini mendorong/menarik roda gigi secara aksial sepanjang poros untuk memilih gigi yang ingin diaktifkan — menggerakkan roda gigi geser (sliding gear) untuk engage atau disengage dengan roda gigi tetap di sebelahnya.",
+          "imageUrl": null,
+          "caption": "Ujung garpu penekan roda gigi geser"
+        },
+        "Pin Pengikut": {
+          "fungsi": "Pin pengikut (shift fork pin atau cam follower) adalah tonjolan kecil di bagian belakang shift fork yang masuk ke dalam alur shift drum. Saat shift drum berputar, alurnya mendorong pin dan memaksa shift fork bergerak secara aksial. Pin harus presisi dan tahan aus karena mengalami tekanan dan gesekan yang signifikan setiap perpindahan gigi.\n\nUjung garpu yang bersentuhan dengan groove roda gigi harus memiliki ketebalan yang tepat. Ujung yang aus (menipis) menyebabkan kelonggaran berlebih antara garpu dan groove roda gigi — garpu yang longgar tidak dapat mendorong roda gigi ke posisi engagement penuh, mengakibatkan dog engagement parsial yang cepat merusak dog dan menyebabkan loncat gigi.",
+          "imageUrl": null,
+          "caption": "Pin pengikut shift fork pada alur shift drum"
+        },
+        "Poros Garpu (Shift Fork Shaft)": {
+          "fungsi": "Shift fork shaft adalah batang silindris yang menjadi rel tempat shift fork bergerak secara aksial. Beberapa transmisi menggunakan satu shift fork shaft untuk semua fork, sementara desain lain menggunakan dua atau tiga shaft terpisah. Shift fork terpasang ke shaft dengan celah pas sehingga dapat bergeser namun tidak bergoyang.\n\nShaft harus lurus dan permukaannya halus agar shift fork bergerak lancar. Shaft yang bengkok (akibat benturan keras atau gearbox pernah dipaksa) menyebabkan shift fork macet di posisi tertentu — perpindahan gigi ke gigi tersebut menjadi sangat berat atau tidak mungkin.\n\nCirclip atau snapring di ujung shaft mencegah shaft keluar dari posisinya. Saat overhaul gearbox, selalu ganti circlip dengan yang baru — circlip yang sudah pernah dipasang kehilangan elastisitasnya dan tidak dapat menahan shaft dengan gaya yang sama. Saat memasang kembali shaft, perhatikan orientasi dan urutan pemasangan fork sesuai buku panduan karena posisi yang salah akan menyebabkan fork mengontrol gigi yang salah.",
+          "imageUrl": null,
+          "caption": "Poros garpu / shift fork shaft"
+        }
+      }
+    },
+    "Poros Transmisi (Mainshaft & Countershaft)": {
+      "fungsi": "Sistem poros transmisi terdiri dari dua poros paralel — mainshaft dan countershaft — yang masing-masing membawa satu set roda gigi. Pasangan roda gigi yang aktif (dipilih oleh shift fork) menentukan rasio transmisi saat itu. Mainshaft menerima tenaga dari kopling, countershaft mengirimkan tenaga ke roda belakang melalui rantai penggerak.\n\nPada transmisi 5-speed, ada 5 pasang roda gigi dengan rasio berbeda antara mainshaft dan countershaft. Roda gigi selalu berputar bersama (tidak bisa dilepas dari posisinya), namun hanya pasangan yang 'terkunci' oleh dog engagement yang meneruskan torsi — pasangan lainnya berputar bebas (freewheeling) di porosnya.\n\nKondisi bearing pada kedua poros sangat kritis. Bearing aus menyebabkan poros bergetar (runout) yang merusak roda gigi lebih cepat dan menimbulkan suara dengungan yang khas dari area gearbox.",
+      "imageUrl": null,
+      "caption": "Mainshaft dan countershaft sistem transmisi",
+      "subComponents": [
+        "Mainshaft (Poros Utama)",
+        "Countershaft (Poros Keluaran)",
+        "Roda Gigi"
+      ],
+      "subComponentDetails": {
+        "Mainshaft (Poros Utama)": {
+          "fungsi": "Mainshaft atau poros utama adalah poros yang menerima tenaga langsung dari hub kopling melalui spline. Di sepanjang mainshaft terpasang beberapa roda gigi — sebagian terpasang permanen (press-fit atau spline tetap) dan sebagian dapat bergeser secara aksial (sliding gear) digerakkan oleh shift fork. Mainshaft berputar dengan kecepatan yang ditentukan oleh rasio gigi primer dan RPM mesin.\n\nRoda gigi di mainshaft berpasangan dengan roda gigi di countershaft — setiap pasangan menghasilkan satu rasio transmisi yang berbeda. Pasangan roda gigi yang sedang aktif (dipilih oleh shift fork) adalah yang menentukan rasio transmisi aktif saat ini, menentukan kecepatan putaran countershaft relatif terhadap mainshaft.\n\nBearing mainshaft di kedua ujungnya harus dalam kondisi baik untuk memastikan mainshaft berputar tanpa getaran lateral. Bearing yang aus mengakibatkan mainshaft sedikit bergoyang (runout) yang menyebabkan roda gigi tidak bergesekan merata di seluruh lebar gigi — keausan gigi yang dipercepat, suara dengungan (whine), dan akhirnya kegagalan gigi.",
+          "imageUrl": null,
+          "caption": "Mainshaft poros utama transmisi"
+        },
+        "Countershaft (Poros Keluaran)": {
+          "fungsi": "Countershaft atau poros keluaran adalah poros kedua yang menerima tenaga dari mainshaft melalui pasangan roda gigi yang aktif, lalu mentransmisikannya ke roda belakang melalui sprocket output dan rantai (pada motor bebek/sport) atau langsung ke roda (pada beberapa desain). Kecepatan putaran countershaft berbeda dari mainshaft sesuai dengan rasio gigi yang sedang aktif.\n\nSprocket output dipasang di salah satu ujung countershaft, biasanya dengan spline dan dikunci snapring atau mur. Sprocket ini menghubungkan transmisi ke rantai penggerak roda belakang. Ukuran sprocket output (jumlah gigi) mempengaruhi rasio final drive dan dapat diubah (ganti sprocket yang lebih besar atau kecil) untuk menyesuaikan karakteristik akselerasi versus kecepatan puncak.\n\nSeperti mainshaft, bearing countershaft harus dalam kondisi prima. Pada gearbox yang sudah lama, bearing aus sering lebih dahulu terjadi di area bearing countershaft depan (berdekatan dengan beban dari rantai primer dan kopling). Bearing aus ditandai oleh suara gemuruh atau grinding dari area gearbox yang berubah karakter tergantung RPM dan gigi yang aktif.",
+          "imageUrl": null,
+          "caption": "Countershaft poros keluaran transmisi"
+        },
+        "Roda Gigi": {
+          "fungsi": "Roda gigi transmisi adalah pasangan roda gigi helical (miring) atau spur (lurus) yang berpasangan antara mainshaft dan countershaft. Gigi helical lebih senyap namun menghasilkan gaya aksial; gigi spur lebih berisik namun tanpa gaya aksial — pilihan tergantung desain pabrikan.\n\nDog engagement adalah mekanisme kunci kopling gigi transmisi. Roda gigi geser (sliding gear) memiliki 'dog' — tonjolan persegi empat di sisi mukanya — yang saat bergeser akan masuk ke lubang 'dog hole' di roda gigi tetap sebelahnya. Ketika dog masuk penuh ke dog hole, kedua roda gigi terkunci secara rotasional dan berputar bersama, mengaktifkan rasio transmisi tersebut.\n\nDog yang aus (sudut dog menjadi tirus/chamfer berlebih alih-alih siku-siku) menyebabkan dog cenderung terlepas saat menerima beban torsi tinggi — inilah penyebab loncat gigi (gear jumping) yang khas. Dog yang patah harus segera diperbaiki karena serpihan logam yang lepas dapat merusak seluruh gearbox. Pemeriksaan dog dilakukan secara visual dan dengan pengukuran sudut chamfer yang dibandingkan dengan spesifikasi.",
+          "imageUrl": null,
+          "caption": "Roda gigi transmisi mainshaft dan countershaft"
+        }
+      }
+    },
+    "Mekanisme Perpindahan Gigi": {
+      "fungsi": "Mekanisme perpindahan gigi adalah rangkaian komponen yang menerjemahkan gerakan kaki pengendara pada tuas gigi menjadi rotasi shift drum yang tepat satu posisi per klik. Mekanisme ini harus presisi, andal, dan memberikan umpan balik taktil yang jelas (sensasi klik) agar pengendara dapat mengoperasikan transmisi dengan tepat tanpa melihat.\n\nSistem ini mencakup tuas gigi (shift lever), linkage penghubung ke dalam bak mesin, mekanisme ratchet yang memastikan perpindahan hanya satu posisi per operasi, dan return spring yang mengembalikan tuas ke posisi netral setelah dioperasikan.\n\nGejala masalah pada mekanisme ini: tuas terasa longgar (freeplay berlebih), perpindahan gigi tidak selalu berhasil (perlu ditekan berkali-kali), atau tuas tidak kembali ke posisi netral ergonomis setelah dilepas.",
+      "imageUrl": null,
+      "caption": "Mekanisme perpindahan gigi transmisi manual",
+      "subComponents": [
+        "Tuas Gigi",
+        "Linkage",
+        "Return Spring"
+      ],
+      "subComponentDetails": {
+        "Tuas Gigi": {
+          "fungsi": "Tuas gigi (gear lever atau shift pedal) adalah tuas yang dioperasikan kaki pengendara untuk meminta perpindahan gigi. Gerakan tuas ke atas atau ke bawah diteruskan melalui linkage (batang penghubung atau pin) ke dalam bak mesin untuk memutar shift drum satu posisi per klik.",
+          "imageUrl": null,
+          "caption": "Tuas gigi / gear lever mekanisme perpindahan"
+        },
+        "Linkage": {
+          "fungsi": "Linkage antara tuas gigi dan shift drum biasanya terdiri dari: return shaft (poros yang berputar sedikit setiap kali tuas ditekan), shift arm (lengan yang menempelkan return shaft ke shift drum), dan ratchet mechanism yang memastikan setiap gerakan tuas hanya memutar drum satu posisi gigi dan kembali ke posisi netral setelah dilepas — siap untuk perpindahan gigi berikutnya.\n\nTuas gigi yang bengkok (akibat terjatuh) dapat menyebabkan linkage binding atau perpindahan gigi menjadi tidak tepat. Pada beberapa motor, tuas gigi dapat diatur ketinggiannya (adjustable) untuk menyesuaikan preferensi ergonomis pengendara. Linkage yang aus atau pivot pin yang longgar menyebabkan 'free play' berlebih pada tuas sehingga tuas harus digerakkan lebih jauh dari normal sebelum perpindahan gigi terjadi.\n\nNetral finder atau neutral finder adalah mekanisme khusus yang memudahkan pengendara menemukan posisi netral (N) di antara gigi 1 dan gigi 2. Tanpa mekanisme ini, menemukan netral dari gigi 1 saat mesin menyala (di lampu merah) akan sangat sulit karena perbedaan putaran mainshaft yang berputar vs countershaft yang cenderung diam.\n\nMekanisme ini biasanya berupa komponen yang memberikan sedikit 'notch' atau tahanan saat shift drum melewati posisi netral sehingga pengendara dapat merasakannya. Pada beberapa desain, terdapat sub-drum atau detent plate khusus yang menangani posisi netral dengan karakteristik yang sedikit berbeda dari perpindahan gigi normal.",
+          "imageUrl": null,
+          "caption": "Linkage penghubung tuas gigi ke shift drum"
+        },
+        "Return Spring": {
+          "fungsi": "Return spring (pegas balik) memastikan tuas gigi kembali ke posisi tengah (netral ergonomis tuas) setelah dilepas, baik setelah pindah naik maupun turun gigi. Pegas yang lemah atau patah menyebabkan tuas tidak kembali dengan baik — dalam kondisi terburuk, tuas dapat tersangkut di posisi bawah dan secara tidak sengaja pindah gigi saat berkendara.",
+          "imageUrl": null,
+          "caption": "Return spring pegas balik tuas gigi"
+        }
+      }
+    }
+  }
+}

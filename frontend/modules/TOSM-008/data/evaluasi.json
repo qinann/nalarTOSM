@@ -1,0 +1,8 @@
+{
+  "questions": [
+    { "q": "Sensor TPS (Throttle Position Sensor) berfungsi untuk memberi tahu ECU tentang?", "opts": ["Suhu udara masuk ke throttle body", "Tekanan bahan bakar di fuel rail", "Posisi dan pergerakan katup gas (throttle)", "Kecepatan putaran crankshaft"], "ans": 2 },
+    { "q": "Kode DTC pada sistem EFI sepeda motor dapat dibaca menggunakan?", "opts": ["Hanya scan tool profesional saja", "Pola kedipan MIL (Malfunction Indicator Lamp) atau scan tool", "Multimeter yang dihubungkan ke soket OBD", "Oscilloscope khusus injeksi"], "ans": 1 },
+    { "q": "Fuel pump EFI sepeda motor berjenis elektrik dan terletak di?", "opts": ["Di luar tangki dekat filter bensin", "Di dalam tangki (intank) atau di luar tangki tergantung desain", "Di throttle body dekat injektor", "Di antara filter dan fuel rail saja"], "ans": 1 },
+    { "q": "Injektor tidak menyemprot sama sekali meski mesin dapat diengkol. Kemungkinan penyebab yang harus diperiksa pertama adalah?", "opts": ["Busi mati", "Tidak ada pulsa sinyal dari ECU ke injektor atau tidak ada tekanan bahan bakar", "Filter udara kotor", "Koil pengapian lemah"], "ans": 1 }
+  ]
+}

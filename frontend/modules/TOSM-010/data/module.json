@@ -1,0 +1,15 @@
+{
+  "id": "TOSM-010",
+  "title": "Sistem Pengapian TCI",
+  "level": "menengah",
+  "desc": "Mempelajari sistem pengapian Transistor Controlled Ignition (TCI) pada sepeda motor — pulser, magnet rotor, TCI unit, koil pengapian, kabel busi, dan busi — beserta cara kerja pembangkitan tegangan tinggi dan pengaturan timing pengapian.",
+  "kd": "Peserta mampu mengidentifikasi komponen sistem pengapian TCI, menjelaskan cara kerja setiap komponen dalam menghasilkan percikan busi, mengukur tegangan pulser dan hambatan koil, serta mendiagnosis gangguan sistem pengapian.",
+  "components": [
+    "Pulser (Pickup Coil)",
+    "Magnet Rotor",
+    "TCI Unit",
+    "Koil Pengapian",
+    "Kabel Busi",
+    "Busi"
+  ]
+}

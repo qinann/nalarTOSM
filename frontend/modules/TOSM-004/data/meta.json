@@ -1,0 +1,14 @@
+{
+  "title": "Sistem Pelumasan",
+  "level": "dasar",
+  "desc": "Modul ini membahas sistem pelumasan pada engine sepeda motor 4-tak secara menyeluruh, mencakup pompa oli, strainer, pressure relief valve, galeri oli, bearing crankshaft, dan filter oli beserta seluruh sub-komponennya. Peserta didik mempelajari prinsip kerja sistem pelumasan bertekanan (force feed lubrication system), alur sirkulasi oli dari bak oli hingga seluruh titik pelumasan kritis, serta spesifikasi tekanan dan viskositas oli yang tepat. Kompetensi mencakup prosedur penggantian oli dan filter, pembersihan strainer, pengukuran tekanan oli, serta diagnosis gangguan sistem pelumasan berdasarkan gejala seperti tekanan oli rendah, konsumsi oli tinggi, atau kontaminasi oli. Sistem pelumasan yang berfungsi baik adalah kunci umur panjang seluruh komponen engine.",
+  "sistemDesc": "Sistem pelumasan pada engine sepeda motor 4-tak bekerja berdasarkan prinsip sirkulasi oli bertekanan (pressure lubrication / force feed) yang memastikan setiap komponen bergerak mendapatkan pasokan oli yang memadai di setiap kondisi operasi.\n\nSiklus pelumasan dimulai dari oli yang berada di bak oli (oil sump) di bagian bawah crankcase. Strainer menyaring partikel besar sebelum oli masuk ke pompa oli. Pompa oli, digerakkan oleh crankshaft, menghisap oli dari strainer dan memompanya dengan tekanan (biasanya 1,5–4 bar saat idle) ke seluruh sistem.\n\nOli bertekanan mengalir melalui filter oli untuk penyaringan halus, kemudian masuk ke galeri oli utama (main gallery) yang memanjang di dalam blok silinder. Dari galeri utama, oli didistribusikan melalui cabang-cabang ke main bearing crankshaft, big end bearing connecting rod (melalui saluran di dalam crankshaft), bearing camshaft, rocker arm, dan sendi-sendi lain yang memerlukan pelumasan.\n\nPressure relief valve mencegah tekanan oli berlebih yang dapat merusak filter atau seal. Setelah melumasi komponen, oli mengalir kembali ke bak oli secara gravitasi untuk mengulang siklus. Oli juga berfungsi sebagai media pendingin, membawa panas dari komponen ke bak oli tempat panas dilepas ke udara.",
+  "kd": "Peserta mampu mengidentifikasi komponen sistem pelumasan engine sepeda motor, menjelaskan prinsip kerja dan alur sirkulasi oli, melakukan perawatan sistem pelumasan (ganti oli, bersihkan strainer, cek tekanan oli), serta mendiagnosis gangguan berdasarkan gejala dan kondisi oli.",
+  "components": [
+    "Pompa Oli",
+    "Strainer",
+    "Oil Pressure Relief Valve",
+    "Bearing Crankshaft",
+    "Filter Oli"
+  ]
+}

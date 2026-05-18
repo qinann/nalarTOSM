@@ -1,0 +1,8 @@
+{
+  "title": "Sistem Pengapian TCI",
+  "level": "menengah",
+  "desc": "Modul ini membahas sistem pengapian Transistor Controlled Ignition (TCI) pada sepeda motor secara menyeluruh, mencakup pulser (pickup coil), magnet rotor, TCI unit, koil pengapian, kabel busi, dan busi beserta seluruh sub-komponennya. Peserta didik mempelajari cara kerja pembangkitan sinyal timing dari pulser, pemrosesan sinyal oleh TCI unit dengan advance curve, pembangkitan tegangan tinggi oleh koil pengapian, serta karakteristik percikan busi. Kompetensi mencakup pengukuran hambatan kumparan, pemeriksaan celah pulser, pengujian TCI unit, dan pemeriksaan kondisi busi sebagai indikator kesehatan mesin.",
+  "kd": "Peserta mampu mengidentifikasi komponen sistem pengapian TCI, menjelaskan cara kerja setiap komponen dari pembangkitan sinyal pulser hingga percikan busi, memeriksa kondisi komponen menggunakan multimeter, serta mendiagnosis kerusakan sistem pengapian berdasarkan gejala sesuai prosedur standar pabrikan.",
+  "sistemDesc": "Sistem pengapian TCI bekerja dalam satu siklus: tonjolan magnet rotor melewati pulser menginduksi sinyal tegangan AC yang dikirim ke TCI unit. IC kontrol TCI memproses sinyal tersebut dan menerapkan advance curve (semakin tinggi RPM, semakin awal timing), lalu transistor daya memutus arus primer koil secara mendadak. Pemutusan arus mendadak menyebabkan medan magnet koil runtuh dan menginduksi tegangan 10.000-25.000 V di kumparan sekunder. Tegangan tinggi ini mengalir melalui kabel busi ke elektroda busi, melompati celah (0,6-0,9 mm) sebagai percikan api yang membakar campuran di ruang bakar.",
+  "components": ["Pulser (Pickup Coil)", "Magnet Rotor", "TCI Unit", "Koil Pengapian", "Kabel Busi", "Busi"]
+}

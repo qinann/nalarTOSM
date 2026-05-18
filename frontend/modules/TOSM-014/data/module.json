@@ -1,0 +1,16 @@
+{
+  "id": "TOSM-014",
+  "title": "Sistem CVT (Continuously Variable Transmission)",
+  "level": "lanjut",
+  "desc": "Mempelajari sistem transmisi otomatis CVT pada sepeda motor matic — primary pulley, V-belt, secondary pulley, kopling sentrifugal, mangkok kopling, torque cam, dan gearbox reduksi — beserta cara kerja perubahan rasio transmisi secara kontinu dan prosedur perawatannya.",
+  "kd": "Peserta mampu mengidentifikasi seluruh komponen CVT, menjelaskan cara kerja perubahan diameter pulley berdasarkan gaya sentrifugal roller, memahami fungsi torque cam dan kopling sentrifugal, serta melakukan prosedur perawatan CVT sesuai standar pabrikan.",
+  "components": [
+    "Primary Pulley (Drive Pulley)",
+    "V-Belt",
+    "Secondary Pulley (Driven Pulley)",
+    "Kopling Sentrifugal",
+    "Mangkok Kopling",
+    "Torque Cam",
+    "Gearbox Reduksi"
+  ]
+}

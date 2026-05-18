@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "q": "Komponen sistem pengisian yang berfungsi mengubah arus AC dari alternator menjadi DC dan mengatur tegangan agar tetap stabil adalah?",
+      "opts": ["Alternator/magneto", "Regulator/rectifier (kiprok)", "Baterai (aki)", "Fuse pengaman utama"],
+      "ans": 1
+    },
+    {
+      "q": "Berapakah rentang tegangan pengisian (charging voltage) yang normal diukur di terminal baterai saat mesin berputar pada RPM kerja?",
+      "opts": ["10,5 – 12,0 Volt DC", "12,0 – 13,0 Volt DC", "13,5 – 14,5 Volt DC", "15,0 – 17,0 Volt DC"],
+      "ans": 2
+    },
+    {
+      "q": "Seorang teknisi mendapati aki sepeda motor selalu habis dalam 2–3 hari meskipun baru diganti. Pengukuran tegangan pengisian menunjukkan hanya 11,8V saat mesin hidup. Kemungkinan penyebab utamanya adalah?",
+      "opts": ["Aki yang dipasang berkualitas rendah", "Kiprok rusak sehingga tidak mengisi aki dengan baik", "Lampu depan terlalu terang menguras daya", "Kabel massa ke rangka terlalu panjang"],
+      "ans": 1
+    },
+    {
+      "q": "Pada alternator sepeda motor tipe magneto, komponen manakah yang berputar bersama crankshaft?",
+      "opts": ["Stator dan kumparan spul", "Flywheel magnet (rotor bermagnet)", "Dioda penyearah di kiprok", "Kiprok dan heatsink"],
+      "ans": 1
+    },
+    {
+      "q": "Berat jenis (specific gravity) elektrolit aki basah yang menunjukkan kondisi pengisian penuh adalah?",
+      "opts": ["1,100 – 1,150", "1,150 – 1,200", "1,200 – 1,250", "1,260 – 1,280"],
+      "ans": 3
+    },
+    {
+      "q": "Saat memeriksa resistansi kumparan stator alternator dengan multimeter, hasilnya menunjukkan nilai 'OL' (tak terhingga). Apa arti pembacaan tersebut?",
+      "opts": ["Kumparan dalam kondisi baik dengan resistansi tinggi", "Kumparan mengalami hubungan singkat (short circuit)", "Kumparan putus (open circuit) sehingga tidak dapat menghasilkan listrik", "Multimeter rusak dan perlu dikalibrasi"],
+      "ans": 2
+    },
+    {
+      "q": "Fungsi utama komponen separator di dalam sel baterai adalah?",
+      "opts": ["Meningkatkan kapasitas penyimpanan energi baterai", "Mencegah kontak fisik antara pelat positif dan negatif sambil mengizinkan ion melewatinya", "Memisahkan gas hidrogen yang terbentuk saat pengisian", "Mendinginkan elektrolit agar tidak mendidih"],
+      "ans": 1
+    },
+    {
+      "q": "Urutan yang benar saat melepas baterai dari kendaraan untuk mencegah kecelakaan adalah?",
+      "opts": ["Lepas terminal positif (+) dulu, kemudian terminal negatif (–)", "Lepas terminal negatif (–) dulu, kemudian terminal positif (+)", "Lepas kedua terminal secara bersamaan sekaligus", "Tidak ada urutan khusus, bebas melepas terminal mana saja"],
+      "ans": 1
+    }
+  ]
+}

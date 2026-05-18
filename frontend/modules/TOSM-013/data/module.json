@@ -1,0 +1,15 @@
+{
+  "id": "TOSM-013",
+  "title": "Sistem Instrumen & Panel Indikator",
+  "level": "dasar",
+  "desc": "Mempelajari komponen sistem instrumen sepeda motor — sensor kecepatan, speedometer, sensor level bensin, fuel gauge, indikator oli, dan indikator netral — beserta cara kerja dan prosedur diagnosisnya.",
+  "kd": "Peserta mampu mengidentifikasi fungsi komponen sistem instrumen, menjelaskan cara kerja sensor dan penunjuk, melakukan kalibrasi sensor kecepatan, serta mendiagnosis kerusakan indikator berdasarkan gejala.",
+  "components": [
+    "Sensor Kecepatan (VSS)",
+    "Speedometer",
+    "Sensor Level Bensin",
+    "Indikator Oli",
+    "Indikator Netral",
+    "Fuel Gauge"
+  ]
+}

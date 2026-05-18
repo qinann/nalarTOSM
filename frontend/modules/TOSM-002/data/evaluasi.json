@@ -1,0 +1,10 @@
+{
+  "questions": [
+    { "q": "Pada langkah hisap engine 4-tak, kondisi katup yang benar adalah?", "opts": ["Katup masuk terbuka, katup buang terbuka", "Katup masuk tertutup, katup buang terbuka", "Katup masuk terbuka, katup buang tertutup", "Kedua katup tertutup"], "ans": 2 },
+    { "q": "Langkah yang menghasilkan tenaga mekanis pada siklus 4-tak adalah?", "opts": ["Langkah hisap", "Langkah kompresi", "Langkah tenaga", "Langkah buang"], "ans": 2 },
+    { "q": "Sebuah engine memiliki Vs = 110 cc dan Vc = 12,2 cc. Berapakah rasio kompresinya?", "opts": ["8,0 : 1", "9,0 : 1", "10,0 : 1", "10,2 : 1"], "ans": 3 },
+    { "q": "Valve overlap adalah kondisi dimana?", "opts": ["Kedua katup menutup bersamaan", "Katup masuk dan buang terbuka bersamaan", "Hanya katup masuk yang terbuka", "Hanya katup buang yang terbuka"], "ans": 1 },
+    { "q": "Blow-down pada langkah buang terjadi saat?", "opts": ["Piston di TMA dan katup buang mulai terbuka", "Piston mendekati TMB dan katup buang mulai terbuka", "Piston di TMB dan kedua katup tertutup", "Piston naik dan katup masuk terbuka"], "ans": 1 },
+    { "q": "Bahan bakar dengan RON 92 (Pertamax) paling sesuai untuk engine dengan rasio kompresi?", "opts": ["7 : 1", "8 : 1", "10,5 : 1", "14 : 1"], "ans": 2 }
+  ]
+}

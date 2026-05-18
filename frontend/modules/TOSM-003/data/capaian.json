@@ -1,0 +1,12 @@
+{
+  "skkni": ["SKKNI No. 391 Tahun 2014 – Teknik Otomotif Kendaraan Ringan", "SKKNI No. 212 Tahun 2019 – Pemeliharaan dan Perbaikan Mesin Sepeda Motor"],
+  "cp": "Pada akhir pembelajaran modul ini, peserta didik mampu mengidentifikasi dan menjelaskan fungsi seluruh komponen sistem bahan bakar karburator sepeda motor mulai dari tangki hingga intake manifold. Peserta didik juga mampu melakukan pembongkaran, pembersihan, penyetelan campuran dan idle karburator, serta perakitan kembali sistem bahan bakar sesuai SOP dan spesifikasi pabrikan. Selain itu, peserta didik mampu mendiagnosis gangguan pada sistem bahan bakar karburator berdasarkan gejala yang muncul dan menentukan tindakan perbaikan yang tepat.",
+  "tp": [
+    "3.1 Menjelaskan fungsi dan prinsip kerja sistem bahan bakar karburator pada sepeda motor secara menyeluruh.",
+    "3.2 Mengidentifikasi nama, letak, dan fungsi setiap komponen sistem bahan bakar karburator beserta sub-komponennya.",
+    "3.3 Melakukan pembongkaran, pembersihan komponen karburator (jet, mangkuk, pelampung), dan perakitan kembali sesuai prosedur.",
+    "3.4 Melakukan penyetelan campuran udara-bahan bakar (air screw), penyetelan putaran idle (throttle stop screw), dan verifikasi menggunakan tachometer.",
+    "3.5 Mendiagnosis gangguan sistem bahan bakar karburator berdasarkan gejala (mesin banjir, campuran miskin, idle tidak stabil) dan menentukan tindakan perbaikan sesuai standar."
+  ],
+  "asesmen": "Asesmen dilakukan melalui tes pilihan ganda tentang komponen dan prinsip kerja karburator, simulasi virtual bongkar-pasang dan penyetelan karburator, serta penilaian praktik identifikasi gangguan berdasarkan gejala yang disajikan."
+}

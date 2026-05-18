@@ -1,0 +1,15 @@
+{
+  "skkni": ["SKKNI No. 391 Tahun 2014 – Teknik Otomotif Kendaraan Ringan", "SKKNI No. 212 Tahun 2019 – Pemeliharaan dan Perbaikan Mesin Sepeda Motor"],
+  "cp": "Pada akhir pembelajaran modul ini, peserta didik mampu mengidentifikasi seluruh komponen sistem CVT sepeda motor matic, menjelaskan mekanisme perubahan rasio transmisi secara kontinu berdasarkan prinsip gaya sentrifugal roller dan torque cam, memahami cara kerja kopling sentrifugal, serta melakukan prosedur perawatan CVT termasuk penggantian V-belt, roller, dan oli gearbox sesuai standar pabrikan.",
+  "tp": [
+    "14.1 Menjelaskan prinsip kerja CVT (Continuously Variable Transmission) dan keunggulannya dibandingkan transmisi manual dalam hal kenyamanan berkendara.",
+    "14.2 Mengidentifikasi komponen primary pulley (drive pulley): fixed sheave, sliding sheave, roller weight, ramp plate, dan cara kerja perubahan diameter efektif berdasarkan gaya sentrifugal.",
+    "14.3 Menjelaskan spesifikasi V-belt: material serat aramid/kevlar, V-angle, dimensi, dan tanda-tanda keausan yang mengharuskan penggantian.",
+    "14.4 Mengidentifikasi komponen secondary pulley (driven pulley): fixed sheave, sliding sheave, pegas CVT, dan torque cam beserta cara kerjanya.",
+    "14.5 Menjelaskan cara kerja kopling sentrifugal dalam menghubungkan dan memutus tenaga berdasarkan putaran mesin (engagement speed).",
+    "14.6 Menjelaskan fungsi mangkok kopling sebagai rumah kopling dan penghubung ke poros roda melalui gearbox reduksi.",
+    "14.7 Menjelaskan fungsi torque cam dalam mengoptimalkan rasio CVT berdasarkan beban torsi saat akselerasi dan perlambatan.",
+    "14.8 Melakukan prosedur perawatan CVT: pemeriksaan dan penggantian roller, V-belt, kampas kopling, serta penggantian oli gearbox sesuai interval pabrikan."
+  ],
+  "asesmen": "Asesmen dilakukan melalui soal pilihan ganda tentang cara kerja CVT, serta simulasi bongkar pasang CVT virtual, pemeriksaan keausan roller dan V-belt, serta prosedur penggantian oli gearbox."
+}

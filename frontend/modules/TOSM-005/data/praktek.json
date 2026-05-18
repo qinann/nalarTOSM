@@ -1,0 +1,25 @@
+{
+  "imageUrl": "/assets/images/praktekKerja.jpg",
+  "steps": [
+    {
+      "title": "Persiapan & K3",
+      "desc": "Pastikan kendaraan dalam kondisi mati (kontak OFF) dan baterai dalam keadaan baik. Siapkan peralatan: multimeter digital, obeng (+) dan (–), tang kombinasi, kunci pas 10 mm, contact cleaner, dan wiring diagram kendaraan yang akan diperiksa. Kenakan APD: sarung tangan isolasi listrik dan kacamata pelindung. Tempatkan kendaraan di area kerja yang terang dan berventilasi baik. Catat kondisi awal sistem penerangan sebelum pemeriksaan dimulai."
+    },
+    {
+      "title": "Pemeriksaan Tegangan Baterai & Sistem Penerangan",
+      "desc": "Nyalakan kontak (ignition ON) tanpa menghidupkan mesin. Ukur tegangan baterai dengan multimeter (DC Volt) — standar 12,0–12,8 V. Aktifkan saklar lampu (ON) dan ukur tegangan pada soket bohlam lampu kepala menggunakan probe multimeter — tegangan harus mendekati tegangan baterai (drop maksimal 0,5 V). Catat pembacaan tegangan pada posisi Lo beam dan Hi beam secara terpisah. Periksa juga tegangan pada soket lampu rem dengan menekan tuas rem, dan pada soket lampu sein saat relay aktif (tegangan harus berosilasi antara tegangan baterai dan 0 V)."
+    },
+    {
+      "title": "Identifikasi dan Penggantian Relay Sein",
+      "desc": "Lokasikan relay sein pada panel atau di bawah jok sesuai wiring diagram. Lepaskan soket relay lama dengan cara menekan tuas pengunci dan tarik keluar. Periksa identitas terminal relay (B, L, E) yang tercetak pada casing atau tercantum dalam wiring diagram. Pasang relay sein baru yang spesifikasi tegangan (12V) dan arusnya sesuai dengan original. Aktifkan saklar sein kiri dan kanan secara bergantian dan verifikasi semua empat lampu sein berkedip normal (60–120 kali per menit). Pastikan indikator sein di panel instrumen juga berkedip sinkron."
+    },
+    {
+      "title": "Penyetelan Arah Lampu Kepala (Headlight Alignment)",
+      "desc": "Posisikan kendaraan tegak (gunakan standar tengah) pada permukaan datar, berjarak 10 meter dari dinding atau permukaan vertikal berwarna terang. Tandai posisi center lampu kepala di dinding (buat tanda silang horizontal). Nyalakan lampu kepala pada posisi Lo beam. Amati pola cahaya di dinding — batas atas berkas Lo beam harus berada pada ketinggian setara atau sedikit di bawah tanda center lampu (standar: pusat berkas cahaya 100–150 mm di bawah tinggi lampu dari tanah pada jarak 10 m). Gunakan baut setel vertikal pada dudukan lampu kepala untuk menyesuaikan ketinggian. Stel juga arah horizontal jika diperlukan. Verifikasi ulang dengan menyalakan Hi beam dan pastikan berkas cahaya mengarah lurus ke depan."
+    },
+    {
+      "title": "Pengujian Akhir & Dokumentasi",
+      "desc": "Lakukan pengujian menyeluruh seluruh sistem penerangan dan sinyal: nyalakan lampu kepala (Lo dan Hi beam), aktifkan lampu rem depan dan belakang secara terpisah, aktifkan lampu sein kiri dan kanan, serta tekan klakson. Verifikasi semua fungsi bekerja normal. Periksa kembali semua soket dan konektor telah terpasang rapat dan aman. Bersihkan area kerja dan kembalikan semua peralatan. Catat hasil pemeriksaan dan penyetelan dalam formulir laporan praktik, termasuk nilai tegangan yang terukur, kondisi komponen, dan tindakan perbaikan yang dilakukan."
+    }
+  ]
+}

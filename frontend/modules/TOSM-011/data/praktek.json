@@ -1,0 +1,25 @@
+{
+  "imageUrl": "/assets/images/praktekKerja.jpg",
+  "steps": [
+    {
+      "title": "Persiapan & K3",
+      "desc": "Siapkan APD (sarung tangan isolasi, kacamata pelindung). Pastikan mesin dalam keadaan mati sebelum memeriksa kabel dan komponen. Siapkan multimeter digital, buku servis, dan wiring diagram sistem pengisian sepeda motor yang akan diperiksa. Identifikasi lokasi alternator, kiprok, baterai, dan fuse utama."
+    },
+    {
+      "title": "Pemeriksaan Baterai",
+      "desc": "Ukur tegangan terminal baterai dengan multimeter (DC Volt) dalam kondisi mesin mati — nilai normal ≥ 12,6V untuk baterai penuh. Periksa kondisi fisik terminal dari korosi dan pastikan koneksi kencang. Untuk aki basah, periksa level dan berat jenis elektrolit menggunakan hydrometer (nilai normal 1,260–1,280). Catat hasil pengukuran."
+    },
+    {
+      "title": "Pengukuran Output Alternator",
+      "desc": "Nyalakan mesin dan biarkan stabil pada 3.000–5.000 RPM. Hubungkan multimeter pada mode AC Volt ke soket output alternator (antara terminal kumparan pengisian dan massa). Catat tegangan AC yang terukur dan bandingkan dengan spesifikasi buku servis (umumnya 14–18V AC pada 5000 RPM). Lakukan juga pengukuran resistansi kumparan saat mesin mati."
+    },
+    {
+      "title": "Pengukuran Tegangan Pengisian (Charging Voltage)",
+      "desc": "Dengan mesin menyala pada 3.000–5.000 RPM, hubungkan multimeter mode DC Volt ke terminal positif dan negatif baterai. Tegangan normal adalah 13,5–14,5V DC. Tegangan di bawah 13,5V mengindikasikan alternator lemah atau kiprok bermasalah. Tegangan di atas 15V mengindikasikan kiprok rusak (regulasi gagal). Ukur juga saat beban listrik ditambahkan (lampu, klakson aktif)."
+    },
+    {
+      "title": "Diagnosis & Kesimpulan",
+      "desc": "Bandingkan semua hasil pengukuran dengan spesifikasi pabrikan. Gunakan tabel diagnosis: jika tegangan pengisian rendah, periksa kumparan stator dan kiprok secara bergantian untuk mengisolasi komponen bermasalah. Catat temuan dalam lembar kerja, tentukan komponen yang perlu diganti, dan susun urutan perbaikan sesuai prioritas. Verifikasi perbaikan dengan pengukuran ulang."
+    }
+  ]
+}

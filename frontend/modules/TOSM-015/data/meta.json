@@ -1,0 +1,15 @@
+{
+  "title": "Sistem Kopling Manual & Transmisi",
+  "level": "lanjut",
+  "desc": "Modul ini membahas sistem kopling manual basah (wet clutch) dan transmisi manual pada sepeda motor sport/bebek secara menyeluruh, mencakup rumah kopling, hub kopling, mekanisme pembebas, pelat gesek, pelat baja, pegas kopling, shift drum, shift fork, mainshaft, countershaft, hingga mekanisme perpindahan gigi. Peserta didik mempelajari cara kerja kopling multi-plate dalam memutus dan menyambung tenaga, prinsip pemilihan gigi melalui shift drum dan shift fork, serta mekanisme dog engagement yang mengaktifkan rasio transmisi. Kompetensi mencakup pemeriksaan kondisi pelat kopling, pengukuran ketebalan friction plate, dan diagnosis loncat gigi.",
+  "kd": "Peserta mampu mengidentifikasi komponen sistem kopling manual dan transmisi sepeda motor, menjelaskan cara kerja wet clutch dan mekanisme perpindahan gigi, memeriksa kondisi pelat kopling dan pegas menggunakan alat ukur, serta mendiagnosis kerusakan kopling dan transmisi berdasarkan gejala sesuai standar pabrikan.",
+  "sistemDesc": "Sistem kopling manual bekerja melalui tuas yang menarik kabel, mendorong push rod, memindahkan pelat penekan melawan pegas kopling sehingga tumpukan friction plate dan steel plate terpisah — tenaga dari rumah kopling (terhubung crankshaft) tidak sampai ke hub kopling (terhubung mainshaft). Saat tuas dilepas, pegas menekan tumpukan pelat kembali — gesekan meneruskan torsi ke transmisi. Shift drum berputar satu posisi per injakan tuas gigi, alur pemandunya menggerakkan shift fork secara aksial untuk mendorong roda gigi geser ke posisi dog engagement yang tepat pada pasangan gigi yang diinginkan.",
+  "components": [
+    "Kopling Manual (Wet Clutch)",
+    "Pelat Kopling & Pegas",
+    "Drum Pemilih (Shift Drum)",
+    "Garpu Pemilih (Shift Fork)",
+    "Poros Transmisi (Mainshaft & Countershaft)",
+    "Mekanisme Perpindahan Gigi"
+  ]
+}

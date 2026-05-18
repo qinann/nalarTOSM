@@ -1,0 +1,25 @@
+{
+  "imageUrl": "/assets/images/praktekKerja.jpg",
+  "steps": [
+    {
+      "title": "Persiapan & K3",
+      "desc": "Siapkan APD (sarung tangan nitril, kacamata pelindung). Pastikan area kerja berventilasi baik karena bekerja dengan bahan bakar yang mudah menguap. Siapkan wadah penampung bahan bakar, karburator cleaner, lap bersih, dan peralatan tangan (obeng minus kecil, kunci pas ring, kuas kecil). Matikan mesin dan tunggu hingga dingin. Tutup keran bensin ke posisi OFF sebelum memulai pembongkaran."
+    },
+    {
+      "title": "Melepas dan Membongkar Karburator",
+      "desc": "Lepas selang bahan bakar dari karburator dan tampung sisa bensin. Lepas kabel gas dan kabel choke. Kendorkan klem intake manifold dan lepas karburator. Buka baut mangkuk pelampung dan lepas mangkuk dengan hati-hati. Lepas pelampung dan needle valve. Lepas main jet dan pilot jet menggunakan obeng minus yang tepat ukurannya. Catat posisi setelan air screw (hitung putaran) sebelum melepasnya."
+    },
+    {
+      "title": "Pembersihan Komponen",
+      "desc": "Semprot seluruh komponen karburator dengan carburator cleaner. Tiup setiap lubang dan saluran pada body karburator dengan udara bertekanan — perhatikan lubang pilot jet, air bleed, dan saluran emulsi. Bersihkan main jet dan pilot jet dengan menyemprotkan udara dari dalam ke luar; jangan gunakan kawat. Bersihkan mangkuk pelampung dan periksa kondisi pelampung (kocok untuk cek kebocoran). Bersihkan jarum skep dan periksa kondisi taper-nya."
+    },
+    {
+      "title": "Perakitan dan Penyetelan Karburator",
+      "desc": "Pasang kembali main jet dan pilot jet sesuai ukuran aslinya. Pastikan needle valve duduk pada pelampung dengan benar dan periksa ketinggian pelampung sesuai spesifikasi. Pasang mangkuk pelampung dengan gasket baru dan kencangkan baut merata. Pasang air screw kembali ke posisi setelan standar (umumnya 1,5–2,5 putaran keluar). Pasang karburator ke intake manifold dan kencangkan klem. Hubungkan selang bahan bakar dan kabel gas."
+    },
+    {
+      "title": "Penyetelan Idle dan Uji Fungsi",
+      "desc": "Buka keran bensin ke posisi ON. Nyalakan mesin dan biarkan panas (3–5 menit). Putar throttle stop screw hingga putaran idle mencapai spesifikasi (1.200–1.500 RPM, ukur dengan tachometer). Setel air screw dengan memutar perlahan masuk atau keluar hingga menemukan posisi di mana putaran idle paling tinggi secara alami. Turunkan idle ke spesifikasi dengan throttle stop screw. Uji respons gas — buka-tutup throttle dengan cepat, mesin harus merespons tanpa hesitasi atau mati."
+    }
+  ]
+}
