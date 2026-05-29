@@ -4,7 +4,7 @@
   "componentDetails": {
     "Tangki": {
       "fungsi": "Tangki bahan bakar pada sistem EFI berfungsi menyimpan cadangan bahan bakar cair sekaligus menjadi tempat dudukan fuel pump elektrik yang terintegrasi di dalamnya. Berbeda dengan tangki karburator biasa, tangki EFI dirancang tahan terhadap tekanan positif dan negatif karena sistem bahan bakar beroperasi pada tekanan tinggi (250–300 kPa).\n\nTangki EFI umumnya terbuat dari baja terstampel atau plastik HDPE yang kedap bahan bakar. Di bagian dalam terdapat fuel pump assembly, pre-filter strainer, dan kadang level sensor pelampung. Tutup tangki dilengkapi check valve yang membuka satu arah saat mengisi bahan bakar, serta ventilasi bertekanan rendah (EVAP/breather) yang mencegah penumpukan uap bahan bakar di dalam tangki.\n\nPemeriksaan tangki meliputi: cek kondisi tutup tangki (seal/O-ring tidak bocor), bersihkan saringan dalam tangki saat servis besar, dan periksa selang breather tidak tersumbat. Tersumbatnya breather menyebabkan vacuum lock di dalam tangki yang mengakibatkan fuel pump tidak dapat mengalirkan bahan bakar secara normal meskipun tangki berisi penuh.",
-      "imageUrl": null,
+      "imageUrl": "assets/images/tangki.glb",
       "caption": "Tangki EFI — wadah BBM bertekanan dengan fuel pump terintegrasi",
       "subComponents": ["Tutup Tangki", "Ventilasi/Breather", "Saringan Dalam Tangki", "Fuel Pump Assembly Seat", "Sambungan Selang Tekanan Tinggi", "Drain Plug"],
       "subComponentDetails": {
@@ -25,7 +25,7 @@
         },
         "Fuel Pump Assembly Seat": {
           "fungsi": "Fuel pump assembly seat adalah dudukan/flange tempat modul fuel pump (termasuk pompa, pelampung level, dan pre-filter) terpasang dan tersegel ke tangki bahan bakar. Segel antara flange dan lubang tangki berupa O-ring atau gasket karet yang harus kedap bahan bakar dan uap.\n\nDesain dudukan ini memudahkan penggantian fuel pump assembly tanpa harus membuang seluruh tangki. Baut atau ring pengunci (lock ring) mengencangkan flange ke tangki. Lubang di flange juga menjadi jalur masuk kabel listrik fuel pump dan kabel sensor level bensin.\n\nKebocoran di area dudukan fuel pump sangat berbahaya karena terjadi di dalam kompartemen yang tertutup dekat sumber api potensial. Gejala: bau bensin kuat, terutama saat kendaraan diparkir. Penggantian O-ring seal dudukan fuel pump harus dilakukan segera jika kebocoran terdeteksi. Selalu gunakan O-ring asli atau setara OEM untuk memastikan kompatibilitas bahan terhadap bahan bakar.",
-          "imageUrl": null,
+          "imageUrl": "null",
           "caption": "Dudukan fuel pump menjadi titik segel modul pompa di tangki"
         },
         "Sambungan Selang Tekanan Tinggi": {
@@ -42,7 +42,7 @@
     },
     "Fuel Pump": {
       "fungsi": "Fuel pump EFI adalah pompa elektrik yang mengalirkan bahan bakar dari tangki ke injektor dengan tekanan konstan 250–300 kPa, jauh lebih tinggi dari tekanan sistem karburator yang mengandalkan gravitasi dan kevakuman. Tekanan tinggi ini diperlukan agar injektor dapat mengatomisasi bahan bakar menjadi kabut halus yang siap terbakar.\n\nPompa EFI berjenis sentrifugal (impeller) atau rotor (gear type), digerakkan oleh motor listrik DC 12V. Pompa beroperasi terus-menerus selama mesin hidup dan beberapa detik saat kunci kontak baru dinyalakan (prime cycle) untuk membangun tekanan awal. Check valve di outlet pompa menjaga tekanan sisa di sistem saat mesin mati, mempermudah start berikutnya.\n\nKerusakan fuel pump umumnya ditandai oleh engine susah hidup atau mati mendadak saat akselerasi (fuel starvation). Diagnosis: ukur tekanan BBM dengan pressure gauge — harus sesuai spesifikasi saat prime (kunci kontak ON, mesin OFF). Ukur juga arus listrik pompa: arus terlalu tinggi (>5A) mengindikasikan pompa terbebani atau strainer tersumbat; tidak ada arus = fuse, relay, atau kabel rusak.",
-      "imageUrl": null,
+      "imageUrl": "assets/images/fuelPump.glb",
       "caption": "Fuel pump elektrik membangun tekanan BBM 250–300 kPa",
       "subComponents": ["Motor Pompa Elektrik", "Impeller/Rotor", "Check Valve", "Filter Awal (Pre-filter)", "Housing Pompa", "Terminal Listrik"],
       "subComponentDetails": {
@@ -80,7 +80,7 @@
     },
     "Fuel Filter": {
       "fungsi": "Fuel filter (filter bahan bakar utama) adalah penyaring bertekanan tinggi yang terletak di antara fuel pump dan fuel rail, menyaring partikel halus (10–30 mikron) dari bahan bakar sebelum mencapai injektor. Injektor memiliki lubang nozzle sangat kecil (0,1–0,3 mm) yang sangat rentan tersumbat oleh partikel kotoran atau deposit.\n\nFilter EFI dirancang untuk beroperasi pada tekanan 250–300 kPa dan harus diganti sesuai interval pabrikan (umumnya setiap 20.000–40.000 km). Filter terlalu lama akan tersumbat sebagian dan menyebabkan tekanan bahan bakar turun di hilirnya, meskipun pompa masih bekerja keras di hulunya. Beberapa desain motor EFI modern mengintegrasikan filter ke dalam tangki (bersama fuel pump), sehingga penggantiannya hanya dilakukan saat fuel pump assembly diganti.\n\nFilter yang tersumbat menghasilkan gejala yang mirip dengan fuel pump lemah: engine mati atau tersendat saat akselerasi penuh, idle tidak stabil, dan susah start. Diagnosis definitif: ukur tekanan BBM di inlet dan outlet filter (harus sama atau perbedaan <10 kPa) — perbedaan besar menunjukkan filter tersumbat.",
-      "imageUrl": null,
+      "imageUrl": "assets/images/fuelFilter.glb",
       "caption": "Fuel filter menyaring partikel halus sebelum BBM mencapai injektor",
       "subComponents": ["Elemen Filter", "Housing Filter", "Sambungan Inlet & Outlet", "Klem"],
       "subComponentDetails": {
@@ -108,7 +108,7 @@
     },
     "Pressure Regulator": {
       "fungsi": "Pressure regulator (regulator tekanan bahan bakar) adalah katup mekanis yang menjaga tekanan bahan bakar di fuel rail tetap konstan pada nilai yang ditentukan (umumnya 250–300 kPa untuk motor EFI) dengan membuang kelebihan bahan bakar kembali ke tangki melalui return line. Tekanan yang konstan memastikan setiap semprotan injektor menghasilkan jumlah bahan bakar yang tepat sesuai durasi pembukaan injektor.\n\nRegulator bekerja menggunakan diafragma yang merespons perbedaan tekanan antara bahan bakar di satu sisi dan referensi vakum intake atau tekanan atmosfer di sisi lain. Pegas di dalam regulator menentukan tekanan dasar. Saat tekanan BBM naik melebihi setpoint (misalnya saat kebutuhan bahan bakar rendah), diafragma bergerak membuka katup dan membuang kelebihan BBM kembali ke tangki.\n\nRegulator yang rusak atau bocor menyebabkan tekanan BBM tidak stabil atau terlalu rendah/tinggi. Tekanan terlalu rendah menyebabkan campuran miskin (lean), misfire, dan tenaga kurang; tekanan terlalu tinggi menyebabkan campuran terlalu kaya (rich), konsumsi BBM boros, dan emisi CO tinggi. Diagnosis: ukur tekanan BBM dengan fuel pressure gauge sesuai spesifikasi pabrikan.",
-      "imageUrl": null,
+      "imageUrl": "assets/images/fuelFilter.glb",
       "caption": "Pressure regulator menjaga tekanan BBM tetap konstan di fuel rail",
       "subComponents": ["Diafragma", "Pegas Pengatur", "Katup Pengatur", "Saluran Return ke Tangki", "Body Regulator"],
       "subComponentDetails": {
@@ -141,7 +141,7 @@
     },
     "Injektor": {
       "fungsi": "Injektor (fuel injector) adalah katup solenoid elektromagnetik yang membuka dan menutup dengan sangat cepat (milidetik) sesuai sinyal dari ECU untuk menyemprotkan bahan bakar bertekanan tinggi ke dalam port masuk atau ruang bakar. Durasi pembukaan injektor (pulse width, diukur dalam milidetik) dikontrol ECU berdasarkan kebutuhan bahan bakar yang dihitung dari data sensor — semakin panjang pulse width, semakin banyak bahan bakar yang disemprotkan.\n\nInjektor bekerja berdasarkan prinsip elektromagnetik: saat ECU memberi pulsa tegangan, koil solenoid menghasilkan medan magnet yang menarik jarum katup (needle) melawan gaya pegas pengembali, membuka jalur bahan bakar dari nozzle ke intake port. Saat pulsa berhenti, pegas mendorong jarum kembali menutup dengan sangat cepat (respon time <1 ms untuk injektor berkualitas baik).\n\nKerusakan injektor dapat berupa: tersumbat (menyebabkan semprotan tidak merata atau tidak keluar sama sekali), bocor (menyebabkan tetesan bahan bakar saat injektor harusnya tertutup — campuran kaya berlebihan), atau hambatan koil di luar spesifikasi (koil terbuka = tidak menyemprot; koil short = ECU rusak). Diagnosis: ukur hambatan injektor (biasanya 10–14 Ω tipe high impedance atau 1,5–3 Ω tipe low impedance), dan uji pola semprotan menggunakan injector tester.",
-      "imageUrl": null,
+      "imageUrl": "assets/images/fuelFilter.glb",
       "caption": "Injektor menyemprotkan BBM presisi sesuai perintah ECU",
       "subComponents": ["Koil Solenoid", "Jarum Katup (Needle)", "Pegas Pengembali", "Nozzle", "Filter Injektor", "O-ring Atas & Bawah", "Terminal Listrik"],
       "subComponentDetails": {
@@ -184,7 +184,7 @@
     },
     "Throttle Body": {
       "fungsi": "Throttle body adalah komponen yang mengontrol jumlah udara yang masuk ke mesin dengan cara mengatur pembukaan butterfly valve (katup gas) sesuai posisi tuas gas pengendara. Berbeda dari karburator, throttle body EFI tidak mencampur bahan bakar — hanya mengatur udara. Bahan bakar disemprotkan terpisah oleh injektor yang duduk di dalam atau dekat throttle body.\n\nThrottle body juga menjadi rumah berbagai sensor penting: TPS (Throttle Position Sensor) mengukur sudut pembukaan throttle; IAT (Intake Air Temperature) mengukur suhu udara masuk; MAP sensor mengukur tekanan absolut intake manifold. Semua data ini dikirim ke ECU untuk menghitung jumlah bahan bakar yang tepat. IACV (Idle Air Control Valve) mengontrol aliran udara bypass untuk menstabilkan idle.\n\nThrottle body harus dibersihkan secara berkala (umumnya setiap 20.000 km) karena deposit minyak dan karbon menumpuk di dinding dan sekitar butterfly valve, menyempitkan jalur udara dan menyebabkan idle yang tidak stabil. Gunakan throttle body cleaner yang tidak merusak sensor. Jangan menyemprot langsung ke IACV atau TPS yang sensitif terhadap pelarut kimia kuat.",
-      "imageUrl": null,
+      "imageUrl": "assets/images/throttleBody.glb",
       "caption": "Throttle body mengontrol aliran udara dan menampung sensor-sensor penting",
       "subComponents": ["Butterfly Valve (Katup Gas)", "TPS (Throttle Position Sensor)", "IACV/ISC (Idle Air Control Valve)", "IAT Sensor", "MAP Sensor", "Dudukan Injektor"],
       "subComponentDetails": {
@@ -250,7 +250,7 @@
     },
     "ECU/ECM": {
       "fungsi": "ECU (Engine Control Unit) atau ECM (Engine Control Module) adalah komputer kecil yang menjadi otak sistem EFI. ECU menerima data dari berbagai sensor (TPS, MAP, IAT, EOT, CKP, O2 sensor) dan menghitung durasi injeksi (pulse width) dan timing pengapian yang optimal untuk setiap kondisi operasi engine secara real-time dengan frekuensi ratusan kali per detik.\n\nECU menyimpan peta 3D (fuel map dan ignition map) di dalam EEPROM yang dipetakan oleh pabrikan untuk mengoptimalkan performa, efisiensi, dan emisi. Data adaptasi (adaptive fuel trim) disimpan di memori non-volatile — ECU belajar dari kondisi operasi nyata dan menyesuaikan injeksi jangka panjang (long-term fuel trim) untuk mengkompensasi perbedaan komponen antar-unit.\n\nECU juga memantau sensor secara terus-menerus dan menyalakan MIL (Malfunction Indicator Lamp) serta menyimpan kode DTC (Diagnostic Trouble Code) ke dalam memori jika mendeteksi nilai sensor di luar batas normal. Kode DTC inilah yang dibaca mekanik menggunakan scan tool atau melalui pola kedipan MIL untuk mengidentifikasi komponen yang bermasalah tanpa harus bongkar seluruh sistem.",
-      "imageUrl": null,
+      "imageUrl": "assets/images/ecu.glb",
       "caption": "ECU — otak sistem EFI yang mengontrol injeksi dan pengapian",
       "subComponents": ["Input Sensor (TPS, MAP, IAT, EOT, CKP)", "Output ke Injektor & Koil", "Soket Konektor Utama", "MIL Output", "EEPROM Mapping"],
       "subComponentDetails": {

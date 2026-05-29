@@ -12,6 +12,17 @@ export function render(data: SistemData, container: HTMLElement): void {
   app.addEventListener('click', e => {
     if (!container.classList.contains('active')) return;
 
+    const zoomBtn = (e.target as HTMLElement).closest<HTMLElement>('[data-zoom]');
+    if (zoomBtn) {
+      const mv = zoomBtn.closest('.diagram-box')?.querySelector('model-viewer') as any;
+      if (mv) {
+        const orbit = mv.getCameraOrbit();
+        const factor = zoomBtn.dataset['zoom'] === 'in' ? 0.8 : 1.25;
+        mv.cameraOrbit = `${orbit.theta}rad ${orbit.phi}rad ${Math.max(0.3, orbit.radius * factor)}m`;
+      }
+      return;
+    }
+
     // Sub-component click from left panel — show inline
     const subEl = (e.target as HTMLElement).closest<HTMLElement>('[data-subcomp]');
     if (subEl && activeComp) {
@@ -26,7 +37,7 @@ export function render(data: SistemData, container: HTMLElement): void {
       );
 
       // Show sub-component media in main panel
-      container.innerHTML = mediaBlock(sub.imageUrl, sub.caption);
+      container.innerHTML = mediaBlock(sub.imageUrl, sub.caption, sub.cameraOrbit);
 
       // Update right panel with fungsi
       const right = app.querySelector<HTMLElement>('[data-right="sistem"]');
@@ -116,7 +127,7 @@ export function renderSubComp(
       <span class="breadcrumb-current">${esc(subName)}</span>
     </div>
     <div class="tab-panel active" style="padding:20px">
-      ${mediaBlock(sub?.imageUrl, sub?.caption ?? subName)}
+      ${mediaBlock(sub?.imageUrl, sub?.caption ?? subName, sub?.cameraOrbit)}
     </div>
   </main>
 
@@ -132,6 +143,16 @@ export function renderSubComp(
 
   // Clicking another sub-component in the left list navigates to it
   container.addEventListener('click', e => {
+    const zoomBtn = (e.target as HTMLElement).closest<HTMLElement>('[data-zoom]');
+    if (zoomBtn) {
+      const mv = zoomBtn.closest('.diagram-box')?.querySelector('model-viewer') as any;
+      if (mv) {
+        const orbit = mv.getCameraOrbit();
+        const factor = zoomBtn.dataset['zoom'] === 'in' ? 0.8 : 1.25;
+        mv.cameraOrbit = `${orbit.theta}rad ${orbit.phi}rad ${Math.max(0.3, orbit.radius * factor)}m`;
+      }
+      return;
+    }
     const li = (e.target as HTMLElement).closest<HTMLElement>('[data-subcomp]');
     if (!li) return;
     const sc = li.dataset['subcomp']!;
@@ -175,7 +196,7 @@ function updateLeftToSubComps(app: HTMLElement, compName: string, subComponents:
   if (section) section.style.display = '';
 }
 
-function mediaBlock(url: string | null | undefined, caption: string): string {
+function mediaBlock(url: string | null | undefined, caption: string, cameraOrbit?: string): string {
   if (!url) {
     return `<div class="diagram-box">
       <div class="diagram-placeholder">
@@ -184,10 +205,21 @@ function mediaBlock(url: string | null | undefined, caption: string): string {
       </div>
     </div>`;
   }
-  const is3D = /\.(glb|gltf)$/i.test(url);
-  const media = is3D
-    ? `<model-viewer src="${esc(url)}" auto-rotate camera-controls shadow-intensity="1" exposure="0.8"></model-viewer>`
-    : `<img src="${esc(url)}" alt="${esc(caption)}"/>`;
+  const is3D   = /\.(glb|gltf)$/i.test(url);
+  const isHTML = /\.html?$/i.test(url);
+  let media: string;
+  if (is3D) {
+    const orbitAttr = cameraOrbit ? ` camera-orbit="${esc(cameraOrbit)}"` : '';
+    media = `<model-viewer src="${esc(url)}" auto-rotate camera-controls shadow-intensity="1" exposure="0.8"${orbitAttr}></model-viewer>
+             <div class="viewer-zoom-btns">
+               <button class="viewer-zoom-btn" data-zoom="in" title="Zoom In">+</button>
+               <button class="viewer-zoom-btn" data-zoom="out" title="Zoom Out">−</button>
+             </div>`;
+  } else if (isHTML) {
+    media = `<iframe src="${esc(url)}" allowfullscreen style="width:100%;height:100%;border:none;"></iframe>`;
+  } else {
+    media = `<img src="${esc(url)}" alt="${esc(caption)}"/>`;
+  }
   return `<div class="diagram-box">${media}</div>
           <p class="diagram-caption">${esc(caption)}</p>`;
 }

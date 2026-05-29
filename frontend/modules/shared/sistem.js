@@ -5,6 +5,16 @@ export function render(data, container) {
     app.addEventListener('click', e => {
         if (!container.classList.contains('active'))
             return;
+        const zoomBtn = e.target.closest('[data-zoom]');
+        if (zoomBtn) {
+            const mv = zoomBtn.closest('.diagram-box')?.querySelector('model-viewer');
+            if (mv) {
+                const orbit = mv.getCameraOrbit();
+                const factor = zoomBtn.dataset['zoom'] === 'in' ? 0.8 : 1.25;
+                mv.cameraOrbit = `${orbit.theta}rad ${orbit.phi}rad ${Math.max(0.3, orbit.radius * factor)}m`;
+            }
+            return;
+        }
         // Sub-component click from left panel — show inline
         const subEl = e.target.closest('[data-subcomp]');
         if (subEl && activeComp) {
@@ -16,7 +26,7 @@ export function render(data, container) {
             // Highlight active sub-comp in left panel sub-list
             app.querySelectorAll('.sub-comp-list-left [data-subcomp]').forEach(el => el.classList.toggle('active', el.dataset['subcomp'] === subName));
             // Show sub-component media in main panel
-            container.innerHTML = mediaBlock(sub.imageUrl, sub.caption);
+            container.innerHTML = mediaBlock(sub.imageUrl, sub.caption, sub.cameraOrbit);
             // Update right panel with fungsi
             const right = app.querySelector('[data-right="sistem"]');
             if (right) {
@@ -95,7 +105,7 @@ export function renderSubComp(meta, data, compName, subName, container) {
       <span class="breadcrumb-current">${esc(subName)}</span>
     </div>
     <div class="tab-panel active" style="padding:20px">
-      ${mediaBlock(sub?.imageUrl, sub?.caption ?? subName)}
+      ${mediaBlock(sub?.imageUrl, sub?.caption ?? subName, sub?.cameraOrbit)}
     </div>
   </main>
 
@@ -109,6 +119,16 @@ export function renderSubComp(meta, data, compName, subName, container) {
     container.querySelector('#btn-back')?.addEventListener('click', () => history.back());
     // Clicking another sub-component in the left list navigates to it
     container.addEventListener('click', e => {
+        const zoomBtn = e.target.closest('[data-zoom]');
+        if (zoomBtn) {
+            const mv = zoomBtn.closest('.diagram-box')?.querySelector('model-viewer');
+            if (mv) {
+                const orbit = mv.getCameraOrbit();
+                const factor = zoomBtn.dataset['zoom'] === 'in' ? 0.8 : 1.25;
+                mv.cameraOrbit = `${orbit.theta}rad ${orbit.phi}rad ${Math.max(0.3, orbit.radius * factor)}m`;
+            }
+            return;
+        }
         const li = e.target.closest('[data-subcomp]');
         if (!li)
             return;
@@ -151,7 +171,7 @@ function updateLeftToSubComps(app, compName, subComponents) {
     if (section)
         section.style.display = '';
 }
-function mediaBlock(url, caption) {
+function mediaBlock(url, caption, cameraOrbit) {
     if (!url) {
         return `<div class="diagram-box">
       <div class="diagram-placeholder">
@@ -161,9 +181,20 @@ function mediaBlock(url, caption) {
     </div>`;
     }
     const is3D = /\.(glb|gltf)$/i.test(url);
-    const media = is3D
-        ? `<model-viewer src="${esc(url)}" auto-rotate camera-controls shadow-intensity="1" exposure="0.8"></model-viewer>`
-        : `<img src="${esc(url)}" alt="${esc(caption)}"/>`;
+    const isHTML = /\.html?$/i.test(url);
+    let media;
+    if (isHTML) {
+        media = `<iframe src="${esc(url)}" allowfullscreen style="width:100%;height:100%;border:none;"></iframe>`;
+    } else if (is3D) {
+        const orbitAttr = cameraOrbit ? ` camera-orbit="${esc(cameraOrbit)}"` : '';
+        media = `<model-viewer src="${esc(url)}" auto-rotate camera-controls shadow-intensity="1" exposure="0.8"${orbitAttr}></model-viewer>
+             <div class="viewer-zoom-btns">
+               <button class="viewer-zoom-btn" data-zoom="in" title="Zoom In">+</button>
+               <button class="viewer-zoom-btn" data-zoom="out" title="Zoom Out">−</button>
+             </div>`;
+    } else {
+        media = `<img src="${esc(url)}" alt="${esc(caption)}"/>`;
+    }
     return `<div class="diagram-box">${media}</div>
           <p class="diagram-caption">${esc(caption)}</p>`;
 }

@@ -17,6 +17,9 @@ app.use(cors({ origin: (origin, cb) => cb(null, true) }));
 // ── Serve frontend statically ─────────────────────────────────────────────────
 app.use(express.static(path.join(__dirname, '../frontend')));
 
+// ── Serve WebGL modules ───────────────────────────────────────────────────────
+app.use('/webgl/modul3', express.static('D:/Downloads/Modul 3/WebGL'));
+
 // ── Database ──────────────────────────────────────────────────────────────────
 const db = new Database(path.join(__dirname, '../database/tosm.db'));
 db.pragma('journal_mode = WAL');

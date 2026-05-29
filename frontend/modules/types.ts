@@ -19,6 +19,7 @@ export interface SubComponentDetail {
   fungsi: string;
   imageUrl?: string | null;
   caption: string;
+  cameraOrbit?: string;
 }
 
 export interface SistemComponentDetail {

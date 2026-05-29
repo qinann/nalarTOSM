@@ -1,6 +1,6 @@
 {
-  "caption": "Komponen Utama Engine",
-  "imageUrl": "/assets/images/komponenUtamaEngine.jpg",
+  "caption": "Simulasi 3D Komponen Utama Engine",
+  "imageUrl": "/assets/animations/Modul1/index.html",
   "componentDetails": {
     "Blok silinder": {
       "fungsi": "Blok silinder adalah rangka utama engine yang menjadi pondasi struktural seluruh sistem mesin. Di dalamnya terdapat lubang silinder sebagai lintasan piston, water jacket untuk sirkulasi cairan pendingin, saluran oli (oil passage), dan crankcase sebagai wadah crankshaft dan oli mesin.\n\nFungsinya mencakup menahan tekanan pembakaran sangat tinggi (50–70 bar), menyalurkan panas ke sistem pendingin, serta menjadi dudukan seluruh komponen internal engine. Material umumnya besi cor abu-abu atau paduan aluminium dengan liner besi cor.\n\nTanda keausan: dinding silinder baret atau oval (perlu oversize/rebore), retak akibat overheat, kebocoran water jacket, atau keausan pada dudukan bearing crankshaft.",
@@ -17,7 +17,7 @@
       "subComponentDetails": {
         "Lubang silinder": {
           "fungsi": "Lubang silinder adalah rongga presisi berbentuk silinder tempat piston bergerak naik-turun. Permukaannya diproses dengan teknik honing (pengasahan spiral) untuk menciptakan kekasaran mikro yang mempertahankan film oli tipis antara ring piston dan dinding, sehingga gesekan minimal namun penyegelan tetap optimal.\n\nDiameter lubang silinder menentukan kapasitas (cc) engine bersama panjang stroke crankshaft. Pada blok aluminium, biasanya dilengkapi liner besi cor untuk ketahanan aus yang lebih baik terhadap gesekan ring piston.\n\nPemeriksaan: ukur diameter dengan bore gauge pada tiga titik ketinggian dan dua arah (sejajar dan tegak lurus sumbu piston). Perbedaan diameter melebihi 0,05 mm (taper/oval) memerlukan rebore ke ukuran oversize sesuai ketersediaan piston pengganti.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/lubangSilinder.png",
           "caption": "Gambar lubang silinder"
         },
         "Liner / sleeve": {
@@ -27,7 +27,7 @@
         },
         "Water jacket": {
           "fungsi": "Water jacket adalah jaringan saluran dan rongga yang mengelilingi lubang silinder di dalam blok. Cairan pendingin (coolant) bersirkulasi melalui jalur ini untuk menyerap panas hasil pembakaran yang merambat melalui dinding silinder, kemudian membawanya ke radiator untuk didinginkan.\n\nDesain water jacket memengaruhi distribusi suhu engine secara keseluruhan. Saluran yang tersumbat (scale/kerak) menyebabkan distribusi panas tidak merata, berpotensi mengakibatkan hot spot yang merusak piston dan liner. Coolant harus diganti sesuai interval pabrikan untuk mencegah pembentukan kerak.\n\nPemeriksaan: periksa kondisi coolant (warna, kontaminasi oli), uji tekanan sistem pendingin dengan pressure tester, dan periksa adanya kebocoran pada sambungan gasket. Flush water jacket dengan cairan pembersih radiator saat overhaul.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/waterJacket.png",
           "caption": "Gambar water jacket"
         },
         "Crankcase": {
@@ -37,7 +37,7 @@
         },
         "Oil passage": {
           "fungsi": "Oil passage adalah jaringan saluran oli yang dibor dengan presisi di dalam blok silinder. Sistem ini mendistribusikan oli bertekanan dari pompa oli ke seluruh titik pelumasan kritis: main bearing crankshaft, bearing camshaft (pada OHV), dan mengirimkan oli ke kepala silinder untuk komponen sistem katup.\n\nSaluran utama (main gallery) memanjang sepanjang blok dengan cabang mengarah ke setiap lubang main bearing. Tekanan oli harus dijaga dalam rentang spesifikasi (biasanya 1,5–4 bar saat idle) untuk memastikan film oli yang cukup pada semua bearing.\n\nPemeriksaan: bersihkan saluran oli saat overhaul menggunakan kawat probe dan semprotan udara bertekanan. Saluran tersumbat menyebabkan oil starvation yang dapat merusak bearing dalam hitungan menit. Ganti selalu filter oli saat overhaul untuk mencegah kontaminasi ke oil passage.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/oilPassage.png",
           "caption": "Gambar oil passage"
         },
         "Baut tanam": {
@@ -63,31 +63,32 @@
         "Ruang bakar": {
           "fungsi": "Ruang bakar adalah rongga antara permukaan bawah kepala silinder dan mahkota piston saat piston di TMA (Titik Mati Atas). Di sinilah campuran udara-bahan bakar dimampatkan lalu dibakar oleh percikan busi untuk menghasilkan tekanan yang mendorong piston ke bawah.\n\nBentuk ruang bakar (hemispherical, pentroof, bathtub) secara langsung memengaruhi efisiensi pembakaran, kecepatan rambat api, dan kecenderungan detonasi. Volume ruang bakar menentukan rasio kompresi engine bersama displacement piston — semakin kecil volumenya, semakin tinggi rasio kompresi.\n\nPemeriksaan: ukur volume ruang bakar dengan burette dan cairan pengukur untuk memverifikasi rasio kompresi aktual. Periksa deposit karbon berlebih yang dapat menaikkan rasio kompresi efektif dan menyebabkan detonasi/knocking. Bersihkan deposit dengan carbon cleaner saat overhaul.",
           "imageUrl": "/assets/images/ruangBakar.glb",
-          "caption": "Gambar ruang bakar"
+          "caption": "Gambar ruang bakar",
+          "cameraOrbit": "0deg 75deg auto"
         },
         "Port masuk": {
           "fungsi": "Port masuk (intake port) adalah saluran berbentuk melengkung yang menghubungkan intake manifold/karburator/throttle body dengan ruang bakar melalui katup masuk. Bentuk dan ukuran port menentukan kecepatan aliran dan volume campuran udara-bahan bakar yang masuk ke silinder.\n\nDesain port masuk yang optimal menciptakan efek swirl (pusaran horizontal) atau tumble (pusaran vertikal) pada campuran untuk meningkatkan atomisasi bahan bakar dan efisiensi pembakaran. Port besar cocok untuk putaran tinggi (tenaga puncak tinggi), port kecil lebih baik untuk torsi putaran rendah.\n\nPemeriksaan: periksa kondisi permukaan port dari deposit karbon atau retak. Port yang kasar dapat di-porting/polishing untuk meningkatkan koefisien aliran (Cv). Pastikan tidak ada retak di sekitar dudukan katup yang mengarah ke port — tanda overheat serius.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/portMasuk.png",
           "caption": "Gambar port masuk"
         },
         "Port buang": {
           "fungsi": "Port buang (exhaust port) mengalirkan gas sisa pembakaran bertekanan tinggi dan bersuhu sangat tinggi (600–900°C) dari ruang bakar menuju exhaust manifold dan sistem knalpot. Bentuk dan ukurannya memengaruhi efisiensi pembuangan dan back-pressure sistem knalpot.\n\nPort buang menghadapi kondisi termal jauh lebih ekstrem dari port masuk. Panas berlebih di area ini menjadi penyebab utama retak kepala silinder. Area di antara dua port buang (bridge) adalah titik paling rentan terhadap retak termal akibat tegangan panas siklis.\n\nPemeriksaan: periksa retak pada permukaan port terutama di sekitar dudukan katup buang dan di bridge antar port. Deposit karbon yang mempersempit port harus dibersihkan saat overhaul. Kepala silinder dengan retak di port buang umumnya tidak dapat diperbaiki dan harus diganti.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/portKeluang.png",
           "caption": "Gambar port buang"
         },
         "Dudukan busi": {
           "fungsi": "Dudukan busi adalah lubang berulir di kepala silinder yang diposisikan tepat di tengah atau mendekati tengah ruang bakar. Posisi sentral memastikan nyala api menjalar secara merata ke seluruh campuran, meminimalkan jarak tempuh api dan risiko detonasi pada sisi yang jauh dari busi.\n\nUlir dudukan busi harus dalam kondisi sempurna untuk memastikan penyegelan ruang bakar yang baik dan kontak termal yang optimal (transfer panas dari busi ke kepala silinder). Jenis ulir bervariasi: M10×1,0 (busi kecil) hingga M14×1,25 (busi standar). Torsi pengencangan busi harus sesuai spesifikasi (umumnya 15–25 Nm).\n\nPemeriksaan: periksa kondisi ulir dengan memasukkan busi baru — harus masuk tanpa hambatan. Ulir yang rusak dapat diperbaiki dengan memasang thread insert (Helicoil). Periksa kondisi washer tembaga busi untuk memastikan penyegelan yang baik saat busi dikencangkan.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/dudukanBusi.png",
           "caption": "Gambar dudukan busi"
         },
         "Dudukan katup": {
           "fungsi": "Dudukan katup (valve seat) adalah cincin logam keras yang dipreskan ke dalam kepala silinder sebagai permukaan kontak kepala katup saat menutup. Fungsinya menyegel ruang bakar secara rapat sekaligus menjadi media transfer panas utama dari katup (terutama katup buang) ke kepala silinder.\n\nMaterial dudukan katup harus menahan tekanan dan suhu tinggi secara siklis tanpa deformasi. Untuk katup buang, digunakan paduan khusus tahan panas tinggi. Sudut dudukan standar biasanya 45° (face angle) dengan lebar kontak ideal 1,0–1,5 mm — terlalu sempit mudah bocor, terlalu lebar menghambat transfer panas.\n\nPemeriksaan: oleskan prussian blue (marking compound) pada permukaan dudukan, pasang katup dan putar sedikit, lalu periksa pola kontak yang seharusnya merata 360°. Dudukan yang tidak merata atau terlalu lebar perlu di-reface dengan seat cutter. Dudukan yang retak atau aus parah harus diganti (press-out dan press-in yang baru).",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/dudukanKatup.png",
           "caption": "Gambar dudukan katup"
         },
         "Water jacket": {
           "fungsi": "Water jacket di kepala silinder adalah jaringan rongga pendingin yang mengelilingi ruang bakar, port masuk, dan port buang untuk menyerap panas dari proses pembakaran yang sangat intens. Terhubung langsung dengan water jacket blok silinder membentuk satu sirkuit pendingin terpadu.\n\nKepala silinder menerima panas paling ekstrem pada engine, terutama di area antara dudukan katup dan ruang bakar. Water jacket yang efektif mencegah overheating lokal yang dapat menyebabkan detonasi, kerusakan katup, atau retak kepala silinder — kerusakan yang biasanya permanen.\n\nPemeriksaan: flush water jacket saat overhaul menggunakan cairan flush radiator untuk menghilangkan endapan kerak. Periksa tanda kebocoran coolant ke ruang bakar (asap putih dari knalpot, level coolant turun, atau emulsifikasi oli) yang mengindikasikan kegagalan head gasket atau retak kepala silinder.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/waterJacket.png",
           "caption": "Gambar water jacket kepala silinder"
         }
       }
@@ -105,7 +106,7 @@
       "subComponentDetails": {
         "Mahkota piston": {
           "fungsi": "Mahkota piston (piston crown) adalah permukaan atas piston yang membentuk salah satu dinding ruang bakar dan menerima tekanan ledakan pembakaran secara langsung. Bentuk mahkota — datar (flat), cekung (dish), atau cembung (dome) — dirancang untuk menciptakan aliran turbulensi gas yang optimal di dalam ruang bakar.\n\nMahkota piston merupakan bagian yang mengalami suhu paling ekstrem, dapat mencapai 300–400°C pada material aluminium. Piston performa tinggi biasanya memiliki lapisan anodisasi keras atau thermal barrier coating untuk meningkatkan ketahanan termal dan efisiensi pembakaran.\n\nPemeriksaan: periksa kondisi permukaan mahkota dari lubang (pitting) akibat detonasi, erosi akibat pre-ignition, atau deposit karbon berlebih. Kerusakan pada mahkota piston umumnya mengindikasikan masalah pembakaran yang lebih serius seperti rasio kompresi terlalu tinggi atau oktan bahan bakar tidak sesuai.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/mahkotaPiston.png",
           "caption": "Gambar mahkota piston"
         },
         "Ring piston": {
@@ -120,7 +121,7 @@
         },
         "Bos pin piston": {
           "fungsi": "Bos pin piston adalah silinder berongga yang menjadi bagian integral bodi piston sebagai dudukan pin piston. Strukturnya diperkuat dengan penebalan dinding karena menanggung konsentrasi tegangan tertinggi pada seluruh piston saat gaya pembakaran ditransfer ke connecting rod.\n\nMaterial piston (paduan aluminium seri 4xxx) di area bos pin sering diberi perlakuan panas khusus atau elemen paduan tambahan seperti silikon tinggi untuk meningkatkan kekuatan di titik kritis ini. Beberapa piston performa menggunakan insert besi cor sebagai dudukan pin untuk ketahanan lebih baik.\n\nPemeriksaan: ukur diameter lubang bos pin dengan bore gauge dan bandingkan dengan diameter pin piston untuk memastikan clearance dalam spesifikasi. Bos pin yang oval, aus berlebihan, atau menunjukkan tanda retak mengharuskan penggantian piston secara keseluruhan — area ini tidak dapat diperbaiki.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/bosPinPiston.png",
           "caption": "Gambar bos pin piston"
         }
       }
@@ -140,32 +141,32 @@
       "subComponentDetails": {
         "Main journal": {
           "fungsi": "Main journal adalah bagian silindris crankshaft yang berputar di dalam main bearing yang dipasang di crankcase. Jumlah main journal bervariasi — mesin 4-silinder umumnya memiliki 5 main journal — memberikan dukungan struktural kuat untuk menahan beban lentur dari gaya pembakaran setiap siklus.\n\nPermukaan main journal diinduction-hardened (dikeraskan secara induksi) lalu digrinda dan dipoles dengan presisi tinggi (toleransi diameter ±0,005 mm). Pelumasan menggunakan oli bertekanan yang dipasok melalui oil passage di crankcase ke alur distribusi pada main bearing shell.\n\nPemeriksaan: ukur diameter main journal di dua arah (0° dan 90°) dengan mikrometer. Perbedaan lebih dari 0,03 mm menunjukkan keovalan. Bandingkan dengan spesifikasi dan limit undersize yang tersedia pabrikan (umumnya 0,25 mm, 0,50 mm, 0,75 mm, 1,00 mm). Jurnal yang aus dapat di-regrind ke ukuran undersize.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/mainJournal.png",
           "caption": "Gambar main journal"
         },
         "Crank pin": {
           "fungsi": "Crank pin adalah poros eksentrik pada crankshaft yang menjadi titik sambungan big end connecting rod. Jarak antara pusat crank pin dan pusat main journal disebut throw, dan besarnya throw × 2 menentukan panjang langkah (stroke) piston.\n\nCrank pin menerima gaya dorong penuh dari piston saat langkah tenaga — gaya ini diteruskan sebagai momen putar ke seluruh crankshaft. Material dan proses pengerasan crank pin identik dengan main journal. Oli pelumas dipasok melalui saluran bor diagonal dari oil passage main journal.\n\nPemeriksaan: ukur diameter crank pin di dua arah untuk mendeteksi keovalan. Periksa kondisi permukaan dari goresan, baret, atau korosi pitting. Crank pin yang aus dapat di-regrind ke ukuran undersize sesuai ketersediaan shell bearing undersize pabrikan.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/crankPin.png",
           "caption": "Gambar crank pin"
         },
         "Counterweight": {
           "fungsi": "Counterweight adalah massa penyeimbang berbentuk sektor lingkaran yang diposisikan berlawanan 180° dari crank pin pada setiap lengan crankshaft. Fungsinya mengimbangi gaya sentrifugal dari crank pin, connecting rod, dan sebagian massa piston yang bergerak eksentrik.\n\nTanpa counterweight, crankshaft akan menghasilkan gaya sentrifugal sangat besar saat berputar, menyebabkan getaran berlebih yang merusak bearing dan komponen lainnya. Pada engine multi-silinder, counterweight juga membantu menyeimbangkan gaya inersia yang berlawanan antar piston.\n\nPemeriksaan: counterweight tidak memerlukan pemeriksaan rutin dalam kondisi normal. Jika engine mengalami getaran berlebih yang tidak normal, lakukan pemeriksaan keseimbangan (dynamic balancing) crankshaft di mesin balancing khusus untuk memastikan tidak ada material yang hilang akibat korosi atau benturan.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/counterweight.png",
           "caption": "Gambar counterweight"
         },
         "Oil passage": {
           "fungsi": "Oil passage crankshaft adalah serangkaian saluran oli yang dibor diagonal di dalam bodi crankshaft, menghubungkan main journal dengan crank pin. Sistem ini memungkinkan oli bertekanan yang masuk ke main bearing mengalir langsung ke crank pin bearing (big end bearing).\n\nSaluran ini berdiameter kecil (3–6 mm) dan dibor dengan sudut tertentu agar selalu terhubung dengan sumber oli di main journal tanpa terputus selama rotasi crankshaft. Kebersihan saluran sangat kritis — partikel logam atau kotoran yang menyumbat akan menyebabkan kelaparan oli pada big end bearing.\n\nPemeriksaan: saat overhaul, bersihkan oil passage dengan kawat probe tipis dan semprot udara bertekanan dari satu ujung ke ujung lainnya untuk memastikan tidak ada penyumbatan. Pastikan semua lubang saluran bersih dan terbuka sebelum crankshaft dipasang kembali.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/oilPassageCrangkshaft.png",
           "caption": "Gambar oil passage crankshaft"
         },
         "Timing sprocket": {
           "fungsi": "Timing sprocket di ujung depan crankshaft menggerakkan camshaft melalui rantai timing, sabuk timing, atau roda gigi. Ukurannya setengah dari timing sprocket camshaft untuk menghasilkan rasio putaran 2:1 yang diperlukan siklus 4-langkah.\n\nAkurasi posisi timing sprocket sangat kritis — tanda timing (timing mark) harus selaras sempurna saat pemasangan agar katup membuka dan menutup pada waktu yang tepat relatif terhadap posisi piston. Kesalahan satu gigi saja dapat menyebabkan performa sangat buruk atau tabrakan katup-piston pada interference engine.\n\nPemeriksaan: periksa kondisi gigi sproket dari keausan (gigi menipis atau berbentuk kail/hooked). Saat penggantian rantai atau sabuk timing baru, selalu ganti juga sproket secara bersamaan untuk mencegah ketidaksesuaian keausan yang dapat memperpendek umur rantai baru.",
-          "imageUrl": "/assets/images/timingSprocketCrankshaft.glb",
+          "imageUrl": "/assets/images/sprocketCrankshaft.glb",
           "caption": "Gambar timing sprocket"
         },
         "Flywheel": {
           "fungsi": "Flywheel adalah cakram berat yang dipasang di ujung belakang crankshaft. Massa flywheel menyimpan energi kinetik dari langkah tenaga dan melepaskannya secara gradual pada tiga langkah lainnya (hisap, kompresi, buang), menjaga rotasi engine tetap halus dan konsisten di semua RPM.\n\nPada kendaraan transmisi manual, flywheel juga menjadi komponen sistem kopling — permukaan geseknya bersentuhan dengan plat kopling. Flywheel dilengkapi ring gear di tepinya sebagai penghubung dengan motor starter. Massa flywheel besar memberikan putaran yang lebih halus namun respons akselerasi lebih lambat.\n\nPemeriksaan: periksa kerataan permukaan gesek flywheel dengan dial gauge (runout maksimum biasanya 0,05 mm). Permukaan yang bergelombang atau bergaris dalam dapat diface-grinding. Periksa kondisi ring gear dari gigi yang rusak atau aus yang menyebabkan masalah start (starter selip atau bunyi grinding).",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/flywheel.glb",
           "caption": "Gambar flywheel"
         }
       }
@@ -178,34 +179,28 @@
         "Cam lobe masuk",
         "Cam lobe buang",
         "Journal camshaft",
-        "Timing sprocket",
-        "Oil passage"
+        "Timing sprocket"
       ],
       "subComponentDetails": {
         "Cam lobe masuk": {
           "fungsi": "Cam lobe masuk (intake cam lobe) adalah tonjolan eksentrik berbentuk oval pada camshaft yang mendorong katup masuk membuka pada timing yang tepat sesuai posisi piston. Setiap putaran camshaft menghasilkan satu siklus buka-tutup katup untuk satu siklus pembakaran.\n\nProfil cam lobe menentukan tiga parameter kritis: durasi (berapa derajat crankshaft katup tetap terbuka), lift (berapa mm katup terangkat maksimal), dan timing (kapan katup mulai membuka). Profil agresif dengan lift tinggi dan durasi panjang meningkatkan tenaga namun mengorbankan efisiensi di putaran rendah.\n\nPemeriksaan: ukur tinggi cam lobe (jarak dari dasar ke puncak) di kedua sisi dengan mikrometer dan bandingkan dengan spesifikasi minimum pabrikan. Keausan pada cam lobe mengubah profil buka-tutup katup, menurunkan performa engine secara bertahap dan ditandai dengan nilai kompresi yang tidak merata antar silinder.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/camLobeMasuk.png",
           "caption": "Gambar cam lobe masuk"
         },
         "Cam lobe buang": {
           "fungsi": "Cam lobe buang (exhaust cam lobe) mendorong katup buang membuka untuk mengeluarkan gas sisa pembakaran. Timing pembukaannya terjadi sedikit sebelum piston mencapai TMB — disebut blow-down — untuk memanfaatkan sisa tekanan gas buang agar keluar lebih cepat dan efisien.\n\nPeriode overlap (saat katup masuk dan buang sama-sama terbuka sejenak) memanfaatkan inersia gas untuk membantu pengisian silinder pada putaran tinggi. Cam lobe buang cenderung mengalami keausan lebih cepat dari cam lobe masuk karena menerima panas lebih tinggi dari sisi exhaust.\n\nPemeriksaan: prosedur sama dengan cam lobe masuk — ukur tinggi dengan mikrometer dan bandingkan dengan spesifikasi. Tanda keausan: performa engine menurun, konsumsi bahan bakar meningkat, dan asap hitam dari knalpot karena pembuangan gas tidak sempurna.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/camLobeBuang.png",
           "caption": "Gambar cam lobe buang"
         },
         "Journal camshaft": {
           "fungsi": "Journal camshaft adalah bagian silindris pada camshaft yang berputar di dalam bearing housing di kepala silinder (OHC) atau di blok silinder (OHV). Berfungsi sebagai titik tumpu putar camshaft yang menerima beban radial dari gaya pembukaan katup melalui cam lobe.\n\nPelumasan journal camshaft menggunakan oli bertekanan yang dipasok dari sistem pelumasan utama engine melalui saluran di kepala silinder. Pelumasan yang terlambat saat cold start adalah penyebab utama keausan prematur pada journal camshaft — inilah alasan mengapa penggunaan oli dengan viskositas yang tepat sangat penting.\n\nPemeriksaan: ukur diameter journal dengan mikrometer dan diameter bearing housing dengan bore gauge, hitung oil clearance yang harus sesuai spesifikasi (umumnya 0,020–0,060 mm). Clearance berlebih menghasilkan suara ketukan dan tekanan oli rendah; clearance terlalu sempit menyebabkan keausan cepat dan overheat.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/journalCamshaft.png",
           "caption": "Gambar journal camshaft"
         },
         "Timing sprocket": {
           "fungsi": "Timing sprocket camshaft berdiameter dua kali lebih besar dari sproket crankshaft, menghasilkan rasio putaran 1:2 yang diperlukan siklus 4-langkah. Dipasang di ujung camshaft dan terkunci pada posisi tertentu sesuai tanda timing yang sangat akurat.\n\nPada sistem Variable Valve Timing (VVT) modern, sproket camshaft dilengkapi aktuator hidraulik yang memungkinkan timing katup disesuaikan secara dinamis sesuai kondisi operasi engine — memajukan timing di putaran rendah untuk torsi, memundurkan di putaran tinggi untuk tenaga.\n\nPemeriksaan: periksa gigi sproket dari keausan simetris atau gigi yang bengkok/patah. Saat penggantian rantai timing, sproket camshaft harus diganti bersamaan. Pastikan tanda timing selaras sempurna dengan tanda di kepala silinder/blok sebelum mengencangkan baut sproket.",
-          "imageUrl": "/assets/images/timingSprocketCamshaft.glb",
+          "imageUrl": "/assets/images/sprocketCamshaft.glb",
           "caption": "Gambar timing sprocket camshaft"
-        },
-        "Oil passage": {
-          "fungsi": "Oil passage pada sistem camshaft mencakup saluran oli di dalam kepala silinder yang mendistribusikan oli bertekanan ke setiap journal camshaft dan komponen sistem katup. Pada beberapa desain, oli juga mengalir melalui lubang di dalam camshaft itu sendiri untuk melumasi cam lobe dari dalam.\n\nPelumasan yang memadai pada camshaft sangat kritis karena gesekan antara cam lobe dan follower/rocker arm sangat tinggi, terutama saat cold start. Oli mesin yang tepat viskositasnya memastikan film oli terbentuk cepat saat engine dinyalakan, mencegah keausan di detik-detik pertama yang paling rentan.\n\nPemeriksaan: pastikan oil passage bersih dan tidak tersumbat saat overhaul. Periksa tekanan oli dengan oil pressure gauge pada berbagai RPM — tekanan rendah di kepala silinder mengindikasikan penyumbatan atau pompa oli yang mulai lemah. Ganti selalu filter oli secara berkala.",
-          "imageUrl": null,
-          "caption": "Gambar oil passage camshaft"
         }
       }
     },
@@ -224,17 +219,17 @@
       "subComponentDetails": {
         "Small end": {
           "fungsi": "Small end (ujung kecil) adalah bagian connecting rod yang lebih kecil, terhubung ke pin piston melalui bushing. Bergerak secara osilasi (berayun) mengikuti gerakan sudut piston relatif terhadap sumbu crankshaft selama rotasi. Di dalam small end dipasang bushing (biasanya bronze/kuningan) sebagai bantalan pin piston.\n\nSmall end menerima beban lentur dan beban aksial bergantian — tarikan saat langkah hisap dan tekanan saat langkah kompresi dan tenaga. Dimensinya lebih kecil dari big end karena beban yang diterima relatif lebih rendah, namun tetap harus sangat presisi.\n\nPemeriksaan: ukur diameter dalam small end (setelah bushing terpasang) dengan bore gauge dan bandingkan dengan diameter pin piston. Oil clearance yang direkomendasikan umumnya 0,005–0,020 mm. Small end yang oval atau aus melebihi toleransi memerlukan penggantian bushing atau seluruh connecting rod.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/smallEnd.png",
           "caption": "Gambar small end"
         },
         "Big end": {
           "fungsi": "Big end (ujung besar) adalah bagian lower connecting rod yang memeluk crank pin crankshaft. Dirancang dalam dua bagian — bodi connecting rod dan tutup (cap) — yang disatukan dengan baut conrod berpresisi tinggi. Shell bearing setengah-lingkaran dipasang di dalam big end sebagai media pelumasan.\n\nBig end mengalami beban terbesar pada seluruh connecting rod: tekanan aksial dari langkah tenaga, beban sentrifugal saat berputar bersama crankshaft, dan beban tarik saat langkah hisap. Clearance antara big end bearing dan crank pin harus dalam spesifikasi untuk mempertahankan film oli yang mencukupi.\n\nPemeriksaan: ukur diameter dalam big end dengan boring gauge (saat cap terpasang dan dikencangkan sesuai torsi) dan bandingkan dengan diameter crank pin untuk menghitung oil clearance. Gunakan Plastigage untuk pengukuran clearance yang cepat. Clearance berlebih menghasilkan suara 'dug-dug' berirama (rod knock) yang khas.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/bigEnd.png",
           "caption": "Gambar big end"
         },
         "Batang conrod": {
           "fungsi": "Batang connecting rod adalah bagian tengah berbentuk profil I-beam atau H-beam yang menghubungkan small end dan big end. Profil ini dipilih karena memberikan kekakuan lentur maksimum dengan bobot minimal — setiap gram massa yang dikurangi mengurangi gaya inersia pada RPM tinggi.\n\nSelama satu siklus, batang conrod mengalami tegangan bergantian: tekan (saat kompresi dan tenaga) dan tarik (saat hisap). Material standar adalah baja paduan medium carbon yang ditempa (forged), sedangkan connecting rod performa tinggi menggunakan baja H-beam atau titanium forging untuk rasio kekuatan-per-bobot yang lebih baik.\n\nPemeriksaan: periksa kebengkokan dan puntiran menggunakan connecting rod aligner — toleransi umumnya 0,03 mm per 100 mm panjang untuk bending dan 0,05 mm untuk twist. Connecting rod yang bengkok menyebabkan piston miring di dalam silinder, mengakibatkan keausan satu sisi (thrust wear) yang tidak normal.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/batangConrod.png",
           "caption": "Gambar batang connecting rod"
         },
         "Baut conrod": {
@@ -256,7 +251,7 @@
     },
     "Katup Intake & Exhaust": {
       "fungsi": "Katup (valve) mengontrol waktu dan volume aliran gas yang masuk dan keluar dari ruang bakar. Katup masuk membuka saat langkah hisap untuk mengijinkan campuran udara-bahan bakar masuk, katup buang membuka saat langkah buang untuk mengeluarkan gas sisa pembakaran sesuai timing camshaft.\n\nTerdiri dari katup masuk (diameter lebih besar), katup buang (tahan suhu hingga 700°C+, biasanya paduan nikel-kromium), pegas katup, stem seal, pengunci katup, dan rocker arm. Kerenggangan katup (valve clearance) harus disetel sesuai spesifikasi pabrikan, umumnya 0,05–0,20 mm saat dingin.\n\nPemeriksaan: ukur kerenggangan katup dengan feeler gauge, periksa kondisi dudukan katup (valve seat), ukur diameter batang katup dengan mikrometer, serta periksa tegangan pegas katup dengan alat ukur pegas.",
-      "imageUrl": "/assets/images/valve.glb",
+      "imageUrl": "/assets/images/katup.glb",
       "caption": "Model 3D Valve",
       "subComponents": [
         "Kepala Katup",
@@ -268,12 +263,12 @@
       "subComponentDetails": {
         "Kepala Katup": {
           "fungsi": "Kepala katup (valve head / disc) adalah bagian berbentuk cakram di ujung bawah katup yang berfungsi sebagai penutup dan pembuka saluran port pada kepala silinder. Permukaannya bersentuhan dengan dudukan katup (valve seat) untuk membentuk segel kedap gas bertekanan tinggi saat katup menutup — mencegah kebocoran campuran udara-bahan bakar selama kompresi dan mencegah gas buang panas bocor balik ke intake.\n\nDiameter kepala katup intake biasanya lebih besar daripada kepala katup exhaust karena aliran udara-bahan bakar masuk memerlukan luas penampang lebih besar untuk mengisi silinder dengan efisien. Kepala katup exhaust dibuat lebih kecil namun dari material yang lebih tahan panas (baja paduan nikel atau stellite) karena terpapar suhu gas buang yang dapat mencapai 700-900 derajat C.\n\nPermukaan kontak kepala katup dengan seat disebut valve face, biasanya memiliki sudut 45 derajat atau 30 derajat. Face yang terkikis, berlubang (pitting), atau tidak merata akibat karbon dan korosi menyebabkan segel tidak sempurna, kompresi bocor, dan tenaga mesin turun. Pemeriksaan dilakukan dengan valve lapping compound untuk memastikan pola kontak face-seat merata di seluruh keliling.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/kepalaKatup.png",
           "caption": "Kepala katup sebagai penutup port intake/exhaust"
         },
         "Batang Katup": {
           "fungsi": "Batang katup (valve stem) adalah bagian silindris panjang yang menjadi sumbu gerak katup naik-turun di dalam valve guide kepala silinder. Diameter batang sangat presisi (biasanya 5-6 mm) karena clearance antara batang dan guide harus minimal — celah terlalu besar menyebabkan katup goyang dan oli masuk ruang bakar, celah terlalu kecil menyebabkan batang macet saat suhu tinggi.\n\nPermukaan batang katup dipoles halus dan kadang diberi lapisan chrome atau nitride untuk mengurangi gesekan dengan valve guide dan meningkatkan ketahanan aus. Bagian atas batang (tip) yang bersentuhan dengan rocker arm atau follower mendapat perlakuan pengerasan permukaan khusus karena mengalami beban kontak dan benturan berulang setiap siklus pembukaan katup.\n\nKeausan batang katup terlihat sebagai ovalitas atau ketidakmerataan diameter yang menyebabkan katup bergoyang dalam guidenya. Pengukuran dilakukan dengan mikrometer luar di beberapa titik sepanjang batang. Batang yang oval, bengkok, atau ausnya melebihi batas (lebih dari 0,05 mm dari diameter nominal) harus diganti karena tidak dapat diluruskan tanpa risiko patah.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/batangKatup.png",
           "caption": "Batang katup bergerak naik-turun dalam valve guide"
         },
         "Dudukan Katup": {

@@ -4,7 +4,7 @@
   "componentDetails": {
     "Injektor": {
       "fungsi": "Injektor (fuel injector) adalah katup solenoid elektromagnetik yang membuka dan menutup dengan sangat cepat (milidetik) sesuai sinyal dari ECU untuk menyemprotkan bahan bakar bertekanan tinggi ke dalam port masuk atau ruang bakar. Durasi pembukaan injektor (pulse width, diukur dalam milidetik) dikontrol ECU berdasarkan kebutuhan bahan bakar yang dihitung dari data sensor — semakin panjang pulse width, semakin banyak bahan bakar yang disemprotkan.\n\nInjektor bekerja berdasarkan prinsip elektromagnetik: saat ECU memberi pulsa tegangan, koil solenoid menghasilkan medan magnet yang menarik jarum katup (needle) melawan gaya pegas pengembali, membuka jalur bahan bakar dari nozzle ke intake port. Saat pulsa berhenti, pegas mendorong jarum kembali menutup dengan sangat cepat (respon time <1 ms untuk injektor berkualitas baik).\n\nKerusakan injektor dapat berupa: tersumbat (menyebabkan semprotan tidak merata atau tidak keluar sama sekali), bocor (menyebabkan tetesan bahan bakar saat injektor harusnya tertutup — campuran kaya berlebihan), atau hambatan koil di luar spesifikasi (koil terbuka = tidak menyemprot; koil short = ECU rusak). Diagnosis: ukur hambatan injektor (biasanya 10–14 Ω tipe high impedance atau 1,5–3 Ω tipe low impedance), dan uji pola semprotan menggunakan injector tester.",
-      "imageUrl": null,
+      "imageUrl": "assets/images/injektor.glb",
       "caption": "Injektor menyemprotkan BBM presisi sesuai perintah ECU",
       "subComponents": [
         "Koil Solenoid",

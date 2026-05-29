@@ -1,16 +1,24 @@
 {
-  "caption": "Sistem Bahan Bakar Karburator",
-  "imageUrl": null,
+  "caption": "Simulasi 3D Sistem Bahan Bakar Karburator",
+  "imageUrl": "/webgl/modul3/index.html",
   "componentDetails": {
     "Tangki": {
       "fungsi": "Tangki bahan bakar adalah wadah penyimpan bensin yang terbuat dari baja lembaran atau plastik polietilena berlapis yang ditempatkan di bagian atas rangka sepeda motor. Fungsi utamanya adalah menyimpan persediaan bahan bakar dalam jumlah cukup untuk jarak tempuh normal, sekaligus menyalurkan bahan bakar secara gravitasi ke karburator melalui keran bensin.\n\nKonstruksi tangki dirancang untuk menahan tekanan uap bahan bakar, tahan terhadap benturan, dan memiliki sambungan ventilasi untuk mencegah perbedaan tekanan yang menghambat aliran bahan bakar. Di dalam tangki terdapat saringan kasar (in-tank strainer) dan pada model tertentu dilengkapi sensor pelampung untuk indikator level bahan bakar di panel instrumen.\n\nPemeriksaan tangki meliputi kondisi fisik dari karat bagian dalam (pada tangki besi), kebocoran pada sambungan las atau fitting, kondisi tutup tangki dan mekanisme kuncinya, serta kondisi gasket tutup. Tangki yang berkarat di dalam harus dibersihkan dengan cairan rust remover atau dilapisi ulang dengan sealant tangki khusus untuk mencegah serpihan karat menyumbat karburator.",
-      "imageUrl": null,
+      "imageUrl": "/assets/images/tangki.glb",
       "caption": "Tangki — Wadah penyimpan bahan bakar utama",
-      "subComponents": ["Tutup tangki (fuel cap)", "Ventilasi/breather", "Saringan dalam tangki (in-tank strainer)", "Level sensor pelampung", "Drain plug", "Sambungan selang keran", "Body tangki"],
+      "subComponents": [
+        "Tutup tangki (fuel cap)",
+        "Ventilasi/breather",
+        "Saringan dalam tangki (in-tank strainer)",
+        "Level sensor pelampung",
+        "Drain plug",
+        "Sambungan selang keran",
+        "Body tangki"
+      ],
       "subComponentDetails": {
         "Tutup tangki (fuel cap)": {
           "fungsi": "Tutup tangki (fuel cap) adalah penutup lubang pengisian bahan bakar di atas tangki yang berfungsi menyegel tangki dari kebocoran bahan bakar sekaligus mencegah masuknya debu, air, dan kotoran. Tutup tangki dilengkapi gasket karet atau cincin O-ring untuk penyegelan dan mekanisme kunci (lock) pada sepeda motor modern untuk keamanan.\n\nTutup tangki umumnya dilengkapi lubang ventilasi kecil atau katup ventilasi satu arah yang membiarkan udara masuk saat bahan bakar berkurang, namun mencegah uap bahan bakar keluar berlebihan. Tanpa ventilasi yang berfungsi, tangki akan mengalami tekanan negatif (vakum) yang menghambat aliran bahan bakar ke karburator, menyebabkan mesin mati di tengah jalan.\n\nPemeriksaan: pastikan gasket atau O-ring tutup tangki dalam kondisi elastis dan tidak keras/retak. Buka dan tutup mekanisme kunci — harus terasa klik dan terkunci rapat. Periksa lubang ventilasi tidak tersumbat dengan meniupnya. Tutup tangki yang bocor atau ventilasinya tersumbat harus segera diganti untuk mencegah masalah aliran bahan bakar.",
-          "imageUrl": null,
+          "imageUrl": "null",
           "caption": "Tutup tangki — penyegel dan ventilasi tangki"
         },
         "Ventilasi/breather": {
@@ -49,7 +57,14 @@
       "fungsi": "Keran bensin (fuel cock / petcock) adalah katup manual atau otomatis yang mengontrol aliran bahan bakar dari tangki ke karburator. Posisi ON mengalirkan bahan bakar dari ruang utama tangki, RES (Reserve) mengalirkan sisa bahan bakar dari ruang cadangan saat bahan bakar utama habis, dan OFF menghentikan aliran sepenuhnya saat mesin dimatikan untuk mencegah kebocoran bahan bakar ke karburator.\n\nKeran bensin tipe vakum otomatis (vacuum-operated petcock) tidak memiliki posisi OFF konvensional — katupnya hanya terbuka saat ada tekanan vakum dari intake manifold (mesin hidup). Ini lebih aman karena bahan bakar otomatis terhenti saat mesin mati, mengurangi risiko banjir karburator. Konstruksinya terdiri dari diafragma yang digerakkan oleh vakum dan pegas yang menutup katup saat tidak ada vakum.\n\nPemeriksaan keran bensin meliputi cek kelancaran aliran bahan bakar pada posisi ON dan RES, pemeriksaan kondisi saringan keran dari penyumbatan, kondisi paking/gasket dari kebocoran, dan pada tipe vakum: periksa kondisi diafragma dari sobek atau robek yang menyebabkan keran tidak dapat terbuka otomatis saat mesin dinyalakan.",
       "imageUrl": null,
       "caption": "Keran Bensin — pengontrol aliran bahan bakar dari tangki",
-      "subComponents": ["Tuas ON/RES/OFF", "Saringan keran (filter cup)", "Paking/gasket", "Diafragma vakum (tipe otomatis)", "Pegas", "Sambungan selang"],
+      "subComponents": [
+        "Tuas ON/RES/OFF",
+        "Saringan keran (filter cup)",
+        "Paking/gasket",
+        "Diafragma vakum (tipe otomatis)",
+        "Pegas",
+        "Sambungan selang"
+      ],
       "subComponentDetails": {
         "Tuas ON/RES/OFF": {
           "fungsi": "Tuas ON/RES/OFF adalah mekanisme pemilih posisi aliran keran bensin yang dioperasikan secara manual oleh pengendara. Pada posisi ON, saluran utama terbuka mengalirkan bahan bakar dari ruang utama tangki. Posisi RES (Reserve) membuka saluran cadangan yang lebih pendek untuk memanfaatkan sisa bahan bakar di dasar tangki saat bahan bakar utama habis.\n\nPada posisi OFF, seluruh saluran tertutup rapat. Posisi ini wajib digunakan saat mesin akan dimatikan dalam waktu lama untuk mencegah bahan bakar meresap ke karburator, mengisi mangkuk pelampung berlebihan, dan menyebabkan banjir karburator (float chamber overflow). Tuas terbuat dari plastik atau logam dengan mekanisme detent untuk memastikan posisi terkunci.\n\nPemeriksaan: pastikan tuas dapat bergerak dengan lancar di antara posisi tanpa memerlukan tenaga berlebih. Uji aliran bahan bakar pada setiap posisi dengan wadah penampung — aliran harus deras pada ON dan RES, tidak ada aliran pada OFF. Tuas yang longgar atau tidak dapat terkunci pada posisi harus diganti untuk mencegah perubahan posisi yang tidak disengaja.",
@@ -87,7 +102,11 @@
       "fungsi": "Filter bensin (fuel filter) adalah komponen penyaring yang dipasang pada jalur bahan bakar antara keran bensin dan karburator. Fungsinya menyaring partikel halus, kotoran, air, dan kontaminan lain yang lolos dari saringan tangki dan keran bensin, melindungi komponen presisi karburator (jet, needle valve) dari penyumbatan dan keausan abrasif.\n\nKonstruksi filter bensin terdiri dari housing/casing transparan (untuk pemeriksaan visual tingkat kejenuhan) atau buram, berisi elemen filter dari kertas lipat (paper filter element) yang mampu menyaring partikel sehalus 10–20 mikron, atau elemen kasa logam halus yang dapat dibersihkan ulang. Bahan bakar masuk melalui inlet, melewati elemen filter, dan keluar melalui outlet menuju karburator.\n\nPemeriksaan filter bensin dilakukan secara visual dengan melihat warna dan kondisi elemen filter. Filter kertas yang sudah kecoklatan atau tersumbat harus diganti, tidak dapat dibersihkan. Interval penggantian umumnya setiap 10.000–15.000 km atau 1–2 tahun. Filter yang tersumbat menyebabkan kekurangan suplai bahan bakar, mesin terasa berat, dan performa menurun terutama saat akselerasi penuh.",
       "imageUrl": null,
       "caption": "Filter Bensin — penjaga kebersihan bahan bakar",
-      "subComponents": ["Housing/casing", "Elemen filter (kertas/kasa)", "Sambungan inlet & outlet"],
+      "subComponents": [
+        "Housing/casing",
+        "Elemen filter (kertas/kasa)",
+        "Sambungan inlet & outlet"
+      ],
       "subComponentDetails": {
         "Housing/casing": {
           "fungsi": "Housing atau casing filter bensin adalah wadah luar yang melindungi elemen filter di dalamnya sekaligus menjadi titik sambungan dengan selang bahan bakar di sisi inlet dan outlet. Terbuat dari plastik transparan (polipropilena atau nilon) yang memungkinkan pemeriksaan visual kondisi elemen filter dan endapan air tanpa perlu membongkar.\n\nHousing dirancang untuk menahan tekanan internal dari aliran bahan bakar dan tekanan vakum dari pompa bahan bakar pada sistem yang menggunakan pompa bensin. Beberapa housing dilengkapi fitting vent untuk membuang udara yang terperangkap. Arah pemasangan (inlet-outlet) biasanya ditandai dengan panah pada housing yang harus diperhatikan saat penggantian.\n\nPemeriksaan: lihat kondisi housing dari retak, warna kekuningan berlebih, atau deposit berwarna coklat-hitam di dasar yang menandakan kontaminasi. Perhatikan apakah ada lapisan air di dasar (bahan bakar terkontaminasi air membentuk lapisan terpisah). Housing yang retak atau bocor harus diganti bersama elemen filter. Pastikan arah aliran sesuai tanda panah saat memasang filter pengganti.",
@@ -108,9 +127,26 @@
     },
     "Karburator": {
       "fungsi": "Karburator adalah komponen inti sistem bahan bakar yang bertugas mencampur bahan bakar dan udara dalam proporsi yang tepat (rasio stoikiometri ±14,7:1 untuk bensin) sebelum campuran masuk ke ruang bakar. Prinsip kerjanya memanfaatkan efek Bernoulli — aliran udara cepat melalui venturi menciptakan tekanan rendah yang mengisap bahan bakar dari jet dan mengabutkannya ke dalam aliran udara.\n\nKarburator sepeda motor umumnya tipe CV (Constant Velocity) atau tipe slide VM. Pada tipe CV, bukaan skep (slide valve) diatur oleh perbedaan tekanan vakum antara atas dan bawah skep, memberikan respons throttle yang halus. Pada tipe VM, skep terhubung langsung ke kabel gas sehingga respons lebih langsung namun membutuhkan kontrol throttle yang lebih presisi.\n\nPemeriksaan dan perawatan karburator meliputi pembersihan jet (main jet, pilot jet) dari endapan, pemeriksaan kondisi jarum skep dan klipnya, penyetelan ketinggian pelampung, penyetelan air screw dan idle speed, serta pemeriksaan kebocoran dari mangkuk pelampung. Karburator yang kotor atau salah setel menyebabkan campuran terlalu kaya (rich) atau terlalu miskin (lean) yang berdampak pada performa, konsumsi bahan bakar, dan emisi gas buang.",
-      "imageUrl": null,
+      "imageUrl": "/assets/images/karburator.glb",
       "caption": "Karburator — sistem pencampuran udara dan bahan bakar",
-      "subComponents": ["Main jet", "Pilot jet (slow jet)", "Jarum skep (jet needle) + klip", "Pelampung (float)", "Needle valve + dudukan", "Skep/slide valve", "Pegas skep", "Air screw", "Throttle stop screw (idle)", "Mangkuk pelampung (float chamber) + baut", "Choke (cuk) lever + jarum choke", "Venturi", "Diafragma vakum (CV/VM type)", "Selang vakum", "Selang overflow", "Kabel gas"],
+      "subComponents": [
+        "Main jet",
+        "Pilot jet (slow jet)",
+        "Jarum skep (jet needle) + klip",
+        "Pelampung (float)",
+        "Needle valve + dudukan",
+        "Skep/slide valve",
+        "Pegas skep",
+        "Air screw",
+        "Throttle stop screw (idle)",
+        "Mangkuk pelampung (float chamber) + baut",
+        "Choke (cuk) lever + jarum choke",
+        "Venturi",
+        "Diafragma vakum (CV/VM type)",
+        "Selang vakum",
+        "Selang overflow",
+        "Kabel gas"
+      ],
       "subComponentDetails": {
         "Main jet": {
           "fungsi": "Main jet adalah nosel presisi berbentuk tabung kecil berulir dengan lubang kalibrasi yang sangat presisi (diameter 0,5–2,0 mm) yang mengontrol jumlah bahan bakar yang masuk ke venturi saat throttle dibuka lebih dari 3/4 putaran penuh. Ukuran lubang jet (dinyatakan dalam angka, misal #95, #100, #105) menentukan kekayaan campuran pada putaran tinggi.\n\nMain jet direndam dalam bahan bakar di dalam mangkuk pelampung dan terhubung ke needle jet (tabung yang menjadi dudukan jarum skep). Bahan bakar naik melalui needle jet, melewati jarum skep, lalu dikabutkan oleh aliran udara cepat di venturi. Ukuran main jet yang terlalu kecil menyebabkan campuran miskin (lean) pada putaran tinggi, sedangkan terlalu besar menyebabkan terlalu kaya (rich).\n\nPemeriksaan: lepas main jet dan periksa kondisi lubangnya — harus bulat sempurna, bersih, tanpa deformasi. Bersihkan dengan semprotan udara bertekanan; jangan gunakan kawat atau benda keras yang dapat memperbesar diameter lubang. Ganti main jet jika lubang terlihat tidak sempurna. Catat nomor ukuran main jet sebelum membongkar untuk memastikan pemasangan kembali dengan ukuran yang sama.",
@@ -196,9 +232,15 @@
     },
     "Intake Manifold": {
       "fungsi": "Intake manifold adalah saluran penghubung antara karburator dengan port masuk kepala silinder. Fungsinya mengalirkan campuran udara-bahan bakar dari karburator ke ruang bakar secara merata dengan turbulensi minimum yang dapat menyebabkan pemisahan kembali bahan bakar dari udara. Pada sepeda motor 4-tak, intake manifold biasanya berupa saluran pendek yang melengkung menghubungkan karburator ke kepala silinder.\n\nKonstruksi intake manifold terbuat dari aluminium tuang atau karet keras (rubber manifold) yang dapat menyerap getaran mesin. Intake manifold karet (insulator manifold) juga berfungsi mengisolasi panas dari kepala silinder agar tidak memanaskan karburator secara berlebihan — karburator yang panas dapat menyebabkan penguapan bahan bakar prematur dan masalah hot soak.\n\nPemeriksaan intake manifold sangat kritis karena kebocoran udara di sambungan manapun akan menyebabkan campuran miskin yang sulit didiagnosis. Gejala kebocoran: idle tidak stabil, mesin susah disetel, atau idle tiba-tiba naik saat mesin panas. Semprotkan cairan karburator cleaner atau air (hati-hati) di sekitar sambungan saat mesin idle — jika idle berubah, terdapat kebocoran di titik tersebut.",
-      "imageUrl": null,
+      "imageUrl": "/assets/images/intakeManifold.glb",
       "caption": "Intake Manifold — saluran campuran ke kepala silinder",
-      "subComponents": ["Dudukan karburator", "Gasket intake", "Baut pengikat", "Sambungan ke kepala silinder", "Lubang vakum"],
+      "subComponents": [
+        "Dudukan karburator",
+        "Gasket intake",
+        "Baut pengikat",
+        "Sambungan ke kepala silinder",
+        "Lubang vakum"
+      ],
       "subComponentDetails": {
         "Dudukan karburator": {
           "fungsi": "Dudukan karburator adalah permukaan flens (flange) pada ujung intake manifold yang menjadi tempat karburator terpasang. Pada manifold karet, ini berupa permukaan karet yang merangkul flens karburator dan dikencangkan dengan klem logam; pada manifold aluminium, berupa permukaan datar berulir dengan baut pengikat.\n\nKesempurnaan sambungan antara karburator dan dudukan sangat kritis untuk mencegah kebocoran udara. Karet manifold yang mengeras atau retak tidak dapat menyegel dengan baik. Klem yang tidak dikencangkan merata juga menyebabkan kebocoran. Pada tipe logam, gasket antara flens karburator dan dudukan manifold harus dalam kondisi baik.\n\nPemeriksaan: periksa kondisi karet dudukan dari kekerasan, retak, atau deformasi. Karet yang keras kehilangan elastisitas sealnya. Klem harus dapat dikencangkan merata di seluruh keliling. Saat memasang karburator, pastikan O-ring atau gasket terpasang di tempatnya dan klem dikencangkan secara bertahap dan merata untuk mencegah kebocoran asimetris.",
