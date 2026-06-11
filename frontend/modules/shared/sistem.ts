@@ -12,17 +12,6 @@ export function render(data: SistemData, container: HTMLElement): void {
   app.addEventListener('click', e => {
     if (!container.classList.contains('active')) return;
 
-    const zoomBtn = (e.target as HTMLElement).closest<HTMLElement>('[data-zoom]');
-    if (zoomBtn) {
-      const mv = zoomBtn.closest('.diagram-box')?.querySelector('model-viewer') as any;
-      if (mv) {
-        const orbit = mv.getCameraOrbit();
-        const factor = zoomBtn.dataset['zoom'] === 'in' ? 0.8 : 1.25;
-        mv.cameraOrbit = `${orbit.theta}rad ${orbit.phi}rad ${Math.max(0.3, orbit.radius * factor)}m`;
-      }
-      return;
-    }
-
     // Sub-component click from left panel — show inline
     const subEl = (e.target as HTMLElement).closest<HTMLElement>('[data-subcomp]');
     if (subEl && activeComp) {
@@ -143,16 +132,6 @@ export function renderSubComp(
 
   // Clicking another sub-component in the left list navigates to it
   container.addEventListener('click', e => {
-    const zoomBtn = (e.target as HTMLElement).closest<HTMLElement>('[data-zoom]');
-    if (zoomBtn) {
-      const mv = zoomBtn.closest('.diagram-box')?.querySelector('model-viewer') as any;
-      if (mv) {
-        const orbit = mv.getCameraOrbit();
-        const factor = zoomBtn.dataset['zoom'] === 'in' ? 0.8 : 1.25;
-        mv.cameraOrbit = `${orbit.theta}rad ${orbit.phi}rad ${Math.max(0.3, orbit.radius * factor)}m`;
-      }
-      return;
-    }
     const li = (e.target as HTMLElement).closest<HTMLElement>('[data-subcomp]');
     if (!li) return;
     const sc = li.dataset['subcomp']!;
@@ -210,13 +189,9 @@ function mediaBlock(url: string | null | undefined, caption: string, cameraOrbit
   let media: string;
   if (is3D) {
     const orbitAttr = cameraOrbit ? ` camera-orbit="${esc(cameraOrbit)}"` : '';
-    media = `<model-viewer src="${esc(url)}" auto-rotate camera-controls shadow-intensity="1" exposure="0.8"${orbitAttr}></model-viewer>
-             <div class="viewer-zoom-btns">
-               <button class="viewer-zoom-btn" data-zoom="in" title="Zoom In">+</button>
-               <button class="viewer-zoom-btn" data-zoom="out" title="Zoom Out">−</button>
-             </div>`;
+    media = `<model-viewer src="${esc(url)}" auto-rotate camera-controls shadow-intensity="1" exposure="0.8"${orbitAttr}></model-viewer>`;
   } else if (isHTML) {
-    media = `<iframe src="${esc(url)}" allowfullscreen style="width:100%;height:100%;border:none;"></iframe>`;
+    media = `<iframe src="${esc(url)}" allowfullscreen style="width:100%;height:100%;border:none;" onmouseenter="this.focus()" tabindex="0"></iframe>`;
   } else {
     media = `<img src="${esc(url)}" alt="${esc(caption)}"/>`;
   }

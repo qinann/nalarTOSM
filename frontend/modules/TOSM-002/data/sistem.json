@@ -1,6 +1,6 @@
 {
-  "caption": "Komponen Fisik Engine 4 Tak",
-  "imageUrl": "/assets/images/komponenUtamaEngine.png",
+  "caption": "Simulasi 3D Siklus Kerja Mesin 4 Tak",
+  "imageUrl": "/assets/animations/Modul2/index.html",
   "componentDetails": {
     "Piston": {
       "fungsi": "Piston adalah komponen bergerak utama di dalam silinder yang mengubah tekanan gas pembakaran menjadi gerak mekanis bolak-balik. Dalam satu siklus 4-tak, piston melakukan empat gerakan berurutan: turun pada langkah hisap, naik pada kompresi, turun lagi menerima tenaga pembakaran, dan naik pada langkah buang.\n\nPiston terbuat dari paduan aluminium-silikon (AlSi) yang ringan, tahan panas, dan memiliki koefisien ekspansi termal yang presisi. Bentuk mahkota disesuaikan dengan desain ruang bakar — datar untuk engine standar, cembung (dome) untuk meningkatkan rasio kompresi, atau cekung (dish) untuk menciptakan turbulensi campuran.\n\nTanda keausan piston meliputi goresan vertikal pada permukaan skirt, groove ring yang aus mengakibatkan celah ring berlebihan (>0,1 mm), dan kerusakan mahkota akibat detonasi kronis berupa lubang atau pitting. Diameter piston diukur dengan mikrometer luar pada titik 90° dari arah pin piston, sekitar 10 mm dari tepi bawah skirt.",
@@ -25,7 +25,7 @@
         },
         "Pin piston": {
           "fungsi": "Pin piston (gudgeon pin / wrist pin) adalah batang silinder baja berongga yang menghubungkan piston dengan ujung kecil (small end) connecting rod. Pin ini menjadi titik engsel yang memungkinkan sudut connecting rod berubah saat piston bergerak bolak-balik sedangkan crankshaft berputar.\n\nPin piston harus tahan terhadap beban alternating yang sangat besar — gaya tekan saat langkah tenaga dan gaya tarik saat langkah hisap — sambil berputar atau berayun di dalam bos pin. Material baja paduan karburasi (case-hardened) digunakan untuk memberikan permukaan keras yang tahan aus namun inti yang ulet.\n\nCelah antara pin dengan bos pin pada piston sangat kritis: clearance standar 0,002–0,012 mm (hampir interferensi). Celah berlebihan terdengar sebagai ketukan berirama di RPM rendah (pin knock) — berbeda dari suara valve train di atas dan rod knock yang lebih dalam. Pengukuran: gunakan mikrometer dan bore gauge pada bos pin dan diameter pin, hitung clearance.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/pinPiston.png",
           "caption": "Pin piston menghubungkan piston ke small end connecting rod"
         },
         "Bos pin piston": {
@@ -59,17 +59,17 @@
         },
         "Dudukan Katup": {
           "fungsi": "Dudukan katup (valve seat) adalah cincin logam keras yang tertanam di kepala silinder, membentuk permukaan kontak untuk kepala katup saat menutup. Dudukan biasanya terbuat dari paduan besi cor keras (hardened cast iron) atau paduan kobalt (stellite) yang jauh lebih tahan aus dan korosi dibandingkan material kepala silinder aluminium.\n\nSudut dudukan katup (seat angle) biasanya 45 derajat dan harus akurat karena menentukan kualitas segel. Lebar kontak (seat width) biasanya 1,0-1,5 mm — terlalu sempit menyebabkan konsentrasi tegangan dan kerusakan cepat, terlalu lebar mengurangi tekanan kontak sehingga segel tidak kedap. Reaming dan grinding dudukan dilakukan dengan mesin khusus pada overhaul kepala silinder.\n\nDudukan yang berlubang (pitting), terkikis, atau aus tidak dapat dibiarkan karena menyebabkan kebocoran kompresi permanen. Tanda dudukan bermasalah: tes tekanan kompresi rendah meski piston dan ring masih baik, atau tes kebocoran silinder menunjukkan udara bocor ke intake atau exhaust. Dudukan dapat diganti dengan press-fit insert baru selama diameter bor kepala silinder masih dalam toleransi.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/dudukanValve.png",
           "caption": "Dudukan katup menjadi bidang kontak segel kepala silinder"
         },
         "Pegas Katup": {
           "fungsi": "Pegas katup (valve spring) adalah pegas koil yang dipasang antara kepala silinder dan retainer (pengunci atas) untuk selalu mendorong katup dalam posisi tertutup. Tegangan pegas harus cukup kuat untuk menutup katup dengan cepat setelah cam lobe melewati puncaknya, namun tidak terlalu kuat karena akan meningkatkan beban gesek pada valve train dan mengurangi efisiensi mesin.\n\nPada mesin performa tinggi atau RPM tinggi, pegas katup dapat mengalami masalah valve float — saat RPM sangat tinggi, pegas tidak mampu menutup katup cukup cepat sebelum cam lobe kembali mendorong, menyebabkan katup melayang terbuka terus. Solusinya adalah menggunakan pegas yang lebih kaku (higher spring rate) atau pegas ganda (dual spring) di mana pegas dalam dan luar memiliki frekuensi resonansi berbeda.\n\nPemeriksaan pegas katup: ukur panjang bebas (free length) dengan jangka sorong dan bandingkan dengan spesifikasi minimum pabrikan. Pegas yang sudah memendek lebih dari 2 mm dari panjang bebas nominal harus diganti. Periksa juga kelurusan pegas dengan meletakkannya tegak di permukaan datar — pegas yang miring lebih dari 1,5 derajat dapat menyebabkan beban lateral pada batang katup dan mempercepat keausan guide.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/pegasKatup.glb",
           "caption": "Pegas katup memastikan katup selalu tertutup saat tidak digerakkan cam"
         },
         "Seal Batang Katup": {
           "fungsi": "Seal batang katup (valve stem seal) adalah komponen karet atau PTFE berukuran kecil yang dipasang di bagian atas valve guide untuk mencegah oli mesin mengalir turun sepanjang batang katup ke dalam ruang bakar (sisi intake) atau keluar melalui exhaust port. Oli yang masuk ruang bakar terbakar menghasilkan asap biru dari knalpot dan meningkatkan konsumsi oli secara signifikan.\n\nSeal katup bekerja dengan menjepit batang katup secara elastis — ketat cukup untuk menahan aliran oli namun longgar cukup untuk memungkinkan batang katup bergerak naik-turun tanpa gesekan berlebih. Desain seal umumnya tipe umbrella (payung) yang mengandalkan gravitasi, atau tipe positive seal (lebih umum pada mesin modern) yang menggunakan bibir karet yang aktif menyegel karena tekanan pegas internal kecil.\n\nSeal batang katup yang aus atau mengeras (elastisitas hilang) menyebabkan konsumsi oli tinggi terutama saat deselerasi, di mana vacuum tinggi di intake menarik oli melewati seal yang longgar. Gejala khas: asap biru sesaat saat mesin pertama dihidupkan pagi hari (oli terkumpul semalam di port intake), lalu hilang setelah mesin hangat. Seal dapat diganti tanpa membongkar kepala silinder menggunakan alat khusus dan valve spring compressor.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/sealBatangKatup.png",
           "caption": "Seal batang katup mencegah oli masuk ruang bakar"
         }
       }
@@ -82,8 +82,6 @@
         "Terminal",
         "Insulator",
         "Ribs",
-        "Gasket",
-        "Metal Case",
         "Insulator Tip",
         "Centre Electrode",
         "Side Electrode"
@@ -91,28 +89,18 @@
       "subComponentDetails": {
         "Terminal": {
           "fungsi": "Terminal adalah ujung logam paling atas busi yang menjadi titik sambungan antara kabel busi (spark plug wire / ignition lead) dengan badan busi. Terminal biasanya berulir atau berbentuk tiang logam yang dapat dipasangi boot kabel busi dengan cara dicolokkan atau dikencangkan dengan mur kecil, tergantung desain pabrikan.\n\nMaterial terminal terbuat dari baja berlapis nikel atau tembaga yang tahan terhadap korosi dan kondukif secara listrik. Terminal harus mampu meneruskan pulsa tegangan tinggi dari koil pengapian (10.000-25.000 V) dengan kehilangan energi seminimal mungkin ke elektroda di ujung bawah busi.\n\nTerminal yang berkarat atau korosi meningkatkan hambatan kontak antara kabel busi dan badan busi, sehingga sebagian energi pengapian terbuang sebagai panas di sambungan dan percikan busi menjadi lemah. Bersihkan korosi dengan amplas halus atau ganti busi jika terminal sudah sangat rusak.",
-          "imageUrl": null,
+          "imageUrl": "assets/images/terminalBusi.png",
           "caption": "Terminal — titik sambungan kabel busi ke badan busi"
         },
         "Insulator": {
           "fungsi": "Insulator adalah komponen berbahan keramik alumina (Al2O3) berkemurnian tinggi yang membungkus elektroda tengah dan memisahkannya secara elektrik dari metal case (selongsong logam) busi. Fungsi utamanya adalah mencegah kebocoran arus listrik tegangan tinggi dari elektroda tengah ke bodi busi sebelum mencapai celah elektroda.\n\nKeramik alumina dipilih karena kombinasi unik sifat-sifatnya: ketahanan listrik sangat tinggi (kekuatan dielektrik >10 kV/mm), konduktivitas termal yang baik untuk membuang panas dari elektroda tengah, ketahanan terhadap suhu ekstrem (hingga 1000 derajat C), dan ketahanan terhadap kejutan termal mendadak.\n\nInsulator yang retak, bahkan retak halus yang tidak terlihat secara visual, menyebabkan kebocoran arus (flashover) yang mencegah percikan terbentuk di celah elektroda. Busi dengan insulator retak harus segera diganti karena tidak dapat diperbaiki. Retak biasanya terjadi akibat benturan mekanis atau pendinginan mendadak (menyiram mesin panas dengan air).",
-          "imageUrl": null,
+          "imageUrl": "assets/images/insulatorBusi.png",
           "caption": "Insulator keramik isolasi elektroda tengah dari metal case"
         },
         "Ribs": {
           "fungsi": "Ribs (rusuk insulator) adalah tonjolan-tonjolan melingkar yang terdapat di bagian atas insulator keramik, tepat di bawah terminal dan di atas metal case. Ribs berfungsi untuk memperpanjang jalur permukaan (creepage distance) antara terminal bertegangan tinggi dan metal case yang terhubung ke massa mesin.\n\nTanpa ribs, jalur permukaan terpendek antara terminal dan metal case adalah garis lurus yang sangat pendek. Dengan adanya ribs, arus harus melewati lembah dan puncak ribs yang berliku-liku, sehingga jalur permukaan menjadi jauh lebih panjang. Ini sangat penting dalam kondisi lembab atau basah ketika lapisan air tipis di permukaan insulator dapat menjadi konduktor.\n\nJumlah dan profil ribs disesuaikan dengan tegangan pengapian yang digunakan. Busi untuk mesin performa tinggi dengan koil pengapian tegangan lebih tinggi biasanya memiliki lebih banyak ribs atau ribs yang lebih dalam. Ribs yang kotor oleh oli atau karbon harus dibersihkan karena kotoran menghubungkan puncak-puncak ribs dan mengurangi efektivitas pemanjangan jalur permukaan.",
           "imageUrl": "/assets/images/ribs.png",
           "caption": "Ribs memperpanjang jalur permukaan untuk mencegah flashover"
-        },
-        "Gasket": {
-          "fungsi": "Gasket (ring busi) adalah cincin logam tipis yang terpasang di pangkal ulir busi, berfungsi sebagai penyegel antara dudukan busi di kepala silinder dengan badan busi saat busi dikencangkan. Gasket memastikan tidak ada kebocoran gas bertekanan tinggi dari ruang bakar keluar melalui celah ulir busi.\n\nGasket biasanya terbuat dari baja lunak atau tembaga yang dapat berdeformasi plastis saat dikencangkan, mengisi ketidaksempurnaan permukaan mikro antara busi dan dudukan kepala silinder. Deformasi ini menciptakan segel metalik yang efektif bahkan pada tekanan pembakaran hingga 60 bar dan suhu hingga 400 derajat C.\n\nSaat busi dilepas dan dipasang kembali, gasket bekas yang sudah terdeformasi tidak boleh digunakan ulang untuk garansi segel yang sempurna — meskipun banyak mekanik yang menggunakannya kembali jika kondisi masih baik. Torsi pengencangan busi harus sesuai spesifikasi: terlalu kencang dapat merusak ulir kepala silinder, terlalu kendor menyebabkan kebocoran kompresi dan busi bisa terlepas sendiri.",
-          "imageUrl": null,
-          "caption": "Gasket menyegel antara busi dan dudukan kepala silinder"
-        },
-        "Metal Case": {
-          "fungsi": "Metal case (selongsong logam / badan busi) adalah casing baja heksagonal yang membungkus bagian bawah insulator dan menjadi struktur mekanis utama busi. Metal case memiliki dua fungsi utama: sebagai pegangan untuk kunci busi (hex wrench) saat pemasangan dan pelepasan, serta sebagai konduktor massa (ground) yang menghubungkan elektroda samping dan keseluruhan busi ke kepala silinder mesin.\n\nBagian bawah metal case dilengkapi ulir (thread) yang dikencangkan ke lubang berulir di kepala silinder. Standar ulir busi yang umum adalah M10, M12, atau M14 dengan berbagai panjang ulir (reach). Penggunaan busi dengan ukuran ulir yang tidak sesuai dapat merusak ulir kepala silinder yang mahal untuk diperbaiki.\n\nMetal case juga berperan dalam menentukan nilai panas busi (heat range). Panjang jalur konduksi panas dari ujung insulator melalui metal case ke kepala silinder menentukan seberapa cepat panas dibuang dari busi. Busi dingin (cold plug) membuang panas lebih cepat, cocok untuk mesin berperforma tinggi. Busi panas (hot plug) mempertahankan panas lebih lama untuk pembakaran deposit, cocok untuk mesin standar putaran rendah.",
-          "imageUrl": null,
-          "caption": "Metal case sebagai struktur mekanis dan konduktor massa busi"
         },
         "Insulator Tip": {
           "fungsi": "Insulator tip adalah bagian ujung bawah insulator keramik yang menonjol ke dalam ruang bakar, mengelilingi dan melindungi bagian bawah elektroda tengah. Insulator tip terpapar langsung ke suhu dan tekanan pembakaran yang ekstrem, serta ke campuran udara-bahan bakar yang bergolak di dalam ruang bakar.\n\nPanjang dan bentuk insulator tip sangat menentukan karakteristik termal busi (heat range). Insulator tip yang panjang memiliki luas permukaan lebih besar yang terpapar ke ruang bakar, menyerap lebih banyak panas, dan memerlukan jalur konduksi yang lebih panjang untuk membuang panas ke metal case — ini adalah karakteristik busi panas. Insulator tip yang pendek membuang panas lebih cepat — karakteristik busi dingin.\n\nWarna dan kondisi insulator tip adalah indikator penting kondisi pembakaran mesin. Insulator tip berwarna coklat muda atau abu-abu beige menandakan pembakaran normal. Hitam dan berkarbon menandakan campuran terlalu kaya atau busi terlalu dingin. Putih atau keabuan menandakan campuran terlalu miskin atau busi terlalu panas (overheating). Meleleh atau berlubang menandakan detonasi parah atau pre-ignition yang mengancam kerusakan mesin.",
@@ -121,12 +109,12 @@
         },
         "Centre Electrode": {
           "fungsi": "Centre electrode (elektroda tengah) adalah konduktor logam di pusat busi yang menjadi titik asal percikan api pengapian. Elektroda tengah terhubung ke terminal di atas melalui konduktor internal, dan menerima tegangan tinggi dari koil pengapian. Percikan melompat dari ujung elektroda tengah melewati celah udara (spark gap) menuju elektroda samping yang terhubung ke massa.\n\nMaterial elektroda tengah sangat menentukan usia pakai busi. Busi standar menggunakan nikel-alloy yang tahan panas namun relatif cepat aus. Busi premium menggunakan inti tembaga (copper core) untuk konduktivitas termal lebih baik. Busi long-life menggunakan platinum atau iridium di ujung elektroda — material sangat keras dengan titik leleh sangat tinggi yang menghasilkan keausan sangat lambat dan umur pakai 3-5 kali lebih lama.\n\nElektroda tengah yang aus terlihat dari ujungnya yang sudah bulat atau terkikis, bukan lagi tajam/datar. Ujung elektroda yang aus memerlukan tegangan lebih tinggi untuk memicu percikan (karena efek corona berkurang pada ujung yang bulat), memperberat beban koil pengapian dan menyebabkan misfire pada kondisi beban tinggi. Ukur celah elektroda dengan feeler gauge secara berkala dan ganti busi sesuai interval servis pabrikan.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/centreElectrode.png",
           "caption": "Centre electrode sumber percikan api pengapian"
         },
         "Side Electrode": {
           "fungsi": "Side electrode (elektroda samping / elektroda massa) adalah elektroda yang menekuk dari metal case busi ke arah elektroda tengah, membentuk celah (gap) tempat percikan api melompat. Elektroda samping terhubung secara elektrik ke metal case dan melaluinya ke massa mesin, sehingga berfungsi sebagai elektroda negatif (ground) dalam rangkaian pengapian.\n\nCelah antara elektroda tengah dan elektroda samping (spark gap) adalah salah satu spesifikasi paling kritis pada busi. Celah yang terlalu kecil menghasilkan percikan yang terlalu lemah dan pendek, pembakaran tidak sempurna. Celah yang terlalu besar memerlukan tegangan lebih tinggi untuk memicu percikan, berisiko misfire terutama saat mesin dalam kondisi beban tinggi atau komponen pengapian sudah sedikit lemah. Celah standar umumnya 0,6-0,9 mm, diukur dan disetel dengan feeler gauge.\n\nElektroda samping juga mengalami keausan seiring waktu akibat erosi ion saat setiap percikan terjadi. Keausan terlihat dari bentuk elektroda yang semakin tirus atau berlubang di sisi yang menghadap elektroda tengah. Busi dengan elektroda samping yang aus harus diganti karena celah yang sudah tidak sesuai spesifikasi tidak dapat disetel ulang dengan akurat — elektroda yang lemah mudah patah jika dibengkokkan.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/sideElectrode.png",
           "caption": "Side electrode membentuk celah percikan dan terhubung ke massa mesin"
         }
       }
@@ -161,17 +149,17 @@
         },
         "Baut conrod": {
           "fungsi": "Baut conrod (connecting rod bolt) adalah pengikat presisi yang menyatukan tutup big end ke bodi connecting rod. Harus mampu menahan beban fatigue siklis sangat tinggi tanpa mengalami kendur, karena kegagalan baut conrod adalah salah satu kerusakan engine paling katastrofik yang dapat menghancurkan blok silinder.\n\nBaut conrod dikencangkan menggunakan metode torsi-sudut (torque-angle) atau pengukuran elongasi aktual dengan mikrometer khusus — bukan hanya torsi konvensional. Elongasi baut yang tepat memastikan pre-load yang konsisten. Sebagian besar pabrikan mewajibkan penggantian baut conrod setiap kali dibongkar karena mengalami deformasi plastis minimal.\n\nPemeriksaan: ukur panjang baut dengan mikrometer sebelum dan sesudah pengencangan untuk memverifikasi elongasi sesuai spesifikasi. Baut yang melebihi panjang maksimum, menunjukkan deformasi, korosi, atau kerusakan ulir wajib diganti tanpa pengecualian — jangan menggunakan kembali baut bekas.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/bautConrod.png",
           "caption": "Gambar baut connecting rod"
         },
         "Bearing big end": {
           "fungsi": "Bearing big end (shell bearing / half-shell bearing) adalah dua keping bantalan setengah-lingkaran tipis yang dipasang di dalam big end connecting rod dan rod cap. Material bearing adalah paduan tri-metal: baja (backing), copper-lead atau aluminum alloy (lining), dan lapisan tipis babbit/overlay untuk permukaan kerja.\n\nBearing ini beroperasi dalam kondisi pelumasan hidrodinamik — film oli bertekanan memisahkan permukaan bearing dari crank pin sehingga tidak terjadi kontak logam-ke-logam. Ketebalan film oli kritis ini hanya 0,005–0,020 mm, itulah mengapa oil clearance yang tepat dan kualitas oli sangat menentukan umur bearing.\n\nPemeriksaan: periksa tanda overheating (warna biru-hitam), spalling (terkelupas), scoring (goresan dalam), atau erosi korosi pada bearing yang dilepas. Bearing dengan tanda keausan berlebih atau overlay habis harus diganti. Tersedia dalam ukuran standar dan berbagai undersize untuk mencocokkan crank pin yang sudah di-regrind.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/bearingBigEnd.png",
           "caption": "Gambar bearing big end"
         },
         "Bushing small end": {
           "fungsi": "Bushing small end adalah silinder berongga tipis yang dipreskan ke dalam lubang small end connecting rod sebagai bantalan pin piston. Material bronze (paduan tembaga-timah) atau bimetal (baja berlapis bronze) dipilih karena kemampuan membentuk film oli yang baik dan sifat self-lubricating dalam kondisi pelumasan terbatas.\n\nBerbeda dengan big end yang menggunakan shell bearing dengan oli bertekanan, small end biasanya mendapat pelumasan dari percikan oli (splash lubrication) atau melalui lubang kecil pada connecting rod. Karena pasokan oli lebih terbatas, bushing harus memiliki sifat self-lubricating yang lebih tinggi.\n\nPemeriksaan: ukur diameter dalam bushing dengan bore gauge. Clearance normal terhadap pin piston biasanya 0,005–0,020 mm. Bushing yang aus, oval, atau permukaannya kasar harus dipress-out dan diganti dengan bushing baru yang dipress-in, kemudian di-ream ke diameter yang tepat sesuai spesifikasi pin piston.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/bushingSmallEnd.png",
           "caption": "Gambar bushing small end"
         }
       }
@@ -216,7 +204,7 @@
         },
         "Flywheel": {
           "fungsi": "Flywheel adalah cakram berat yang dipasang di ujung belakang crankshaft. Massa flywheel menyimpan energi kinetik dari langkah tenaga dan melepaskannya secara gradual pada tiga langkah lainnya (hisap, kompresi, buang), menjaga rotasi engine tetap halus dan konsisten di semua RPM.\n\nPada kendaraan transmisi manual, flywheel juga menjadi komponen sistem kopling — permukaan geseknya bersentuhan dengan plat kopling. Flywheel dilengkapi ring gear di tepinya sebagai penghubung dengan motor starter. Massa flywheel besar memberikan putaran yang lebih halus namun respons akselerasi lebih lambat.\n\nPemeriksaan: periksa kerataan permukaan gesek flywheel dengan dial gauge (runout maksimum biasanya 0,05 mm). Permukaan yang bergelombang atau bergaris dalam dapat diface-grinding. Periksa kondisi ring gear dari gigi yang rusak atau aus yang menyebabkan masalah start (starter selip atau bunyi grinding).",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/flywheel.glb",
           "caption": "Gambar flywheel"
         }
       }
@@ -262,7 +250,7 @@
     },
     "Flywheel": {
       "fungsi": "Flywheel (roda gila) adalah cakram logam bermassa besar yang terpasang pada ujung crankshaft, berfungsi menyimpan energi kinetik rotasi saat langkah tenaga dan melepaskannya secara bertahap untuk mempertahankan putaran crankshaft selama tiga langkah lainnya (hisap, kompresi, buang) yang tidak menghasilkan tenaga.\n\nTanpa flywheel, engine 1-silinder hanya akan berputar lancar saat ada langkah tenaga dan melambat tajam di antara langkah tenaga — getaran ekstrem akan membuat engine tidak dapat digunakan. Flywheel dengan momen inersia yang cukup menghaluskan variasi torsi ini menjadi putaran yang stabil. Engine multi-silinder memiliki langkah tenaga yang tumpang tindih sehingga flywheel yang lebih ringan sudah cukup.\n\nPada sepeda motor, flywheel sering berfungsi ganda sebagai magnet flywheel (magneto/alternator) dengan magnet permanen yang dipres atau ditanam di sekeliling lingkar luar flywheel. Putaran flywheel menginduksi arus pada stator (koil yang diam) untuk mengisi baterai dan mensuplai listrik. Berat flywheel memengaruhi respons engine: flywheel ringan → respons cepat (engine revvy) namun idle kasar; flywheel berat → idle halus namun respons lebih lambat.",
-      "imageUrl": null,
+      "imageUrl": "assets/images/flywheel.glb",
       "caption": "Flywheel menyimpan energi rotasi dan menghaluskan putaran crankshaft",
       "subComponents": [
         "Magnet Permanen",
@@ -272,17 +260,17 @@
       "subComponentDetails": {
         "Magnet Permanen": {
           "fungsi": "Magnet permanen (permanent magnet) adalah magnet berbasis ferit atau neodymium yang dipres atau direkatkan ke permukaan dalam atau lingkar luar flywheel. Saat flywheel berputar, medan magnet dari magnet-magnet ini menyapu koil stator yang diam, menginduksi arus listrik AC melalui prinsip induksi elektromagnetik (hukum Faraday).\n\nSistem ini disebut flywheel magneto atau alternator flywheel — sumber tenaga listrik utama pada sepeda motor untuk mengisi baterai (setelah dikonversi ke DC oleh rectifier-regulator) dan mensuplai sistem pengapian, lampu, dan aksesori elektronik lainnya. Kapasitas pembangkitan listrik: 100–400 watt tergantung ukuran dan jumlah magnet.\n\nMagnet yang melemah (demagnetisasi) akibat panas berlebih atau benturan menyebabkan pengisian baterai tidak optimal dan sistem pengapian lemah di RPM rendah. Gejala: baterai terus soak meski sudah dicas, pengapian lemah saat idle. Kekuatan magnet diukur dengan gaussmeter; jika di bawah spesifikasi, flywheel harus diganti (magnet tidak dapat dipulihkan dengan mudah di bengkel umum).",
-          "imageUrl": null,
+          "imageUrl": "assets/images/magnetPermanen.png",
           "caption": "Magnet permanen pada flywheel membangkitkan listrik untuk sistem pengapian"
         },
         "Ring Gear": {
           "fungsi": "Ring gear adalah gigi besar yang melingkar di sekeliling tepi flywheel, berfungsi sebagai tempat gigi pinion motor starter (starting motor) berkaitan saat menghidupkan engine. Saat kunci kontak diputar ke posisi start, motor starter berputar dan gigi pinion kecilnya berekatan dengan ring gear yang besar, memutar crankshaft untuk menginisiasi siklus pembakaran pertama.\n\nRasio gigi antara pinion starter dengan ring gear biasanya sangat besar (10:1 hingga 15:1) untuk memberikan torsi awal yang besar dari motor starter yang kecil. Ini memungkinkan motor starter bertenaga relatif kecil (150–400 watt) untuk memutar crankshaft beserta semua hambatan kompresi pada RPM yang cukup untuk pembakaran.\n\nKerusakan ring gear: gigi yang ompong atau aus menyebabkan motor starter slip (terdengar suara geretan saat start) atau starter tidak bisa memutar crankshaft. Pada flywheel yang menyatu, jika ring gear rusak seluruh flywheel harus diganti. Pada flywheel yang ring gear-nya terpisah (dipres panas), ring gear dapat diganti sendiri — panaskan ring gear hingga mengembang, ketuk keluar dengan palu, pasang ring gear baru yang sudah dipanaskan.",
-          "imageUrl": null,
+          "imageUrl": "assets/images/ringGear.png",
           "caption": "Ring gear sebagai tempat kaitan gigi pinion motor starter"
         },
         "Bearing Flywheel": {
           "fungsi": "Bearing flywheel (pilot bearing / spigot bearing) adalah bearing kecil yang terpasang di pusat flywheel atau di ujung crankshaft di balik flywheel. Pada sepeda motor dengan transmisi manual, bearing ini menopang ujung input shaft transmisi saat kopling dioperasikan, memungkinkan input shaft berputar bebas relatif terhadap flywheel saat kopling dilepas.\n\nBearing ini juga menjadi referensi pemusatan (centering) antara crankshaft dan transmisi. Jika bearing aus atau macet, input shaft tidak dapat berputar bebas saat pedal/tuas kopling ditekan — engine terasa 'berat' saat kopling dilepas atau transmisi susah dimasukkan.\n\nPemeriksaan: saat kopling dilepas, kopling terasa berat atau terdapat getaran di pedal/tuas kopling. Bearing pilot yang macet totalnya sangat mudah dideteksi — engine mati saat gigi dimasukkan meski kopling ditekan. Penggantian bearing pilot memerlukan slide hammer atau puller khusus untuk melepasnya dari dalam flywheel. Pasang bearing baru dengan membekukan bearing (freezer) dan menggunakan mandrel yang presisi agar tidak rusak saat dipres masuk.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/bearingFlywheel.png",
           "caption": "Bearing flywheel menopang dan menyelaraskan ujung input shaft transmisi"
         }
       }

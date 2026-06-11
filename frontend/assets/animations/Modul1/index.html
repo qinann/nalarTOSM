@@ -16,6 +16,27 @@
         transform: translate(-50%, -50%); z-index: 200;
       }
     </style>
+    <script>
+      // Block scroll immediately so Unity gets all wheel events
+      ['wheel','mousewheel','DOMMouseScroll'].forEach(function(type) {
+        window.addEventListener(type, function(e) { e.preventDefault(); }, { passive: false });
+        document.addEventListener(type, function(e) { e.preventDefault(); }, { passive: false });
+      });
+      // Receive wheel from parent page via postMessage
+      window.addEventListener('message', function(e) {
+        if (e.data && e.data.type === 'wheel') {
+          var canvas = document.querySelector('#unity-canvas');
+          if (canvas) {
+            canvas.focus();
+            var evt = new WheelEvent('wheel', {
+              deltaY: e.data.deltaY, deltaMode: 0,
+              bubbles: true, cancelable: true
+            });
+            canvas.dispatchEvent(evt);
+          }
+        }
+      });
+    </script>
   </head>
   <body>
     <div id="unity-container">
@@ -69,6 +90,10 @@
           window.unityInstance = unityInstance;
           canvas.focus();
           canvas.addEventListener('mouseenter', () => canvas.focus());
+
+          // Prevent browser from intercepting scroll — let Unity handle zoom
+          document.addEventListener('wheel', e => e.preventDefault(), { passive: false });
+          canvas.addEventListener('wheel',  e => e.preventDefault(), { passive: false });
         }).catch((msg) => alert(msg));
       };
       document.body.appendChild(script);

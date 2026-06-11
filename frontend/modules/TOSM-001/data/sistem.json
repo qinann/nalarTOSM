@@ -22,7 +22,7 @@
         },
         "Liner / sleeve": {
           "fungsi": "Liner (cylinder sleeve) adalah lapisan tabung logam yang dipasang di dalam blok silinder sebagai permukaan luncur piston. Terdapat dua tipe: liner basah (wet liner) yang bersentuhan langsung dengan coolant, dan liner kering (dry liner) yang dipreskan ke dalam blok tanpa kontak cairan pendingin.\n\nMaterial liner umumnya besi cor kelabu atau besi cor paduan dengan kromium/molybdenum untuk ketahanan aus optimal. Beberapa engine modern menggunakan liner nikasil (nikel-silikon karbida) pada blok aluminium untuk ketahanan aus yang sangat tinggi.\n\nPemeriksaan: ukur diameter liner di bagian atas (zona keausan tertinggi), tengah, dan bawah menggunakan bore gauge. Tanda keausan meliputi permukaan bergaris, oval, atau taper. Liner yang aus dapat diganti (press-fit) tanpa mengganti seluruh blok silinder.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/liner.png",
           "caption": "Gambar liner silinder"
         },
         "Water jacket": {
@@ -42,7 +42,7 @@
         },
         "Baut tanam": {
           "fungsi": "Baut tanam (stud bolt) adalah batang berulir yang tertanam permanen di blok silinder sebagai pengikat kepala silinder. Berbeda dari baut biasa, stud bolt dipasang satu ujung ke blok dan mur dikencangkan di ujung lainnya melewati kepala silinder dan gasket, memberikan distribusi beban yang lebih merata.\n\nMaterial baja paduan kekuatan tinggi yang mampu menahan torsi pengencangan besar (umumnya 35–60 Nm) sekaligus tekanan gas pembakaran siklis. Pola pengencangan mur harus dilakukan secara berurutan menyilang dan bertahap (misal: 20 Nm → 40 Nm → torsi final) untuk distribusi tekanan yang merata pada gasket.\n\nPemeriksaan: periksa kondisi ulir (tidak aus, bengkok, atau berkarat) dan panjang baut tanam yang masih memenuhi kedalaman minimum pemasangan. Baut yang bengkok atau ulir rusak wajib diganti. Beberapa pabrikan menentukan baut tanam sebagai komponen sekali pakai (stretch bolt).",
-          "imageUrl": null,
+          "imageUrl": "assets/images/bautTanam.png",
           "caption": "Gambar baut tanam"
         }
       }
@@ -73,7 +73,7 @@
         },
         "Port buang": {
           "fungsi": "Port buang (exhaust port) mengalirkan gas sisa pembakaran bertekanan tinggi dan bersuhu sangat tinggi (600–900°C) dari ruang bakar menuju exhaust manifold dan sistem knalpot. Bentuk dan ukurannya memengaruhi efisiensi pembuangan dan back-pressure sistem knalpot.\n\nPort buang menghadapi kondisi termal jauh lebih ekstrem dari port masuk. Panas berlebih di area ini menjadi penyebab utama retak kepala silinder. Area di antara dua port buang (bridge) adalah titik paling rentan terhadap retak termal akibat tegangan panas siklis.\n\nPemeriksaan: periksa retak pada permukaan port terutama di sekitar dudukan katup buang dan di bridge antar port. Deposit karbon yang mempersempit port harus dibersihkan saat overhaul. Kepala silinder dengan retak di port buang umumnya tidak dapat diperbaiki dan harus diganti.",
-          "imageUrl": "/assets/images/portKeluang.png",
+          "imageUrl": "/assets/images/portKeluar.png",
           "caption": "Gambar port buang"
         },
         "Dudukan busi": {
@@ -116,7 +116,7 @@
         },
         "Pin piston": {
           "fungsi": "Pin piston (gudgeon pin / wrist pin) adalah poros silindris presisi dari baja paduan yang berfungsi sebagai engsel antara piston dan small end connecting rod. Menerima beban geser sangat besar saat pembakaran — gaya aksial dari piston dialihkan ke connecting rod melalui bidang kontak yang relatif sempit.\n\nTerdapat tiga metode pemasangan: floating pin (bebas berputar di piston dan bushing conrod, ditahan circlip), semi-floating (salah satu ujung dikunci di piston), dan full-floating. Sistem floating paling umum pada engine modern karena lebih tahan lama dan mudah perawatan.\n\nPemeriksaan: ukur diameter pin piston dengan mikrometer dan diameter lubang pin di piston dengan bore gauge kecil. Clearance standar umumnya 0,004–0,020 mm. Pin yang longgar menimbulkan suara 'tik-tik' berirama saat engine panas (pin knock) dan harus segera diganti untuk mencegah kerusakan lebih lanjut.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/pinPiston.png",
           "caption": "Gambar pin piston"
         },
         "Bos pin piston": {
@@ -234,17 +234,17 @@
         },
         "Baut conrod": {
           "fungsi": "Baut conrod (connecting rod bolt) adalah pengikat presisi yang menyatukan tutup big end ke bodi connecting rod. Harus mampu menahan beban fatigue siklis sangat tinggi tanpa mengalami kendur, karena kegagalan baut conrod adalah salah satu kerusakan engine paling katastrofik yang dapat menghancurkan blok silinder.\n\nBaut conrod dikencangkan menggunakan metode torsi-sudut (torque-angle) atau pengukuran elongasi aktual dengan mikrometer khusus — bukan hanya torsi konvensional. Elongasi baut yang tepat memastikan pre-load yang konsisten. Sebagian besar pabrikan mewajibkan penggantian baut conrod setiap kali dibongkar karena mengalami deformasi plastis minimal.\n\nPemeriksaan: ukur panjang baut dengan mikrometer sebelum dan sesudah pengencangan untuk memverifikasi elongasi sesuai spesifikasi. Baut yang melebihi panjang maksimum, menunjukkan deformasi, korosi, atau kerusakan ulir wajib diganti tanpa pengecualian — jangan menggunakan kembali baut bekas.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/bautConrod.png",
           "caption": "Gambar baut connecting rod"
         },
         "Bearing big end": {
           "fungsi": "Bearing big end (shell bearing / half-shell bearing) adalah dua keping bantalan setengah-lingkaran tipis yang dipasang di dalam big end connecting rod dan rod cap. Material bearing adalah paduan tri-metal: baja (backing), copper-lead atau aluminum alloy (lining), dan lapisan tipis babbit/overlay untuk permukaan kerja.\n\nBearing ini beroperasi dalam kondisi pelumasan hidrodinamik — film oli bertekanan memisahkan permukaan bearing dari crank pin sehingga tidak terjadi kontak logam-ke-logam. Ketebalan film oli kritis ini hanya 0,005–0,020 mm, itulah mengapa oil clearance yang tepat dan kualitas oli sangat menentukan umur bearing.\n\nPemeriksaan: periksa tanda overheating (warna biru-hitam), spalling (terkelupas), scoring (goresan dalam), atau erosi korosi pada bearing yang dilepas. Bearing dengan tanda keausan berlebih atau overlay habis harus diganti. Tersedia dalam ukuran standar dan berbagai undersize untuk mencocokkan crank pin yang sudah di-regrind.",
-          "imageUrl": null,
+          "imageUrl": "assets/images/bearingBigEnd.png",
           "caption": "Gambar bearing big end"
         },
         "Bushing small end": {
           "fungsi": "Bushing small end adalah silinder berongga tipis yang dipreskan ke dalam lubang small end connecting rod sebagai bantalan pin piston. Material bronze (paduan tembaga-timah) atau bimetal (baja berlapis bronze) dipilih karena kemampuan membentuk film oli yang baik dan sifat self-lubricating dalam kondisi pelumasan terbatas.\n\nBerbeda dengan big end yang menggunakan shell bearing dengan oli bertekanan, small end biasanya mendapat pelumasan dari percikan oli (splash lubrication) atau melalui lubang kecil pada connecting rod. Karena pasokan oli lebih terbatas, bushing harus memiliki sifat self-lubricating yang lebih tinggi.\n\nPemeriksaan: ukur diameter dalam bushing dengan bore gauge. Clearance normal terhadap pin piston biasanya 0,005–0,020 mm. Bushing yang aus, oval, atau permukaannya kasar harus dipress-out dan diganti dengan bushing baru yang dipress-in, kemudian di-ream ke diameter yang tepat sesuai spesifikasi pin piston.",
-          "imageUrl": null,
+          "imageUrl": "assets/images/bushingSmallEnd.png",
           "caption": "Gambar bushing small end"
         }
       }
@@ -273,17 +273,17 @@
         },
         "Dudukan Katup": {
           "fungsi": "Dudukan katup (valve seat) adalah cincin logam keras yang tertanam di kepala silinder, membentuk permukaan kontak untuk kepala katup saat menutup. Dudukan biasanya terbuat dari paduan besi cor keras (hardened cast iron) atau paduan kobalt (stellite) yang jauh lebih tahan aus dan korosi dibandingkan material kepala silinder aluminium.\n\nSudut dudukan katup (seat angle) biasanya 45 derajat dan harus akurat karena menentukan kualitas segel. Lebar kontak (seat width) biasanya 1,0-1,5 mm — terlalu sempit menyebabkan konsentrasi tegangan dan kerusakan cepat, terlalu lebar mengurangi tekanan kontak sehingga segel tidak kedap. Reaming dan grinding dudukan dilakukan dengan mesin khusus pada overhaul kepala silinder.\n\nDudukan yang berlubang (pitting), terkikis, atau aus tidak dapat dibiarkan karena menyebabkan kebocoran kompresi permanen. Tanda dudukan bermasalah: tes tekanan kompresi rendah meski piston dan ring masih baik, atau tes kebocoran silinder menunjukkan udara bocor ke intake atau exhaust. Dudukan dapat diganti dengan press-fit insert baru selama diameter bor kepala silinder masih dalam toleransi.",
-          "imageUrl": null,
+          "imageUrl": "/assets/images/dudukanValve.png",
           "caption": "Dudukan katup menjadi bidang kontak segel kepala silinder"
         },
         "Pegas Katup": {
           "fungsi": "Pegas katup (valve spring) adalah pegas koil yang dipasang antara kepala silinder dan retainer (pengunci atas) untuk selalu mendorong katup dalam posisi tertutup. Tegangan pegas harus cukup kuat untuk menutup katup dengan cepat setelah cam lobe melewati puncaknya, namun tidak terlalu kuat karena akan meningkatkan beban gesek pada valve train dan mengurangi efisiensi mesin.\n\nPada mesin performa tinggi atau RPM tinggi, pegas katup dapat mengalami masalah valve float — saat RPM sangat tinggi, pegas tidak mampu menutup katup cukup cepat sebelum cam lobe kembali mendorong, menyebabkan katup melayang terbuka terus. Solusinya adalah menggunakan pegas yang lebih kaku (higher spring rate) atau pegas ganda (dual spring) di mana pegas dalam dan luar memiliki frekuensi resonansi berbeda.\n\nPemeriksaan pegas katup: ukur panjang bebas (free length) dengan jangka sorong dan bandingkan dengan spesifikasi minimum pabrikan. Pegas yang sudah memendek lebih dari 2 mm dari panjang bebas nominal harus diganti. Periksa juga kelurusan pegas dengan meletakkannya tegak di permukaan datar — pegas yang miring lebih dari 1,5 derajat dapat menyebabkan beban lateral pada batang katup dan mempercepat keausan guide.",
-          "imageUrl": null,
+          "imageUrl": "assets/images/pegasKatup.glb",
           "caption": "Pegas katup memastikan katup selalu tertutup saat tidak digerakkan cam"
         },
         "Seal Batang Katup": {
           "fungsi": "Seal batang katup (valve stem seal) adalah komponen karet atau PTFE berukuran kecil yang dipasang di bagian atas valve guide untuk mencegah oli mesin mengalir turun sepanjang batang katup ke dalam ruang bakar (sisi intake) atau keluar melalui exhaust port. Oli yang masuk ruang bakar terbakar menghasilkan asap biru dari knalpot dan meningkatkan konsumsi oli secara signifikan.\n\nSeal katup bekerja dengan menjepit batang katup secara elastis — ketat cukup untuk menahan aliran oli namun longgar cukup untuk memungkinkan batang katup bergerak naik-turun tanpa gesekan berlebih. Desain seal umumnya tipe umbrella (payung) yang mengandalkan gravitasi, atau tipe positive seal (lebih umum pada mesin modern) yang menggunakan bibir karet yang aktif menyegel karena tekanan pegas internal kecil.\n\nSeal batang katup yang aus atau mengeras (elastisitas hilang) menyebabkan konsumsi oli tinggi terutama saat deselerasi, di mana vacuum tinggi di intake menarik oli melewati seal yang longgar. Gejala khas: asap biru sesaat saat mesin pertama dihidupkan pagi hari (oli terkumpul semalam di port intake), lalu hilang setelah mesin hangat. Seal dapat diganti tanpa membongkar kepala silinder menggunakan alat khusus dan valve spring compressor.",
-          "imageUrl": null,
+          "imageUrl": "assets/images/sealBatangKatup.png",
           "caption": "Seal batang katup mencegah oli masuk ruang bakar"
         }
       }
