@@ -1,10 +1,25 @@
 {
-  "imageUrl": null,
+  "imageUrl": "/assets/images/praktekKerja.jpg",
   "steps": [
-    { "title": "Persiapan & K3", "desc": "Siapkan multimeter digital, injektor EFI sepeda motor (atau unit peraga), buku panduan servis, kain lap bersih, dan wadah kecil. Pastikan kunci kontak OFF dan tekanan bahan bakar sudah dilepas (tekan katup Schrader pada fuel rail atau ikuti prosedur depressurize sesuai pabrikan) sebelum melepas injektor. Bahan bakar bertekanan 250–300 kPa dapat menyemprot dengan kencang — jauhkan dari sumber api dan gunakan APD." },
-    { "title": "Pemeriksaan Hambatan Koil Injektor", "desc": "Lepas soket listrik injektor. Set multimeter ke mode resistansi (Ω). Tempelkan kedua probe ke dua terminal soket injektor. Baca nilai resistansi: tipe high impedance (saturated drive) biasanya 10–17 Ω; tipe low impedance (peak-and-hold) biasanya 2–5 Ω. Pastikan nilai sesuai spesifikasi pabrikan di buku panduan. Jika hambatan terbaca 0 Ω (short circuit) atau OL/infinity (open circuit), koil solenoid rusak dan injektor harus diganti." },
-    { "title": "Pemeriksaan O-ring dan Filter Strainer", "desc": "Setelah injektor dilepas dari fuel rail, periksa O-ring atas dan bawah secara visual: cari tanda retak, mengeras, menggembung, atau deformasi permanen. O-ring yang rusak menyebabkan kebocoran bahan bakar dan penurunan tekanan fuel rail. Periksa filter strainer di ujung inlet injektor — jika berwarna coklat atau tersumbat, bersihkan dengan udara bertekanan rendah. Jika filter tidak terpisah, dan injektor kotor, lakukan cleaning profesional atau ganti injektor." },
-    { "title": "Uji Pola Semprotan Visual (Bench Test)", "desc": "Sambungkan injektor ke fuel rail atau gunakan tester injektor khusus. Letakkan kertas putih di bawah nozzle untuk merekam pola semprotan. Aktifkan injektor secara singkat (melalui tester atau jembatan sinyal ECU) dan amati: pola yang baik berbentuk kerucut atomisasi halus dan simetris. Tanda injektor bermasalah: semprotan miring ke satu sisi, aliran tunggal tanpa atomisasi, atau tetesan besar yang jatuh tanpa menjadi kabut. Untuk motor multi-silinder, bandingkan volume flow — perbedaan lebih dari 10% mengindikasikan injektor perlu dibersihkan atau diganti." },
-    { "title": "Pemasangan Kembali & Verifikasi", "desc": "Ganti O-ring baru sebelum memasang injektor ke fuel rail — lumasi O-ring dengan sedikit oli mesin bersih agar tidak sobek saat dimasukkan. Pasang injektor ke rail dan kencangkan baut klip penjepit sesuai torsi spesifikasi. Sambungkan soket listrik injektor. Nyalakan kunci kontak tanpa menghidupkan mesin dan amati area O-ring selama 30 detik untuk memastikan tidak ada kebocoran bahan bakar. Jika tidak ada tanda bocor, hidupkan mesin dan periksa kembali." }
+    {
+      "title": "Persiapan & K3",
+      "desc": "Siapkan APD (sarung tangan isolasi, kacamata pelindung). Siapkan multimeter digital, amperemeter clamp, wiring diagram sistem starter sepeda motor yang akan diperiksa, dan buku servis pabrikan. Identifikasi lokasi relay starter, motor starter, tombol starter, dan switch interlock pada kendaraan. Pastikan area kerja bebas dari bahan yang mudah terbakar."
+    },
+    {
+      "title": "Pemeriksaan Baterai & Rangkaian Utama",
+      "desc": "Ukur tegangan baterai (harus ≥ 12,6V saat mesin mati). Periksa kondisi terminal baterai dari korosi dan pastikan semua koneksi kencang. Ukur tegangan saat cranking di terminal baterai (tidak boleh di bawah 9,6V). Periksa kondisi kabel dari baterai ke relay starter dan dari relay ke motor starter — cari tanda kabel hangus, isolasi retak, atau koneksi longgar."
+    },
+    {
+      "title": "Pemeriksaan Relay Starter",
+      "desc": "Ukur resistansi kumparan relay (antara terminal S dan massa) dengan multimeter — bandingkan dengan spesifikasi. Aktifkan kunci kontak ke posisi ON, tekan tombol starter sambil mengukur tegangan di terminal kontrol (S) relay — harus ada tegangan baterai. Dengarkan apakah relay berbunyi klik. Jika ada klik, ukur tegangan di terminal output motor (M) relay — harus sama dengan tegangan baterai."
+    },
+    {
+      "title": "Pemeriksaan Arus Starter & Motor Starter",
+      "desc": "Pasang amperemeter clamp pada kabel positif dari relay ke motor starter. Aktifkan starter dan catat arus yang terukur — bandingkan dengan spesifikasi pabrikan (umumnya 60–150 Ampere). Arus terlalu rendah menunjukkan motor starter lemah atau koneksi buruk. Arus sangat tinggi menunjukkan motor starter atau gigi pinion macet. Periksa kondisi brush motor starter jika motor dapat diakses."
+    },
+    {
+      "title": "Pemeriksaan Interlock & Diagnosis",
+      "desc": "Uji fungsional switch interlock: aktifkan kunci kontak, pastikan engine tidak menyala saat standar samping turun atau kopling tidak ditekan. Ukur kontinuitas switch interlock pada posisi aktif dan non-aktif. Rangkum semua hasil pemeriksaan, identifikasi komponen bermasalah, dan susun langkah perbaikan sesuai prioritas. Verifikasi perbaikan dengan uji coba start engine secara penuh."
+    }
   ]
 }

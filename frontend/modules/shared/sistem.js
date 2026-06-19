@@ -5,7 +5,7 @@ let activeComp = null;
     let unityIframe = null;
     document.addEventListener('wheel', function(e) {
         const iframe = e.target.closest('.diagram-box')?.querySelector('iframe')
-                    || document.querySelector('.diagram-box iframe');
+                    || document.querySelector('.tab-panel.active .diagram-box iframe');
         if (iframe) {
             e.preventDefault();
             iframe.focus();

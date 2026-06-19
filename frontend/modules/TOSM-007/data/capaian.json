@@ -1,13 +1,14 @@
 {
   "skkni": ["SKKNI No. 391 Tahun 2014 – Teknik Otomotif Kendaraan Ringan", "SKKNI No. 212 Tahun 2019 – Pemeliharaan dan Perbaikan Mesin Sepeda Motor"],
-  "cp": "Pada akhir pembelajaran modul ini, peserta didik mampu mengidentifikasi seluruh komponen sistem pendinginan cairan sepeda motor, menjelaskan prinsip kerja dan jalur sirkulasi coolant, melakukan prosedur pemeriksaan thermostat dan penggantian coolant sesuai SOP, serta mendiagnosis penyebab overheat dan menentukan tindakan perbaikan yang tepat.",
+  "cp": "Pada akhir pembelajaran modul ini, peserta didik mampu mengidentifikasi konstruksi injektor EFI beserta seluruh sub-komponennya, menjelaskan cara kerja solenoid dalam mengontrol aliran bahan bakar berdasarkan sinyal pulsa dari ECU, memahami fungsi fuel rail, O-ring, dan filter strainer, serta menganalisis kualitas pola semprotan berdasarkan desain nozzle dan tekanan kerja sistem.",
   "tp": [
-    "7.1 Menjelaskan fungsi dan prinsip kerja sistem pendinginan cairan serta keunggulannya dibandingkan pendinginan udara.",
-    "7.2 Mengidentifikasi dan menjelaskan fungsi setiap komponen: radiator, kipas radiator, pompa air, thermostat, water jacket, selang radiator, tutup radiator, reservoir tank, dan coolant.",
-    "7.3 Menjelaskan jalur sirkulasi coolant dalam kondisi mesin dingin (by-pass circuit) dan kondisi mesin panas (full circuit melalui radiator).",
-    "7.4 Melakukan pemeriksaan thermostat dengan metode perendaman air panas dan menginterpretasikan hasilnya.",
-    "7.5 Melakukan prosedur penggantian coolant sesuai interval pabrikan termasuk bleeding udara dari sistem.",
-    "7.6 Mendiagnosis penyebab overheat (thermostat macet, kebocoran coolant, kipas tidak berputar, pompa air rusak) dan menentukan tindakan perbaikan yang tepat."
+    "9.1 Menjelaskan konstruksi injektor EFI: koil solenoid, inti besi, jarum katup, pegas pengembali, dudukan katup, nozzle, lubang nozzle, terminal listrik, body, dan filter inlet.",
+    "9.2 Menjelaskan cara kerja solenoid injektor dalam membuka dan menutup katup berdasarkan sinyal pulsa (duty cycle) dari ECU.",
+    "9.3 Mengidentifikasi fungsi fuel rail sebagai manifold distribusi bahan bakar bertekanan dari pompa ke seluruh injektor.",
+    "9.4 Menjelaskan fungsi O-ring atas dan bawah injektor dalam mencegah kebocoran bahan bakar pada tekanan kerja 250–300 kPa.",
+    "9.5 Menjelaskan fungsi filter strainer pada inlet injektor dalam mencegah kotoran memasuki saluran nozzle yang sempit.",
+    "9.6 Menganalisis pola semprotan (spray pattern) berdasarkan jumlah lubang nozzle, sudut semprotan, ukuran droplet, arah semprotan, dan tekanan kerja.",
+    "9.7 Mengukur hambatan koil solenoid injektor menggunakan multimeter dan membandingkan dengan spesifikasi pabrikan (10–17 Ω untuk tipe high impedance)."
   ],
-  "asesmen": "Asesmen dilakukan melalui soal pilihan ganda dan studi kasus overheat, serta praktik pemeriksaan thermostat, penggantian coolant, dan pembersihan radiator virtual."
+  "asesmen": "Asesmen dilakukan melalui soal pilihan ganda tentang konstruksi dan cara kerja injektor, serta simulasi pemeriksaan hambatan koil injektor dan analisis pola semprotan virtual."
 }

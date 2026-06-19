@@ -2,10 +2,13 @@
   "name": "tosm-backend",
   "version": "1.0.0",
   "description": "TOSM Backend API",
-  "main": "server.js",
+  "main": "electron/main.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "rebuild:electron": "electron-rebuild -f -w better-sqlite3",
+    "desktop": "npm run rebuild:electron && electron .",
+    "dist:win": "npm run rebuild:electron && electron-builder --win portable"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -16,6 +19,37 @@
     "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {
+    "electron": "^37.1.0",
+    "electron-builder": "^26.0.12",
     "nodemon": "^3.1.0"
+  },
+  "build": {
+    "appId": "com.nalarxr.tosm",
+    "productName": "TOSM",
+    "artifactName": "TOSM-${version}-${arch}.${ext}",
+    "asar": false,
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "server.js",
+      "electron/**/*",
+      "package.json",
+      "node_modules/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "../frontend",
+        "to": "frontend",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "win": {
+      "target": [
+        "portable"
+      ]
+    }
   }
 }

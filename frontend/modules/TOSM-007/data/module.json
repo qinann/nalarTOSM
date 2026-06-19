@@ -1,18 +1,14 @@
 {
-  "id": "TOSM-007",
-  "title": "Sistem Pendinginan Cairan",
+  "id": "TOSM-009",
+  "title": "Injektor & Pola Semprotan Bahan Bakar",
   "level": "menengah",
-  "desc": "Mempelajari sistem pendinginan cairan sepeda motor — radiator, pompa air, thermostat, water jacket, selang, tutup radiator, reservoir, dan coolant — beserta prinsip sirkulasi dan prosedur perawatannya.",
-  "kd": "Peserta mampu mengidentifikasi komponen sistem pendinginan cairan, menjelaskan prinsip sirkulasi coolant, melakukan perawatan (ganti coolant, cek thermostat), serta mendiagnosis penyebab overheat.",
+  "desc": "Mempelajari konstruksi injektor EFI secara mendalam — koil solenoid, jarum katup, nozzle, filter strainer, O-ring — beserta prinsip terbentuknya pola semprotan (spray pattern) yang optimal dan peran fuel rail sebagai distributor bahan bakar bertekanan.",
+  "kd": "Peserta mampu mengidentifikasi setiap bagian injektor, menjelaskan cara kerja solenoid membuka katup berdasarkan sinyal ECU, memahami peran O-ring dan filter injektor, serta menganalisis pola semprotan berdasarkan tekanan dan desain nozzle.",
   "components": [
-    "Radiator",
-    "Kipas Radiator",
-    "Pompa Air (Water Pump)",
-    "Thermostat",
-    "Water Jacket",
-    "Selang Radiator",
-    "Tutup Radiator (Radiator Cap)",
-    "Reservoir Tank",
-    "Coolant"
+    "Injektor",
+    "Fuel Rail",
+    "O-ring",
+    "Filter Injektor",
+    "Pola Semprotan (Spray Pattern)"
   ]
 }

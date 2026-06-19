@@ -1,54 +1,34 @@
 {
   "questions": [
-    {
-      "q": "Komponen karburator yang berfungsi mengontrol jumlah bahan bakar pada kondisi idle dan bukaan throttle kecil adalah?",
-      "opts": ["Main jet", "Pilot jet (slow jet)", "Jarum skep (jet needle)", "Air screw"],
-      "ans": 1
-    },
-    {
-      "q": "Gejala needle valve karburator yang bocor adalah?",
-      "opts": ["Mesin tidak dapat mencapai putaran tinggi", "Bahan bakar meluap dari selang overflow saat mesin mati", "Putaran idle terlalu rendah dan tidak stabil", "Akselerasi lambat pada throttle menengah"],
-      "ans": 1
-    },
-    {
-      "q": "Saat menyetel air screw karburator, kondisi yang paling tepat untuk penyetelan adalah?",
-      "opts": ["Mesin dingin dan throttle penuh terbuka", "Mesin panas dan pada kondisi idle yang stabil", "Mesin baru dinyalakan dan choke aktif", "Mesin mati untuk mencegah risiko kebakaran"],
-      "ans": 1
-    },
-    {
-      "q": "Fungsi pelampung (float) pada karburator adalah?",
-      "opts": ["Mengatur jumlah udara yang masuk ke venturi", "Mempertahankan ketinggian permukaan bahan bakar yang konstan di mangkuk", "Mengontrol pembukaan skep berdasarkan putaran mesin", "Menyaring kotoran dalam bahan bakar sebelum masuk ke jet"],
-      "ans": 1
-    },
-    {
-      "q": "Keran bensin tipe vakum otomatis tidak membuka aliran bahan bakar saat mesin mati karena?",
-      "opts": ["Tuas pemilih otomatis bergerak ke posisi OFF", "Tidak ada tekanan vakum dari intake manifold yang menggerakkan diafragma", "Filter cup tersumbat oleh partikel dari tangki", "Level bahan bakar di tangki berada di bawah batas minimum"],
-      "ans": 1
-    },
-    {
-      "q": "Mesin sepeda motor tiba-tiba mati saat berkendara namun dapat dinyalakan kembali setelah tutup tangki dibuka sedikit. Penyebab paling mungkin adalah?",
-      "opts": ["Karburator tersumbat oleh kotoran", "Ventilasi/breather tangki tersumbat sehingga terjadi vakum di dalam tangki", "Keran bensin dalam posisi OFF", "Filter bensin penuh dan harus diganti"],
-      "ans": 1
-    },
-    {
-      "q": "Pada karburator tipe CV (Constant Velocity), skep diangkat oleh?",
-      "opts": ["Tarikan langsung kabel gas dari grip throttle", "Perbedaan tekanan vakum antara ruang atas dan bawah diafragma", "Gaya sentrifugal saat mesin berputar cepat", "Tekanan bahan bakar dari pompa bensin"],
-      "ans": 1
-    },
-    {
-      "q": "Cara yang benar untuk membersihkan main jet karburator yang tersumbat adalah?",
-      "opts": ["Tusuk lubang jet dengan kawat tembaga tipis untuk membuka sumbatan", "Rendam dalam bensin dan semprot udara bertekanan dari dalam ke luar", "Amplas permukaan jet hingga lubang terlihat bersih dan bulat", "Perbesar sedikit diameter lubang jet agar tidak tersumbat lagi"],
-      "ans": 1
-    },
-    {
-      "q": "Kebocoran udara pada sambungan intake manifold dengan kepala silinder menyebabkan?",
-      "opts": ["Campuran bahan bakar terlalu kaya dan konsumsi bahan bakar meningkat", "Campuran bahan bakar terlalu miskin, idle tidak stabil, dan sulit disetel", "Tekanan kompresi silinder menurun secara signifikan", "Bahan bakar bocor ke luar dari sela-sela sambungan manifold"],
-      "ans": 1
-    },
-    {
-      "q": "Klip pada jarum skep karburator dipindahkan ke alur yang lebih atas (jarum turun). Efek yang terjadi pada campuran bahan bakar-udara adalah?",
-      "opts": ["Campuran menjadi lebih kaya pada putaran menengah", "Campuran menjadi lebih miskin pada putaran menengah", "Tidak ada perubahan — klip hanya mengunci jarum agar tidak jatuh", "Campuran lebih kaya pada idle tetapi lebih miskin pada putaran tinggi"],
-      "ans": 1
-    }
+    { "q": "Prinsip kerja karburator didasarkan pada efek?", "opts": ["Bernoulli — kecepatan tinggi menghasilkan tekanan rendah", "Pascal — tekanan sama di semua arah", "Archimedes — gaya apung", "Boyle — tekanan berbanding terbalik dengan volume"], "ans": 0 },
+    { "q": "Fungsi venturi pada karburator adalah?", "opts": ["Menyaring udara masuk", "Mempercepat aliran udara sehingga tekanan turun dan bahan bakar terhisap", "Mengatur debit bahan bakar lewat jarum skep", "Menampung bahan bakar cadangan"], "ans": 1 },
+    { "q": "Main jet (spuyer utama) berfungsi pada kondisi?", "opts": ["Putaran idle (stasioner)", "Putaran menengah hingga penuh", "Saat mesin pertama dihidupkan", "Saat deselerasi"], "ans": 1 },
+    { "q": "Pilot jet (slow jet) berfungsi pada kondisi?", "opts": ["Putaran tinggi", "Putaran menengah", "Putaran idle dan akselerasi awal", "Putaran puncak RPM"], "ans": 2 },
+    { "q": "Jarum skep (needle jet) berfungsi mengatur campuran pada kondisi?", "opts": ["Idle penuh", "Throttle terbuka 1/4 hingga 3/4", "Throttle terbuka penuh", "Saat choke aktif"], "ans": 1 },
+    { "q": "Choke valve pada karburator berfungsi untuk?", "opts": ["Membatasi aliran bahan bakar saat panas", "Memperkaya campuran udara-bahan bakar saat mesin dingin", "Membatasi putaran mesin", "Memperbesar bukaan throttle"], "ans": 1 },
+    { "q": "Float (pelampung) pada karburator berfungsi untuk?", "opts": ["Menyaring bahan bakar dari kotoran", "Menjaga level bahan bakar dalam ruang pelampung tetap konstan", "Mengatur bukaan main jet", "Menampung kelebihan bahan bakar"], "ans": 1 },
+    { "q": "Campuran yang terlalu kaya (rich mixture) ditandai dengan?", "opts": ["Asap putih tipis dari knalpot", "Asap hitam dari knalpot dan bahan bakar boros", "Suhu mesin turun drastis", "Mesin terasa lebih bertenaga dan irit"], "ans": 1 },
+    { "q": "Campuran yang terlalu miskin (lean mixture) dapat menyebabkan?", "opts": ["Asap hitam pekat", "Overheating, backfire, dan tenaga loyo", "Konsumsi bahan bakar tinggi", "Knalpot mengeluarkan asap biru"], "ans": 1 },
+    { "q": "Air screw (sekrup udara) pada karburator digunakan untuk?", "opts": ["Mengatur level pelampung", "Menyetel campuran udara-bahan bakar pada putaran idle", "Mengatur bukaan throttle", "Membersihkan main jet"], "ans": 1 },
+    { "q": "Ukuran jet karburator dinyatakan dalam satuan?", "opts": ["Milimeter diameter", "Nomor jet (misalnya #90, #95)", "Liter per jam", "Pascal"], "ans": 1 },
+    { "q": "Emulsioner (emulsion tube) pada karburator berfungsi untuk?", "opts": ["Menyaring bahan bakar sebelum masuk jet", "Mencampur udara ke bahan bakar sebelum disemprotkan melalui nozzle", "Mengatur tekanan bahan bakar", "Mendinginkan campuran udara-bahan bakar"], "ans": 1 },
+    { "q": "Gejala busi hitam basah (wet and black) biasanya disebabkan oleh?", "opts": ["Campuran terlalu miskin", "Campuran terlalu kaya / over-rich", "Timing pengapian terlalu maju", "Tekanan kompresi terlalu tinggi"], "ans": 1 },
+    { "q": "Prosedur sinkronisasi karburator ganda bertujuan?", "opts": ["Menyamakan ukuran main jet pada setiap karburator", "Menyamakan tekanan vakum/bukaan throttle di setiap karburator", "Mengganti float setiap karburator", "Membersihkan venturi setiap karburator"], "ans": 1 },
+    { "q": "Throttle slide (skep) karburator jenis piston valve mengontrol?", "opts": ["Hanya aliran bahan bakar", "Hanya aliran udara", "Aliran udara sekaligus posisi jarum skep yang menentukan aliran bahan bakar", "Tekanan dalam ruang pelampung"], "ans": 2 },
+    { "q": "Bahan bakar masuk ke ruang pelampung melalui?", "opts": ["Venturi tube", "Needle valve (jarum pelampung) yang dikontrol pelampung", "Main jet langsung", "Pilot jet"], "ans": 1 },
+    { "q": "Vacuum secondary karburator tipe CV (Constant Velocity) membuka skep berdasarkan?", "opts": ["Posisi gas tangan secara langsung", "Perbedaan tekanan vakum antara atas dan bawah skep", "Putaran crankshaft", "Tekanan bahan bakar"], "ans": 1 },
+    { "q": "Apa yang terjadi jika main jet tersumbat?", "opts": ["Mesin tidak bisa idle", "Tenaga mesin drop drastis pada putaran tinggi dan berat beban", "Mesin overheat", "Karburator bocor bahan bakar"], "ans": 1 },
+    { "q": "Gejala karburator kelebihan bahan bakar (flooding) adalah?", "opts": ["Mesin susah dihidupkan karena terlalu kaya", "Konsumsi bahan bakar sangat boros dan asap hitam tebal", "Keduanya benar", "Mesin bertenaga berlebih"], "ans": 2 },
+    { "q": "Level bahan bakar dalam ruang pelampung yang terlalu tinggi menyebabkan?", "opts": ["Campuran terlalu miskin", "Campuran terlalu kaya / flooding", "Mesin tidak bisa start", "Pilot jet tersumbat"], "ans": 1 },
+    { "q": "Filter udara karburator perlu diganti berkala karena?", "opts": ["Mempengaruhi warna cat mesin", "Filter kotor menghambat aliran udara sehingga campuran menjadi kaya", "Filter mempengaruhi tekanan oli", "Filter mempengaruhi kerja sistem pengapian"], "ans": 1 },
+    { "q": "Posisi jarum skep yang dinaikkan (klip naik) akan menghasilkan?", "opts": ["Campuran lebih miskin", "Campuran lebih kaya", "Tidak berpengaruh pada campuran", "Campuran lebih miskin hanya di RPM tinggi"], "ans": 1 },
+    { "q": "Karburator jenis slide type (piston valve) peka terhadap?", "opts": ["Perubahan ketinggian saja", "Respons throttle yang lebih langsung namun lebih sensitif", "Kualitas bahan bakar", "Suhu lingkungan"], "ans": 1 },
+    { "q": "Penyetelan putaran idle (stasioner) dilakukan menggunakan?", "opts": ["Pilot jet dan air screw", "Main jet dan jarum skep", "Pilot jet dan float level", "Throttle stop screw dan air screw"], "ans": 3 },
+    { "q": "Karburator perlu dibersihkan secara berkala karena?", "opts": ["Getaran mesin mengikis komponen karburator", "Endapan kotoran dan gum dari bahan bakar menyumbat saluran-saluran kecil", "Air dapat masuk ke ruang pelampung", "Semua jawaban benar"], "ans": 3 },
+    { "q": "Apa fungsi pompa akselerasi (accelerator pump) pada beberapa karburator?", "opts": ["Memompa bahan bakar ke filter", "Menyemprotkan bahan bakar tambahan sesaat saat throttle dibuka tiba-tiba untuk mencegah lean stumble", "Mengatur tekanan bahan bakar saat idle", "Membilas venturi karburator"], "ans": 1 },
+    { "q": "Pada ketinggian tinggi (altitude tinggi), karburator perlu disetel ke?", "opts": ["Campuran lebih kaya karena udara lebih tipis", "Campuran lebih miskin karena kadar oksigen berkurang", "Tidak perlu penyesuaian", "Main jet diganti yang lebih besar"], "ans": 1 },
+    { "q": "Fuel strainer (penyaring bahan bakar) pada karburator berfungsi?", "opts": ["Mengatur debit aliran bahan bakar", "Menyaring kotoran agar tidak masuk ke saluran jet", "Mengatur level pelampung", "Menampung sisa bahan bakar"], "ans": 1 },
+    { "q": "Debit bahan bakar dari main jet dipengaruhi oleh?", "opts": ["Diameter lubang jet, tekanan bahan bakar, dan kecepatan aliran udara", "Hanya ukuran lubang jet saja", "Hanya suhu bahan bakar", "Hanya tekanan atmosfer"], "ans": 0 },
+    { "q": "Perbedaan utama karburator dengan sistem injeksi (EFI) adalah?", "opts": ["Karburator menggunakan pompa tekanan tinggi", "Karburator mengandalkan efek venturi/vakum, EFI menyemprotkan bahan bakar bertekanan tinggi secara elektronik", "Karburator lebih presisi dari EFI", "EFI tidak menggunakan sensor"], "ans": 1 }
   ]
 }

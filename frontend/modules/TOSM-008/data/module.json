@@ -1,17 +1,13 @@
 {
-  "id": "TOSM-008",
-  "title": "Sistem Bahan Bakar Injeksi (EFI)",
+  "id": "TOSM-011",
+  "title": "Sistem Pengisian (Charging System)",
   "level": "menengah",
-  "desc": "Mempelajari sistem EFI sepeda motor — tangki, fuel pump, filter, pressure regulator, injektor, throttle body, fuel rail, dan ECU/ECM — beserta cara kerja dan prosedur diagnosis kode DTC.",
-  "kd": "Peserta mampu mengidentifikasi komponen sistem EFI, menjelaskan fungsi dan cara kerja setiap komponen, serta melakukan diagnosis kerusakan menggunakan kode DTC dan pengukuran sensor.",
+  "desc": "Modul ini membahas sistem pengisian sepeda motor yang mencakup alternator/magneto, regulator/rectifier (kiprok), baterai, dan kabel pengisian. Peserta didik mempelajari cara kerja, pemeriksaan, diagnosis kerusakan, dan prosedur perbaikan komponen sistem pengisian sesuai standar pabrikan.",
+  "kd": "Peserta mampu menjelaskan cara kerja sistem pengisian sepeda motor, memeriksa output alternator dan tegangan pengisian menggunakan multimeter, mendiagnosis kerusakan komponen sistem pengisian, serta melakukan penggantian komponen sesuai prosedur standar.",
   "components": [
-    "Tangki",
-    "Fuel Pump",
-    "Fuel Filter",
-    "Pressure Regulator",
-    "Injektor",
-    "Throttle Body",
-    "Fuel Rail",
-    "ECU/ECM"
+    "Alternator/Magneto",
+    "Regulator/Rectifier (Kiprok)",
+    "Baterai",
+    "Kabel Pengisian"
   ]
 }

@@ -15,6 +15,23 @@
         position: fixed; top: 50%; left: 50%;
         transform: translate(-50%, -50%); z-index: 200;
       }
+      #unity-debug {
+        position: fixed;
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        max-height: 40vh;
+        overflow: auto;
+        z-index: 9999;
+        padding: 10px 12px;
+        border-radius: 10px;
+        background: rgba(20, 6, 28, 0.92);
+        border: 1px solid rgba(255, 86, 86, 0.5);
+        color: #ffd4d4;
+        font: 12px/1.45 Consolas, monospace;
+        white-space: pre-wrap;
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -28,9 +45,24 @@
       </div>
       <div id="unity-warning"></div>
     </div>
+    <div id="unity-debug"></div>
 
     <script>
       var canvas = document.querySelector("#unity-canvas");
+      var debugBox = document.querySelector("#unity-debug");
+
+      function showDebug(message) {
+        debugBox.style.display = "block";
+        debugBox.textContent += (debugBox.textContent ? "\n\n" : "") + String(message);
+      }
+
+      function formatError(error) {
+        if (!error) return "Unknown error";
+        if (typeof error === "string") return error;
+        if (error.stack) return error.stack;
+        if (error.message) return error.message;
+        return JSON.stringify(error, null, 2);
+      }
 
       function unityShowBanner(msg, type) {
         var wb = document.querySelector("#unity-warning");
@@ -43,7 +75,16 @@
           setTimeout(() => { wb.removeChild(div); }, 5000);
         }
         wb.style.display = wb.children.length ? 'block' : 'none';
+        if (type === 'error') showDebug(msg);
       }
+
+      window.addEventListener('error', function(event) {
+        showDebug("window.error\n" + formatError(event.error || event.message));
+      });
+
+      window.addEventListener('unhandledrejection', function(event) {
+        showDebug("unhandledrejection\n" + formatError(event.reason));
+      });
 
       var buildUrl = "Build";
       var config = {
@@ -61,6 +102,9 @@
 
       var script = document.createElement("script");
       script.src = buildUrl + "/Modul14.loader.js";
+      script.onerror = function() {
+        showDebug("Gagal memuat loader Unity: " + script.src);
+      };
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
@@ -69,7 +113,11 @@
           window.unityInstance = unityInstance;
           canvas.focus();
           canvas.addEventListener('mouseenter', () => canvas.focus());
-        }).catch((msg) => alert(msg));
+        }).catch((msg) => {
+          document.querySelector("#unity-loading-bar").style.display = "none";
+          unityShowBanner(String(msg), "error");
+          showDebug("createUnityInstance gagal\n" + formatError(msg));
+        });
       };
       document.body.appendChild(script);
     </script>

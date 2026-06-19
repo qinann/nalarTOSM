@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TOSM — Dashboard</title>
+  <title>TOSM - Dashboard</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
@@ -20,11 +20,9 @@
     }
     html, body { height: 100%; font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); overflow: hidden; }
 
-    #bg { position: fixed; inset: 0; z-index: 0; }
+    #bg { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
 
-    /* ════════════════════════════════════════
-       SIDEBAR
-    ════════════════════════════════════════ */
+    /* ========== SIDEBAR========== */
     .sidebar {
       position: fixed; left: 0; top: 0;
       width: var(--sidebar-w); height: 100vh;
@@ -87,9 +85,7 @@
     }
     .btn-logout:hover { background: rgba(239,68,68,.1); border-color: rgba(239,68,68,.2); color: #fca5a5; }
 
-    /* ════════════════════════════════════════
-       MAIN CONTENT
-    ════════════════════════════════════════ */
+    /* ========== MAIN CONTENT========== */
     .main {
       position: relative; z-index: 10;
       margin-left: var(--sidebar-w);
@@ -122,7 +118,7 @@
 
     /* Content wrapper */
     .content {
-      flex: 1; overflow-y: auto; padding: 28px;
+      flex: 1; overflow-y: auto; padding: 20px 28px;
     }
     .content::-webkit-scrollbar { width: 5px; }
     .content::-webkit-scrollbar-thumb { background: rgba(124,58,237,.3); border-radius: 99px; }
@@ -170,7 +166,7 @@
     .hero-sub { font-size: 14px; color: var(--muted); text-align: center; }
 
     /* Stats row */
-    .stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; margin-top: 20px; }
+    .stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; margin-top: 14px; }
     .stat {
       background: var(--glass-bg); border: 1px solid var(--glass-bd);
       backdrop-filter: blur(12px); border-radius: 14px;
@@ -188,7 +184,11 @@
     .stat:nth-child(3) .stat-val { background: linear-gradient(135deg, #86efac, #4ade80); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .stat:nth-child(4) .stat-val { background: linear-gradient(135deg, #fde68a, #fbbf24); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 
-    /* ── GENERIC PAGE ── */
+    /* -- User pill clickable -- */
+    .user-pill { cursor: pointer; padding: 5px 10px; border-radius: 10px; transition: background .2s; }
+    .user-pill:hover { background: rgba(255,255,255,.06); }
+
+    /* -- GENERIC PAGE -- */
     .generic-page { display: none; } /* initial hide only — JS controls display */
     #page-beranda { display: block; }
     .page-header-text { margin-bottom: 20px; }
@@ -246,6 +246,83 @@
     .modul-bar { height: 4px; background: rgba(255,255,255,.08); border-radius: 99px; overflow: hidden; }
     .modul-bar-fill { height: 100%; border-radius: 99px; background: linear-gradient(90deg, var(--purple), var(--blue)); transition: width .6s ease; }
 
+    /* ── KELAS CRUD ── */
+    .crud-toolbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 9px 16px; border-radius: 9px;
+      background: linear-gradient(135deg, var(--purple), var(--blue));
+      color: #fff; font-size: 13px; font-weight: 600; font-family: inherit;
+      border: none; cursor: pointer; transition: opacity .18s;
+    }
+    .btn-primary:hover { opacity: .85; }
+    .btn-sm {
+      padding: 5px 10px; font-size: 12px; border-radius: 7px;
+      font-weight: 500; font-family: inherit; border: 1px solid transparent; cursor: pointer;
+      transition: opacity .18s;
+    }
+    .btn-edit { background: rgba(59,130,246,.15); border-color: rgba(59,130,246,.3); color: #93c5fd; }
+    .btn-edit:hover { opacity: .7; }
+    .btn-del  { background: rgba(239,68,68,.12); border-color: rgba(239,68,68,.25); color: #fca5a5; }
+    .btn-del:hover  { opacity: .7; }
+    .data-table-wrap {
+      background: var(--glass-bg); border: 1px solid var(--glass-bd);
+      border-radius: 16px; overflow: hidden; backdrop-filter: blur(12px);
+    }
+    .data-table { width: 100%; border-collapse: collapse; }
+    .data-table th {
+      padding: 12px 16px; text-align: left; font-size: 11px;
+      font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .6px;
+      border-bottom: 1px solid var(--glass-bd);
+    }
+    .data-table td { padding: 13px 16px; font-size: 13px; border-bottom: 1px solid rgba(255,255,255,.04); }
+    .data-table tr:last-child td { border-bottom: none; }
+    .data-table tr:hover td { background: rgba(255,255,255,.02); }
+    .data-table .actions { display: flex; gap: 6px; }
+    .data-empty { padding: 40px; text-align: center; font-size: 13px; color: var(--muted); }
+
+    /* Modal */
+    .modal-overlay {
+      display: none; position: fixed; inset: 0; z-index: 100;
+      background: rgba(0,0,0,.6); backdrop-filter: blur(4px);
+      align-items: center; justify-content: center;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal {
+      background: #0e0b22; border: 1px solid var(--glass-bd);
+      border-radius: 18px; padding: 28px; width: 100%; max-width: 420px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.6);
+    }
+    .modal-title { font-size: 16px; font-weight: 700; margin-bottom: 20px; }
+    .form-group { margin-bottom: 14px; }
+    .form-group label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 6px; font-weight: 500; }
+    .form-group input, .form-group select {
+      width: 100%; padding: 10px 12px; border-radius: 9px;
+      background: rgba(255,255,255,.06); border: 1px solid var(--glass-bd);
+      color: var(--text); font-size: 13px; font-family: inherit;
+      outline: none; transition: border-color .18s;
+    }
+    .form-group input:focus, .form-group select:focus { border-color: rgba(124,58,237,.5); }
+    .form-group select option { background: #0e0b22; }
+    select option { background: #0e0b22; color: #e2e8f0; }
+    .modal-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; }
+    .btn-ghost {
+      padding: 9px 16px; border-radius: 9px; font-size: 13px; font-weight: 500;
+      background: rgba(255,255,255,.05); border: 1px solid var(--glass-bd);
+      color: var(--muted); cursor: pointer; font-family: inherit; transition: color .18s, border-color .18s;
+    }
+    .btn-ghost:hover { color: var(--text); border-color: rgba(255,255,255,.2); }
+
+    /* Toast */
+    .toast {
+      position: fixed; bottom: 24px; right: 24px; z-index: 200;
+      background: rgba(124,58,237,.9); color: #fff;
+      padding: 12px 18px; border-radius: 10px; font-size: 13px; font-weight: 500;
+      transform: translateY(80px); opacity: 0; transition: all .3s ease; pointer-events: none;
+    }
+    .toast.show { transform: translateY(0); opacity: 1; }
+    .toast.error { background: rgba(239,68,68,.9); }
+
     /* Responsive */
     @media (max-width: 768px) {
       :root { --sidebar-w: 68px; }
@@ -260,7 +337,7 @@
 <body>
   <canvas id="bg"></canvas>
 
-  <!-- ══ SIDEBAR ══ -->
+  <!-- SIDEBAR -->
   <aside class="sidebar">
     <div class="logo">
       <div class="logo-icon">
@@ -310,6 +387,7 @@
         </svg>
         <span>Ujian</span>
       </div>
+
     </nav>
 
     <div class="sidebar-footer">
@@ -322,13 +400,13 @@
     </div>
   </aside>
 
-  <!-- ══ MAIN ══ -->
+  <!-- MAIN -->
   <div class="main">
 
     <!-- Topbar -->
     <div class="topbar">
       <span class="page-title" id="page-title">Beranda</span>
-      <div class="user-pill">
+      <div class="user-pill" id="user-pill-btn">
         <div class="avatar" id="avatar">?</div>
         <span class="user-name" id="user-name">—</span>
       </div>
@@ -340,13 +418,13 @@
       <!-- ── Beranda ── -->
       <div id="page-beranda">
 
-        <!-- Hero / Gambar Motor -->
-        <div class="hero-card">
-          <div class="hero-bg"></div>
-          <div class="hero-glow"></div>
-          <div class="hero-content">
-            <!-- Motor SVG -->
-            <svg class="hero-motor-svg" width="320" height="140" viewBox="0 0 320 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Hero / Gambar Banner -->
+        <div class="hero-card" style="aspect-ratio:unset;padding:0;overflow:hidden;border-radius:18px;max-height:320px">
+          <img src="/assets/images/baner.png" alt="TOSM Banner"
+            style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block">
+        </div>
+        <div style="display:none">
+          <svg width="0" height="0" viewBox="0 0 320 140" fill="none" xmlns="http://www.w3.org/2000/svg">
               <!-- Roda belakang -->
               <circle cx="72" cy="104" r="30" stroke="#7c3aed" stroke-width="3" fill="none"/>
               <circle cx="72" cy="104" r="20" stroke="#a855f7" stroke-width="1.5" fill="none" stroke-dasharray="4 4"/>
@@ -382,53 +460,152 @@
               <line x1="100" y1="60" x2="87" y2="80" stroke="#c4b5fd" stroke-width="2" stroke-linecap="round"/>
             </svg>
 
-            <div class="hero-title">Selamat Datang di TOSM</div>
-            <div class="hero-sub">Platform Manajemen Otomotif & Keterampilan</div>
-          </div>
         </div>
 
         <!-- Stats -->
         <div class="stats">
           <div class="stat">
             <div class="stat-label">Total Kelas</div>
-            <div class="stat-val">12</div>
+            <div class="stat-val" id="stat-kelas">—</div>
           </div>
           <div class="stat">
             <div class="stat-label">Total Siswa</div>
-            <div class="stat-val">248</div>
+            <div class="stat-val" id="stat-siswa">—</div>
           </div>
           <div class="stat">
             <div class="stat-label">Total Modul</div>
-            <div class="stat-val">15</div>
+            <div class="stat-val" id="stat-modul">10</div>
           </div>
           <div class="stat">
-            <div class="stat-label">Ujian Hari Ini</div>
-            <div class="stat-val">5</div>
+            <div class="stat-label">Total Ujian</div>
+            <div class="stat-val" id="stat-ujian">—</div>
           </div>
         </div>
       </div>
 
       <!-- ── Kelas ── -->
       <div id="page-kelas" class="generic-page">
-        <div class="page-header-text">
-          <h2>Kelas</h2>
-          <p>Kelola data kelas dan ruang belajar</p>
+        <div class="crud-toolbar">
+          <div class="page-header-text" style="margin-bottom:0">
+            <h2>Kelas</h2>
+            <p>Kelola data kelas dan ruang belajar</p>
+          </div>
+          <button class="btn-primary" onclick="openKelasModal()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Tambah Kelas
+          </button>
         </div>
-        <div class="empty-state">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-          <p>Data kelas akan ditampilkan di sini</p>
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Nama Kelas</th>
+                <th>Tingkat</th>
+                <th>Jurusan</th>
+                <th>Tahun Ajaran</th>
+                <th>Siswa</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody id="kelas-tbody">
+              <tr><td colspan="7" class="data-empty">Memuat data...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Kelas Modal -->
+      <div class="modal-overlay" id="kelas-modal" onclick="if(event.target===this)closeKelasModal()">
+        <div class="modal">
+          <div class="modal-title" id="kelas-modal-title">Tambah Kelas</div>
+          <div class="form-group">
+            <label>Nama Kelas *</label>
+            <input type="text" id="kelas-nama" placeholder="cth. X TKR 1" />
+          </div>
+          <div class="form-group">
+            <label>Tingkat</label>
+            <select id="kelas-tingkat">
+              <option value="">— Pilih Tingkat —</option>
+              <option value="X">X</option>
+              <option value="XI">XI</option>
+              <option value="XII">XII</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Jurusan</label>
+            <input type="text" id="kelas-jurusan" placeholder="cth. TKR, TSM" />
+          </div>
+          <div class="form-group">
+            <label>Tahun Ajaran</label>
+            <input type="text" id="kelas-tahun" placeholder="cth. 2025/2026" />
+          </div>
+          <div class="modal-actions">
+            <button class="btn-ghost" onclick="closeKelasModal()">Batal</button>
+            <button class="btn-primary" onclick="saveKelas()">Simpan</button>
+          </div>
         </div>
       </div>
 
       <!-- ── Siswa ── -->
       <div id="page-siswa" class="generic-page">
-        <div class="page-header-text">
-          <h2>Siswa</h2>
-          <p>Kelola data siswa dan peserta didik</p>
+        <div class="crud-toolbar">
+          <div class="page-header-text" style="margin-bottom:0">
+            <h2>Siswa</h2>
+            <p>Kelola data siswa dan peserta didik</p>
+          </div>
+          <button class="btn-primary" onclick="openSiswaModal()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Tambah Siswa
+          </button>
         </div>
-        <div class="empty-state">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-          <p>Data siswa akan ditampilkan di sini</p>
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>NIS</th>
+                <th>Nama</th>
+                <th>Jenis Kelamin</th>
+                <th>Kelas</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody id="siswa-tbody">
+              <tr><td colspan="6" class="data-empty">Memuat data...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Siswa Modal -->
+      <div class="modal-overlay" id="siswa-modal" onclick="if(event.target===this)closeSiswaModal()">
+        <div class="modal">
+          <div class="modal-title" id="siswa-modal-title">Tambah Siswa</div>
+          <div class="form-group">
+            <label>NIS *</label>
+            <input type="text" id="siswa-nis" placeholder="Nomor Induk Siswa" />
+          </div>
+          <div class="form-group">
+            <label>Nama Lengkap *</label>
+            <input type="text" id="siswa-nama" placeholder="Nama siswa" />
+          </div>
+          <div class="form-group">
+            <label>Jenis Kelamin</label>
+            <select id="siswa-jk">
+              <option value="">— Pilih —</option>
+              <option value="L">Laki-laki</option>
+              <option value="P">Perempuan</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Kelas</label>
+            <select id="siswa-kelas"></select>
+          </div>
+          <div class="modal-actions">
+            <button class="btn-ghost" onclick="closeSiswaModal()">Batal</button>
+            <button class="btn-primary" onclick="saveSiswa()">Simpan</button>
+          </div>
         </div>
       </div>
 
@@ -476,56 +653,56 @@
             <div class="modul-desc">Jenis dan spesifikasi oli mesin, pompa oli, oil gallery, filter oli, tekanan pelumasan, dan jadwal penggantian oli berkala.</div>
           </div>
 
-          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-007'">
+          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-005'">
             <div class="modul-card-top">
               <div class="modul-num">05</div>
             </div>
-            <div class="modul-id">TOSM-007</div>
+            <div class="modul-id">TOSM-005</div>
             <div class="modul-title">Sistem Pendinginan Cairan</div>
             <div class="modul-desc">Radiator, thermostat, water pump, selang coolant, reservoir, pengisian & bleeding coolant, dan diagnosa kebocoran sistem.</div>
           </div>
 
-          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-008'">
+          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-006'">
             <div class="modul-card-top">
               <div class="modul-num">06</div>
             </div>
-            <div class="modul-id">TOSM-008</div>
+            <div class="modul-id">TOSM-006</div>
             <div class="modul-title">Sistem Bahan Bakar Injeksi (EFI)</div>
             <div class="modul-desc">ECU, sensor MAP/TPS/O2/IAT, fuel pump, fuel rail, injektor, kalibrasi idle speed, dan diagnosa sistem EFI dengan scan tool.</div>
           </div>
 
-          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-009'">
+          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-007'">
             <div class="modul-card-top">
               <div class="modul-num">07</div>
             </div>
-            <div class="modul-id">TOSM-009</div>
+            <div class="modul-id">TOSM-007</div>
             <div class="modul-title">Injektor & Pola Semprotan Bahan Bakar</div>
             <div class="modul-desc">Konstruksi injektor, solenoida, duty cycle, pola atomisasi, pengujian semprotan, pembersihan, dan penggantian injektor.</div>
           </div>
 
-          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-011'">
+          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-008'">
             <div class="modul-card-top">
               <div class="modul-num">08</div>
             </div>
-            <div class="modul-id">TOSM-011</div>
+            <div class="modul-id">TOSM-008</div>
             <div class="modul-title">Sistem Pengisian (Charging)</div>
             <div class="modul-desc">Alternator/spul, rectifier, regulator tegangan, aki, pengukuran tegangan pengisian, dan diagnosa sistem charging lemah.</div>
           </div>
 
-          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-012'">
+          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-009'">
             <div class="modul-card-top">
               <div class="modul-num">09</div>
             </div>
-            <div class="modul-id">TOSM-012</div>
+            <div class="modul-id">TOSM-009</div>
             <div class="modul-title">Sistem Starter</div>
             <div class="modul-desc">Motor starter, mekanisme pinion & ring gear, relay starter, kick starter, dan diagnosa sistem starter yang tidak bekerja.</div>
           </div>
 
-          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-014'">
+          <div class="modul-card" onclick="window.location.href='modul-detail.html?id=TOSM-010'">
             <div class="modul-card-top">
               <div class="modul-num">10</div>
             </div>
-            <div class="modul-id">TOSM-014</div>
+            <div class="modul-id">TOSM-010</div>
             <div class="modul-title">Sistem CVT (Continuously Variable Transmission)</div>
             <div class="modul-desc">Konstruksi CVT, puli primer & sekunder, v-belt, roller weight, kampas kopling, dan prosedur overhaul CVT skuter matik.</div>
           </div>
@@ -535,18 +712,62 @@
 
       <!-- ── Ujian ── -->
       <div id="page-ujian" class="generic-page">
-        <div class="page-header-text">
-          <h2>Ujian</h2>
-          <p>Kelola ujian dan penilaian siswa</p>
+
+        <!-- View 1: daftar modul -->
+        <div id="ujian-modul-list">
+          <div class="page-header-text">
+            <h2>Ujian</h2>
+            <p>Pilih modul untuk melihat hasil evaluasi siswa</p>
+          </div>
+          <div id="ujian-modul-grid" style="display:flex;flex-direction:column;gap:10px"></div>
         </div>
-        <div class="empty-state">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/><path d="M9 12h6M9 16h4"/></svg>
-          <p>Data ujian akan ditampilkan di sini</p>
+
+        <!-- View 2: hasil ujian modul -->
+        <div id="ujian-result" style="display:none">
+          <div class="page-header-text" style="display:flex;align-items:center;gap:12px;margin-bottom:20px">
+            <button class="btn-ghost" onclick="backToUjianList()" style="padding:6px 14px">&#8592; Modul</button>
+            <div>
+              <h2 id="ujian-result-title" style="margin:0"></h2>
+              <p id="ujian-result-sub" style="margin:0"></p>
+            </div>
+          </div>
+          <div class="crud-toolbar" style="margin-bottom:16px">
+            <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+              <label style="font-size:13px;color:var(--text-muted)">Filter Kelas:</label>
+              <select id="ujian-filter-kelas" style="background:var(--glass-bg);border:1px solid var(--glass-bd);color:var(--text);padding:8px 12px;border-radius:8px;font-size:13px;min-width:180px">
+                <option value="">Semua Kelas</option>
+              </select>
+            </div>
+          </div>
+          <div class="data-table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>NIS</th>
+                  <th>Nama Siswa</th>
+                  <th>Kelas</th>
+                  <th>Skor</th>
+                  <th>Nilai</th>
+                  <th>Grade</th>
+                  <th>Status</th>
+                  <th>Tanggal</th>
+                </tr>
+              </thead>
+              <tbody id="ujian-tbody">
+                <tr><td colspan="9" class="data-empty">Memuat...</td></tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
 
+
+
     </div><!-- /content -->
   </div><!-- /main -->
+
+  <div class="toast" id="toast"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
   <script>
@@ -555,9 +776,23 @@
   const user  = JSON.parse(localStorage.getItem('tosm_user') || 'null');
   if (!token || !user) { window.location.href = 'index.html'; }
   else {
-    const init = (user.username || '?')[0].toUpperCase();
-    document.getElementById('avatar').textContent    = init;
-    document.getElementById('user-name').textContent = user.username;
+    try {
+      const init = (user.username || '?')[0].toUpperCase();
+      const avatarEl   = document.getElementById('avatar');
+      const userNameEl = document.getElementById('user-name');
+      if (userNameEl) userNameEl.textContent = user.username || '';
+      if (avatarEl) {
+        const savedPhoto = localStorage.getItem('tosm_avatar');
+        if (savedPhoto) {
+          avatarEl.textContent = '';
+          avatarEl.style.backgroundImage = 'url(' + savedPhoto + ')';
+          avatarEl.style.backgroundSize = 'cover';
+          avatarEl.style.backgroundPosition = 'center';
+        } else {
+          avatarEl.textContent = init;
+        }
+      }
+    } catch(e) { console.warn('avatar init error', e); }
   }
 
   // ── Navigation ────────────────────────────────────────
@@ -567,10 +802,478 @@
     const page = el.dataset.page;
     document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
     el.classList.add('active');
-    document.getElementById('page-title').textContent = pageNames[page];
+    document.getElementById('page-title').textContent = pageNames[page] || page;
     ['beranda','kelas','siswa','modul','ujian'].forEach(p => {
       document.getElementById('page-' + p).style.display = p === page ? 'block' : 'none';
     });
+    if (page === 'beranda') loadBeranda();
+    if (page === 'kelas')   loadKelas();
+    if (page === 'siswa')   loadSiswa();
+    if (page === 'ujian')   loadUjian();
+  }
+
+  document.getElementById('user-pill-btn').addEventListener('click', openProfile);
+
+  // ── Kelas CRUD ─────────────────────────────────────────
+  // ── Beranda ────────────────────────────────────────────
+  async function loadBeranda() {
+    try {
+      const [rk, rs, re] = await Promise.all([
+        fetch('/api/kelas',    { headers: { Authorization: 'Bearer ' + token } }),
+        fetch('/api/siswa',    { headers: { Authorization: 'Bearer ' + token } }),
+        fetch('/api/evaluasi', { headers: { Authorization: 'Bearer ' + token } }),
+      ]);
+      const kelas = rk.ok ? await rk.json() : [];
+      const siswa = rs.ok ? await rs.json() : [];
+      const ujian = re.ok ? await re.json() : [];
+      document.getElementById('stat-kelas').textContent = kelas.length;
+      document.getElementById('stat-siswa').textContent = siswa.length;
+      document.getElementById('stat-ujian').textContent = ujian.length;
+    } catch { /* no-op */ }
+  }
+  loadBeranda();
+
+  // -- Profil modal (appended to body) --
+  let _profOv = null;
+
+  function openProfile() {
+    if (_profOv) return;
+    const savedPhoto = localStorage.getItem('tosm_avatar');
+    const initChar   = (user.username || '?')[0].toUpperCase();
+    _profOv = document.createElement('div');
+    _profOv.style.cssText = 'position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.7)';
+    _profOv.innerHTML =
+      '<div style="background:#1a1535;border:1px solid rgba(139,92,246,.4);border-radius:18px;padding:28px 32px;width:90%;max-width:380px;display:flex;flex-direction:column;gap:14px">' +
+        '<div style="font-size:17px;font-weight:700;color:#e2e8f0;margin-bottom:4px">Profil Akun</div>' +
+        '<div style="display:flex;flex-direction:column;align-items:center;gap:8px">' +
+          '<div id="pf-avatar-wrap" title="Klik untuk ganti foto" style="width:80px;height:80px;border-radius:50%;overflow:hidden;border:3px solid rgba(139,92,246,.5);cursor:pointer;position:relative;flex-shrink:0">' +
+            (savedPhoto
+              ? '<img id="pf-avatar-img" src="' + savedPhoto + '" style="width:100%;height:100%;object-fit:cover">'
+              : '<div id="pf-avatar-init" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#7c3aed,#4f46e5);font-size:30px;font-weight:700;color:#fff">' + initChar + '</div>') +
+          '</div>' +
+          '<span style="font-size:11px;color:#64748b">Klik foto untuk mengganti</span>' +
+        '</div>' +
+        '<input id="pf-photo-input" type="file" accept="image/*" style="display:none">' +
+        '<div style="display:flex;flex-direction:column;gap:5px">' +
+          '<label style="font-size:11px;color:#94a3b8;text-transform:uppercase;letter-spacing:.5px">Username</label>' +
+          '<input id="pf-user" type="text" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:9px;padding:9px 13px;color:#e2e8f0;font-size:14px;outline:none;width:100%;box-sizing:border-box">' +
+        '</div>' +
+        '<hr style="border:none;border-top:1px solid rgba(255,255,255,.08);margin:2px 0">' +
+        '<div style="display:flex;flex-direction:column;gap:5px">' +
+          '<label style="font-size:11px;color:#94a3b8;text-transform:uppercase;letter-spacing:.5px">Password Baru</label>' +
+          '<input id="pf-new" type="password" placeholder="Kosongkan jika tidak diganti" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:9px;padding:9px 13px;color:#e2e8f0;font-size:14px;outline:none;width:100%;box-sizing:border-box">' +
+        '</div>' +
+        '<div style="display:flex;flex-direction:column;gap:5px">' +
+          '<label style="font-size:11px;color:#94a3b8;text-transform:uppercase;letter-spacing:.5px">Konfirmasi Password Baru</label>' +
+          '<input id="pf-confirm" type="password" placeholder="Ulangi password baru" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:9px;padding:9px 13px;color:#e2e8f0;font-size:14px;outline:none;width:100%;box-sizing:border-box">' +
+        '</div>' +
+        '<hr style="border:none;border-top:1px solid rgba(255,255,255,.08);margin:2px 0">' +
+        '<div style="display:flex;flex-direction:column;gap:5px">' +
+          '<label style="font-size:11px;color:#94a3b8;text-transform:uppercase;letter-spacing:.5px">Password Saat Ini <span style="color:#f87171">*wajib</span></label>' +
+          '<input id="pf-cur" type="password" placeholder="Masukkan password saat ini" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:9px;padding:9px 13px;color:#e2e8f0;font-size:14px;outline:none;width:100%;box-sizing:border-box">' +
+        '</div>' +
+        '<div id="pf-msg" style="font-size:13px;min-height:16px;text-align:center"></div>' +
+        '<div style="display:flex;gap:10px;justify-content:flex-end;margin-top:4px">' +
+          '<button id="pf-cancel" style="padding:9px 20px;border-radius:9px;font-size:13px;cursor:pointer;background:transparent;border:1px solid rgba(255,255,255,.18);color:#94a3b8">Batal</button>' +
+          '<button id="pf-save" style="padding:9px 22px;border-radius:9px;font-size:13px;font-weight:600;cursor:pointer;background:linear-gradient(135deg,#7c3aed,#4f46e5);border:none;color:#fff">Simpan</button>' +
+        '</div>' +
+      '</div>';
+
+    document.body.appendChild(_profOv);
+    document.getElementById('pf-user').value = user.username || '';
+    _profOv.addEventListener('click', function(e) { if (e.target === _profOv) closeProfile(); });
+    document.getElementById('pf-cancel').addEventListener('click', closeProfile);
+    document.getElementById('pf-save').addEventListener('click', saveProfile);
+
+    // Photo upload
+    document.getElementById('pf-avatar-wrap').addEventListener('click', function() {
+      document.getElementById('pf-photo-input').click();
+    });
+    document.getElementById('pf-photo-input').addEventListener('change', function(e) {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(ev) {
+        const data = ev.target.result;
+        const wrap = document.getElementById('pf-avatar-wrap');
+        wrap.innerHTML = '<img id="pf-avatar-img" src="' + data + '" style="width:100%;height:100%;object-fit:cover">';
+        wrap._pendingPhoto = data;
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+
+  function closeProfile() {
+    if (_profOv) { _profOv.remove(); _profOv = null; }
+  }
+
+  async function saveProfile() {
+    const username    = document.getElementById('pf-user').value.trim();
+    const newPass     = document.getElementById('pf-new').value;
+    const confirmPass = document.getElementById('pf-confirm').value;
+    const curPass     = document.getElementById('pf-cur').value;
+    const msg         = document.getElementById('pf-msg');
+
+    if (!curPass) { msg.style.color='#f87171'; msg.textContent='Password saat ini wajib diisi'; return; }
+    if (newPass && newPass !== confirmPass) { msg.style.color='#f87171'; msg.textContent='Konfirmasi password tidak cocok'; return; }
+    if (newPass && newPass.length < 8) { msg.style.color='#f87171'; msg.textContent='Password baru min. 8 karakter'; return; }
+
+    try {
+      const body = { current_password: curPass };
+      if (username && username !== user.username) body.username = username;
+      if (newPass) body.new_password = newPass;
+
+      const res = await fetch('/api/me', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + token },
+        body: JSON.stringify(body)
+      });
+      const data = await res.json();
+      if (!res.ok) { msg.style.color='#f87171'; msg.textContent=data.message; return; }
+
+      const updated = data.user;
+      localStorage.setItem('tosm_user', JSON.stringify({ ...user, username: updated.username }));
+      user.username = updated.username;
+      document.getElementById('user-name').textContent = updated.username;
+
+      // Save photo and update topbar avatar
+      const wrap = document.getElementById('pf-avatar-wrap');
+      const photoData = wrap._pendingPhoto;
+      if (photoData) {
+        localStorage.setItem('tosm_avatar', photoData);
+        const topbarAvatar = document.getElementById('avatar');
+        topbarAvatar.textContent = '';
+        topbarAvatar.style.backgroundImage = 'url(' + photoData + ')';
+        topbarAvatar.style.backgroundSize = 'cover';
+        topbarAvatar.style.backgroundPosition = 'center';
+      } else {
+        document.getElementById('avatar').textContent = (updated.username || '?')[0].toUpperCase();
+      }
+
+      msg.style.color='#34d399'; msg.textContent='Profil berhasil diperbarui!';
+      setTimeout(closeProfile, 1200);
+    } catch { msg.style.color='#f87171'; msg.textContent='Gagal terhubung ke server'; }
+  }
+
+  let kelasList = [];
+  let editingKelasId = null;
+
+  async function loadKelas() {
+    const tbody = document.getElementById('kelas-tbody');
+    tbody.innerHTML = '<tr><td colspan="6" class="data-empty">Memuat...</td></tr>';
+    try {
+      const res = await fetch('/api/kelas', { headers: { Authorization: 'Bearer ' + token } });
+      kelasList = await res.json();
+      renderKelas();
+    } catch {
+      tbody.innerHTML = '<tr><td colspan="6" class="data-empty">Gagal memuat data</td></tr>';
+    }
+  }
+
+  function renderKelas() {
+    const tbody = document.getElementById('kelas-tbody');
+    if (!kelasList.length) {
+      tbody.innerHTML = '<tr><td colspan="7" class="data-empty">Belum ada data kelas</td></tr>';
+      return;
+    }
+    tbody.innerHTML = kelasList.map((k, i) => `
+      <tr>
+        <td style="color:var(--muted)">${i + 1}</td>
+        <td style="font-weight:600">${esc(k.nama)}</td>
+        <td>${esc(k.tingkat) || '—'}</td>
+        <td>${esc(k.jurusan) || '—'}</td>
+        <td>${esc(k.tahun_ajaran) || '—'}</td>
+        <td><span style="background:rgba(124,58,237,.15);border:1px solid rgba(124,58,237,.3);color:#c4b5fd;padding:3px 10px;border-radius:20px;font-size:12px;font-weight:600">${k.jumlah_siswa}</span></td>
+        <td><div class="actions">
+          <button class="btn-sm btn-edit" onclick="openKelasModal(${k.id})">Edit</button>
+          <button class="btn-sm btn-del"  onclick="deleteKelas(${k.id})">Hapus</button>
+        </div></td>
+      </tr>
+    `).join('');
+  }
+
+  function esc(s) {
+    return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  function openKelasModal(id) {
+    editingKelasId = id ?? null;
+    document.getElementById('kelas-modal-title').textContent = id ? 'Edit Kelas' : 'Tambah Kelas';
+    if (id) {
+      const k = kelasList.find(x => x.id === id);
+      document.getElementById('kelas-nama').value    = k.nama;
+      document.getElementById('kelas-tingkat').value = k.tingkat;
+      document.getElementById('kelas-jurusan').value = k.jurusan;
+      document.getElementById('kelas-tahun').value   = k.tahun_ajaran;
+    } else {
+      document.getElementById('kelas-nama').value    = '';
+      document.getElementById('kelas-tingkat').value = '';
+      document.getElementById('kelas-jurusan').value = '';
+      document.getElementById('kelas-tahun').value   = '';
+    }
+    document.getElementById('kelas-modal').classList.add('open');
+    setTimeout(() => document.getElementById('kelas-nama').focus(), 100);
+  }
+
+  function closeKelasModal() {
+    document.getElementById('kelas-modal').classList.remove('open');
+  }
+
+  async function saveKelas() {
+    const nama         = document.getElementById('kelas-nama').value.trim();
+    const tingkat      = document.getElementById('kelas-tingkat').value;
+    const jurusan      = document.getElementById('kelas-jurusan').value.trim();
+    const tahun_ajaran = document.getElementById('kelas-tahun').value.trim();
+    if (!nama) { showToast('Nama kelas wajib diisi', true); return; }
+    const url    = editingKelasId ? `/api/kelas/${editingKelasId}` : '/api/kelas';
+    const method = editingKelasId ? 'PUT' : 'POST';
+    try {
+      const res  = await fetch(url, {
+        method, headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + token },
+        body: JSON.stringify({ nama, tingkat, jurusan, tahun_ajaran })
+      });
+      const data = await res.json();
+      if (!res.ok) { showToast(data.message || 'Gagal menyimpan', true); return; }
+      closeKelasModal();
+      showToast(data.message);
+      loadKelas();
+    } catch { showToast('Terjadi kesalahan', true); }
+  }
+
+  async function deleteKelas(id) {
+    if (!confirm('Hapus kelas ini?')) return;
+    try {
+      const res  = await fetch(`/api/kelas/${id}`, { method: 'DELETE', headers: { Authorization: 'Bearer ' + token } });
+      const data = await res.json();
+      if (!res.ok) { showToast(data.message || 'Gagal menghapus', true); return; }
+      showToast(data.message);
+      loadKelas();
+    } catch { showToast('Terjadi kesalahan', true); }
+  }
+
+  // ── Siswa CRUD ─────────────────────────────────────────
+  let siswaList = [];
+  let editingSiswaId = null;
+
+  async function loadSiswa() {
+    const tbody = document.getElementById('siswa-tbody');
+    tbody.innerHTML = '<tr><td colspan="6" class="data-empty">Memuat...</td></tr>';
+    try {
+      const res = await fetch('/api/siswa', { headers: { Authorization: 'Bearer ' + token } });
+      siswaList = await res.json();
+      renderSiswa();
+    } catch {
+      tbody.innerHTML = '<tr><td colspan="6" class="data-empty">Gagal memuat data</td></tr>';
+    }
+  }
+
+  function renderSiswa() {
+    const tbody = document.getElementById('siswa-tbody');
+    if (!siswaList.length) {
+      tbody.innerHTML = '<tr><td colspan="6" class="data-empty">Belum ada data siswa</td></tr>';
+      return;
+    }
+    tbody.innerHTML = siswaList.map((s, i) => `
+      <tr>
+        <td style="color:var(--muted)">${i + 1}</td>
+        <td style="font-family:monospace;font-size:12px">${esc(s.nis)}</td>
+        <td style="font-weight:600">${esc(s.nama)}</td>
+        <td>${s.jenis_kelamin === 'L' ? 'Laki-laki' : s.jenis_kelamin === 'P' ? 'Perempuan' : '—'}</td>
+        <td>${s.kelas_nama ? esc(s.kelas_nama) : '<span style="color:var(--muted)">—</span>'}</td>
+        <td><div class="actions">
+          <button class="btn-sm btn-edit" onclick="openSiswaModal(${s.id})">Edit</button>
+          <button class="btn-sm btn-del"  onclick="deleteSiswa(${s.id})">Hapus</button>
+        </div></td>
+      </tr>
+    `).join('');
+  }
+
+  async function openSiswaModal(id) {
+    editingSiswaId = id ?? null;
+    document.getElementById('siswa-modal-title').textContent = id ? 'Edit Siswa' : 'Tambah Siswa';
+
+    // Isi dropdown kelas
+    const kelasRes = await fetch('/api/kelas', { headers: { Authorization: 'Bearer ' + token } });
+    const kelasDrop = await kelasRes.json();
+    const selKelas = document.getElementById('siswa-kelas');
+    selKelas.innerHTML = '<option value="">— Tidak ada kelas —</option>' +
+      kelasDrop.map(k => `<option value="${k.id}">${esc(k.nama)}${k.tingkat ? ' ('+k.tingkat+')' : ''}</option>`).join('');
+
+    if (id) {
+      const s = siswaList.find(x => x.id === id);
+      document.getElementById('siswa-nis').value  = s.nis;
+      document.getElementById('siswa-nama').value = s.nama;
+      document.getElementById('siswa-jk').value   = s.jenis_kelamin;
+      selKelas.value = s.kelas_id ?? '';
+    } else {
+      document.getElementById('siswa-nis').value  = '';
+      document.getElementById('siswa-nama').value = '';
+      document.getElementById('siswa-jk').value   = '';
+      selKelas.value = '';
+    }
+    document.getElementById('siswa-modal').classList.add('open');
+    setTimeout(() => document.getElementById('siswa-nis').focus(), 100);
+  }
+
+  function closeSiswaModal() {
+    document.getElementById('siswa-modal').classList.remove('open');
+  }
+
+  async function saveSiswa() {
+    const nis          = document.getElementById('siswa-nis').value.trim();
+    const nama         = document.getElementById('siswa-nama').value.trim();
+    const jenis_kelamin = document.getElementById('siswa-jk').value;
+    const kelas_id     = document.getElementById('siswa-kelas').value || null;
+    if (!nis || !nama) { showToast('NIS dan nama wajib diisi', true); return; }
+    const url    = editingSiswaId ? `/api/siswa/${editingSiswaId}` : '/api/siswa';
+    const method = editingSiswaId ? 'PUT' : 'POST';
+    try {
+      const res  = await fetch(url, {
+        method, headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + token },
+        body: JSON.stringify({ nis, nama, jenis_kelamin, kelas_id })
+      });
+      const data = await res.json();
+      if (!res.ok) { showToast(data.message || 'Gagal menyimpan', true); return; }
+      closeSiswaModal();
+      showToast(data.message);
+      loadSiswa();
+    } catch { showToast('Terjadi kesalahan', true); }
+  }
+
+  async function deleteSiswa(id) {
+    if (!confirm('Hapus siswa ini?')) return;
+    try {
+      const res  = await fetch(`/api/siswa/${id}`, { method: 'DELETE', headers: { Authorization: 'Bearer ' + token } });
+      const data = await res.json();
+      if (!res.ok) { showToast(data.message || 'Gagal menghapus', true); return; }
+      showToast(data.message);
+      loadSiswa();
+    } catch { showToast('Terjadi kesalahan', true); }
+  }
+
+  // ── Ujian ────────────────────────────────────────────────
+  const MODUL_NAMES = {
+    'TOSM-001': 'Komponen Utama Engine',
+    'TOSM-002': 'Siklus Kerja 4 Tak',
+    'TOSM-003': 'Sistem Bahan Bakar Karburator',
+    'TOSM-004': 'Sistem Pelumasan',
+    'TOSM-005': 'Sistem Pendinginan Cairan',
+    'TOSM-006': 'Sistem EFI',
+    'TOSM-007': 'Injektor & Pola Semprotan',
+    'TOSM-008': 'Sistem Pengisian',
+    'TOSM-009': 'Sistem Starter',
+    'TOSM-010': 'Sistem CVT',
+  };
+
+  let ujianAll = [];
+  let ujianKelasList = [];
+  let ujianModul = '';
+
+  async function loadUjian() {
+    document.getElementById('ujian-modul-list').style.display = 'block';
+    document.getElementById('ujian-result').style.display = 'none';
+    const grid = document.getElementById('ujian-modul-grid');
+    grid.innerHTML = '<p style="color:var(--text-muted);font-size:13px">Memuat...</p>';
+    try {
+      const [re, rk] = await Promise.all([
+        fetch('/api/evaluasi', { headers: { Authorization: 'Bearer ' + token } }),
+        fetch('/api/kelas',    { headers: { Authorization: 'Bearer ' + token } })
+      ]);
+      ujianAll       = re.ok ? await re.json() : [];
+      ujianKelasList = rk.ok ? await rk.json() : [];
+    } catch { ujianAll = []; ujianKelasList = []; }
+
+    // Hitung jumlah ujian per modul
+    const counts = {};
+    ujianAll.forEach(r => { counts[r.modul_id] = (counts[r.modul_id] || 0) + 1; });
+
+    grid.innerHTML = Object.entries(MODUL_NAMES).map(([id, nama]) => {
+      const count = counts[id] || 0;
+      return `<div onclick="openUjianModul('${id}')" style="
+        display:flex;align-items:center;justify-content:space-between;
+        background:var(--glass-bg);border:1px solid var(--glass-bd);
+        border-radius:12px;padding:16px 20px;cursor:pointer;
+        transition:border-color .2s,background .2s"
+        onmouseover="this.style.borderColor='var(--purple)';this.style.background='rgba(139,92,246,.08)'"
+        onmouseout="this.style.borderColor='var(--glass-bd)';this.style.background='var(--glass-bg)'">
+        <div>
+          <div style="font-size:11px;color:var(--purple);font-weight:600;margin-bottom:3px">${id}</div>
+          <div style="font-size:14px;color:var(--text);font-weight:500">${nama}</div>
+        </div>
+        <div style="text-align:right">
+          <div style="font-size:20px;font-weight:700;color:var(--text)">${count}</div>
+          <div style="font-size:11px;color:var(--text-muted)">hasil ujian</div>
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  async function openUjianModul(modulId) {
+    ujianModul = modulId;
+    document.getElementById('ujian-modul-list').style.display = 'none';
+    document.getElementById('ujian-result').style.display = 'block';
+    document.getElementById('ujian-result-title').textContent = modulId;
+    document.getElementById('ujian-result-sub').textContent = MODUL_NAMES[modulId] || '';
+
+    // Populate filter kelas dari data yang sudah ada
+    const kelasSet = [...new Set(ujianAll.filter(r => r.modul_id === modulId).map(r => r.kelas_nama).filter(Boolean))].sort();
+    const kSel = document.getElementById('ujian-filter-kelas');
+    kSel.innerHTML = '<option value="">Semua Kelas</option>' +
+      kelasSet.map(k => `<option>${esc(k)}</option>`).join('');
+
+    renderUjian();
+  }
+
+  function backToUjianList() {
+    document.getElementById('ujian-modul-list').style.display = 'block';
+    document.getElementById('ujian-result').style.display = 'none';
+  }
+
+  function renderUjian() {
+    const tbody = document.getElementById('ujian-tbody');
+    const filterKelas = document.getElementById('ujian-filter-kelas').value;
+
+    const rows = ujianAll.filter(r =>
+      r.modul_id === ujianModul &&
+      (!filterKelas || r.kelas_nama === filterKelas)
+    );
+
+    if (rows.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="9" class="data-empty">Belum ada data ujian untuk modul ini</td></tr>';
+      return;
+    }
+
+    tbody.innerHTML = rows.map((r, i) => {
+      const pct   = Math.round(r.score / r.total * 100);
+      const grade = pct >= 90 ? 'A' : pct >= 80 ? 'B' : pct >= 70 ? 'C' : pct >= 60 ? 'D' : 'E';
+      const lulus = pct >= 70;
+      const tgl   = r.created_at ? r.created_at.slice(0, 16).replace('T', ' ') : '-';
+      return `<tr>
+        <td>${i + 1}</td>
+        <td>${esc(r.nis || '-')}</td>
+        <td>${esc(r.siswa_nama)}</td>
+        <td>${esc(r.kelas_nama || '-')}</td>
+        <td>${r.score} / ${r.total}</td>
+        <td>${pct}%</td>
+        <td><strong>${grade}</strong></td>
+        <td><span style="color:${lulus ? 'var(--blue)' : '#e55'}">${lulus ? 'âœ“ Lulus' : 'âœ— Belum'}</span></td>
+        <td style="font-size:12px;color:var(--text-muted)">${tgl}</td>
+      </tr>`;
+    }).join('');
+  }
+
+  document.getElementById('ujian-filter-kelas')?.addEventListener('change', renderUjian);
+
+
+  let toastTimer;
+  function showToast(msg, isError = false) {
+    const el = document.getElementById('toast');
+    el.textContent = msg;
+    el.className = 'toast' + (isError ? ' error' : '');
+    void el.offsetWidth;
+    el.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => el.classList.remove('show'), 3000);
   }
 
   function logout() {

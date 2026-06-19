@@ -1,13 +1,12 @@
 {
   "skkni": ["SKKNI No. 391 Tahun 2014 – Teknik Otomotif Kendaraan Ringan", "SKKNI No. 212 Tahun 2019 – Pemeliharaan dan Perbaikan Mesin Sepeda Motor"],
-  "cp": "Pada akhir pembelajaran modul ini, peserta didik mampu mengidentifikasi seluruh komponen sistem EFI sepeda motor, menjelaskan fungsi dan cara kerja setiap komponen termasuk sensor-sensor input ECU, melakukan pembacaan dan interpretasi kode DTC, serta melakukan pengukuran sensor TPS dan IAT menggunakan multimeter sesuai prosedur standar pabrikan.",
+  "cp": "Pada akhir pembelajaran modul ini, peserta didik mampu menjelaskan prinsip kerja sistem pengisian sepeda motor secara menyeluruh, mengidentifikasi fungsi setiap komponen sistem pengisian beserta sub-komponennya, serta melakukan pemeriksaan dan diagnosis kerusakan sistem pengisian menggunakan multimeter sesuai prosedur standar. Peserta didik juga mampu melakukan pengukuran output alternator, memeriksa tegangan pengisian, menguji kondisi baterai, dan menentukan tindakan perbaikan yang tepat berdasarkan hasil pemeriksaan.",
   "tp": [
-    "8.1 Menjelaskan prinsip kerja sistem EFI dan perbedaannya dibandingkan sistem karburator.",
-    "8.2 Mengidentifikasi dan menjelaskan fungsi setiap komponen sistem EFI: tangki, fuel pump, filter, pressure regulator, injektor, throttle body, fuel rail, dan ECU/ECM.",
-    "8.3 Menjelaskan sensor-sensor input ECU (TPS, MAP, IAT, EOT, CKP, O2 sensor) dan parameter yang diukur masing-masing sensor.",
-    "8.4 Membaca dan menginterpretasikan kode DTC (Diagnostic Trouble Code) menggunakan MIL (Malfunction Indicator Lamp) atau scan tool.",
-    "8.5 Mengukur tegangan dan resistansi sensor TPS dan IAT menggunakan multimeter dan membandingkan dengan spesifikasi pabrikan.",
-    "8.6 Mendiagnosis gangguan sistem EFI berdasarkan kode DTC dan gejala, serta melakukan reset ECU setelah perbaikan sesuai prosedur."
+    "11.1 Menjelaskan prinsip induksi elektromagnetik dan cara kerja sistem pengisian sepeda motor dari alternator hingga baterai.",
+    "11.2 Mengidentifikasi nama, fungsi, dan lokasi setiap komponen sistem pengisian (alternator/magneto, kiprok, baterai, kabel pengisian) beserta sub-komponennya.",
+    "11.3 Melakukan pemeriksaan output alternator dengan mengukur tegangan AC dan resistansi kumparan stator menggunakan multimeter sesuai spesifikasi pabrikan.",
+    "11.4 Mengukur tegangan pengisian sistem (charging voltage) di terminal baterai pada berbagai RPM dan mengevaluasi hasil pengukuran terhadap spesifikasi normal 13,5–14,5V DC.",
+    "11.5 Mendiagnosis kerusakan sistem pengisian berdasarkan gejala, hasil pengukuran, dan prosedur pemeriksaan sistematis, serta menentukan komponen yang perlu diperbaiki atau diganti."
   ],
-  "asesmen": "Asesmen dilakukan melalui soal pilihan ganda berbasis diagnosis DTC, serta praktik baca kode DTC virtual dan pengukuran sensor TPS dan IAT."
+  "asesmen": "Asesmen dilakukan melalui soal pilihan ganda tentang komponen dan cara kerja sistem pengisian, simulasi pengukuran output alternator dan tegangan pengisian secara virtual, serta studi kasus diagnosis kerusakan sistem pengisian berdasarkan gejala yang diberikan."
 }

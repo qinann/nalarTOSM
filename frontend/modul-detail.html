@@ -19,7 +19,7 @@
     }
     html, body { height: 100%; font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); overflow: hidden; }
 
-    #bg  { position: fixed; inset: 0; z-index: 0; }
+    #bg  { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
     #app { position: relative; z-index: 10; height: 100vh; }
 
     /* ══ 3-column layout ══ */
@@ -219,8 +219,47 @@
       font-size: 12px; color: var(--muted); cursor: pointer; transition: all .15s;
     }
     .quiz-opt:hover  { background: rgba(124,58,237,.12); border-color: rgba(124,58,237,.25); color: var(--text); }
-    .quiz-opt.correct { background: rgba(34,197,94,.12);  border-color: rgba(34,197,94,.3);  color: #86efac; }
-    .quiz-opt.wrong   { background: rgba(239,68,68,.1);   border-color: rgba(239,68,68,.25); color: #fca5a5; }
+    .quiz-opt.correct  { background: rgba(34,197,94,.12);  border-color: rgba(34,197,94,.3);  color: #86efac; }
+    .quiz-opt.wrong    { background: rgba(239,68,68,.1);   border-color: rgba(239,68,68,.25); color: #fca5a5; }
+    .quiz-opt.selected { background: rgba(124,58,237,.12); border-color: rgba(124,58,237,.3); color: #c4b5fd; }
+
+    /* ── EVALUASI: pilih siswa ── */
+    .eval-gate { display:flex; align-items:center; justify-content:center; flex:1; padding:20px; }
+    .eval-gate-box { background:var(--glass-bg); border:1px solid var(--glass-bd); border-radius:18px; padding:32px; width:100%; max-width:380px; display:flex; flex-direction:column; gap:16px; }
+    .eval-gate-title { font-size:18px; font-weight:700; }
+    .eval-gate-meta { font-size:13px; color:var(--muted); }
+    .eval-field label { display:block; font-size:12px; color:var(--muted); margin-bottom:6px; font-weight:500; }
+    .eval-field select { width:100%; padding:10px 12px; border-radius:9px; background:rgba(255,255,255,.06); border:1px solid var(--glass-bd); color:var(--text); font-size:13px; font-family:inherit; outline:none; transition:border-color .18s; }
+    .eval-field select:focus { border-color:rgba(124,58,237,.5); }
+    .eval-field select option { background:#0e0b22; }
+    .eval-warn { font-size:12px; color:#fca5a5; text-align:center; }
+    .eval-btn { width:100%; padding:11px; border-radius:10px; background:linear-gradient(135deg,#7c3aed,#3b82f6); color:#fff; font-size:14px; font-weight:600; font-family:inherit; border:none; cursor:pointer; transition:opacity .18s; }
+    .eval-btn:hover { opacity:.85; }
+    .eval-btn:disabled { opacity:.35; cursor:not-allowed; }
+    .eval-btn-ghost { padding:10px 20px; border-radius:10px; background:rgba(255,255,255,.05); border:1px solid var(--glass-bd); color:var(--muted); font-size:13px; font-weight:600; font-family:inherit; cursor:pointer; transition:color .18s; }
+    .eval-btn-ghost:hover { color:var(--text); }
+
+    /* ── EVALUASI: quiz header & submit ── */
+    .quiz-header { display:flex; justify-content:space-between; align-items:center; padding:12px 16px; background:var(--glass-bg); border:1px solid var(--glass-bd); border-radius:12px; flex-shrink:0; }
+    .quiz-student { font-size:13px; color:var(--muted); }
+    .quiz-student strong { color:var(--text); }
+    .quiz-progress { font-size:12px; color:#c4b5fd; font-weight:600; }
+    .quiz-submit-bar { display:flex; justify-content:flex-end; padding-top:4px; flex-shrink:0; }
+    .quiz-submit-bar .eval-btn { width:auto; padding:10px 28px; }
+
+    /* ── EVALUASI: result overlay ── */
+    .eval-result-overlay { position:absolute; inset:0; background:rgba(3,7,26,.92); display:flex; align-items:center; justify-content:center; z-index:50; backdrop-filter:blur(8px); }
+    .eval-result-box { background:#0e0b22; border:1px solid var(--glass-bd); border-radius:20px; padding:36px 32px; display:flex; flex-direction:column; align-items:center; gap:14px; min-width:280px; }
+    .eval-result-score { font-size:64px; font-weight:800; line-height:1; }
+    .eval-result-score span { font-size:28px; font-weight:400; color:var(--muted); }
+    .eval-result-score.pass { background:linear-gradient(135deg,#4ade80,#22c55e); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .eval-result-score.fail { background:linear-gradient(135deg,#f87171,#ef4444); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .eval-result-pct { font-size:18px; font-weight:700; }
+    .eval-result-name { font-size:13px; color:var(--muted); }
+    .eval-result-status { font-size:13px; font-weight:600; padding:5px 16px; border-radius:20px; }
+    .eval-result-status.pass { background:rgba(74,222,128,.12); color:#4ade80; border:1px solid rgba(74,222,128,.25); }
+    .eval-result-status.fail { background:rgba(239,68,68,.08); color:#f87171; border:1px solid rgba(239,68,68,.2); }
+    .eval-result-actions { display:flex; gap:10px; margin-top:6px; }
 
     .chip-bar {
       display: flex; gap: 8px; flex-wrap: wrap;
